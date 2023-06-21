@@ -1,0 +1,97 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 47	3 cups flour
+T4	FOOD 49 55	cheese
+T5	FOOD 57 62	sugar
+T6	FOOD 64 69	yeast
+T7	FOOD 74 78	salt
+T8	AC 83 86	Add
+T9	FOOD 87 91	milk
+T10	FOOD 96 99	egg
+T11	AC 101 105	beat
+T12	OTHER 109 118	low speed
+T13	CONDITION_CLAUSE 119 131	until smooth
+T14	AC 136 143	Stir in
+T15	FOOD 144 166	enough remaining flour
+T16	PURPOSE_CLAUSE 167 187	to form a soft dough
+T17	AC 192 196	Turn
+T18	TOOL 202 219	a floured surface
+T19	AC 221 226	knead
+T20	CONDITION_CLAUSE 227 251	until smooth and elastic
+T21	DUR 259 270	6-8 minutes
+T22	AC 275 280	Place
+T23	TOOL 284 298	a greased bowl
+T24	AC 300 307	turning
+T25	PURPOSE_CLAUSE 313 326	to grease top
+T26	AC 331 336	Cover
+T27	AC 345 349	rise
+T28	TOOL 353 365	a warm place
+T29	CONDITION_CLAUSE 366 379	until doubled
+T30	DUR 387 393	1 hour
+T31	AC 398 403	Punch
+T32	FOOD 404 409	dough
+T33	AC 419 425	Divide
+T34	OTHER 429 433	half
+T35	AC 438 443	shape
+T36	FOOD 449 459	two loaves
+T37	AC 464 469	Place
+T38	TOOL 473 489	two greased 9-in
+T39	AC 495 500	Cover
+T40	AC 509 513	rise
+T41	CONDITION_CLAUSE 514 527	until doubled
+T42	DUR 535 545	45 minutes
+T43	AC 551 555	Bake
+T44	TEMPERATURE 559 572	375 degrees F
+T45	DUR 577 590	25-30 minutes
+T46	CONDITION_CLAUSE 594 612	until golden brown
+T47	AC 618 624	Remove
+T48	TOOL 630 634	pans
+T49	PURPOSE_CLAUSE 635 656	to cool on wire racks
+T60	zav 83 86	Add
+R1	zav_anaphor Arg1:T60 Arg2:T50	
+R2	zav_anaphor Arg1:T60 Arg2:T51	
+R3	zav_anaphor Arg1:T60 Arg2:T52	
+R4	zav_anaphor Arg1:T60 Arg2:T53	
+R5	zav_anaphor Arg1:T60 Arg2:T54	
+T61	zav 101 105	beat
+R6	zav_anaphor Arg1:T61 Arg2:T56	
+R7	zav_anaphor Arg1:T61 Arg2:T55	
+R8	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 136 143	Stir in
+R9	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 192 196	Turn
+R10	zav_zav Arg1:T63 Arg2:T62	
+R11	zav_anaphor Arg1:T63 Arg2:T57	
+T64	zav 221 226	knead
+R12	zav_zav Arg1:T64 Arg2:T63	
+T65	zav 275 280	Place
+R13	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 300 307	turning
+R14	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 331 336	Cover
+R15	zav_zav Arg1:T67 Arg2:T66	
+T68	zav 345 349	rise
+R16	zav_zav Arg1:T68 Arg2:T66	
+T69	zav 419 425	Divide
+R17	zav_anaphor Arg1:T69 Arg2:T58	
+T70	zav 438 443	shape
+R18	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 464 469	Place
+R19	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 495 500	Cover
+R20	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 509 513	rise
+R21	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 551 555	Bake
+R22	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 618 624	Remove
+R23	zav_zav Arg1:T75 Arg2:T74	
+T50	anaphor 35 47	3 cups flour
+T51	anaphor 49 55	cheese
+T52	anaphor 57 62	sugar
+T53	anaphor 64 69	yeast
+T54	anaphor 74 78	salt
+T55	anaphor 87 91	milk
+T56	anaphor 96 99	egg
+T57	anaphor 144 166	enough remaining flour
+T58	anaphor 404 409	dough

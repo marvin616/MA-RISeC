@@ -1,0 +1,71 @@
+T1	AC 21 26	cream
+T2	AC 54 57	Add
+T3	AC 80 83	mix
+T4	AC 93 100	Combine
+T5	AC 117 120	add
+T6	AC 144 149	Press
+T7	AC 175 179	Bake
+T8	AC 253 258	place
+T9	AC 361 369	Sprinkle
+T10	AC 387 391	Cool
+T11	AC 397 400	Cut
+T12	TOOL 6 19	a mixing bowl
+T13	FOOD 27 33	butter
+T14	FOOD 38 49	brown sugar
+T15	FOOD 58 66	egg yolk
+T16	FOOD 71 78	vanilla
+T17	FOOD 101 106	flour
+T18	FOOD 111 115	salt
+T19	FOOD 124 139	creamed mixture
+T20	TOOL 155 170	a greased 15-in
+T21	TEMPERATURE 183 196	350 degrees F
+T22	DUR 201 214	15-18 minutes
+T23	FOOD 259 275	candy bar pieces
+T24	DUR 305 313	1 minute
+T25	AC 333 339	spread
+T26	FOOD 340 349	chocolate
+T27	FOOD 375 382	walnuts
+T28	CONDITION_CLAUSE 218 236	until golden brown
+T29	FOOD 281 286	crust
+T30	AC 295 300	stand
+T31	CONDITION_CLAUSE 317 331	until softened
+T32	OTHER 406 413	squares
+T44	zav 54 57	Add
+R1	zav_anaphor Arg1:T44 Arg2:T33	
+R2	zav_anaphor Arg1:T44 Arg2:T34	
+T45	zav 80 83	mix
+R3	zav_anaphor Arg1:T45 Arg2:T36	
+R4	zav_anaphor Arg1:T45 Arg2:T35	
+R5	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 117 120	add
+R6	zav_anaphor Arg1:T46 Arg2:T38	
+R7	zav_anaphor Arg1:T46 Arg2:T37	
+T47	zav 144 149	Press
+R8	zav_anaphor Arg1:T47 Arg2:T39	
+R9	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 175 179	Bake
+R10	zav_zav Arg1:T48 Arg2:T47	
+T49	zav 295 300	stand
+R11	zav_anaphor Arg1:T49 Arg2:T40	
+R12	zav_anaphor Arg1:T49 Arg2:T43	
+T50	zav 333 339	spread
+R13	zav_zav Arg1:T50 Arg2:T49	
+T51	zav 361 369	Sprinkle
+R14	zav_anaphor Arg1:T51 Arg2:T41	
+R15	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 387 391	Cool
+R16	zav_zav Arg1:T52 Arg2:T51	
+R17	zav_anaphor Arg1:T52 Arg2:T42	
+T53	zav 397 400	Cut
+R18	zav_zav Arg1:T53 Arg2:T52	
+T33	anaphor 27 33	butter
+T34	anaphor 38 49	brown sugar
+T35	anaphor 58 66	egg yolk
+T36	anaphor 71 78	vanilla
+T37	anaphor 101 106	flour
+T38	anaphor 111 115	salt
+T39	anaphor 124 139	creamed mixture
+T40	anaphor 259 275	candy bar pieces
+T41	anaphor 340 349	chocolate
+T42	anaphor 375 382	walnuts
+T43	anaphor 281 286	crust

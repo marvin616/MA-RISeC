@@ -1,0 +1,59 @@
+T1	AC 3 10	Preheat
+T2	AC 53 59	Grease
+T3	AC 64 69	flour
+T4	TEMPERATURE 19 32	350 degrees F
+T5	TOOL 11 15	oven
+T6	TOOL 70 85	a 9x13 inch pan
+T7	AC 90 94	Sift
+T8	FOOD 104 113	the flour
+T9	FOOD 115 126	baking soda
+T10	FOOD 128 136	cinnamon
+T11	FOOD 141 145	salt
+T12	AC 150 157	Combine
+T13	FOOD 158 168	the apples
+T14	FOOD 173 188	the white sugar
+T15	AC 190 199	set aside
+T16	TOOL 207 219	a large bowl
+T17	AC 221 224	mix
+T18	FOOD 234 249	the brown sugar
+T19	FOOD 251 254	oil
+T20	FOOD 256 260	eggs
+T21	FOOD 265 272	vanilla
+T23	FOOD 285 302	the apple mixture
+T22	AC 277 284	Stir in
+T24	AC 331 338	Fold in
+T25	AC 355 359	Pour
+T26	AC 389 393	Bake
+T27	AC 520 524	cool
+T28	FOOD 309 326	the flour mixture
+T29	FOOD 339 350	the walnuts
+T30	FOOD 360 366	batter
+T31	TOOL 372 384	prepared pan
+T32	TOOL 397 415	the preheated oven
+T33	DUR 420 430	45 minutes
+T34	CONDITION_CLAUSE 435 505	until a toothpick inserted into the center of the cake comes out clean
+T35	zav 190 199	set aside
+R1	zav_anaphor Arg1:T35 Arg2:T37	
+R2	zav_anaphor Arg1:T35 Arg2:T36	
+T38	zav 277 284	Stir in
+R3	zav_anaphor Arg1:T38 Arg2:T39	
+R4	zav_anaphor Arg1:T38 Arg2:T40	
+R5	zav_anaphor Arg1:T38 Arg2:T41	
+R6	zav_anaphor Arg1:T38 Arg2:T42	
+T43	zav 331 338	Fold in
+R7	zav_anaphor Arg1:T43 Arg2:T45	
+R8	zav_anaphor Arg1:T43 Arg2:T44	
+R9	zav_zav Arg1:T43 Arg2:T38	
+T50	zav 389 393	Bake
+R11	zav_anaphor Arg1:T50 Arg2:T48	
+T51	zav 520 524	cool
+R15	zav_zav Arg1:T51 Arg2:T50	
+T36	anaphor 158 168	the apples
+T37	anaphor 173 188	the white sugar
+T39	anaphor 234 249	the brown sugar
+T40	anaphor 251 254	oil
+T41	anaphor 256 260	eggs
+T42	anaphor 265 272	vanilla
+T44	anaphor 285 302	the apple mixture
+T45	anaphor 309 326	the flour mixture
+T48	anaphor 360 366	batter

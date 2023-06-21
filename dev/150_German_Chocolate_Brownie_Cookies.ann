@@ -1,0 +1,84 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 22	brown sugar
+T3	FOOD 24 42	2/3 cup shortening
+T4	FOOD 44 49	water
+T5	FOOD 55 73	1 teaspoon vanilla
+T6	TOOL 77 87	large bowl
+T7	AC 92 96	Beat
+T8	FOOD 97 101	eggs
+T9	FOOD 107 122	creamed mixture
+T10	TOOL 130 142	another bowl
+T11	AC 144 151	combine
+T12	FOOD 152 157	flour
+T13	FOOD 159 164	cocoa
+T14	FOOD 166 170	salt
+T15	FOOD 176 187	baking soda
+T16	AC 192 195	Mix
+T17	FOOD 196 208	this mixture
+T18	FOOD 214 229	creamed mixture
+T19	CONDITION_CLAUSE 230 248	until just blended
+T20	AC 253 260	Stir in
+T21	FOOD 261 276	chocolate chips
+T22	AC 281 285	Drop
+T23	FOOD 286 317	rounded tablespoonfuls of dough
+T24	TOOL 323 345	ungreased baking sheet
+T25	OTHER 346 366	about 2 inches apart
+T26	AC 371 376	Place
+T27	TOOL 377 389	cookie sheet
+T28	TOOL 393 415	the middle of the oven
+T29	AC 420 424	Cool
+T30	DUR 429 438	2 minutes
+T31	TOOL 442 454	baking sheet
+T32	AC 459 465	Remove
+T33	FOOD 466 473	cookies
+T34	TOOL 477 486	wire rack
+T35	PURPOSE_CLAUSE 487 505	to cool completely
+T36	AC 538 547	combining
+T37	FOOD 548 563	evaporated milk
+T38	FOOD 565 576	white sugar
+T39	FOOD 578 596	1/4 cup shortening
+T40	FOOD 602 611	egg yolks
+T41	TOOL 615 630	medium saucepan
+T42	AC 636 640	Stir
+T43	FOOD 641 661	1/2 teaspoon vanilla
+T44	FOOD 663 669	pecans
+T45	FOOD 675 682	coconut
+T46	FOOD 688 704	the warm mixture
+T47	AC 710 714	Cool
+T48	AC 731 736	frost
+T49	FOOD 737 751	cooled cookies
+T50	AC 514 518	Make
+T51	FOOD 519 527	Frosting
+T77	zav 253 260	Stir in
+T78	zav 192 195	Mix
+R1	zav_anaphor Arg1:T78 Arg2:T58	
+R2	zav_anaphor Arg1:T78 Arg2:T59	
+R3	zav_anaphor Arg1:T78 Arg2:T60	
+R4	zav_anaphor Arg1:T78 Arg2:T61	
+R5	zav_anaphor Arg1:T77 Arg2:T63	
+R6	zav_zav Arg1:T77 Arg2:T78	
+T79	zav 420 424	Cool
+R7	zav_anaphor Arg1:T79 Arg2:T65	
+T80	zav 710 714	Cool
+R8	zav_anaphor Arg1:T80 Arg2:T71	
+R9	zav_anaphor Arg1:T80 Arg2:T72	
+R10	zav_anaphor Arg1:T80 Arg2:T73	
+T81	zav 636 640	Stir
+R11	zav_anaphor Arg1:T81 Arg2:T67	
+R12	zav_anaphor Arg1:T81 Arg2:T68	
+R13	zav_anaphor Arg1:T81 Arg2:T69	
+R14	zav_anaphor Arg1:T81 Arg2:T70	
+R15	zav_zav Arg1:T80 Arg2:T81	
+T58	anaphor 152 157	flour
+T59	anaphor 159 164	cocoa
+T60	anaphor 166 170	salt
+T61	anaphor 176 187	baking soda
+T63	anaphor 214 229	creamed mixture
+T65	anaphor 286 317	rounded tablespoonfuls of dough
+T67	anaphor 548 563	evaporated milk
+T68	anaphor 565 576	white sugar
+T69	anaphor 578 596	1/4 cup shortening
+T70	anaphor 602 611	egg yolks
+T71	anaphor 641 661	1/2 teaspoon vanilla
+T72	anaphor 663 669	pecans
+T73	anaphor 675 682	coconut

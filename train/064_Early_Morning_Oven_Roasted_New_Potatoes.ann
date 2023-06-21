@@ -1,0 +1,35 @@
+T1	AC 3 10	Preheat
+T2	AC 71 75	melt
+T3	AC 91 98	Stir in
+T4	AC 129 133	Coat
+T5	AC 177 184	Arrange
+T6	AC 236 240	Bake
+T7	AC 329 333	Toss
+T8	TOOL 11 15	oven
+T9	TEMPERATURE 19 32	450 degrees F
+T10	TOOL 56 69	a hot skillet
+T11	FOOD 76 86	the butter
+T12	FOOD 118 124	pepper
+T13	FOOD 109 113	salt
+T14	FOOD 99 107	rosemary
+T15	FOOD 134 142	potatoes
+T16	FOOD 155 172	the melted butter
+T17	FOOD 185 197	the potatoes
+T18	TOOL 219 231	a baking pan
+T19	TOOL 244 260	a preheated oven
+T20	DUR 294 324	approximately 20 to 25 minutes
+T21	FOOD 334 338	them
+T22	CONDITION_CLAUSE 261 292	until potatoes are golden brown
+T23	PURPOSE_CLAUSE 352 390	to ensure that they brown on all sides
+T24	OTHER 201 215	a single layer
+T25	TEMPERATURE 34 47	230 degrees C
+T34	zav 91 98	Stir in
+R1	zav_anaphor Arg1:T34 Arg2:T26	
+T35	zav 236 240	Bake
+R2	zav_anaphor Arg1:T35 Arg2:T32	
+T36	zav 329 333	Toss
+R3	zav_zav Arg1:T36 Arg2:T35	
+R4	zav_anaphor Arg1:T35 Arg2:T31	
+T26	anaphor 76 86	the butter
+T31	anaphor 155 172	the melted butter
+T32	anaphor 185 197	the potatoes

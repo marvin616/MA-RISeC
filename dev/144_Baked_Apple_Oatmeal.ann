@@ -1,0 +1,37 @@
+T1	TOOL 6 16	a saucepan
+T2	AC 18 22	heat
+T3	FOOD 23 27	milk
+T4	FOOD 29 40	brown sugar
+T5	FOOD 42 48	butter
+T6	FOOD 50 54	salt
+T7	FOOD 59 67	cinnamon
+T8	AC 72 75	Add
+T9	FOOD 76 97	remaining ingredients
+T10	AC 99 102	mix
+T11	AC 114 119	Spoon
+T12	TOOL 125 150	a greased 2-qt. casserole
+T13	AC 155 160	Cover
+T14	AC 165 169	bake
+T15	TEMPERATURE 173 186	350 degrees F
+T16	DUR 191 201	45 minutes
+T23	zav 72 75	Add
+R1	zav_anaphor Arg1:T23 Arg2:T17	
+R2	zav_anaphor Arg1:T23 Arg2:T18	
+R3	zav_anaphor Arg1:T23 Arg2:T19	
+R4	zav_anaphor Arg1:T23 Arg2:T20	
+R5	zav_anaphor Arg1:T23 Arg2:T21	
+T24	zav 99 102	mix
+R6	zav_anaphor Arg1:T24 Arg2:T22	
+R7	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 114 119	Spoon
+R8	zav_zav Arg1:T25 Arg2:T24	
+T26	zav 155 160	Cover
+R9	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 165 169	bake
+R10	zav_zav Arg1:T27 Arg2:T26	
+T17	anaphor 23 27	milk
+T18	anaphor 29 40	brown sugar
+T19	anaphor 42 48	butter
+T20	anaphor 50 54	salt
+T21	anaphor 59 67	cinnamon
+T22	anaphor 76 97	remaining ingredients

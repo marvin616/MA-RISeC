@@ -1,0 +1,19 @@
+T1	AC 21 28	combine
+T2	TOOL 6 19	a medium bowl
+T3	AC 55 64	Microwave
+T4	TEMPERATURE 68 72	high
+T5	CONDITION_CLAUSE 73 93	until heated through
+T6	DUR 101 110	5 minutes
+T7	AC 115 123	Sprinkle
+T8	FOOD 127 134	coconut
+T9	AC 151 156	Serve
+T10	FOOD 29 50	first six ingredients
+T13	zav 55 64	Microwave
+R1	zav_anaphor Arg1:T13 Arg2:T12	
+T14	zav 115 123	Sprinkle
+R2	zav_zav Arg1:T14 Arg2:T13	
+T15	zav 151 156	Serve
+R3	zav_zav Arg1:T15 Arg2:T14	
+R4	zav_anaphor Arg1:T15 Arg2:T11	
+T11	anaphor 127 134	coconut
+T12	anaphor 29 50	first six ingredients

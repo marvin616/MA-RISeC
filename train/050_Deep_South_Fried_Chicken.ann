@@ -1,0 +1,45 @@
+T1	AC 3 7	Heat
+T2	AC 107 114	combine
+T3	AC 147 152	Shake
+T4	AC 196 201	place
+T5	AC 226 232	Repeat
+T6	AC 291 294	Fry
+T7	AC 389 393	Turn
+T8	AC 418 423	cover
+T9	AC 429 433	cook
+T10	AC 453 459	Remove
+T11	AC 473 481	increase
+T13	FOOD 115 124	the flour
+T17	FOOD 126 130	salt
+T18	FOOD 136 142	pepper
+T19	FOOD 153 171	two chicken pieces
+T20	TOOL 26 52	a large, cast iron skillet
+T21	TEMPERATURE 58 74	medium-high heat
+T22	TOOL 82 105	a brown paper lunch bag
+T23	TOOL 175 182	the bag
+T24	TOOL 210 221	the skillet
+T25	FOOD 8 22	the shortening
+T27	FOOD 295 306	the chicken
+T28	TEMPERATURE 312 328	medium-high heat
+T32	TOOL 394 402	the heat
+T33	TEMPERATURE 406 416	medium-low
+T34	DUR 438 448	25 minutes
+T35	TOOL 460 467	the lid
+T36	TOOL 482 486	heat
+T37	TEMPERATURE 490 501	medium-high
+T43	FOOD 202 206	them
+T14	CONDITION_CLAUSE 233 286	until all of the chicken is coated and in the skillet
+T15	CONDITION_CLAUSE 329 384	until all of the pieces have been browned on both sides
+T12	CONDITION_CLAUSE 522 592	until chicken pieces are a deep golden brown, and the juices run clear
+T16	AC 515 521	frying
+T26	PURPOSE_CLAUSE 183 190	to coat
+T29	zav 196 201	place
+R1	zav_anaphor Arg1:T29 Arg2:T30	
+T31	zav 429 433	cook
+T38	zav 418 423	cover
+R2	zav_anaphor Arg1:T38 Arg2:T39	
+R3	zav_zav Arg1:T31 Arg2:T38	
+T40	zav 515 521	frying
+R4	zav_zav Arg1:T40 Arg2:T31	
+T30	anaphor 153 171	two chicken pieces
+T39	anaphor 295 306	the chicken

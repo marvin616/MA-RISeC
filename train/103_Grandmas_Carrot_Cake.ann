@@ -1,0 +1,99 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 75	a 9x13 inch pan
+T7	AC 80 84	Sift
+T8	FOOD 94 103	the flour
+T9	FOOD 105 116	baking soda
+T10	FOOD 121 129	cinnamon
+T11	AC 134 143	Set aside
+T12	TOOL 151 163	a large bowl
+T13	AC 165 172	combine
+T14	FOOD 173 182	the sugar
+T15	FOOD 187 190	oil
+T16	CONDITION_CLAUSE 191 204	until blended
+T17	AC 209 216	Beat in
+T18	FOOD 217 225	the eggs
+T19	AC 246 253	stir in
+T20	FOOD 254 265	the vanilla
+T21	AC 270 277	Stir in
+T22	FOOD 278 295	the flour mixture
+T23	CONDITION_CLAUSE 301 319	until incorporated
+T24	AC 324 331	Fold in
+T25	FOOD 332 345	the pineapple
+T26	FOOD 347 354	carrots
+T27	FOOD 356 363	coconut
+T28	FOOD 368 375	walnuts
+T29	AC 380 384	Pour
+T30	FOOD 385 391	batter
+T31	TOOL 397 409	prepared pan
+T32	AC 415 419	Bake
+T33	TOOL 423 441	the preheated oven
+T34	DUR 446 456	45 minutes
+T35	CONDITION_CLAUSE 461 531	until a toothpick inserted into the center of the cake comes out clean
+T36	AC 555 559	poke
+T37	OTHER 560 565	holes
+T38	FOOD 569 577	the cake
+T39	TOOL 583 589	a fork
+T40	FOOD 599 608	the glaze
+T41	TOOL 613 623	a saucepan
+T42	AC 625 632	combine
+T43	FOOD 633 639	butter
+T44	FOOD 641 646	sugar
+T45	FOOD 648 658	buttermilk
+T46	FOOD 663 670	vanilla
+T47	AC 695 699	boil
+T48	FOOD 682 689	mixture
+T49	TEMPERATURE 705 716	medium heat
+T50	AC 723 729	reduce
+T51	OTHER 730 734	heat
+T52	AC 739 743	cook
+T53	TEMPERATURE 748 757	5 minutes
+T54	AC 763 767	Pour
+T55	FOOD 768 773	glaze
+T56	FOOD 779 788	warm cake
+T57	AC 804 808	cool
+T58	OTHER 226 239	one at a time
+T59	OTHER 809 819	completely
+T60	CONDITION_CLAUSE 537 553	While still warm
+T83	zav 134 143	Set aside
+R1	zav_anaphor Arg1:T83 Arg2:T61	
+R2	zav_anaphor Arg1:T83 Arg2:T62	
+R3	zav_anaphor Arg1:T83 Arg2:T63	
+T84	zav 209 216	Beat in
+R4	zav_anaphor Arg1:T84 Arg2:T64	
+R5	zav_anaphor Arg1:T84 Arg2:T65	
+T85	zav 246 253	stir in
+R6	zav_anaphor Arg1:T85 Arg2:T66	
+R7	zav_zav Arg1:T85 Arg2:T84	
+T86	zav 270 277	Stir in
+R8	zav_zav Arg1:T86 Arg2:T85	
+R9	zav_anaphor Arg1:T86 Arg2:T67	
+T87	zav 415 419	Bake
+R10	zav_anaphor Arg1:T87 Arg2:T73	
+T88	zav 695 699	boil
+R11	zav_anaphor Arg1:T88 Arg2:T76	
+R12	zav_anaphor Arg1:T88 Arg2:T77	
+R13	zav_anaphor Arg1:T88 Arg2:T78	
+R14	zav_anaphor Arg1:T88 Arg2:T79	
+T89	zav 739 743	cook
+R15	zav_zav Arg1:T89 Arg2:T88	
+T90	zav 804 808	cool
+R16	zav_anaphor Arg1:T90 Arg2:T82	
+R17	zav_anaphor Arg1:T90 Arg2:T81	
+T61	anaphor 94 103	the flour
+T62	anaphor 105 116	baking soda
+T63	anaphor 121 129	cinnamon
+T64	anaphor 173 182	the sugar
+T65	anaphor 187 190	oil
+T66	anaphor 217 225	the eggs
+T67	anaphor 254 265	the vanilla
+T73	anaphor 385 391	batter
+T76	anaphor 633 639	butter
+T77	anaphor 641 646	sugar
+T78	anaphor 648 658	buttermilk
+T79	anaphor 663 670	vanilla
+T81	anaphor 768 773	glaze
+T82	anaphor 779 788	warm cake

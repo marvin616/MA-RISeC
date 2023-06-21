@@ -1,0 +1,58 @@
+T1	AC 3 8	Place
+T2	FOOD 9 24	the cranberries
+T3	FOOD 29 34	water
+T4	TOOL 40 51	a large pot
+T5	AC 67 71	boil
+T6	AC 76 80	cook
+T7	CONDITION_CLAUSE 86 107	until the berries pop
+T8	DUR 109 124	about 5 minutes
+T9	AC 129 135	Remove
+T10	OTHER 141 149	the heat
+T11	AC 214 224	Strain out
+T12	FOOD 225 240	the cranberries
+T13	AC 245 249	stir
+T14	FOOD 250 266	the orange juice
+T15	FOOD 268 283	pineapple juice
+T16	FOOD 285 296	lemon juice
+T17	FOOD 301 306	sugar
+T18	FOOD 312 322	the liquid
+T19	AC 327 330	Add
+T20	FOOD 331 349	the cinnamon stick
+T21	FOOD 351 363	whole cloves
+T22	FOOD 368 384	allspice berries
+T23	AC 404 408	boil
+T24	TEMPERATURE 400 403	low
+T25	AC 158 163	stand
+T26	TEMPERATURE 167 183	room temperature
+T27	CONDITION_CLAUSE 184 194	until cold
+T28	DUR 196 209	several hours
+T40	zav 67 71	boil
+R1	zav_anaphor Arg1:T40 Arg2:T29	
+R2	zav_anaphor Arg1:T40 Arg2:T30	
+T41	zav 76 80	cook
+R3	zav_zav Arg1:T41 Arg2:T40	
+T42	zav 129 135	Remove
+R4	zav_zav Arg1:T42 Arg2:T41	
+T43	zav 158 163	stand
+R5	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 327 330	Add
+R6	zav_anaphor Arg1:T44 Arg2:T32	
+R7	zav_anaphor Arg1:T44 Arg2:T33	
+R8	zav_anaphor Arg1:T44 Arg2:T34	
+R9	zav_anaphor Arg1:T44 Arg2:T35	
+R10	zav_anaphor Arg1:T44 Arg2:T36	
+T45	zav 404 408	boil
+R11	zav_zav Arg1:T45 Arg2:T44	
+R12	zav_anaphor Arg1:T45 Arg2:T37	
+R13	zav_anaphor Arg1:T45 Arg2:T38	
+R14	zav_anaphor Arg1:T45 Arg2:T39	
+T29	anaphor 9 24	the cranberries
+T30	anaphor 29 34	water
+T32	anaphor 250 266	the orange juice
+T33	anaphor 268 283	pineapple juice
+T34	anaphor 285 296	lemon juice
+T35	anaphor 301 306	sugar
+T36	anaphor 312 322	the liquid
+T37	anaphor 331 349	the cinnamon stick
+T38	anaphor 351 363	whole cloves
+T39	anaphor 368 384	allspice berries

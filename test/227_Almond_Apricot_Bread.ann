@@ -1,0 +1,74 @@
+T1	AC 20 27	combine
+T2	AC 74 83	Set aside
+T3	AC 138 142	beat
+T4	AC 199 203	Stir
+T5	AC 250 257	Fold in
+T6	AC 283 287	Pour
+T7	AC 321 325	Bake
+T8	AC 402 406	Cool
+T9	AC 481 488	combine
+T10	FOOD 521 528	extract
+T11	FOOD 489 513	the confectioners' sugar
+T12	FOOD 515 519	milk
+T13	FOOD 533 551	reserved baby food
+T14	CONDITION_CLAUSE 552 564	until smooth
+T15	AC 570 577	Drizzle
+T16	FOOD 583 595	cooled bread
+T17	PURPOSE_CLAUSE 470 479	For glaze
+T18	TOOL 6 18	a large bowl
+T19	FOOD 28 37	the flour
+T20	FOOD 39 45	sugars
+T21	FOOD 47 60	baking powder
+T22	FOOD 65 69	salt
+T23	FOOD 84 106	1 tablespoon baby food
+T24	PURPOSE_CLAUSE 107 116	for glaze
+T25	TOOL 124 136	another bowl
+T26	FOOD 143 150	the egg
+T27	FOOD 152 156	milk
+T28	FOOD 158 161	oil
+T29	FOOD 163 170	extract
+T30	FOOD 175 194	remaining baby food
+T31	FOOD 209 224	dry ingredients
+T32	CONDITION_CLAUSE 230 245	until moistened
+T33	FOOD 258 265	almonds
+T34	FOOD 270 278	apricots
+T35	TOOL 293 316	a greased 9-in loaf pan
+T36	TEMPERATURE 329 342	350 degrees F
+T37	DUR 347 360	55-65 minutes
+T38	CONDITION_CLAUSE 364 397	until a toothpick comes out clean
+T39	DUR 411 421	10 minutes
+T40	CONDITION_CLAUSE 422 465	before removing from the pan to a wire rack
+T59	zav 199 203	Stir
+R1	zav_anaphor Arg1:T59 Arg2:T51	
+R2	zav_anaphor Arg1:T59 Arg2:T52	
+R3	zav_anaphor Arg1:T59 Arg2:T53	
+R4	zav_anaphor Arg1:T59 Arg2:T54	
+R5	zav_anaphor Arg1:T59 Arg2:T55	
+T60	zav 250 257	Fold in
+R6	zav_zav Arg1:T60 Arg2:T59	
+R7	zav_anaphor Arg1:T60 Arg2:T56	
+T61	zav 283 287	Pour
+R8	zav_zav Arg1:T61 Arg2:T60	
+R9	zav_anaphor Arg1:T61 Arg2:T57	
+R10	zav_anaphor Arg1:T61 Arg2:T58	
+T62	zav 321 325	Bake
+R11	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 402 406	Cool
+R12	zav_zav Arg1:T63 Arg2:T62	
+T64	zav 570 577	Drizzle
+R13	zav_anaphor Arg1:T64 Arg2:T42	
+R14	zav_anaphor Arg1:T64 Arg2:T43	
+R15	zav_anaphor Arg1:T64 Arg2:T41	
+R16	zav_anaphor Arg1:T64 Arg2:T44	
+T41	anaphor 521 528	extract
+T42	anaphor 489 513	the confectioners' sugar
+T43	anaphor 515 519	milk
+T44	anaphor 533 551	reserved baby food
+T51	anaphor 143 150	the egg
+T52	anaphor 152 156	milk
+T53	anaphor 158 161	oil
+T54	anaphor 163 170	extract
+T55	anaphor 175 194	remaining baby food
+T56	anaphor 209 224	dry ingredients
+T57	anaphor 258 265	almonds
+T58	anaphor 270 278	apricots

@@ -1,0 +1,101 @@
+T1	AC 3 8	Place
+T2	FOOD 9 14	water
+T3	FOOD 16 19	egg
+T4	FOOD 21 32	bread flour
+T5	FOOD 34 45	white sugar
+T6	FOOD 47 60	powdered milk
+T7	FOOD 62 66	salt
+T8	FOOD 68 88	5 tablespoons butter
+T9	FOOD 93 98	yeast
+T10	TOOL 102 115	bread machine
+T11	AC 163 169	Select
+T12	OTHER 170 183	DOUGH setting
+T13	AC 189 193	turn
+T14	TOOL 194 201	machine
+T15	AC 241 245	melt
+T16	TOOL 223 239	a small saucepan
+T17	FOOD 246 260	1/3 cup butter
+T18	AC 265 268	Add
+T19	FOOD 269 288	1/2 cup brown sugar
+T20	FOOD 293 302	ice cream
+T21	AC 315 319	boil
+T22	AC 325 329	cook
+T23	DUR 334 343	2 minutes
+T24	AC 348 352	Pour
+T25	TOOL 382 413	lightly greased 9 x 13 inch pan
+T26	FOOD 353 360	caramel
+T27	AC 418 425	Preheat
+T28	TEMPERATURE 434 447	350 degrees F
+T29	TEMPERATURE 449 462	175 degrees C
+T30	TOOL 426 430	oven
+T31	CONDITION_CLAUSE 468 501	When machine has finished cycling
+T32	AC 502 508	remove
+T33	FOOD 509 514	dough
+T34	TOOL 520 523	pan
+T35	AC 528 532	turn
+T36	TOOL 547 570	lightly floured surface
+T37	AC 575 578	Pat
+T38	AC 606 612	Spread
+T39	AC 674 681	Crumble
+T40	AC 720 727	Roll up
+T41	AC 748 751	Cut
+T42	AC 818 822	rise
+T43	CONDITION_CLAUSE 823 844	until doubled in size
+T44	DUR 846 862	about 45 minutes
+T45	AC 868 872	Bake
+T46	TEMPERATURE 876 889	350 degrees F
+T47	TEMPERATURE 891 904	175 degrees C
+T48	DUR 924 940	20 to 25 minutes
+T49	FOOD 757 765	12 rolls
+T50	AC 771 776	place
+T51	TOOL 780 803	prepared pan of caramel
+T52	FOOD 738 742	edge
+T53	AC 733 737	seal
+T54	FOOD 682 701	1/2 cup brown sugar
+T55	FOOD 579 584	dough
+T56	OTHER 590 601	a rectangle
+T57	FOOD 618 633	softened butter
+T58	AC 638 646	sprinkle
+T59	FOOD 660 668	cinnamon
+T60	OTHER 647 654	lightly
+T61	OTHER 707 714	the top
+T62	FOOD 533 535	it
+T63	CONDITION_CLAUSE 942 960	until golden brown
+T84	zav 265 268	Add
+R1	zav_anaphor Arg1:T84 Arg2:T72	
+T85	zav 315 319	boil
+T86	zav 325 329	cook
+R2	zav_zav Arg1:T85 Arg2:T84	
+R3	zav_anaphor Arg1:T85 Arg2:T73	
+R4	zav_anaphor Arg1:T85 Arg2:T74	
+R5	zav_zav Arg1:T86 Arg2:T85	
+T87	zav 528 532	turn
+R6	zav_anaphor Arg1:T87 Arg2:T76	
+T88	zav 606 612	Spread
+R7	zav_anaphor Arg1:T88 Arg2:T80	
+T89	zav 638 646	sprinkle
+R8	zav_anaphor Arg1:T89 Arg2:T81	
+R9	zav_zav Arg1:T89 Arg2:T88	
+T90	zav 674 681	Crumble
+R10	zav_zav Arg1:T90 Arg2:T89	
+R11	zav_anaphor Arg1:T90 Arg2:T82	
+T91	zav 720 727	Roll up
+R12	zav_zav Arg1:T91 Arg2:T90	
+R13	zav_anaphor Arg1:T91 Arg2:T79	
+T92	zav 748 751	Cut
+R14	zav_zav Arg1:T92 Arg2:T91	
+T93	zav 771 776	place
+T94	zav 868 872	Bake
+R15	zav_anaphor Arg1:T93 Arg2:T77	
+T95	zav 818 822	rise
+R16	zav_zav Arg1:T95 Arg2:T93	
+R17	zav_zav Arg1:T94 Arg2:T95	
+T72	anaphor 246 260	1/3 cup butter
+T73	anaphor 269 288	1/2 cup brown sugar
+T74	anaphor 293 302	ice cream
+T76	anaphor 509 514	dough
+T77	anaphor 757 765	12 rolls
+T79	anaphor 682 701	1/2 cup brown sugar
+T80	anaphor 579 584	dough
+T81	anaphor 618 633	softened butter
+T82	anaphor 660 668	cinnamon

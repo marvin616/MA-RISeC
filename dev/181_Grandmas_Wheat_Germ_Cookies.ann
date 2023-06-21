@@ -1,0 +1,50 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 60	the first six ingredients
+T4	AC 65 72	Combine
+T5	FOOD 73 87	the applesauce
+T6	FOOD 89 92	oil
+T7	FOOD 97 101	eggs
+T8	AC 106 109	Add
+T9	FOOD 113 130	the flour mixture
+T10	AC 132 135	mix
+T11	AC 145 152	Stir in
+T12	FOOD 153 171	the chocolate chip
+T13	FOOD 176 183	walnuts
+T14	AC 188 192	Drop
+T15	TOOL 233 246	baking sheets
+T16	TOOL 196 216	rounded teaspoonfuls
+T17	AC 286 293	Flatten
+T18	TOOL 308 322	a glass bottom
+T19	AC 362 366	Bake
+T20	TEMPERATURE 370 383	350 degrees F
+T21	DUR 388 401	10-12 minutes
+T22	CONDITION_CLAUSE 405 456	until edges are lightly browned and cookies are set
+T23	AC 461 465	Cool
+T24	DUR 470 478	1 minute
+T25	CONDITION_CLAUSE 479 508	before removing to wire racks
+T33	zav 106 109	Add
+R1	zav_anaphor Arg1:T33 Arg2:T27	
+R2	zav_anaphor Arg1:T33 Arg2:T28	
+R3	zav_anaphor Arg1:T33 Arg2:T29	
+T34	zav 132 135	mix
+R4	zav_anaphor Arg1:T34 Arg2:T30	
+R5	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 145 152	Stir in
+R6	zav_zav Arg1:T35 Arg2:T34	
+T36	zav 188 192	Drop
+R7	zav_zav Arg1:T36 Arg2:T35	
+R8	zav_anaphor Arg1:T36 Arg2:T31	
+R9	zav_anaphor Arg1:T36 Arg2:T32	
+T37	zav 286 293	Flatten
+R10	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 362 366	Bake
+R11	zav_zav Arg1:T38 Arg2:T37	
+T39	zav 461 465	Cool
+R12	zav_zav Arg1:T39 Arg2:T38	
+T27	anaphor 73 87	the applesauce
+T28	anaphor 89 92	oil
+T29	anaphor 97 101	eggs
+T30	anaphor 113 130	the flour mixture
+T31	anaphor 153 171	the chocolate chip
+T32	anaphor 176 183	walnuts

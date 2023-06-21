@@ -1,0 +1,47 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 30	a heavy skillet
+T4	AC 35 40	spray
+T5	TOOL 41 62	a nonstick frying pan
+T6	FOOD 68 81	cooking spray
+T7	AC 86 91	Saute
+T8	FOOD 92 107	chicken breasts
+T9	CONDITION_CLAUSE 108 150	until no longer pink, and juices run clear
+T10	AC 152 161	set aside
+T11	AC 166 173	Preheat
+T12	TOOL 174 178	oven
+T13	TEMPERATURE 182 196	375  degrees F
+T14	TEMPERATURE 198 211	190 degrees C
+T15	AC 217 223	Unroll
+T16	FOOD 224 246	4 large crescent rolls
+T17	AC 251 256	Layer
+T18	FOOD 257 261	each
+T19	FOOD 267 285	3 thin slices brie
+T20	FOOD 287 303	3 leaves spinach
+T21	FOOD 308 326	1 slice prosciutto
+T22	AC 331 336	Place
+T23	FOOD 337 351	chicken breast
+T24	FOOD 355 374	the center of dough
+T25	AC 379 383	Wrap
+T26	AC 388 392	tuck
+T27	FOOD 393 398	dough
+T28	FOOD 406 413	chicken
+T29	CONDITION_CLAUSE 414 439	until completely enclosed
+T30	AC 444 449	Place
+T31	FOOD 450 459	seam side
+T32	TOOL 468 480	baking sheet
+T33	AC 485 489	Bake
+T34	TOOL 493 507	preheated oven
+T35	DUR 512 528	10 to 15 minutes
+T36	CONDITION_CLAUSE 533 551	until golden brown
+T50	zav 152 161	set aside
+R1	zav_anaphor Arg1:T50 Arg2:T39	
+T51	zav 251 256	Layer
+R2	zav_anaphor Arg1:T51 Arg2:T40	
+T52	zav 485 489	Bake
+R3	zav_anaphor Arg1:T52 Arg2:T47	
+R4	zav_anaphor Arg1:T52 Arg2:T48	
+T39	anaphor 92 107	chicken breasts
+T40	anaphor 224 246	4 large crescent rolls
+T47	anaphor 393 398	dough
+T48	anaphor 406 413	chicken

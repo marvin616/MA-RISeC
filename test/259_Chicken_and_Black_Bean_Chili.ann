@@ -1,0 +1,97 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 15	the oil
+T3	TOOL 19 30	a large pot
+T4	TEMPERATURE 36 47	medium heat
+T5	AC 52 57	Place
+T6	FOOD 58 65	chicken
+T7	TOOL 69 76	the pot
+T8	AC 78 83	brown
+T9	OTHER 87 96	all sides
+T10	AC 101 107	Season
+T11	FOOD 113 121	sea salt
+T12	FOOD 123 135	chili powder
+T13	FOOD 137 142	cumin
+T14	FOOD 144 159	ground chipotle
+T15	FOOD 161 173	black pepper
+T16	FOOD 180 194	cayenne pepper
+T17	AC 199 205	Mix in
+T18	FOOD 206 211	onion
+T19	FOOD 213 230	green bell pepper
+T20	FOOD 236 254	yellow bell pepper
+T21	AC 259 266	Pour in
+T22	FOOD 273 285	3 cups water
+T23	AC 300 307	cooking
+T24	DUR 308 318	10 minutes
+T25	CONDITION_CLAUSE 320 360	until about 1/2 the water has evaporated
+T26	AC 365 368	Mix
+T27	FOOD 369 385	the kidney beans
+T28	FOOD 387 398	black beans
+T29	FOOD 404 408	corn
+T30	TOOL 414 421	the pot
+T31	AC 426 432	Season
+T32	FOOD 438 456	green pepper sauce
+T33	AC 461 467	Reduce
+T34	OTHER 468 472	heat
+T35	TEMPERATURE 476 479	low
+T36	AC 485 491	mix in
+T37	FOOD 492 514	remaining 2 cups water
+T38	FOOD 519 531	tomato paste
+T39	AC 536 542	Simmer
+T40	AC 544 552	stirring
+T41	DUR 566 576	30 minutes
+T42	CONDITION_CLAUSE 581 596	until thickened
+T43	AC 602 605	Top
+T44	FOOD 611 619	cilantro
+T45	PURPOSE_CLAUSE 620 628	to serve
+T65	zav 78 83	brown
+R1	zav_anaphor Arg1:T65 Arg2:T47	
+T66	zav 101 107	Season
+R2	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 199 205	Mix in
+R3	zav_zav Arg1:T67 Arg2:T66	
+R4	zav_anaphor Arg1:T67 Arg2:T48	
+R5	zav_anaphor Arg1:T67 Arg2:T49	
+R6	zav_anaphor Arg1:T67 Arg2:T50	
+R7	zav_anaphor Arg1:T67 Arg2:T51	
+R8	zav_anaphor Arg1:T67 Arg2:T52	
+R9	zav_anaphor Arg1:T67 Arg2:T53	
+T68	zav 259 266	Pour in
+R10	zav_zav Arg1:T68 Arg2:T67	
+R11	zav_anaphor Arg1:T68 Arg2:T54	
+R12	zav_anaphor Arg1:T68 Arg2:T55	
+R13	zav_anaphor Arg1:T68 Arg2:T56	
+T69	zav 300 307	cooking
+R14	zav_anaphor Arg1:T69 Arg2:T57	
+R15	zav_zav Arg1:T69 Arg2:T68	
+T70	zav 426 432	Season
+R16	zav_anaphor Arg1:T70 Arg2:T58	
+R17	zav_anaphor Arg1:T70 Arg2:T59	
+R18	zav_anaphor Arg1:T70 Arg2:T60	
+T71	zav 485 491	mix in
+R19	zav_anaphor Arg1:T71 Arg2:T61	
+R20	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 536 542	Simmer
+R21	zav_zav Arg1:T72 Arg2:T71	
+R22	zav_anaphor Arg1:T72 Arg2:T62	
+R23	zav_anaphor Arg1:T72 Arg2:T63	
+T73	zav 544 552	stirring
+R24	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 602 605	Top
+R25	zav_zav Arg1:T74 Arg2:T73	
+T47	anaphor 58 65	chicken
+T48	anaphor 113 121	sea salt
+T49	anaphor 123 135	chili powder
+T50	anaphor 137 142	cumin
+T51	anaphor 144 159	ground chipotle
+T52	anaphor 161 173	black pepper
+T53	anaphor 180 194	cayenne pepper
+T54	anaphor 206 211	onion
+T55	anaphor 213 230	green bell pepper
+T56	anaphor 236 254	yellow bell pepper
+T57	anaphor 273 285	3 cups water
+T58	anaphor 369 385	the kidney beans
+T59	anaphor 387 398	black beans
+T60	anaphor 404 408	corn
+T61	anaphor 438 456	green pepper sauce
+T62	anaphor 492 514	remaining 2 cups water
+T63	anaphor 519 531	tomato paste

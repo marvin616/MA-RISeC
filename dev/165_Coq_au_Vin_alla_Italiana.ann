@@ -1,0 +1,99 @@
+T1	TOOL 6 21	a large skillet
+T2	AC 23 27	heat
+T3	FOOD 28 31	oil
+T4	AC 36 39	Add
+T5	FOOD 40 57	1/2 of the garlic
+T6	AC 62 68	Season
+T7	FOOD 69 74	flour
+T8	FOOD 80 97	poultry seasoning
+T9	AC 102 108	Dredge
+T10	FOOD 109 122	chicken parts
+T11	AC 138 143	brown
+T12	TOOL 147 158	the skillet
+T13	DUR 163 177	4 or 5 minutes
+T14	AC 182 185	Add
+T15	FOOD 186 197	the sausage
+T16	AC 203 208	saute
+T17	DUR 213 226	a few minutes
+T18	AC 231 234	Add
+T19	FOOD 235 244	the onion
+T20	FOOD 246 253	carrots
+T21	FOOD 255 264	mushrooms
+T22	FOOD 266 274	rosemary
+T23	FOOD 279 299	the remaining garlic
+T24	AC 304 308	Stir
+T25	FOOD 309 312	all
+T26	AC 326 329	Add
+T27	FOOD 330 338	the wine
+T28	FOOD 343 351	tomatoes
+T29	AC 353 357	stir
+T30	AC 362 367	Cover
+T31	AC 376 382	simmer
+T32	TEMPERATURE 388 396	low heat
+T33	DUR 401 411	25 minutes
+T34	AC 417 423	Season
+T35	FOOD 429 433	salt
+T36	FOOD 438 444	pepper
+T37	PURPOSE_CLAUSE 445 453	to taste
+T38	AC 462 468	simmer
+T39	DUR 473 491	another 10 minutes
+T40	AC 501 505	cool
+T41	DUR 518 528	10 minutes
+T42	AC 535 540	serve
+T43	FOOD 126 131	flour
+T61	zav 36 39	Add
+R1	zav_anaphor Arg1:T61 Arg2:T44	
+T62	zav 62 68	Season
+R2	zav_zav Arg1:T62 Arg2:T61	
+R3	zav_anaphor Arg1:T62 Arg2:T45	
+T63	zav 138 143	brown
+R4	zav_anaphor Arg1:T63 Arg2:T48	
+R5	zav_anaphor Arg1:T63 Arg2:T60	
+T64	zav 182 185	Add
+R6	zav_zav Arg1:T64 Arg2:T63	
+T65	zav 203 208	saute
+R7	zav_anaphor Arg1:T65 Arg2:T49	
+R8	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 231 234	Add
+R9	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 304 308	Stir
+R10	zav_zav Arg1:T67 Arg2:T66	
+R11	zav_anaphor Arg1:T67 Arg2:T50	
+R12	zav_anaphor Arg1:T67 Arg2:T51	
+R13	zav_anaphor Arg1:T67 Arg2:T52	
+R14	zav_anaphor Arg1:T67 Arg2:T53	
+R15	zav_anaphor Arg1:T67 Arg2:T54	
+T68	zav 326 329	Add
+R16	zav_zav Arg1:T68 Arg2:T67	
+T69	zav 353 357	stir
+R17	zav_anaphor Arg1:T69 Arg2:T57	
+R18	zav_anaphor Arg1:T69 Arg2:T56	
+R19	zav_zav Arg1:T69 Arg2:T68	
+T70	zav 362 367	Cover
+R20	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 376 382	simmer
+R21	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 417 423	Season
+R22	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 462 468	simmer
+R23	zav_anaphor Arg1:T73 Arg2:T59	
+R24	zav_anaphor Arg1:T73 Arg2:T58	
+R25	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 501 505	cool
+R26	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 535 540	serve
+R27	zav_zav Arg1:T75 Arg2:T74	
+T44	anaphor 28 31	oil
+T45	anaphor 40 57	1/2 of the garlic
+T48	anaphor 109 122	chicken parts
+T49	anaphor 186 197	the sausage
+T50	anaphor 235 244	the onion
+T51	anaphor 246 253	carrots
+T52	anaphor 255 264	mushrooms
+T53	anaphor 266 274	rosemary
+T54	anaphor 279 299	the remaining garlic
+T56	anaphor 330 338	the wine
+T57	anaphor 343 351	tomatoes
+T58	anaphor 429 433	salt
+T59	anaphor 438 444	pepper
+T60	anaphor 126 131	flour

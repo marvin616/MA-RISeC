@@ -1,0 +1,63 @@
+T1	AC 3 8	Crush
+T2	FOOD 9 25	half the cookies
+T3	PURPOSE_CLAUSE 37 51	to make crumbs
+T4	AC 56 63	Combine
+T5	FOOD 64 70	crumbs
+T6	FOOD 76 92	melted margarine
+T7	TOOL 108 145	the bottom of a 9-inch springform pan
+T8	TOOL 149 158	pie plate
+T9	AC 163 168	Stand
+T10	FOOD 169 186	remaining cookies
+T11	TOOL 194 205	edge of pan
+T12	AC 210 216	Spread
+T13	FOOD 217 238	3/4 cup fudge topping
+T14	FOOD 244 249	crust
+T15	AC 254 260	Freeze
+T16	DUR 261 271	15 minutes
+T17	AC 287 293	soften
+T18	FOOD 294 314	1 quart of ice cream
+T19	TOOL 318 327	microwave
+T20	TOOL 334 344	countertop
+T21	CONDITION_CLAUSE 349 372	After crust has chilled
+T22	AC 374 380	spread
+T23	FOOD 381 399	softened ice cream
+T24	FOOD 405 416	fudge layer
+T25	AC 421 427	Freeze
+T26	DUR 428 438	30 minutes
+T27	AC 443 448	Scoop
+T28	FOOD 449 477	remaining quart of ice cream
+T29	AC 493 500	arrange
+T30	FOOD 506 528	spread ice cream layer
+T31	AC 534 540	Freeze
+T32	CONDITION_CLAUSE 541 551	until firm
+T33	DUR 553 560	4 hours
+T34	DUR 564 573	overnight
+T35	PURPOSE_CLAUSE 579 587	To serve
+T36	AC 589 596	garnish
+T37	FOOD 602 628	remainder of fudge topping
+T38	FOOD 630 643	whipped cream
+T39	FOOD 648 656	cherries
+T40	OTHER 483 488	balls
+T41	AC 97 102	press
+T56	zav 97 102	press
+R1	zav_anaphor Arg1:T56 Arg2:T44	
+R2	zav_anaphor Arg1:T56 Arg2:T43	
+T58	zav 254 260	Freeze
+R3	zav_anaphor Arg1:T58 Arg2:T46	
+R4	zav_anaphor Arg1:T58 Arg2:T47	
+T59	zav 421 427	Freeze
+R5	zav_anaphor Arg1:T59 Arg2:T49	
+R6	zav_anaphor Arg1:T59 Arg2:T50	
+T60	zav 493 500	arrange
+R7	zav_anaphor Arg1:T60 Arg2:T51	
+T61	zav 534 540	Freeze
+R8	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 589 596	garnish
+R9	zav_zav Arg1:T62 Arg2:T61	
+T43	anaphor 64 70	crumbs
+T44	anaphor 76 92	melted margarine
+T46	anaphor 217 238	3/4 cup fudge topping
+T47	anaphor 244 249	crust
+T49	anaphor 381 399	softened ice cream
+T50	anaphor 405 416	fudge layer
+T51	anaphor 449 477	remaining quart of ice cream

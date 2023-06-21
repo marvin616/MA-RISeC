@@ -1,0 +1,86 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	300 degrees F
+T4	TEMPERATURE 34 47	150 degrees C
+T5	AC 53 57	Line
+T6	TOOL 58 72	a baking sheet
+T7	TOOL 78 93	parchment paper
+T8	AC 98 102	Draw
+T9	OTHER 103 118	a 9 inch circle
+T10	TOOL 122 141	the parchment paper
+T11	TOOL 149 161	a large bowl
+T12	AC 163 167	beat
+T13	FOOD 168 178	egg whites
+T14	CONDITION_CLAUSE 179 202	until stiff but not dry
+T15	AC 217 223	add in
+T16	FOOD 224 233	the sugar
+T17	OTHER 235 257	1 tablespoon at a time
+T18	AC 259 266	beating
+T19	CONDITION_CLAUSE 272 291	after each addition
+T20	AC 296 300	Beat
+T21	CONDITION_CLAUSE 301 323	until thick and glossy
+T22	FOOD 328 349	Overbeaten egg whites
+T23	AC 366 373	deflate
+T24	CONDITION_CLAUSE 374 408	when folded into other ingredients
+T25	FOOD 432 468	not a particle of grease or egg yolk
+T26	AC 469 473	gets
+T27	FOOD 479 489	the whites
+T28	AC 501 508	fold in
+T29	FOOD 509 524	vanilla extract
+T30	FOOD 526 537	lemon juice
+T31	FOOD 542 552	cornstarch
+T32	AC 558 563	Spoon
+T33	FOOD 564 571	mixture
+T34	TOOL 599 618	the parchment paper
+T35	OTHER 579 589	the circle
+T36	AC 649 655	spread
+T37	FOOD 656 663	mixture
+T38	AC 774 778	Bake
+T39	DUR 783 789	1 hour
+T40	AC 795 799	Cool
+T41	TOOL 803 814	a wire rack
+T42	AC 820 826	Remove
+T43	TOOL 827 836	the paper
+T44	AC 842 847	place
+T45	FOOD 848 856	meringue
+T46	TOOL 860 880	a flat serving plate
+T47	AC 886 890	Fill
+T48	FOOD 923 936	whipped cream
+T49	AC 964 967	Top
+T50	FOOD 968 981	whipped cream
+T51	FOOD 987 1003	kiwifruit slices
+T52	FOOD 891 917	the center of the meringue
+T53	PURPOSE_CLAUSE 729 768	leave a slight depression in the center
+T54	OTHER 671 687	the outside edge
+T55	AC 350 354	lose
+T56	OTHER 355 361	volume
+T72	zav 217 223	add in
+R1	zav_anaphor Arg1:T72 Arg2:T57	
+T73	zav 259 266	beating
+R2	zav_anaphor Arg1:T73 Arg2:T58	
+R3	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 296 300	Beat
+R4	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 501 508	fold in
+R5	zav_zav Arg1:T75 Arg2:T74	
+T76	zav 558 563	Spoon
+R6	zav_zav Arg1:T76 Arg2:T75	
+R7	zav_anaphor Arg1:T76 Arg2:T62	
+R8	zav_anaphor Arg1:T76 Arg2:T63	
+R9	zav_anaphor Arg1:T76 Arg2:T64	
+T77	zav 649 655	spread
+R10	zav_zav Arg1:T77 Arg2:T76	
+T78	zav 774 778	Bake
+R11	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 795 799	Cool
+R12	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 964 967	Top
+R13	zav_anaphor Arg1:T80 Arg2:T71	
+R14	zav_anaphor Arg1:T80 Arg2:T68	
+T57	anaphor 168 178	egg whites
+T58	anaphor 224 233	the sugar
+T62	anaphor 509 524	vanilla extract
+T63	anaphor 526 537	lemon juice
+T64	anaphor 542 552	cornstarch
+T68	anaphor 923 936	whipped cream
+T71	anaphor 891 917	the center of the meringue

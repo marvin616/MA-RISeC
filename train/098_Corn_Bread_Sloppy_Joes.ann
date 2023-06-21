@@ -1,0 +1,69 @@
+T1	AC 3 10	Prepare
+T2	AC 15 19	bake
+T3	FOOD 20 30	corn bread
+T4	AC 64 69	using
+T5	FOOD 74 77	egg
+T6	FOOD 82 86	milk
+T7	OTHER 31 62	according to package directions
+T8	TOOL 105 120	a large skillet
+T9	AC 122 126	cook
+T10	FOOD 127 131	beef
+T11	FOOD 136 141	onion
+T12	TEMPERATURE 147 158	medium heat
+T13	CONDITION_CLAUSE 159 187	until meat is no longer pink
+T14	AC 189 194	drain
+T15	AC 199 206	Stir in
+T16	FOOD 207 226	the spaghetti sauce
+T17	FOOD 228 232	corn
+T18	FOOD 234 241	chilies
+T19	FOOD 246 260	sloppy joe mix
+T20	AC 276 280	boil
+T21	AC 285 291	Reduce
+T22	OTHER 292 296	heat
+T23	AC 298 304	simmer
+T24	DUR 321 331	10 minutes
+T25	OTHER 306 315	uncovered
+T26	AC 336 344	Sprinkle
+T27	FOOD 350 356	cheese
+T28	AC 358 363	cover
+T29	AC 368 372	cook
+T30	DUR 377 385	1 minute
+T31	CONDITION_CLAUSE 389 411	until cheese is melted
+T32	AC 416 419	Cut
+T33	FOOD 420 430	corn bread
+T34	OTHER 436 446	six pieces
+T35	AC 448 451	cut
+T36	FOOD 452 462	each piece
+T37	OTHER 466 470	half
+T38	AC 475 478	Top
+T39	FOOD 484 502	sloppy joe mixture
+T53	zav 189 194	drain
+R1	zav_anaphor Arg1:T53 Arg2:T44	
+R2	zav_anaphor Arg1:T53 Arg2:T43	
+T54	zav 199 206	Stir in
+R3	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 276 280	boil
+R4	zav_zav Arg1:T55 Arg2:T54	
+R5	zav_anaphor Arg1:T55 Arg2:T45	
+R6	zav_anaphor Arg1:T55 Arg2:T46	
+R7	zav_anaphor Arg1:T55 Arg2:T47	
+R8	zav_anaphor Arg1:T55 Arg2:T48	
+T56	zav 298 304	simmer
+R9	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 336 344	Sprinkle
+R10	zav_zav Arg1:T57 Arg2:T56	
+T58	zav 358 363	cover
+R11	zav_anaphor Arg1:T58 Arg2:T49	
+R12	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 368 372	cook
+R13	zav_zav Arg1:T59 Arg2:T58	
+T60	zav 475 478	Top
+R14	zav_anaphor Arg1:T60 Arg2:T51	
+T43	anaphor 127 131	beef
+T44	anaphor 136 141	onion
+T45	anaphor 207 226	the spaghetti sauce
+T46	anaphor 228 232	corn
+T47	anaphor 234 241	chilies
+T48	anaphor 246 260	sloppy joe mix
+T49	anaphor 350 356	cheese
+T51	anaphor 452 462	each piece

@@ -1,0 +1,70 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 15	the oil
+T3	TOOL 19 30	a large pot
+T4	TEMPERATURE 36 47	medium heat
+T5	AC 52 59	Stir in
+T6	FOOD 60 69	the onion
+T7	FOOD 71 82	bell pepper
+T8	FOOD 84 90	carrot
+T9	FOOD 96 102	garlic
+T10	AC 108 112	cook
+T11	DUR 113 122	5 minutes
+T12	CONDITION_CLAUSE 124 136	until tender
+T13	AC 141 147	Mix in
+T14	FOOD 148 165	1 can black beans
+T15	FOOD 170 183	chicken broth
+T16	TOOL 191 200	a blender
+T17	AC 202 207	puree
+T18	FOOD 208 230	remaining can of beans
+T19	CONDITION_CLAUSE 231 243	until smooth
+T20	AC 248 251	Mix
+T21	TOOL 257 264	the pot
+T22	AC 285 289	boil
+T23	FOOD 275 279	soup
+T24	AC 294 300	Reduce
+T25	OTHER 301 305	heat
+T26	TEMPERATURE 309 312	low
+T27	AC 317 323	Mix in
+T28	FOOD 324 327	ham
+T29	FOOD 329 334	cumin
+T30	FOOD 336 340	salt
+T31	FOOD 346 352	pepper
+T32	AC 357 363	Simmer
+T33	DUR 364 374	20 minutes
+T34	AC 380 387	Garnish
+T35	FOOD 393 407	Cheddar cheese
+T36	FOOD 412 422	sour cream
+T37	PURPOSE_CLAUSE 423 431	to serve
+T53	zav 52 59	Stir in
+R1	zav_anaphor Arg1:T53 Arg2:T38	
+T54	zav 108 112	cook
+R2	zav_anaphor Arg1:T54 Arg2:T42	
+R3	zav_anaphor Arg1:T54 Arg2:T41	
+R4	zav_anaphor Arg1:T54 Arg2:T40	
+R5	zav_anaphor Arg1:T54 Arg2:T39	
+R6	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 141 147	Mix in
+R7	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 248 251	Mix
+R8	zav_anaphor Arg1:T56 Arg2:T45	
+T57	zav 317 323	Mix in
+R9	zav_anaphor Arg1:T57 Arg2:T46	
+T58	zav 357 363	Simmer
+R10	zav_zav Arg1:T58 Arg2:T57	
+R11	zav_anaphor Arg1:T58 Arg2:T47	
+R12	zav_anaphor Arg1:T58 Arg2:T48	
+R13	zav_anaphor Arg1:T58 Arg2:T49	
+R14	zav_anaphor Arg1:T58 Arg2:T50	
+T59	zav 380 387	Garnish
+R15	zav_zav Arg1:T59 Arg2:T58	
+T38	anaphor 8 15	the oil
+T39	anaphor 60 69	the onion
+T40	anaphor 71 82	bell pepper
+T41	anaphor 84 90	carrot
+T42	anaphor 96 102	garlic
+T45	anaphor 208 230	remaining can of beans
+T46	anaphor 275 279	soup
+T47	anaphor 324 327	ham
+T48	anaphor 329 334	cumin
+T49	anaphor 336 340	salt
+T50	anaphor 346 352	pepper

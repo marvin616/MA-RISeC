@@ -1,0 +1,63 @@
+T1	AC 3 10	Preheat
+T2	AC 32 37	Place
+T3	AC 133 138	Broil
+T4	AC 194 197	Cut
+T5	AC 230 236	Spread
+T6	AC 292 297	Layer
+T7	AC 333 341	sprinkle
+T8	AC 367 372	Cover
+T9	AC 403 406	Cut
+T10	AC 425 430	Serve
+T11	FOOD 38 50	the eggplant
+T12	TOOL 11 27	the oven broiler
+T13	FOOD 55 70	red bell pepper
+T14	TOOL 74 95	a medium baking sheet
+T15	AC 101 107	season
+T16	FOOD 113 117	salt
+T17	FOOD 122 128	pepper
+T18	DUR 139 154	5 to 10 minutes
+T19	FOOD 198 206	baguette
+T20	FOOD 254 265	goat cheese
+T21	FOOD 237 248	bottom half
+T22	FOOD 279 287	tapenade
+T23	FOOD 303 311	eggplant
+T24	FOOD 316 326	red pepper
+T25	FOOD 347 362	Parmesan cheese
+T26	FOOD 378 398	top half of baguette
+T27	OTHER 412 420	4 pieces
+T28	CONDITION_CLAUSE 156 189	until tender and slightly browned
+T29	OTHER 210 225	half lengthwise
+T42	zav 101 107	season
+R1	zav_anaphor Arg1:T42 Arg2:T31	
+R2	zav_anaphor Arg1:T42 Arg2:T30	
+T43	zav 133 138	Broil
+R3	zav_zav Arg1:T43 Arg2:T42	
+R4	zav_anaphor Arg1:T43 Arg2:T32	
+R5	zav_anaphor Arg1:T43 Arg2:T33	
+T44	zav 292 297	Layer
+R6	zav_anaphor Arg1:T44 Arg2:T36	
+R7	zav_anaphor Arg1:T44 Arg2:T35	
+R8	zav_anaphor Arg1:T44 Arg2:T37	
+T45	zav 333 341	sprinkle
+R9	zav_anaphor Arg1:T45 Arg2:T39	
+R10	zav_anaphor Arg1:T45 Arg2:T38	
+R11	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 367 372	Cover
+R12	zav_zav Arg1:T46 Arg2:T45	
+R13	zav_anaphor Arg1:T46 Arg2:T40	
+T47	zav 403 406	Cut
+R14	zav_anaphor Arg1:T47 Arg2:T41	
+R15	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 425 430	Serve
+R16	zav_zav Arg1:T48 Arg2:T47	
+T30	anaphor 38 50	the eggplant
+T31	anaphor 55 70	red bell pepper
+T32	anaphor 113 117	salt
+T33	anaphor 122 128	pepper
+T35	anaphor 254 265	goat cheese
+T36	anaphor 237 248	bottom half
+T37	anaphor 279 287	tapenade
+T38	anaphor 303 311	eggplant
+T39	anaphor 316 326	red pepper
+T40	anaphor 347 362	Parmesan cheese
+T41	anaphor 378 398	top half of baguette

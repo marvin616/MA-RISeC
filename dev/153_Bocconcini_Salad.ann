@@ -1,0 +1,43 @@
+T1	TOOL 6 24	a large salad bowl
+T2	AC 26 33	combine
+T3	FOOD 34 48	the mozzarella
+T4	FOOD 50 65	cherry tomatoes
+T5	FOOD 67 78	bell pepper
+T6	FOOD 80 86	celery
+T7	FOOD 88 94	endive
+T8	FOOD 99 106	arugula
+T9	AC 111 116	Whisk
+T10	FOOD 126 141	the lemon juice
+T11	FOOD 146 155	olive oil
+T12	AC 157 161	pour
+T13	FOOD 167 176	the salad
+T14	AC 181 187	season
+T15	AC 191 196	taste
+T16	FOOD 202 206	salt
+T17	FOOD 211 217	pepper
+T18	AC 222 226	Toss
+T19	CONDITION_CLAUSE 227 292	until all the ingredients are thoroughly coated with the dressing
+T20	AC 297 305	Sprinkle
+T21	FOOD 306 315	the basil
+T22	FOOD 321 330	the salad
+T23	AC 335 340	serve
+T37	zav 157 161	pour
+R1	zav_anaphor Arg1:T37 Arg2:T31	
+R2	zav_anaphor Arg1:T37 Arg2:T30	
+T38	zav 181 187	season
+R3	zav_anaphor Arg1:T38 Arg2:T32	
+R4	zav_zav Arg1:T38 Arg2:T37	
+T39	zav 222 226	Toss
+R5	zav_zav Arg1:T39 Arg2:T38	
+R6	zav_anaphor Arg1:T39 Arg2:T33	
+R7	zav_anaphor Arg1:T39 Arg2:T34	
+T40	zav 335 340	serve
+R8	zav_anaphor Arg1:T40 Arg2:T36	
+R9	zav_anaphor Arg1:T40 Arg2:T35	
+T30	anaphor 126 141	the lemon juice
+T31	anaphor 146 155	olive oil
+T32	anaphor 167 176	the salad
+T33	anaphor 202 206	salt
+T34	anaphor 211 217	pepper
+T35	anaphor 306 315	the basil
+T36	anaphor 321 330	the salad

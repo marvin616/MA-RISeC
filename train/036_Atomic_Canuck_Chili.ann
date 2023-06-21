@@ -1,0 +1,74 @@
+T1	TOOL 6 21	a large skillet
+T2	TEMPERATURE 27 38	medium heat
+T3	AC 40 45	brown
+T4	FOOD 46 57	ground beef
+T5	FOOD 72 77	onion
+T6	FOOD 79 97	crushed red pepper
+T7	FOOD 99 112	garlic powder
+T8	FOOD 118 133	seasoned pepper
+T9	AC 138 147	Drain off
+T10	FOOD 148 155	the fat
+T11	AC 161 166	place
+T12	FOOD 167 178	the mixture
+T13	TOOL 184 197	a slow cooker
+T14	AC 202 206	Stir
+T15	FOOD 207 216	mushrooms
+T16	FOOD 218 229	baked beans
+T17	FOOD 231 243	kidney beans
+T18	FOOD 257 269	tomato paste
+T19	FOOD 271 276	sugar
+T20	FOOD 278 285	carrots
+T21	FOOD 287 293	celery
+T22	FOOD 295 302	peppers
+T23	FOOD 304 308	beer
+T24	FOOD 314 328	barbeque sauce
+T25	TOOL 334 349	the slow cooker
+T26	AC 354 360	Season
+T27	FOOD 366 375	hot sauce
+T28	FOOD 380 403	more crushed red pepper
+T29	AC 408 413	Cover
+T30	AC 419 423	cook
+T31	TEMPERATURE 427 430	Low
+T32	DUR 435 447	4 to 5 hours
+T33	FOOD 249 255	liquid
+T34	zav 202 206	Stir
+R1	zav_anaphor Arg1:T34 Arg2:T36	
+R2	zav_anaphor Arg1:T34 Arg2:T35	
+R3	zav_anaphor Arg1:T34 Arg2:T37	
+R4	zav_anaphor Arg1:T34 Arg2:T38	
+R5	zav_anaphor Arg1:T34 Arg2:T39	
+T51	zav 354 360	Season
+R6	zav_zav Arg1:T51 Arg2:T34	
+R7	zav_anaphor Arg1:T51 Arg2:T40	
+R8	zav_anaphor Arg1:T51 Arg2:T41	
+R9	zav_anaphor Arg1:T51 Arg2:T42	
+R10	zav_anaphor Arg1:T51 Arg2:T50	
+R11	zav_anaphor Arg1:T51 Arg2:T43	
+R12	zav_anaphor Arg1:T51 Arg2:T44	
+R13	zav_anaphor Arg1:T51 Arg2:T45	
+R14	zav_anaphor Arg1:T51 Arg2:T46	
+R15	zav_anaphor Arg1:T51 Arg2:T48	
+R16	zav_anaphor Arg1:T51 Arg2:T49	
+T52	zav 408 413	Cover
+T53	zav 419 423	cook
+R17	zav_zav Arg1:T52 Arg2:T51	
+R18	zav_anaphor Arg1:T52 Arg2:T54	
+R19	zav_anaphor Arg1:T52 Arg2:T55	
+R20	zav_zav Arg1:T53 Arg2:T52	
+T35	anaphor 72 77	onion
+T36	anaphor 46 57	ground beef
+T37	anaphor 79 97	crushed red pepper
+T38	anaphor 99 112	garlic powder
+T39	anaphor 118 133	seasoned pepper
+T40	anaphor 207 216	mushrooms
+T41	anaphor 218 229	baked beans
+T42	anaphor 231 243	kidney beans
+T43	anaphor 257 269	tomato paste
+T44	anaphor 271 276	sugar
+T45	anaphor 278 285	carrots
+T46	anaphor 287 293	celery
+T48	anaphor 304 308	beer
+T49	anaphor 314 328	barbeque sauce
+T50	anaphor 249 255	liquid
+T54	anaphor 366 375	hot sauce
+T55	anaphor 380 403	more crushed red pepper

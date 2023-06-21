@@ -1,0 +1,50 @@
+T1	AC 206 211	Cover
+T2	AC 216 227	refrigerate
+T3	DUR 232 238	1 hour
+T4	TOOL 6 19	a medium bowl
+T5	AC 21 28	combine
+T6	FOOD 29 40	the avocado
+T7	FOOD 42 48	garlic
+T8	FOOD 50 61	lemon juice
+T9	FOOD 63 73	sour cream
+T10	FOOD 78 86	cucumber
+T11	AC 91 95	Mash
+T12	TOOL 101 107	a fork
+T13	CONDITION_CLAUSE 108 120	until smooth
+T14	AC 125 131	Season
+T15	FOOD 137 154	red pepper flakes
+T16	FOOD 156 164	cilantro
+T17	FOOD 166 170	mint
+T18	FOOD 172 176	salt
+T19	FOOD 181 187	pepper
+T20	AC 193 196	mix
+T21	CONDITION_CLAUSE 239 253	before serving
+T32	zav 91 95	Mash
+R1	zav_anaphor Arg1:T32 Arg2:T22	
+R2	zav_anaphor Arg1:T32 Arg2:T23	
+R3	zav_anaphor Arg1:T32 Arg2:T24	
+R4	zav_anaphor Arg1:T32 Arg2:T25	
+R5	zav_anaphor Arg1:T32 Arg2:T26	
+T33	zav 125 131	Season
+R6	zav_zav Arg1:T33 Arg2:T32	
+T34	zav 193 196	mix
+R7	zav_anaphor Arg1:T34 Arg2:T31	
+R8	zav_anaphor Arg1:T34 Arg2:T30	
+R9	zav_anaphor Arg1:T34 Arg2:T29	
+R10	zav_anaphor Arg1:T34 Arg2:T28	
+R11	zav_anaphor Arg1:T34 Arg2:T27	
+R12	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 206 211	Cover
+R13	zav_zav Arg1:T35 Arg2:T34	
+T36	zav 216 227	refrigerate
+R14	zav_zav Arg1:T36 Arg2:T35	
+T22	anaphor 29 40	the avocado
+T23	anaphor 42 48	garlic
+T24	anaphor 50 61	lemon juice
+T25	anaphor 63 73	sour cream
+T26	anaphor 78 86	cucumber
+T27	anaphor 137 154	red pepper flakes
+T28	anaphor 156 164	cilantro
+T29	anaphor 166 170	mint
+T30	anaphor 172 176	salt
+T31	anaphor 181 187	pepper

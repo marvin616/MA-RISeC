@@ -1,0 +1,31 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 25	whisk
+T3	FOOD 26 47	first six ingredients
+T4	CONDITION_CLAUSE 48 60	until smooth
+T5	AC 62 67	chill
+T6	AC 93 100	combine
+T7	FOOD 131 138	parsley
+T8	FOOD 119 126	almonds
+T9	FOOD 110 117	raisins
+T10	FOOD 101 108	chicken
+T11	TOOL 142 154	a large bowl
+T12	AC 156 159	add
+T13	FOOD 160 168	dressing
+T14	AC 173 177	toss
+T15	CONDITION_CLAUSE 77 91	before serving
+T22	zav 62 67	chill
+R1	zav_anaphor Arg1:T22 Arg2:T16	
+T23	zav 156 159	add
+R2	zav_anaphor Arg1:T23 Arg2:T17	
+R3	zav_anaphor Arg1:T23 Arg2:T18	
+R4	zav_anaphor Arg1:T23 Arg2:T19	
+R5	zav_anaphor Arg1:T23 Arg2:T20	
+T24	zav 173 177	toss
+R6	zav_anaphor Arg1:T24 Arg2:T21	
+R7	zav_zav Arg1:T24 Arg2:T23	
+T16	anaphor 26 47	first six ingredients
+T17	anaphor 131 138	parsley
+T18	anaphor 119 126	almonds
+T19	anaphor 110 117	raisins
+T20	anaphor 101 108	chicken
+T21	anaphor 160 168	dressing

@@ -1,0 +1,43 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	325 degrees F
+T4	TEMPERATURE 38 51	165 degrees C
+T5	AC 57 68	Refrigerate
+T6	FOOD 69 85	2/3 of the bacon
+T7	CONDITION_CLAUSE 86 98	until needed
+T8	AC 103 107	Wrap
+T9	FOOD 108 128	each cocktail wiener
+T10	FOOD 134 150	a piece of bacon
+T11	AC 155 161	secure
+T12	TOOL 167 178	a toothpick
+T13	AC 183 188	Place
+T14	TOOL 192 212	a large baking sheet
+T15	AC 217 225	Sprinkle
+T16	FOOD 226 237	brown sugar
+T17	FOOD 254 257	all
+T18	AC 262 266	Bake
+T19	DUR 271 281	40 minutes
+T20	TOOL 285 303	the preheated oven
+T21	CONDITION_CLAUSE 305 330	until the sugar is bubbly
+T22	AC 345 350	place
+T23	FOOD 351 362	the wieners
+T24	TOOL 366 379	a slow cooker
+T25	AC 384 388	keep
+T26	TEMPERATURE 392 404	the low heat
+T27	PURPOSE_CLAUSE 335 343	To serve
+T34	zav 155 161	secure
+R1	zav_anaphor Arg1:T34 Arg2:T30	
+R2	zav_anaphor Arg1:T34 Arg2:T29	
+T35	zav 183 188	Place
+R3	zav_zav Arg1:T35 Arg2:T34	
+T36	zav 217 225	Sprinkle
+R4	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 262 266	Bake
+R5	zav_zav Arg1:T37 Arg2:T36	
+R6	zav_anaphor Arg1:T37 Arg2:T31	
+T39	zav 384 388	keep
+R7	zav_anaphor Arg1:T39 Arg2:T33	
+T29	anaphor 108 128	each cocktail wiener
+T30	anaphor 134 150	a piece of bacon
+T31	anaphor 226 237	brown sugar
+T33	anaphor 351 362	the wieners

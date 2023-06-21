@@ -1,0 +1,100 @@
+T1	AC 3 6	Mix
+T2	FOOD 7 10	oil
+T3	FOOD 12 18	garlic
+T4	FOOD 20 24	salt
+T5	FOOD 26 32	pepper
+T6	FOOD 34 39	cumin
+T7	FOOD 44 51	oregano
+T8	FOOD 60 65	paste
+T9	AC 53 59	spread
+T10	FOOD 69 91	both sides of the lamb
+T12	DUR 110 117	an hour
+T13	AC 100 105	stand
+T18	AC 159 165	Adjust
+T19	TOOL 166 175	oven rack
+T20	DUR 283 293	10 minutes
+T21	TOOL 254 261	broiler
+T22	AC 246 253	preheat
+T23	OTHER 224 240	lamb's thickness
+T24	OTHER 179 209	upper or upper-middle position
+T25	AC 298 303	Place
+T26	FOOD 304 308	lamb
+T29	TOOL 326 378	a large wire rack set over a foil-lined roasting pan
+T31	AC 383 388	Broil
+T32	TEMPERATURE 265 269	high
+T33	AC 390 396	moving
+T34	TOOL 397 400	pan
+T36	PURPOSE_CLAUSE 401 432	so entire surface browns evenly
+T37	DUR 440 449	8 minutes
+T38	AC 454 458	Turn
+T39	FOOD 459 463	lamb
+T40	AC 482 487	broil
+T41	CONDITION_CLAUSE 488 524	until well browned on the other side
+T43	DUR 532 541	8 minutes
+T44	AC 553 561	Turn off
+T45	TOOL 562 569	broiler
+T46	AC 571 577	remove
+T47	FOOD 578 582	lamb
+T48	TOOL 588 592	oven
+T49	AC 601 605	rest
+T51	DUR 610 620	10 minutes
+T52	AC 625 629	Heat
+T53	TOOL 630 634	oven
+T54	TEMPERATURE 638 649	325 degrees
+T55	AC 654 659	Stick
+T56	TOOL 660 678	a meat thermometer
+T57	FOOD 684 716	the thickest portion of the lamb
+T59	AC 718 724	return
+T60	FOOD 725 727	it
+T61	FOOD 731 739	the oven
+T62	AC 744 749	Roast
+T63	DUR 765 785	50 minutes to 1 hour
+T67	AC 844 849	Check
+T68	FOOD 850 854	lamb
+T69	DUR 875 885	30 minutes
+T73	AC 924 933	turn down
+T74	TOOL 934 938	oven
+T75	TEMPERATURE 942 953	170 degrees
+T80	AC 1019 1026	squeeze
+T81	FOOD 1030 1041	lemon juice
+T82	AC 1046 1054	sprinkle
+T83	FOOD 1060 1071	fresh herbs
+T84	AC 1077 1082	Carve
+T85	AC 1084 1091	slicing
+T87	AC 1128 1135	Arrange
+T88	TOOL 1139 1148	a platter
+T89	AC 1150 1157	drizzle
+T90	FOOD 1163 1181	accumulated juices
+T91	AC 1187 1192	serve
+T14	CONDITION_CLAUSE 118 154	until meat comes to room temperature
+T15	CONDITION_CLAUSE 787 838	until thermometer registers a rosy-pink 140 degrees
+T16	CONDITION_CLAUSE 891 915	If lamb gets done sooner
+T17	CONDITION_CLAUSE 954 974	until ready to serve
+T42	CONDITION_CLAUSE 980 1017	As soon as lamb comes out of the oven
+T50	CONDITION_CLAUSE 1109 1122	when possible
+T64	FOOD 1099 1108	the grain
+T11	zav 383 388	Broil
+R1	zav_anaphor Arg1:T11 Arg2:T27	
+T28	zav 482 487	broil
+R2	zav_anaphor Arg1:T28 Arg2:T30	
+T35	zav 601 605	rest
+R3	zav_anaphor Arg1:T35 Arg2:T58	
+T65	zav 744 749	Roast
+R4	zav_anaphor Arg1:T65 Arg2:T66	
+T71	zav 1019 1026	squeeze
+R5	zav_anaphor Arg1:T71 Arg2:T70	
+T76	zav 1128 1135	Arrange
+R6	zav_anaphor Arg1:T76 Arg2:T72	
+R7	zav_zav Arg1:T76 Arg2:T71	
+T78	zav 1150 1157	drizzle
+R8	zav_zav Arg1:T78 Arg2:T76	
+T79	zav 1187 1192	serve
+R9	zav_zav Arg1:T79 Arg2:T78	
+R10	zav_anaphor Arg1:T79 Arg2:T77	
+T27	anaphor 304 308	lamb
+T30	anaphor 459 463	lamb
+T58	anaphor 578 582	lamb
+T66	anaphor 684 716	the thickest portion of the lamb
+T70	anaphor 850 854	lamb
+T72	anaphor 1099 1108	the grain
+T77	anaphor 1163 1181	accumulated juices

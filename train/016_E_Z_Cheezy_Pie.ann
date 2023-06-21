@@ -1,0 +1,80 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	TOOL 56 76	a medium mixing bowl
+T6	AC 78 82	whip
+T7	FOOD 83 95	cream cheese
+T8	CONDITION_CLAUSE 96 108	until fluffy
+T9	AC 113 116	Add
+T10	FOOD 117 130	1/2 cup sugar
+T11	FOOD 135 150	vanilla extract
+T12	AC 155 158	Mix
+T13	CONDITION_CLAUSE 159 171	until smooth
+T14	AC 176 179	Add
+T15	FOOD 180 184	eggs
+T16	AC 189 193	Beat
+T17	CONDITION_CLAUSE 194 239	until all ingredients are thoroughly combined
+T18	AC 244 248	Pour
+T19	FOOD 249 256	mixture
+T20	FOOD 262 275	pastry shells
+T21	AC 280 284	Bake
+T22	TOOL 288 302	preheated oven
+T23	DUR 307 317	20 minutes
+T24	AC 322 328	Remove
+T25	AC 337 342	stand
+T26	DUR 347 356	5 minutes
+T27	TOOL 365 377	a small bowl
+T28	AC 379 386	combine
+T29	FOOD 387 397	sour cream
+T30	FOOD 402 421	3 tablespoons sugar
+T31	AC 427 430	Mix
+T32	AC 442 448	spread
+T33	FOOD 449 464	half of mixture
+T34	FOOD 470 478	each pie
+T35	AC 484 488	Turn
+T36	TOOL 493 497	oven
+T37	AC 503 508	Place
+T38	FOOD 509 513	pies
+T39	TOOL 517 521	oven
+T40	DUR 526 536	15 minutes
+T41	AC 542 548	Remove
+T42	AC 553 558	chill
+T43	DUR 559 568	overnight
+T45	AC 590 593	top
+T46	FOOD 594 602	each pie
+T47	FOOD 608 629	1 cup of strawberries
+T44	CONDITION_CLAUSE 574 588	Before serving
+T48	zav 113 116	Add
+R1	zav_anaphor Arg1:T48 Arg2:T49	
+T50	zav 155 158	Mix
+R2	zav_zav Arg1:T50 Arg2:T48	
+R3	zav_anaphor Arg1:T50 Arg2:T51	
+R4	zav_anaphor Arg1:T50 Arg2:T52	
+T53	zav 176 179	Add
+T54	zav 189 193	Beat
+R5	zav_zav Arg1:T53 Arg2:T50	
+R6	zav_zav Arg1:T54 Arg2:T53	
+R7	zav_anaphor Arg1:T54 Arg2:T55	
+T56	zav 280 284	Bake
+R8	zav_zav Arg1:T56 Arg2:T54	
+R9	zav_anaphor Arg1:T56 Arg2:T57	
+T58	zav 322 328	Remove
+T59	zav 337 342	stand
+R10	zav_zav Arg1:T58 Arg2:T56	
+R11	zav_zav Arg1:T59 Arg2:T58	
+T62	zav 427 430	Mix
+R12	zav_anaphor Arg1:T62 Arg2:T60	
+R13	zav_anaphor Arg1:T62 Arg2:T61	
+T63	zav 542 548	Remove
+R14	zav_anaphor Arg1:T63 Arg2:T64	
+T65	zav 553 558	chill
+R15	zav_zav Arg1:T65 Arg2:T63	
+T49	anaphor 83 95	cream cheese
+T51	anaphor 117 130	1/2 cup sugar
+T52	anaphor 135 150	vanilla extract
+T55	anaphor 180 184	eggs
+T57	anaphor 262 275	pastry shells
+T60	anaphor 387 397	sour cream
+T61	anaphor 402 421	3 tablespoons sugar
+T64	anaphor 509 513	pies

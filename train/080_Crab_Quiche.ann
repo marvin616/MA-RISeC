@@ -1,0 +1,64 @@
+T1	AC 441 446	Leave
+T2	AC 338 342	Bake
+T3	AC 310 314	Pour
+T4	AC 3 10	Preheat
+T5	AC 57 61	Bake
+T6	AC 131 137	Remove
+T7	AC 192 197	whisk
+T8	TOOL 11 19	the oven
+T9	TEMPERATURE 23 36	350 degrees F
+T10	FOOD 62 75	the pie crust
+T11	DUR 80 96	about 10 minutes
+T12	TOOL 143 151	the oven
+T13	TOOL 178 190	a large bowl
+T14	FOOD 207 215	the eggs
+T15	FOOD 217 222	cream
+T16	FOOD 224 228	salt
+T17	FOOD 230 236	pepper
+T18	FOOD 242 251	hot sauce
+T19	FOOD 264 279	shredded cheese
+T20	FOOD 281 286	onion
+T21	FOOD 291 305	imitation crab
+T22	FOOD 320 333	the pie shell
+T23	DUR 347 363	25 to 30 minutes
+T24	TOOL 367 385	the preheated oven
+T25	TOOL 401 409	the oven
+T26	FOOD 447 453	quiche
+T27	TOOL 457 465	the oven
+T28	DUR 470 500	an additional 20 to 30 minutes
+T29	CONDITION_CLAUSE 98 126	until just starting to brown
+T30	AC 392 400	turn off
+T31	TOOL 421 429	the door
+T32	AC 415 420	leave
+T33	CONDITION_CLAUSE 501 511	until firm
+T34	AC 166 170	cool
+T35	AC 256 263	Stir in
+T36	TEMPERATURE 38 51	175 degrees C
+T48	zav 131 137	Remove
+R1	zav_anaphor Arg1:T48 Arg2:T37	
+T49	zav 166 170	cool
+R2	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 256 263	Stir in
+R3	zav_anaphor Arg1:T50 Arg2:T38	
+R4	zav_anaphor Arg1:T50 Arg2:T39	
+R5	zav_anaphor Arg1:T50 Arg2:T40	
+R6	zav_anaphor Arg1:T50 Arg2:T41	
+R7	zav_anaphor Arg1:T50 Arg2:T42	
+T51	zav 310 314	Pour
+R8	zav_anaphor Arg1:T51 Arg2:T43	
+R9	zav_anaphor Arg1:T51 Arg2:T44	
+R10	zav_anaphor Arg1:T51 Arg2:T45	
+R11	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 338 342	Bake
+R12	zav_anaphor Arg1:T52 Arg2:T46	
+R13	zav_zav Arg1:T52 Arg2:T51	
+T37	anaphor 62 75	the pie crust
+T38	anaphor 207 215	the eggs
+T39	anaphor 217 222	cream
+T40	anaphor 224 228	salt
+T41	anaphor 230 236	pepper
+T42	anaphor 242 251	hot sauce
+T43	anaphor 264 279	shredded cheese
+T44	anaphor 281 286	onion
+T45	anaphor 291 305	imitation crab
+T46	anaphor 320 333	the pie shell

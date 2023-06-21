@@ -1,0 +1,45 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 21	combine
+T3	FOOD 22 30	the eggs
+T4	FOOD 32 40	crackers
+T5	FOOD 42 48	celery
+T6	FOOD 53 62	pimientos
+T7	TOOL 70 82	another bowl
+T8	AC 84 91	combine
+T9	FOOD 92 106	the mayonnaise
+T10	FOOD 108 112	milk
+T11	FOOD 114 118	salt
+T12	FOOD 120 131	garlic salt
+T13	FOOD 136 142	pepper
+T14	AC 144 147	mix
+T15	AC 157 161	Stir
+T16	FOOD 167 182	the egg mixture
+T17	AC 187 192	Spoon
+T18	FOOD 212 228	each muffin half
+T19	AC 230 235	place
+T20	TOOL 239 264	an ungreased baking sheet
+T21	AC 269 274	Broil
+T22	DUR 279 290	3-4 minutes
+T23	CONDITION_CLAUSE 294 315	until lightly browned
+T24	OTHER 199 206	1/3 cup
+T36	zav 144 147	mix
+R1	zav_anaphor Arg1:T36 Arg2:T33	
+R2	zav_anaphor Arg1:T36 Arg2:T32	
+R3	zav_anaphor Arg1:T36 Arg2:T31	
+R4	zav_anaphor Arg1:T36 Arg2:T30	
+R5	zav_anaphor Arg1:T36 Arg2:T29	
+T37	zav 157 161	Stir
+R6	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 230 235	place
+R7	zav_anaphor Arg1:T38 Arg2:T35	
+T39	zav 269 274	Broil
+R8	zav_zav Arg1:T39 Arg2:T38	
+T29	anaphor 92 106	the mayonnaise
+T30	anaphor 108 112	milk
+T31	anaphor 114 118	salt
+T32	anaphor 120 131	garlic salt
+T33	anaphor 136 142	pepper
+T35	anaphor 212 228	each muffin half
+T25	anaphor 167 182	the egg mixture
+R9	zav_anaphor Arg1:T38 Arg2:T25	
+R10	zav_zav Arg1:T38 Arg2:T37	

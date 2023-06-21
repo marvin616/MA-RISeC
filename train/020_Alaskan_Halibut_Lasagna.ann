@@ -1,0 +1,109 @@
+T1	TOOL 6 21	a large skillet
+T2	OTHER 27 38	medium heat
+T3	AC 40 44	melt
+T4	FOOD 45 65	2 tablespoons butter
+T5	AC 70 73	Add
+T6	FOOD 74 81	halibut
+T7	FOOD 83 89	garlic
+T8	FOOD 94 99	thyme
+T9	AC 104 108	Cook
+T10	CONDITION_CLAUSE 109 145	until fish flakes easily with a fork
+T11	DUR 153 163	10 minutes
+T12	AC 168 174	Remove
+T13	AC 179 188	set aside
+T14	AC 193 196	Add
+T15	FOOD 197 217	the remaining butter
+T16	TOOL 221 232	the skillet
+T17	AC 237 241	Stir
+T18	FOOD 245 250	flour
+T19	FOOD 255 259	salt
+T20	CONDITION_CLAUSE 260 272	until smooth
+T21	AC 274 278	cook
+T22	AC 283 287	stir
+T23	CONDITION_CLAUSE 288 306	until golden brown
+T24	AC 321 324	add
+T25	FOOD 325 330	broth
+T26	FOOD 335 340	cream
+T29	AC 362 366	cook
+T30	AC 371 375	stir
+T31	DUR 380 389	2 minutes
+T32	CONDITION_CLAUSE 393 408	until thickened
+T33	TOOL 416 443	a greased 13-in baking dish
+T34	AC 445 450	layer
+T35	FOOD 451 470	half of the noodles
+T37	FOOD 472 479	halibut
+T38	FOOD 481 492	white sauce
+T39	FOOD 497 503	cheese
+T40	AC 509 515	Repeat
+T41	FOOD 516 522	layers
+T42	AC 528 533	Cover
+T43	AC 538 542	bake
+T44	TEMPERATURE 546 559	350 degrees F
+T45	DUR 564 574	20 minutes
+T46	AC 580 587	Uncover
+T47	AC 589 593	bake
+T48	DUR 594 604	20 minutes
+T49	CONDITION_CLAUSE 615 627	until bubbly
+T50	AC 637 642	stand
+T51	DUR 643 653	15 minutes
+T52	CONDITION_CLAUSE 654 668	before serving
+T53	AC 674 682	Sprinkle
+T54	FOOD 688 695	parsley
+T27	AC 356 360	boil
+T28	zav 70 73	Add
+R1	zav_anaphor Arg1:T28 Arg2:T36	
+T55	zav 104 108	Cook
+R2	zav_zav Arg1:T55 Arg2:T28	
+R3	zav_anaphor Arg1:T55 Arg2:T56	
+R4	zav_anaphor Arg1:T55 Arg2:T57	
+R5	zav_anaphor Arg1:T55 Arg2:T58	
+T59	zav 168 174	Remove
+T60	zav 179 188	set aside
+R6	zav_zav Arg1:T59 Arg2:T55	
+R7	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 237 241	Stir
+R8	zav_anaphor Arg1:T61 Arg2:T62	
+T63	zav 274 278	cook
+R9	zav_anaphor Arg1:T63 Arg2:T65	
+R10	zav_anaphor Arg1:T63 Arg2:T64	
+R11	zav_zav Arg1:T63 Arg2:T61	
+T66	zav 283 287	stir
+R12	zav_zav Arg1:T66 Arg2:T63	
+T67	zav 321 324	add
+R13	zav_zav Arg1:T67 Arg2:T66	
+T70	zav 356 360	boil
+R14	zav_zav Arg1:T70 Arg2:T67	
+R15	zav_anaphor Arg1:T70 Arg2:T68	
+R16	zav_anaphor Arg1:T70 Arg2:T69	
+T71	zav 362 366	cook
+T72	zav 371 375	stir
+R17	zav_zav Arg1:T71 Arg2:T70	
+R18	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 528 533	Cover
+T74	zav 538 542	bake
+R19	zav_anaphor Arg1:T73 Arg2:T75	
+R20	zav_anaphor Arg1:T73 Arg2:T76	
+R21	zav_anaphor Arg1:T73 Arg2:T77	
+R22	zav_anaphor Arg1:T73 Arg2:T78	
+R23	zav_zav Arg1:T74 Arg2:T73	
+T79	zav 580 587	Uncover
+R24	zav_zav Arg1:T79 Arg2:T74	
+T80	zav 589 593	bake
+R25	zav_zav Arg1:T80 Arg2:T79	
+T81	zav 637 642	stand
+R26	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 674 682	Sprinkle
+R27	zav_zav Arg1:T82 Arg2:T81	
+T36	anaphor 45 65	2 tablespoons butter
+T56	anaphor 74 81	halibut
+T57	anaphor 83 89	garlic
+T58	anaphor 94 99	thyme
+T62	anaphor 197 217	the remaining butter
+T64	anaphor 245 250	flour
+T65	anaphor 255 259	salt
+T68	anaphor 325 330	broth
+T69	anaphor 335 340	cream
+T75	anaphor 451 470	half of the noodles
+T76	anaphor 472 479	halibut
+T77	anaphor 481 492	white sauce
+T78	anaphor 497 503	cheese

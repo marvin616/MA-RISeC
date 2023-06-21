@@ -1,0 +1,63 @@
+T1	AC 3 7	Line
+T2	TOOL 8 26	a 15-in baking pan
+T3	TOOL 32 36	foil
+T4	AC 38 42	coat
+T5	TOOL 43 47	foil
+T6	FOOD 53 75	nonstick cooking spray
+T7	TOOL 83 89	a bowl
+T8	AC 91 98	combine
+T9	FOOD 99 115	the bread crumbs
+T10	FOOD 117 123	garlic
+T11	FOOD 125 140	Parmesan cheese
+T12	FOOD 142 149	parsley
+T13	FOOD 151 156	thyme
+T14	FOOD 158 166	rosemary
+T15	FOOD 168 172	salt
+T16	FOOD 177 183	pepper
+T17	AC 188 191	Add
+T18	FOOD 192 198	butter
+T19	AC 200 204	toss
+T20	PURPOSE_CLAUSE 205 219	to coat evenly
+T21	AC 224 229	Place
+T22	FOOD 230 236	salmon
+T23	TOOL 240 252	prepared pan
+T24	AC 257 262	Spray
+T25	FOOD 268 290	nonstick cooking spray
+T26	AC 295 298	pat
+T27	FOOD 304 323	bread crumb mixture
+T28	AC 328 332	Bake
+T29	TEMPERATURE 348 361	350 degrees F
+T30	DUR 366 379	35-40 minutes
+T31	CONDITION_CLAUSE 383 419	until fish flakes easily with a fork
+T45	zav 188 191	Add
+R1	zav_anaphor Arg1:T45 Arg2:T33	
+R2	zav_anaphor Arg1:T45 Arg2:T34	
+R3	zav_anaphor Arg1:T45 Arg2:T35	
+R4	zav_anaphor Arg1:T45 Arg2:T36	
+R5	zav_anaphor Arg1:T45 Arg2:T37	
+R6	zav_anaphor Arg1:T45 Arg2:T38	
+R7	zav_anaphor Arg1:T45 Arg2:T39	
+R8	zav_anaphor Arg1:T45 Arg2:T40	
+T46	zav 200 204	toss
+R9	zav_anaphor Arg1:T46 Arg2:T41	
+R10	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 257 262	Spray
+R11	zav_anaphor Arg1:T47 Arg2:T42	
+T48	zav 295 298	pat
+R12	zav_zav Arg1:T48 Arg2:T47	
+R13	zav_anaphor Arg1:T48 Arg2:T43	
+T49	zav 328 332	Bake
+R14	zav_zav Arg1:T49 Arg2:T48	
+R15	zav_anaphor Arg1:T49 Arg2:T44	
+T33	anaphor 99 115	the bread crumbs
+T34	anaphor 117 123	garlic
+T35	anaphor 125 140	Parmesan cheese
+T36	anaphor 142 149	parsley
+T37	anaphor 151 156	thyme
+T38	anaphor 158 166	rosemary
+T39	anaphor 168 172	salt
+T40	anaphor 177 183	pepper
+T41	anaphor 192 198	butter
+T42	anaphor 230 236	salmon
+T43	anaphor 268 290	nonstick cooking spray
+T44	anaphor 304 323	bread crumb mixture

@@ -1,0 +1,87 @@
+T1	TOOL 21 34	a medium bowl
+T2	AC 35 42	combine
+T3	FOOD 43 54	the ketchup
+T4	FOOD 56 71	pineapple juice
+T5	FOOD 73 81	molasses
+T6	FOOD 83 86	rum
+T7	FOOD 88 95	mustard
+T8	FOOD 100 106	garlic
+T9	AC 111 117	Season
+T10	FOOD 123 127	salt
+T11	FOOD 132 138	pepper
+T12	PURPOSE_CLAUSE 139 160	to taste and mix well
+T13	AC 165 170	Place
+T14	FOOD 171 185	chicken pieces
+T15	TOOL 189 226	a lightly oiled 9x13 inch baking dish
+T16	AC 228 233	brush
+T17	OTHER 234 244	both sides
+T18	FOOD 250 264	prepared glaze
+T19	PURPOSE_CLAUSE 3 16	To Make Glaze
+T20	AC 299 304	Cover
+T21	TOOL 305 309	dish
+T22	AC 314 325	refrigerate
+T23	PURPOSE_CLAUSE 326 337	to marinate
+T24	DUR 342 358	at least 2 hours
+T25	DUR 362 371	overnight
+T26	AC 382 393	refrigerate
+T27	FOOD 394 409	remaining glaze
+T28	AC 414 421	Preheat
+T29	TOOL 422 426	oven
+T30	TEMPERATURE 430 444	375  degrees F
+T31	TEMPERATURE 446 459	190 degrees C
+T32	AC 473 478	brush
+T33	FOOD 479 493	chicken pieces
+T34	OTHER 497 505	one side
+T35	FOOD 511 537	some of the reserved glaze
+T36	AC 542 546	bake
+T37	TOOL 560 574	preheated oven
+T38	DUR 585 595	25 minutes
+T39	AC 600 604	Turn
+T40	FOOD 605 611	pieces
+T41	AC 613 618	brush
+T42	FOOD 624 639	remaining glaze
+T43	AC 644 648	bake
+T44	DUR 653 671	another 25 minutes
+T45	CONDITION_CLAUSE 675 698	until chicken is tender
+T46	AC 703 710	Preheat
+T47	TOOL 711 715	oven
+T48	PURPOSE_CLAUSE 716 724	to broil
+T49	AC 730 733	Put
+T50	FOOD 734 741	chicken
+T51	TOOL 748 755	broiler
+T52	AC 768 773	brown
+T53	FOOD 777 787	both sides
+T54	DUR 795 819	2 to 3 minutes each side
+T55	OTHER 266 294	using about 1/2 of the glaze
+T73	zav 111 117	Season
+R1	zav_anaphor Arg1:T73 Arg2:T56	
+R2	zav_anaphor Arg1:T73 Arg2:T57	
+R3	zav_anaphor Arg1:T73 Arg2:T58	
+R4	zav_anaphor Arg1:T73 Arg2:T59	
+R5	zav_anaphor Arg1:T73 Arg2:T60	
+R6	zav_anaphor Arg1:T73 Arg2:T61	
+T74	zav 152 160	mix well
+R7	zav_anaphor Arg1:T74 Arg2:T63	
+R8	zav_anaphor Arg1:T74 Arg2:T62	
+R9	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 228 233	brush
+R10	zav_anaphor Arg1:T75 Arg2:T64	
+T76	zav 314 325	refrigerate
+R11	zav_zav Arg1:T76 Arg2:T75	
+R12	zav_anaphor Arg1:T76 Arg2:T65	
+T77	zav 542 546	bake
+R13	zav_anaphor Arg1:T77 Arg2:T67	
+T78	zav 644 648	bake
+R14	zav_anaphor Arg1:T78 Arg2:T70	
+T56	anaphor 43 54	the ketchup
+T57	anaphor 56 71	pineapple juice
+T58	anaphor 73 81	molasses
+T59	anaphor 83 86	rum
+T60	anaphor 88 95	mustard
+T61	anaphor 100 106	garlic
+T62	anaphor 123 127	salt
+T63	anaphor 132 138	pepper
+T64	anaphor 171 185	chicken pieces
+T65	anaphor 250 264	prepared glaze
+T67	anaphor 479 493	chicken pieces
+T70	anaphor 624 639	remaining glaze

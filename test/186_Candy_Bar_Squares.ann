@@ -1,0 +1,61 @@
+T1	AC 3 10	Preheat
+T2	AC 53 57	Beat
+T3	AC 141 146	Blend
+T4	AC 238 245	Reserve
+T5	AC 300 304	Stir
+T6	AC 352 358	Spread
+T7	AC 404 412	Sprinkle
+T8	AC 443 447	Bake
+T9	AC 532 536	Cool
+T10	TOOL 11 15	oven
+T11	TEMPERATURE 19 48	350 degrees F (175 degrees C)
+T12	FOOD 58 68	the butter
+T13	FOOD 72 81	margarine
+T14	FOOD 150 158	the eggs
+T15	AC 160 166	mixing
+T16	FOOD 183 192	the flour
+T17	AC 176 182	Mix in
+T18	FOOD 194 205	baking soda
+T19	FOOD 210 214	salt
+T20	FOOD 218 233	the egg mixture
+T21	FOOD 246 279	1/2 cup of the chopped candy bars
+T22	FOOD 284 295	the topping
+T23	FOOD 305 324	the remaining candy
+T24	FOOD 330 347	the flour mixture
+T25	FOOD 359 369	the batter
+T26	TOOL 375 399	one 13x9 inch baking pan
+T27	FOOD 413 431	the reserved candy
+T28	FOOD 435 438	top
+T29	TEMPERATURE 451 464	350 degrees F
+T30	DUR 485 501	25 to 30 minutes
+T31	CONDITION_CLAUSE 505 526	until lightly browned
+T32	AC 564 567	cut
+T33	OTHER 573 580	squares
+T34	CONDITION_CLAUSE 114 136	until light and fluffy
+T35	FOOD 87 113	the white and brown sugars
+T36	TOOL 540 558	pan on a wire rack
+T37	TEMPERATURE 466 479	175 degrees C
+T53	zav 141 149	Blend in
+R1	zav_anaphor Arg1:T53 Arg2:T38	
+R2	zav_anaphor Arg1:T53 Arg2:T39	
+R3	zav_anaphor Arg1:T53 Arg2:T52	
+T54	zav 160 166	mixing
+R4	zav_anaphor Arg1:T54 Arg2:T40	
+R5	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 176 182	Mix in
+R6	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 404 412	Sprinkle
+R7	zav_anaphor Arg1:T56 Arg2:T49	
+T57	zav 443 447	Bake
+R8	zav_zav Arg1:T57 Arg2:T56	
+R9	zav_anaphor Arg1:T57 Arg2:T50	
+T58	zav 532 536	Cool
+R10	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 564 567	cut
+R11	zav_zav Arg1:T59 Arg2:T58	
+T38	anaphor 58 68	the butter
+T39	anaphor 72 81	margarine
+T40	anaphor 150 158	the eggs
+T49	anaphor 359 369	the batter
+T50	anaphor 413 431	the reserved candy
+T52	anaphor 87 113	the white and brown sugars

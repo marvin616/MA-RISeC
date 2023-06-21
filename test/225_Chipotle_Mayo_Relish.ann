@@ -1,0 +1,32 @@
+T1	AC 3 8	Place
+T2	FOOD 9 23	the mayonnaise
+T3	FOOD 28 44	chipotle peppers
+T4	TOOL 50 66	a food processor
+T5	AC 72 79	process
+T6	CONDITION_CLAUSE 80 98	until well blended
+T7	AC 103 106	Add
+T8	FOOD 107 137	a little bit more of the sauce
+T9	AC 187 195	Transfer
+T10	TOOL 199 213	a serving bowl
+T11	AC 219 226	stir in
+T12	FOOD 227 242	the green onion
+T13	FOOD 247 266	sweet pickle relish
+T14	AC 271 276	Chill
+T15	CONDITION_CLAUSE 277 290	until serving
+T21	zav 103 106	Add
+R1	zav_anaphor Arg1:T21 Arg2:T16	
+R2	zav_anaphor Arg1:T21 Arg2:T17	
+T22	zav 187 195	Transfer
+R3	zav_zav Arg1:T22 Arg2:T21	
+R4	zav_anaphor Arg1:T22 Arg2:T18	
+T23	zav 219 226	stir in
+R5	zav_zav Arg1:T23 Arg2:T22	
+T24	zav 271 276	Chill
+R6	zav_zav Arg1:T24 Arg2:T23	
+R7	zav_anaphor Arg1:T24 Arg2:T19	
+R8	zav_anaphor Arg1:T24 Arg2:T20	
+T16	anaphor 9 23	the mayonnaise
+T17	anaphor 28 44	chipotle peppers
+T18	anaphor 107 137	a little bit more of the sauce
+T19	anaphor 227 242	the green onion
+T20	anaphor 247 266	sweet pickle relish

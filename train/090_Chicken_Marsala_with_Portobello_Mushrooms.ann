@@ -1,0 +1,139 @@
+T1	AC 3 10	Preheat
+T2	TEMPERATURE 19 32	350 degrees F
+T3	TEMPERATURE 34 47	175 degrees C
+T4	TOOL 11 15	oven
+T5	AC 53 57	Melt
+T6	AC 143 147	Cook
+T7	AC 209 215	Remove
+T8	AC 265 269	Melt
+T9	AC 358 362	Cook
+T10	AC 367 371	stir
+T11	FOOD 372 382	the garlic
+T12	CONDITION_CLAUSE 383 396	until tender,
+T13	AC 412 420	whisk in
+T14	FOOD 421 430	the flour
+T15	AC 435 443	Increase
+T16	OTHER 444 448	heat
+T17	TEMPERATURE 452 456	high
+T18	AC 506 512	Season
+T19	AC 599 605	reduce
+T20	AC 589 593	boil
+T21	OTHER 606 610	heat
+T22	TEMPERATURE 614 617	low
+T23	AC 623 629	Mix in
+T24	AC 700 705	Cover
+T25	AC 716 722	remove
+T26	OTHER 728 732	heat
+T27	AC 738 747	set aside
+T28	TOOL 706 714	saucepan
+T29	AC 753 759	Season
+T30	FOOD 760 767	chicken
+T31	FOOD 773 777	salt
+T32	FOOD 782 788	pepper
+T33	AC 794 803	dredge in
+T34	FOOD 804 823	the remaining flour
+T35	AC 829 833	Cook
+T36	FOOD 834 845	the chicken
+T37	DUR 846 864	2 minutes per side
+T38	CONDITION_CLAUSE 866 879	until browned
+T39	AC 885 892	Arrange
+T40	FOOD 893 904	the chicken
+T41	TOOL 908 945	the bottom of a 9x13 inch baking dish
+T42	AC 951 956	cover
+T43	FOOD 962 992	the sauce and mushroom mixture
+T44	AC 998 1003	Cover
+T45	TOOL 1004 1015	baking dish
+T46	AC 1021 1025	bake
+T47	DUR 1026 1036	25 minutes
+T48	TOOL 1040 1058	the preheated oven
+T49	CONDITION_CLAUSE 1063 1093	until chicken juices run clear
+T50	FOOD 58 72	1/2 cup butter
+T51	FOOD 82 108	1 tablespoon vegetable oil
+T52	TOOL 112 121	a skillet
+T53	TEMPERATURE 127 138	medium heat
+T54	AC 77 81	heat
+T55	AC 152 156	stir
+T56	FOOD 161 176	mushroom slices
+T57	TOOL 180 191	the skillet
+T58	CONDITION_CLAUSE 192 204	until tender
+T59	OTHER 221 225	heat
+T60	FOOD 634 643	mushrooms
+T61	AC 645 654	reserving
+T62	FOOD 655 671	remaining butter
+T63	FOOD 676 679	oil
+T64	TOOL 683 694	the skillet
+T65	AC 546 554	whisk in
+T66	FOOD 559 573	browning sauce
+T67	FOOD 518 524	kosher
+T68	FOOD 525 529	salt
+T69	FOOD 534 540	pepper
+T70	AC 462 469	pour in
+T71	FOOD 474 484	beef broth
+T72	FOOD 489 501	Marsala wine
+T73	FOOD 270 290	the remaining butter
+T74	AC 295 299	heat
+T75	FOOD 300 317	the remaining oil
+T76	TOOL 321 331	a saucepan
+T77	TEMPERATURE 337 353	medium-high heat
+T78	AC 227 232	cover
+T79	PURPOSE_CLAUSE 233 245	to keep warm
+T80	AC 251 260	set aside
+T104	zav 143 147	Cook
+R1	zav_anaphor Arg1:T104 Arg2:T90	
+R2	zav_anaphor Arg1:T104 Arg2:T91	
+T105	zav 152 156	stir
+R3	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 209 215	Remove
+R4	zav_zav Arg1:T106 Arg2:T105	
+R5	zav_anaphor Arg1:T106 Arg2:T92	
+T107	zav 227 232	cover
+R6	zav_zav Arg1:T107 Arg2:T106	
+T108	zav 251 260	set aside
+R7	zav_zav Arg1:T108 Arg2:T107	
+T109	zav 412 420	whisk in
+R8	zav_anaphor Arg1:T109 Arg2:T81	
+T110	zav 462 469	pour in
+R9	zav_zav Arg1:T110 Arg2:T109	
+R10	zav_anaphor Arg1:T110 Arg2:T82	
+T111	zav 506 512	Season
+R11	zav_anaphor Arg1:T111 Arg2:T100	
+R12	zav_zav Arg1:T111 Arg2:T110	
+R13	zav_anaphor Arg1:T111 Arg2:T101	
+T112	zav 546 554	whisk in
+R14	zav_anaphor Arg1:T112 Arg2:T99	
+R15	zav_anaphor Arg1:T112 Arg2:T98	
+R16	zav_anaphor Arg1:T112 Arg2:T97	
+R17	zav_zav Arg1:T112 Arg2:T111	
+T113	zav 589 593	boil
+R18	zav_zav Arg1:T113 Arg2:T112	
+R19	zav_anaphor Arg1:T113 Arg2:T96	
+T114	zav 623 629	Mix in
+R20	zav_zav Arg1:T114 Arg2:T113	
+T115	zav 700 705	Cover
+R21	zav_zav Arg1:T115 Arg2:T114	
+R22	zav_anaphor Arg1:T115 Arg2:T93	
+T116	zav 716 722	remove
+R23	zav_zav Arg1:T116 Arg2:T115	
+T117	zav 738 747	set aside
+R24	zav_zav Arg1:T117 Arg2:T116	
+T118	zav 951 956	cover
+R25	zav_anaphor Arg1:T118 Arg2:T88	
+T119	zav 998 1003	Cover
+R26	zav_zav Arg1:T119 Arg2:T118	
+R27	zav_anaphor Arg1:T119 Arg2:T89	
+T120	zav 1021 1025	bake
+R28	zav_zav Arg1:T120 Arg2:T119	
+T81	anaphor 372 382	the garlic
+T82	anaphor 421 430	the flour
+T88	anaphor 893 904	the chicken
+T89	anaphor 962 992	the sauce and mushroom mixture
+T90	anaphor 58 72	1/2 cup butter
+T91	anaphor 82 108	1 tablespoon vegetable oil
+T92	anaphor 161 176	mushroom slices
+T93	anaphor 634 643	mushrooms
+T96	anaphor 559 573	browning sauce
+T97	anaphor 518 524	kosher
+T98	anaphor 525 529	salt
+T99	anaphor 534 540	pepper
+T100	anaphor 474 484	beef broth
+T101	anaphor 489 501	Marsala wine

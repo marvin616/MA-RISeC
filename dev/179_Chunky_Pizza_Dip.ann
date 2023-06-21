@@ -1,0 +1,39 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	FOOD 16 22	garlic
+T4	TOOL 26 42	a large saucepan
+T5	TOOL 46 56	Dutch oven
+T6	CONDITION_CLAUSE 57 102	until garlic starts to sizzle and turn golden
+T7	AC 107 110	Add
+T8	FOOD 111 119	tomatoes
+T9	FOOD 121 133	tomato paste
+T10	FOOD 135 140	basil
+T11	FOOD 145 152	oregano
+T12	AC 176 182	Simmer
+T13	AC 154 159	bring
+T14	TOOL 163 171	a simmer
+T15	CONDITION_CLAUSE 195 234	until sauce is thick enough for dipping
+T16	DUR 236 252	15 to 20 minutes
+T17	AC 257 261	Cool
+T18	AC 266 277	refrigerate
+T25	zav 107 110	Add
+R1	zav_anaphor Arg1:T25 Arg2:T19	
+R2	zav_anaphor Arg1:T25 Arg2:T20	
+T26	zav 154 159	bring
+R3	zav_anaphor Arg1:T26 Arg2:T24	
+R4	zav_anaphor Arg1:T26 Arg2:T23	
+R5	zav_anaphor Arg1:T26 Arg2:T22	
+R6	zav_anaphor Arg1:T26 Arg2:T21	
+R7	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 176 182	Simmer
+R8	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 257 261	Cool
+R9	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 266 277	refrigerate
+R10	zav_zav Arg1:T29 Arg2:T28	
+T19	anaphor 8 11	oil
+T20	anaphor 16 22	garlic
+T21	anaphor 111 119	tomatoes
+T22	anaphor 121 133	tomato paste
+T23	anaphor 135 140	basil
+T24	anaphor 145 152	oregano

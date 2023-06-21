@@ -1,0 +1,35 @@
+T1	AC 27 31	beat
+T2	AC 49 52	Add
+T3	TOOL 6 25	a small mixing bowl
+T4	FOOD 32 44	cream cheese
+T5	FOOD 53 57	milk
+T6	FOOD 59 73	egg substitute
+T7	FOOD 78 84	pepper
+T8	AC 86 90	beat
+T9	CONDITION_CLAUSE 91 103	until smooth
+T10	AC 108 115	Stir in
+T11	FOOD 116 137	remaining ingredients
+T12	TOOL 142 152	quiche pan
+T13	FOOD 165 187	nonstick cooking spray
+T14	AC 192 196	Bake
+T15	TEMPERATURE 200 213	350 degrees F
+T16	DUR 218 231	45-50 minutes
+T17	CONDITION_CLAUSE 235 289	until a knife inserted near the center comes out clean
+T18	AC 153 159	coated
+T25	zav 49 52	Add
+R1	zav_anaphor Arg1:T25 Arg2:T19	
+T26	zav 86 90	beat
+R2	zav_anaphor Arg1:T26 Arg2:T22	
+R3	zav_anaphor Arg1:T26 Arg2:T21	
+R4	zav_anaphor Arg1:T26 Arg2:T20	
+R5	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 108 115	Stir in
+R6	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 192 196	Bake
+R7	zav_anaphor Arg1:T28 Arg2:T23	
+R8	zav_zav Arg1:T28 Arg2:T27	
+T19	anaphor 32 44	cream cheese
+T20	anaphor 53 57	milk
+T21	anaphor 59 73	egg substitute
+T22	anaphor 78 84	pepper
+T23	anaphor 116 137	remaining ingredients

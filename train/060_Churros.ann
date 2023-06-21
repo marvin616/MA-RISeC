@@ -1,0 +1,59 @@
+T1	AC 41 48	combine
+T3	AC 142 148	remove
+T5	AC 208 212	Heat
+T6	AC 295 299	Pipe
+T7	AC 352 355	Fry
+T8	AC 396 403	Combine
+T9	AC 435 439	Roll
+T11	TOOL 6 22	a small saucepan
+T12	TEMPERATURE 28 39	medium heat
+T13	FOOD 49 54	water
+T14	FOOD 56 79	2 1/2 tablespoons sugar
+T15	FOOD 81 85	salt
+T16	FOOD 90 117	2 tablespoons vegetable oil
+T17	FOOD 171 176	flour
+T18	FOOD 213 227	oil for frying
+T19	TOOL 231 241	deep-fryer
+T20	TOOL 245 257	deep skillet
+T21	TEMPERATURE 261 274	375 degrees F
+T22	AC 370 375	drain
+T23	TOOL 379 391	paper towels
+T24	FOOD 404 417	1/2 cup sugar
+T25	FOOD 422 430	cinnamon
+T26	FOOD 440 455	drained churros
+T30	FOOD 321 328	hot oil
+T31	FOOD 300 315	strips of dough
+T32	TOOL 335 347	a pastry bag
+T33	CONDITION_CLAUSE 356 368	until golden
+T28	CONDITION_CLAUSE 177 203	until mixture forms a ball
+T4	AC 163 170	Stir in
+T2	AC 133 137	boil
+T10	FOOD 459 485	cinnamon and sugar mixture
+T27	TOOL 154 158	heat
+T29	TEMPERATURE 276 289	190 degrees C
+T34	zav 133 137	boil
+R1	zav_anaphor Arg1:T34 Arg2:T35	
+T39	zav 142 148	remove
+R2	zav_zav Arg1:T39 Arg2:T34	
+R4	zav_anaphor Arg1:T34 Arg2:T37	
+T40	zav 163 170	Stir in
+R6	zav_zav Arg1:T40 Arg2:T39	
+T41	zav 352 355	Fry
+R7	zav_anaphor Arg1:T41 Arg2:T42	
+T43	zav 370 375	drain
+R8	zav_zav Arg1:T43 Arg2:T41	
+T44	zav 396 403	Combine
+R9	zav_zav Arg1:T44 Arg2:T43	
+R3	zav_anaphor Arg1:T34 Arg2:T36	
+R5	zav_anaphor Arg1:T34 Arg2:T38	
+T47	zav 435 439	Roll
+R10	zav_anaphor Arg1:T47 Arg2:T45	
+R11	zav_anaphor Arg1:T47 Arg2:T46	
+R12	zav_zav Arg1:T47 Arg2:T44	
+T35	anaphor 49 54	water
+T37	anaphor 81 85	salt
+T42	anaphor 300 315	strips of dough
+T45	anaphor 404 417	1/2 cup sugar
+T46	anaphor 422 430	cinnamon
+T36	anaphor 56 79	2 1/2 tablespoons sugar
+T38	anaphor 90 117	2 tablespoons vegetable oil

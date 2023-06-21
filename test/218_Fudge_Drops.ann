@@ -1,0 +1,42 @@
+T1	AC 24 31	combine
+T2	TOOL 6 22	a heavy saucepan
+T3	FOOD 36 41	sugar
+T4	FOOD 43 47	milk
+T5	FOOD 49 55	butter
+T6	FOOD 60 64	salt
+T7	AC 80 84	boil
+T8	TEMPERATURE 90 101	medium heat
+T9	AC 103 111	stirring
+T10	AC 127 133	Remove
+T11	TOOL 139 147	the heat
+T12	AC 149 156	stir in
+T13	FOOD 157 178	remaining ingredients
+T14	AC 183 187	Drop
+T15	TOOL 211 242	waxed paper-lined baking sheets
+T16	AC 251 256	stand
+T17	TEMPERATURE 260 276	room temperature
+T18	CONDITION_CLAUSE 277 287	until cool
+T19	TOOL 191 205	tablespoonfuls
+T25	zav 80 84	boil
+R1	zav_anaphor Arg1:T25 Arg2:T20	
+R2	zav_anaphor Arg1:T25 Arg2:T21	
+R3	zav_anaphor Arg1:T25 Arg2:T22	
+R4	zav_anaphor Arg1:T25 Arg2:T23	
+T26	zav 103 111	stirring
+R5	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 127 133	Remove
+R6	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 149 156	stir in
+R7	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 183 187	Drop
+R8	zav_anaphor Arg1:T29 Arg2:T24	
+R9	zav_zav Arg1:T29 Arg2:T28	
+T30	zav 251 256	stand
+R10	zav_zav Arg1:T30 Arg2:T29	
+T31	zav 283 287	cool
+R11	zav_zav Arg1:T31 Arg2:T30	
+T20	anaphor 36 41	sugar
+T21	anaphor 43 47	milk
+T22	anaphor 49 55	butter
+T23	anaphor 60 64	salt
+T24	anaphor 157 178	remaining ingredients

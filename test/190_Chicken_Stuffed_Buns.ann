@@ -1,0 +1,39 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Slice
+T3	AC 104 114	Hollow out
+T4	AC 162 169	combine
+T5	AC 253 258	Spoon
+T6	AC 302 305	cap
+T7	AC 324 328	Wrap
+T8	AC 358 362	Bake
+T9	TOOL 366 380	preheated oven
+T10	DUR 385 395	20 minutes
+T11	FOOD 329 337	each bun
+T12	TOOL 349 353	foil
+T13	FOOD 259 266	mixture
+T14	FOOD 272 280	each bun
+T15	PURPOSE_CLAUSE 282 300	packing it tightly
+T16	FOOD 311 319	bun tops
+T17	TOOL 148 161	a medium bowl
+T18	FOOD 170 177	chicken
+T19	FOOD 179 191	cream cheese
+T20	FOOD 193 211	Pepper Jack cheese
+T21	FOOD 213 228	Parmesan cheese
+T22	FOOD 230 236	garlic
+T23	FOOD 241 248	spinach
+T24	FOOD 115 123	each bun
+T25	PURPOSE_CLAUSE 125 140	leaving a shell
+T26	TOOL 11 15	oven
+T27	TEMPERATURE 19 32	350 degrees F
+T29	PURPOSE_CLAUSE 84 99	saving the tops
+T28	FOOD 59 66	the top
+T30	FOOD 74 82	each bun
+T31	TEMPERATURE 34 47	175 degrees C
+T32	zav 302 305	cap
+R1	zav_anaphor Arg1:T32 Arg2:T34	
+R2	zav_anaphor Arg1:T32 Arg2:T33	
+T35	zav 358 362	Bake
+R3	zav_anaphor Arg1:T35 Arg2:T36	
+T33	anaphor 259 266	mixture
+T34	anaphor 272 280	each bun
+T36	anaphor 329 337	each bun

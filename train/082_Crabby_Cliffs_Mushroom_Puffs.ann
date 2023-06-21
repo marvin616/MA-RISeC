@@ -1,0 +1,61 @@
+T1	AC 636 640	Bake
+T2	AC 588 593	Place
+T3	AC 3 10	Preheat
+T4	AC 53 57	Heat
+T5	AC 181 185	Cook
+T6	AC 218 226	Transfer
+T7	AC 347 351	roll
+T8	AC 399 402	Cut
+T9	AC 445 450	Place
+T10	AC 517 521	Fold
+T11	DUR 641 651	20 minutes
+T12	TOOL 655 673	the preheated oven
+T13	FOOD 594 605	the squares
+T14	TOOL 11 15	oven
+T15	TEMPERATURE 34 47	200 degrees C
+T16	FOOD 58 71	the olive oil
+T17	TOOL 75 92	a medium saucepan
+T18	OTHER 98 109	medium heat
+T19	FOOD 122 135	the mushrooms
+T20	FOOD 137 149	green onions
+T21	FOOD 151 157	garlic
+T22	FOOD 162 176	cayenne pepper
+T23	DUR 186 196	10 minutes
+T24	FOOD 227 247	the mushroom mixture
+T25	TOOL 251 264	a medium bowl
+T26	FOOD 278 294	the cream cheese
+T27	FOOD 299 307	crabmeat
+T28	TOOL 315 345	a lightly floured flat surface
+T29	FOOD 352 369	each pastry sheet
+T30	FOOD 375 394	a 12x12 inch square
+T31	FOOD 403 413	each sheet
+T32	OTHER 419 440	nine 4x4 inch squares
+T33	FOOD 451 487	1 tablespoon of the mushroom mixture
+T34	FOOD 493 511	each pastry square
+T35	FOOD 522 533	the squares
+T36	TOOL 609 630	a medium baking sheet
+T37	CONDITION_CLAUSE 201 213	until tender
+T38	CONDITION_CLAUSE 678 696	until golden brown
+T39	AC 114 121	Stir in
+T40	AC 269 277	Blend in
+T41	TEMPERATURE 19 32	400 degrees F
+T42	OTHER 534 571	by bringing the corners to the center
+T58	zav 114 121	Stir in
+R1	zav_anaphor Arg1:T58 Arg2:T44	
+T59	zav 181 185	Cook
+R2	zav_zav Arg1:T59 Arg2:T58	
+R3	zav_anaphor Arg1:T59 Arg2:T45	
+R4	zav_anaphor Arg1:T59 Arg2:T46	
+R5	zav_anaphor Arg1:T59 Arg2:T47	
+R6	zav_anaphor Arg1:T59 Arg2:T48	
+T60	zav 269 277	Blend in
+R7	zav_anaphor Arg1:T60 Arg2:T49	
+T61	zav 636 640	Bake
+R8	zav_anaphor Arg1:T61 Arg2:T55	
+T44	anaphor 58 71	the olive oil
+T45	anaphor 122 135	the mushrooms
+T46	anaphor 137 149	green onions
+T47	anaphor 151 157	garlic
+T48	anaphor 162 176	cayenne pepper
+T49	anaphor 227 247	the mushroom mixture
+T55	anaphor 451 487	1 tablespoon of the mushroom mixture

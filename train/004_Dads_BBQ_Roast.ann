@@ -1,0 +1,58 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 23	mix
+T3	FOOD 33 44	the mustard
+T4	AC 68 75	Lay out
+T5	TOOL 76 108	two long sheets of aluminum foil
+T6	AC 123 126	Pat
+T7	FOOD 127 136	the roast
+T9	AC 146 151	place
+T10	TOOL 155 177	the center of the foil
+T12	AC 193 197	coat
+T13	FOOD 198 207	the roast
+T14	FOOD 213 232	the mustard mixture
+T15	AC 237 241	Wrap
+T16	TOOL 242 250	the foil
+T17	FOOD 266 275	the roast
+T18	AC 282 287	apply
+T19	TOOL 288 310	one more piece of foil
+T20	PURPOSE_CLAUSE 311 331	to really seal it in
+T26	AC 408 415	Prepare
+T27	TOOL 416 432	an outdoor grill
+T28	OTHER 437 450	indirect heat
+T29	TOOL 459 467	charcoal
+T30	AC 469 474	light
+T31	TOOL 475 484	the coals
+T32	AC 491 495	move
+T33	TOOL 499 520	one side of the grill
+T35	AC 525 530	Place
+T36	FOOD 531 540	the roast
+T37	TOOL 544 553	the grill
+T38	AC 559 564	cover
+T39	AC 569 573	Cook
+T40	DUR 584 591	2 hours
+T41	AC 593 600	turning
+T42	DUR 601 623	every 30 to 45 minutes
+T47	AC 709 714	stand
+T48	DUR 725 735	10 minutes
+T50	AC 756 761	Place
+T51	TOOL 765 785	a deep serving plate
+T57	PURPOSE_CLAUSE 823 887	to save the juices and mustard rub to slather on the beef slices
+T58	FOOD 49 63	onion soup mix
+T43	CONDITION_CLAUSE 628 699	until the internal temperature is at least 145 degrees F (63 degrees C)
+T44	CONDITION_CLAUSE 736 750	before carving
+T45	CONDITION_CLAUSE 786 803	before unwrapping
+T22	PURPOSE_CLAUSE 332 403	so that the roast can be rotated without all of the juices spilling out
+T8	zav 146 151	place
+R1	zav_anaphor Arg1:T8 Arg2:T11	
+T21	zav 569 573	Cook
+T24	zav 559 564	cover
+R2	zav_anaphor Arg1:T24 Arg2:T23	
+R3	zav_zav Arg1:T21 Arg2:T24	
+T25	zav 593 600	turning
+R4	zav_zav Arg1:T25 Arg2:T21	
+T34	zav 709 714	stand
+R5	zav_zav Arg1:T34 Arg2:T25	
+T46	zav 756 761	Place
+R6	zav_zav Arg1:T46 Arg2:T34	
+T11	anaphor 127 136	the roast
+T23	anaphor 531 540	the roast

@@ -1,0 +1,43 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 60	Prepare
+T6	FOOD 61 69	stuffing
+T7	OTHER 70 101	according to package directions
+T8	AC 106 110	Wash
+T9	FOOD 111 122	the chicken
+T10	AC 124 127	pat
+T11	AC 136 145	pound out
+T12	OTHER 155 175	a 1/2 inch thickness
+T13	AC 180 185	Place
+T14	FOOD 186 203	a slice of cheese
+T15	FOOD 207 218	each breast
+T16	AC 265 270	Place
+T17	FOOD 271 286	stuffed breasts
+T18	TOOL 290 329	a lightly greased 9x13 inch baking dish
+T19	AC 334 338	Bake
+T20	TEMPERATURE 342 355	350 degrees F
+T21	TEMPERATURE 357 370	175 degrees C
+T22	DUR 376 386	25 minutes
+T23	CONDITION_CLAUSE 391 421	until chicken juices run clear
+T24	AC 428 433	place
+T25	FOOD 434 458	a second slice of cheese
+T26	FOOD 464 484	each stuffed chicken
+T27	AC 490 494	bake
+T28	DUR 499 513	2 more minutes
+T29	CONDITION_CLAUSE 518 540	until cheese is bubbly
+T30	FOOD 232 260	a scoop of prepared stuffing
+T39	zav 124 127	pat
+R1	zav_anaphor Arg1:T39 Arg2:T32	
+T40	zav 136 145	pound out
+R2	zav_zav Arg1:T40 Arg2:T39	
+T41	zav 334 338	Bake
+R3	zav_anaphor Arg1:T41 Arg2:T35	
+T42	zav 490 494	bake
+R4	zav_anaphor Arg1:T42 Arg2:T37	
+R5	zav_anaphor Arg1:T42 Arg2:T36	
+T32	anaphor 111 122	the chicken
+T35	anaphor 271 286	stuffed breasts
+T36	anaphor 434 458	a second slice of cheese
+T37	anaphor 464 484	each stuffed chicken

@@ -1,0 +1,103 @@
+T1	AC 3 8	Place
+T2	FOOD 9 19	cubed beef
+T3	FOOD 24 29	flour
+T4	TOOL 33 57	a resealable plastic bag
+T5	AC 62 66	Seal
+T6	AC 71 76	shake
+T7	PURPOSE_CLAUSE 77 107	to evenly coat beef with flour
+T8	AC 112 116	Heat
+T9	FOOD 117 124	the oil
+T10	TOOL 128 137	a skillet
+T11	TEMPERATURE 143 154	medium heat
+T12	AC 160 165	brown
+T13	FOOD 166 170	beef
+T14	OTHER 174 183	all sides
+T15	AC 188 196	Transfer
+T16	TOOL 200 213	a slow cooker
+T17	AC 218 222	Melt
+T18	FOOD 223 233	the butter
+T19	TOOL 237 248	the skillet
+T20	TEMPERATURE 254 265	medium heat
+T21	AC 271 275	cook
+T22	FOOD 276 281	onion
+T23	CONDITION_CLAUSE 282 294	until tender
+T24	AC 299 307	Transfer
+T25	TOOL 311 326	the slow cooker
+T26	FOOD 332 340	the beef
+T27	AC 345 349	Pour
+T28	FOOD 350 354	wine
+T29	TOOL 360 371	the skillet
+T30	PURPOSE_CLAUSE 372 382	to deglaze
+T31	AC 389 393	pour
+T32	FOOD 394 398	wine
+T33	TOOL 404 415	slow cooker
+T34	AC 420 428	Dissolve
+T35	FOOD 429 451	the beef bouillon cube
+T36	FOOD 455 470	1 cup hot water
+T37	AC 476 480	pour
+T38	TOOL 486 497	slow cooker
+T39	AC 502 507	Place
+T40	FOOD 508 514	potato
+T41	FOOD 519 526	carrots
+T42	TOOL 530 541	slow cooker
+T43	AC 547 553	season
+T44	FOOD 559 567	rosemary
+T45	FOOD 569 574	thyme
+T46	FOOD 576 589	garlic powder
+T47	FOOD 595 601	pepper
+T48	AC 607 613	Mix in
+T49	FOOD 614 629	remaining water
+T50	FOOD 634 654	Worcestershire sauce
+T51	AC 660 663	Add
+T52	FOOD 664 674	more water
+T53	PURPOSE_CLAUSE 685 709	to cover all ingredients
+T54	AC 715 720	Cover
+T55	TOOL 721 732	slow cooker
+T56	AC 738 742	cook
+T57	FOOD 743 747	stew
+T58	DUR 748 760	7 to 8 hours
+T59	TEMPERATURE 764 772	low heat
+T81	zav 62 66	Seal
+R1	zav_anaphor Arg1:T81 Arg2:T60	
+R2	zav_anaphor Arg1:T81 Arg2:T61	
+T82	zav 71 76	shake
+R3	zav_zav Arg1:T82 Arg2:T81	
+T83	zav 188 196	Transfer
+R4	zav_anaphor Arg1:T83 Arg2:T63	
+T84	zav 299 307	Transfer
+R5	zav_anaphor Arg1:T84 Arg2:T65	
+T85	zav 738 742	cook
+T86	zav 502 507	Place
+R6	zav_anaphor Arg1:T86 Arg2:T70	
+R7	zav_anaphor Arg1:T86 Arg2:T69	
+T87	zav 547 553	season
+R8	zav_anaphor Arg1:T87 Arg2:T71	
+R9	zav_anaphor Arg1:T87 Arg2:T72	
+R10	zav_zav Arg1:T87 Arg2:T86	
+T88	zav 607 613	Mix in
+R11	zav_zav Arg1:T88 Arg2:T87	
+R12	zav_anaphor Arg1:T88 Arg2:T73	
+R13	zav_anaphor Arg1:T88 Arg2:T74	
+R14	zav_anaphor Arg1:T88 Arg2:T75	
+R15	zav_anaphor Arg1:T88 Arg2:T76	
+T89	zav 660 663	Add
+R16	zav_zav Arg1:T89 Arg2:T88	
+R17	zav_anaphor Arg1:T89 Arg2:T77	
+R18	zav_anaphor Arg1:T89 Arg2:T78	
+R19	zav_zav Arg1:T85 Arg2:T89	
+R20	zav_anaphor Arg1:T85 Arg2:T79	
+T60	anaphor 9 19	cubed beef
+T61	anaphor 24 29	flour
+T63	anaphor 166 170	beef
+T65	anaphor 276 281	onion
+T69	anaphor 429 451	the beef bouillon cube
+T70	anaphor 455 470	1 cup hot water
+T71	anaphor 508 514	potato
+T72	anaphor 519 526	carrots
+T73	anaphor 559 567	rosemary
+T74	anaphor 569 574	thyme
+T75	anaphor 576 589	garlic powder
+T76	anaphor 595 601	pepper
+T77	anaphor 614 629	remaining water
+T78	anaphor 634 654	Worcestershire sauce
+T79	anaphor 664 674	more water

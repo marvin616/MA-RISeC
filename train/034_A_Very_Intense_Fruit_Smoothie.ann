@@ -1,0 +1,14 @@
+T1	TOOL 6 15	a blender
+T2	AC 17 24	combine
+T3	FOOD 25 37	frozen fruit
+T4	FOOD 39 51	canned fruit
+T5	FOOD 56 61	honey
+T6	AC 66 71	Blend
+T7	CONDITION_CLAUSE 72 84	until smooth
+T11	zav 66 71	Blend
+R1	zav_anaphor Arg1:T11 Arg2:T8	
+R2	zav_anaphor Arg1:T11 Arg2:T9	
+R3	zav_anaphor Arg1:T11 Arg2:T10	
+T8	anaphor 25 37	frozen fruit
+T9	anaphor 39 51	canned fruit
+T10	anaphor 56 61	honey

@@ -1,0 +1,36 @@
+T1	AC 3 8	Place
+T2	FOOD 9 20	the carrots
+T3	FOOD 22 27	onion
+T4	FOOD 29 44	vegetable broth
+T5	FOOD 49 57	cilantro
+T6	TOOL 63 79	a large saucepan
+T7	AC 95 99	boil
+T8	AC 105 109	cook
+T9	CONDITION_CLAUSE 110 138	until the carrots are tender
+T10	DUR 146 156	10 minutes
+T11	AC 161 167	Remove
+T12	OTHER 173 177	heat
+T13	AC 191 195	cool
+T14	AC 209 214	Puree
+T15	FOOD 215 223	the soup
+T16	CONDITION_CLAUSE 224 236	until smooth
+T17	AC 238 243	using
+T18	TOOL 244 253	a blender
+T19	TOOL 257 271	food processor
+T20	AC 276 282	Reheat
+T21	CONDITION_CLAUSE 283 297	before serving
+T27	zav 95 99	boil
+R1	zav_anaphor Arg1:T27 Arg2:T22	
+R2	zav_anaphor Arg1:T27 Arg2:T23	
+R3	zav_anaphor Arg1:T27 Arg2:T24	
+R4	zav_anaphor Arg1:T27 Arg2:T25	
+T28	zav 105 109	cook
+R5	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 161 167	Remove
+R6	zav_zav Arg1:T29 Arg2:T28	
+T30	zav 191 195	cool
+R7	zav_zav Arg1:T30 Arg2:T29	
+T22	anaphor 9 20	the carrots
+T23	anaphor 22 27	onion
+T24	anaphor 29 44	vegetable broth
+T25	anaphor 49 57	cilantro

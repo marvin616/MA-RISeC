@@ -1,0 +1,59 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 94	two 9 x 5 inch loaf pans
+T8	AC 99 103	Beat
+T9	FOOD 113 117	eggs
+T10	FOOD 119 124	sugar
+T11	FOOD 130 133	oil
+T12	AC 138 146	Blend in
+T13	FOOD 147 157	applesauce
+T14	FOOD 168 178	sour cream
+T15	FOOD 182 192	buttermilk
+T16	AC 197 203	Mix in
+T17	FOOD 204 209	flour
+T18	FOOD 211 224	baking powder
+T19	FOOD 226 230	soda
+T20	FOOD 236 244	cinnamon
+T21	AC 249 256	Stir in
+T22	FOOD 257 264	raisins
+T23	AC 269 273	Pour
+T24	FOOD 274 280	batter
+T25	TOOL 286 299	prepared pans
+T26	AC 304 308	Bake
+T27	DUR 313 323	80 minutes
+T28	AC 328 332	Cool
+T29	TOOL 336 346	wire racks
+T42	zav 138 146	Blend in
+R1	zav_anaphor Arg1:T42 Arg2:T30	
+R2	zav_anaphor Arg1:T42 Arg2:T31	
+R3	zav_anaphor Arg1:T42 Arg2:T32	
+T43	zav 197 203	Mix in
+R4	zav_zav Arg1:T43 Arg2:T42	
+R5	zav_anaphor Arg1:T43 Arg2:T33	
+R6	zav_anaphor Arg1:T43 Arg2:T34	
+R7	zav_anaphor Arg1:T43 Arg2:T35	
+T44	zav 249 256	Stir in
+R8	zav_zav Arg1:T44 Arg2:T43	
+R9	zav_anaphor Arg1:T44 Arg2:T36	
+R10	zav_anaphor Arg1:T44 Arg2:T37	
+R11	zav_anaphor Arg1:T44 Arg2:T38	
+R12	zav_anaphor Arg1:T44 Arg2:T39	
+T45	zav 304 308	Bake
+T47	zav 328 332	Cool
+R16	zav_zav Arg1:T47 Arg2:T45	
+R13	zav_anaphor Arg1:T45 Arg2:T41	
+T30	anaphor 113 117	eggs
+T31	anaphor 119 124	sugar
+T32	anaphor 130 133	oil
+T33	anaphor 147 157	applesauce
+T34	anaphor 168 178	sour cream
+T35	anaphor 182 192	buttermilk
+T36	anaphor 204 209	flour
+T37	anaphor 211 224	baking powder
+T38	anaphor 226 230	soda
+T39	anaphor 236 244	cinnamon
+T41	anaphor 274 280	batter

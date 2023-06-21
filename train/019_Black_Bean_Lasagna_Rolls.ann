@@ -1,0 +1,62 @@
+T1	AC 3 7	Cook
+T2	FOOD 8 23	lasagna noodles
+T3	AC 57 65	omitting
+T4	FOOD 66 70	salt
+T5	FOOD 75 78	fat
+T6	AC 80 85	drain
+T7	AC 95 102	Combine
+T8	FOOD 103 110	cheeses
+T9	FOOD 115 133	next 3 ingredients
+T10	OTHER 37 55	package directions
+T11	AC 135 143	stirring
+T12	AC 153 159	Spread
+T13	FOOD 160 174	cheese mixture
+T14	FOOD 180 203	one side of each noodle
+T16	AC 208 213	Spoon
+T17	FOOD 214 225	black beans
+T18	FOOD 238 252	cheese mixture
+T19	AC 257 261	Roll
+T20	FOOD 265 272	noodles
+T21	FOOD 274 291	jellyroll fashion
+T22	AC 293 302	beginning
+T23	FOOD 306 317	narrow ends
+T24	AC 322 327	Place
+T25	FOOD 328 341	lasagna rolls
+T26	TOOL 363 398	an 11- x 7- x 11/2-inch baking dish
+T27	OTHER 399 424	coated with cooking spray
+T28	AC 429 434	Cover
+T29	AC 439 443	bake
+T30	TEMPERATURE 447 458	350 degrees
+T31	DUR 463 473	25 minutes
+T32	CONDITION_CLAUSE 477 500	until thoroughly heated
+T33	PURPOSE_CLAUSE 505 513	To serve
+T34	AC 515 520	spoon
+T35	FOOD 521 526	salsa
+T36	FOOD 539 544	rolls
+T37	AC 550 557	garnish
+T38	FOOD 563 578	cilantro sprigs
+T15	CONDITION_CLAUSE 580 590	if desired
+T40	zav 57 65	omitting
+R1	zav_anaphor Arg1:T40 Arg2:T39	
+T41	zav 80 85	drain
+R2	zav_anaphor Arg1:T41 Arg2:T43	
+R3	zav_anaphor Arg1:T41 Arg2:T42	
+R4	zav_zav Arg1:T41 Arg2:T40	
+T46	zav 135 143	stirring
+R5	zav_anaphor Arg1:T46 Arg2:T45	
+R6	zav_anaphor Arg1:T46 Arg2:T44	
+T48	zav 429 434	Cover
+T49	zav 439 443	bake
+R7	zav_anaphor Arg1:T48 Arg2:T47	
+R8	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 550 557	garnish
+R9	zav_anaphor Arg1:T50 Arg2:T52	
+R10	zav_anaphor Arg1:T50 Arg2:T51	
+T39	anaphor 8 23	lasagna noodles
+T42	anaphor 66 70	salt
+T43	anaphor 75 78	fat
+T44	anaphor 103 110	cheeses
+T45	anaphor 115 133	next 3 ingredients
+T47	anaphor 328 341	lasagna rolls
+T51	anaphor 521 526	salsa
+T52	anaphor 539 544	rolls

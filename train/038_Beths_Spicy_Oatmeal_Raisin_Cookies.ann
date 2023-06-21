@@ -1,0 +1,66 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	TOOL 56 68	a large bowl
+T6	AC 70 75	cream
+T7	FOOD 85 95	the butter
+T8	FOOD 97 123	butter flavored shortening
+T9	FOOD 125 136	brown sugar
+T10	FOOD 138 149	white sugar
+T11	FOOD 151 155	eggs
+T12	FOOD 161 168	vanilla
+T13	CONDITION_CLAUSE 169 181	until smooth
+T14	AC 186 193	Combine
+T15	FOOD 194 203	the flour
+T16	FOOD 205 216	baking soda
+T17	FOOD 218 226	cinnamon
+T18	FOOD 228 234	cloves
+T19	FOOD 240 244	salt
+T20	AC 246 250	stir
+T21	FOOD 256 273	the sugar mixture
+T22	AC 278 285	Stir in
+T23	FOOD 286 294	the oats
+T24	FOOD 299 306	raisins
+T25	AC 311 315	Drop
+T26	TOOL 345 368	ungreased cookie sheets
+T27	TOOL 319 339	rounded teaspoonfuls
+T28	AC 373 377	Bake
+T29	DUR 378 394	10 to 12 minutes
+T30	CONDITION_CLAUSE 395 417	until light and golden
+T31	AC 425 437	not overbake
+T32	AC 451 455	cool
+T33	FOOD 446 450	them
+T34	DUR 460 469	2 minutes
+T35	CONDITION_CLAUSE 470 523	before removing from cookie sheets to cool completely
+T36	AC 528 533	Store
+T37	TOOL 537 555	airtight container
+T38	zav 246 250	stir
+R1	zav_anaphor Arg1:T38 Arg2:T43	
+R2	zav_anaphor Arg1:T38 Arg2:T42	
+R3	zav_anaphor Arg1:T38 Arg2:T41	
+R4	zav_anaphor Arg1:T38 Arg2:T40	
+R5	zav_anaphor Arg1:T38 Arg2:T39	
+T44	zav 278 285	Stir in
+R6	zav_zav Arg1:T44 Arg2:T38	
+R7	zav_anaphor Arg1:T44 Arg2:T45	
+T46	zav 311 315	Drop
+R8	zav_zav Arg1:T46 Arg2:T44	
+R9	zav_anaphor Arg1:T46 Arg2:T47	
+R10	zav_anaphor Arg1:T46 Arg2:T48	
+T49	zav 373 377	Bake
+R11	zav_zav Arg1:T49 Arg2:T46	
+T50	zav 425 437	not overbake
+R12	zav_zav Arg1:T50 Arg2:T49	
+T51	zav 451 455	cool
+R13	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 528 533	Store
+R14	zav_zav Arg1:T52 Arg2:T51	
+T39	anaphor 194 203	the flour
+T40	anaphor 205 216	baking soda
+T41	anaphor 218 226	cinnamon
+T42	anaphor 228 234	cloves
+T43	anaphor 240 244	salt
+T45	anaphor 256 273	the sugar mixture
+T47	anaphor 286 294	the oats
+T48	anaphor 299 306	raisins

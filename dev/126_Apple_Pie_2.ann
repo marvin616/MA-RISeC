@@ -1,0 +1,28 @@
+T1	TOOL 6 17	a large pot
+T2	AC 19 26	combine
+T3	FOOD 27 38	apple juice
+T4	FOOD 40 51	apple cider
+T5	FOOD 53 58	sugar
+T6	FOOD 63 78	cinnamon sticks
+T7	AC 94 98	boil
+T8	AC 105 111	remove
+T9	OTHER 117 121	heat
+T10	AC 130 134	cool
+T11	CONDITION_CLAUSE 150 176	When juice mixture is cool
+T12	AC 178 185	stir in
+T13	FOOD 186 203	the grain alcohol
+T19	zav 94 98	boil
+R1	zav_anaphor Arg1:T19 Arg2:T14	
+R2	zav_anaphor Arg1:T19 Arg2:T15	
+R3	zav_anaphor Arg1:T19 Arg2:T16	
+R4	zav_anaphor Arg1:T19 Arg2:T17	
+T20	zav 105 111	remove
+R5	zav_zav Arg1:T20 Arg2:T19	
+T21	zav 178 185	stir in
+T18	zav 130 134	cool
+R7	zav_zav Arg1:T21 Arg2:T18	
+R6	zav_zav Arg1:T18 Arg2:T20	
+T14	anaphor 27 38	apple juice
+T15	anaphor 40 51	apple cider
+T16	anaphor 53 58	sugar
+T17	anaphor 63 78	cinnamon sticks

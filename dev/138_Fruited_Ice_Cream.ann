@@ -1,0 +1,23 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 25	condensed milk
+T3	FOOD 27 31	milk
+T4	FOOD 33 38	cream
+T5	FOOD 40 47	vanilla
+T6	FOOD 49 53	salt
+T7	FOOD 58 63	fruit
+T8	TOOL 67 102	freezer canister of ice cream maker
+T9	AC 107 113	Freeze
+T10	OTHER 114 152	according to manufacturer's directions
+T17	zav 107 113	Freeze
+R1	zav_anaphor Arg1:T17 Arg2:T11	
+R2	zav_anaphor Arg1:T17 Arg2:T12	
+R3	zav_anaphor Arg1:T17 Arg2:T13	
+R4	zav_anaphor Arg1:T17 Arg2:T14	
+R5	zav_anaphor Arg1:T17 Arg2:T15	
+R6	zav_anaphor Arg1:T17 Arg2:T16	
+T11	anaphor 11 25	condensed milk
+T12	anaphor 27 31	milk
+T13	anaphor 33 38	cream
+T14	anaphor 40 47	vanilla
+T15	anaphor 49 53	salt
+T16	anaphor 58 63	fruit

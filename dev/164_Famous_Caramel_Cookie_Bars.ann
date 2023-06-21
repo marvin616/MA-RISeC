@@ -1,0 +1,48 @@
+T1	AC 3 8	Place
+T2	FOOD 9 27	shortbread cookies
+T3	TOOL 31 53	a baking sheet or tray
+T4	TOOL 61 77	a small saucepan
+T5	TEMPERATURE 83 98	medium-low heat
+T6	AC 100 104	melt
+T7	FOOD 105 113	caramels
+T8	FOOD 117 122	water
+T9	AC 124 132	stirring
+T10	AC 148 153	Spoon
+T11	FOOD 154 176	a thin line of caramel
+T12	FOOD 182 193	each cookie
+T13	AC 198 203	Place
+T14	FOOD 204 211	cookies
+T15	TOOL 215 227	refrigerator
+T16	CONDITION_CLAUSE 228 248	until caramel is set
+T17	AC 253 257	Line
+T18	TOOL 258 280	baking sheets or trays
+T19	TOOL 286 297	waxed paper
+T20	TOOL 305 320	a double boiler
+T21	FOOD 326 341	simmering water
+T22	AC 343 347	melt
+T23	FOOD 348 357	chocolate
+T24	AC 362 365	Dip
+T25	FOOD 366 373	cookies
+T26	FOOD 377 386	chocolate
+T27	OTHER 387 400	one at a time
+T28	AC 402 409	tapping
+T29	TOOL 418 438	the side of the bowl
+T30	PURPOSE_CLAUSE 439 455	to remove excess
+T31	AC 460 465	Place
+T32	TOOL 469 484	prepared sheets
+T33	AC 493 497	rest
+T34	TEMPERATURE 501 517	room temperature
+T35	DUR 518 531	several hours
+T36	CONDITION_CLAUSE 533 542	until set
+T47	zav 124 132	stirring
+R1	zav_anaphor Arg1:T47 Arg2:T39	
+R2	zav_anaphor Arg1:T47 Arg2:T38	
+T48	zav 460 465	Place
+R3	zav_anaphor Arg1:T48 Arg2:T45	
+R4	zav_anaphor Arg1:T48 Arg2:T46	
+T49	zav 493 497	rest
+R5	zav_zav Arg1:T49 Arg2:T48	
+T38	anaphor 105 113	caramels
+T39	anaphor 117 122	water
+T45	anaphor 366 373	cookies
+T46	anaphor 377 386	chocolate

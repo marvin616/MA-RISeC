@@ -1,0 +1,22 @@
+T1	AC 14 21	combine
+T2	AC 54 61	Crumble
+T3	AC 86 89	mix
+T4	AC 114 119	Shape
+T5	AC 142 146	Cook
+T6	TOOL 6 12	a bowl
+T7	FOOD 22 49	the first seven ingredients
+T8	FOOD 62 68	turkey
+T9	FOOD 74 81	mixture
+T10	FOOD 125 137	four patties
+T12	CONDITION_CLAUSE 95 109	until combined
+T13	CONDITION_CLAUSE 204 224	until no longer pink
+T11	TOOL 150 203	a nonstick skillet coated with nonstick cooking spray
+T14	zav 86 89	mix
+R1	zav_anaphor Arg1:T14 Arg2:T15	
+R2	zav_anaphor Arg1:T14 Arg2:T16	
+T17	zav 114 119	Shape
+R3	zav_zav Arg1:T17 Arg2:T14	
+T18	zav 142 146	Cook
+R4	zav_zav Arg1:T18 Arg2:T17	
+T15	anaphor 62 68	turkey
+T16	anaphor 22 49	the first seven ingredients

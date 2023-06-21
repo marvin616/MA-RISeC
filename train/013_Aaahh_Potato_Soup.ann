@@ -1,0 +1,39 @@
+T1	TOOL 6 22	a large saucepan
+T2	TOOL 26 29	pot
+T3	AC 31 38	combine
+T4	FOOD 39 47	potatoes
+T5	FOOD 49 69	au gratin potato mix
+T6	FOOD 71 84	chicken broth
+T7	FOOD 89 94	water
+T8	AC 99 102	Add
+T9	FOOD 103 113	more water
+T11	CONDITION_CLAUSE 123 135	if necessary
+T12	AC 140 144	Cook
+T13	OTHER 150 161	medium heat
+T14	AC 163 171	stirring
+T15	CONDITION_CLAUSE 186 211	until potatoes are tender
+T16	DUR 220 230	40 minutes
+T17	AC 235 242	Stir in
+T18	FOOD 243 248	cream
+T19	AC 253 257	heat
+T20	AC 270 275	Serve
+T10	PURPOSE_CLAUSE 114 122	to cover
+T21	zav 99 102	Add
+R1	zav_anaphor Arg1:T21 Arg2:T22	
+R2	zav_anaphor Arg1:T21 Arg2:T23	
+R3	zav_anaphor Arg1:T21 Arg2:T24	
+R4	zav_anaphor Arg1:T21 Arg2:T25	
+T26	zav 140 144	Cook
+R5	zav_zav Arg1:T26 Arg2:T21	
+T27	zav 163 171	stirring
+R6	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 235 242	Stir in
+R7	zav_zav Arg1:T28 Arg2:T27	
+T30	zav 270 275	Serve
+R8	zav_zav Arg1:T30 Arg2:T28	
+R9	zav_anaphor Arg1:T30 Arg2:T29	
+T22	anaphor 39 47	potatoes
+T23	anaphor 49 69	au gratin potato mix
+T24	anaphor 71 84	chicken broth
+T25	anaphor 89 94	water
+T29	anaphor 243 248	cream

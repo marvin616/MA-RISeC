@@ -1,0 +1,54 @@
+T1	AC 21 25	beat
+T2	AC 78 85	Combine
+T3	AC 103 107	fold
+T4	AC 153 159	Spread
+T5	AC 174 178	Pour
+T6	AC 216 220	Bake
+T7	AC 280 285	cream
+T8	AC 324 327	Add
+T9	FOOD 345 349	peel
+T10	AC 354 358	beat
+T11	TOOL 6 19	a mixing bowl
+T12	FOOD 26 33	bananas
+T13	FOOD 35 40	sugar
+T14	FOOD 42 45	oil
+T15	FOOD 50 54	eggs
+T16	FOOD 86 101	dry ingredients
+T17	FOOD 113 131	the banana mixture
+T18	TOOL 165 169	bars
+T19	TOOL 184 211	a greased 15-in. baking pan
+T20	DUR 242 255	25-30 minutes
+T21	AC 257 261	cool
+T22	FOOD 286 292	butter
+T23	FOOD 297 302	sugar
+T24	TOOL 306 319	a mixing bowl
+T25	FOOD 328 340	orange juice
+T26	FOOD 270 278	frosting
+T27	TEMPERATURE 224 237	350 degrees F
+T28	CONDITION_CLAUSE 55 73	until well blended
+T29	CONDITION_CLAUSE 132 148	until well mixed
+T30	CONDITION_CLAUSE 359 371	until smooth
+T31	zav 103 107	fold
+R1	zav_anaphor Arg1:T31 Arg2:T32	
+T33	zav 153 159	Spread
+R2	zav_zav Arg1:T33 Arg2:T31	
+R3	zav_anaphor Arg1:T33 Arg2:T34	
+T35	zav 174 178	Pour
+R4	zav_zav Arg1:T35 Arg2:T33	
+T36	zav 216 220	Bake
+R5	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 257 261	cool
+R6	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 324 327	Add
+T42	zav 354 358	beat
+R7	zav_anaphor Arg1:T38 Arg2:T39	
+R8	zav_anaphor Arg1:T38 Arg2:T43	
+R9	zav_anaphor Arg1:T42 Arg2:T41	
+R10	zav_anaphor Arg1:T42 Arg2:T40	
+R11	zav_zav Arg1:T42 Arg2:T38	
+T32	anaphor 86 101	dry ingredients
+T34	anaphor 113 131	the banana mixture
+T40	anaphor 328 340	orange juice
+T41	anaphor 345 349	peel
+T39	anaphor 286 292	butter
+T43	anaphor 297 302	sugar

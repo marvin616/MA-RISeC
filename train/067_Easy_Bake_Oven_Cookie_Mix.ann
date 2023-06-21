@@ -1,0 +1,50 @@
+T1	AC 21 25	stir
+T2	AC 195 202	Measure
+T3	AC 278 283	Label
+T4	AC 288 292	date
+T5	AC 327 332	empty
+T6	AC 481 484	Mix
+T7	AC 494 499	shape
+T8	AC 543 548	Place
+T9	AC 588 595	flatten
+T10	TOOL 6 19	a medium bowl
+T11	FOOD 35 43	the oats
+T12	FOOD 45 50	flour
+T13	FOOD 52 63	baking soda
+T14	FOOD 68 79	brown sugar
+T15	FOOD 91 105	the shortening
+T16	FOOD 203 225	1/2 cup of the mixture
+T17	FOOD 333 355	one package of the mix
+T18	TOOL 361 367	a bowl
+T19	FOOD 380 400	2 teaspoons of water
+T20	FOOD 402 425	1 tablespoon of raisins
+T21	FOOD 430 476	1 tablespoon of mini semisweet chocolate chips
+T22	FOOD 500 521	teaspoonfuls of dough
+T23	FOOD 527 538	small balls
+T24	FOOD 549 554	balls
+T25	TOOL 558 583	an ungreased cookie sheet
+T26	TOOL 601 647	the buttered bottom of a glass dipped in sugar
+T27	CONDITION_CLAUSE 147 191	There should be no lumps of shortening left.
+T28	CONDITION_CLAUSE 106 142	until the mixture resembles cornmeal
+T29	AC 84 90	Cut in
+T30	TOOL 231 273	re-sealable bags or containers for storage
+T31	TOOL 293 301	each bag
+T32	AC 372 379	Stir in
+T33	OTHER 664 683	oven's instructions
+T34	PURPOSE_CLAUSE 684 694	for baking
+T35	AC 653 659	Follow
+T36	PURPOSE_CLAUSE 306 325	To make the cookies
+T50	zav 372 379	Stir in
+R1	zav_anaphor Arg1:T50 Arg2:T41	
+T51	zav 481 484	Mix
+R2	zav_zav Arg1:T51 Arg2:T50	
+R3	zav_anaphor Arg1:T51 Arg2:T44	
+R4	zav_anaphor Arg1:T51 Arg2:T45	
+R5	zav_anaphor Arg1:T51 Arg2:T46	
+T52	zav 588 595	flatten
+R7	zav_anaphor Arg1:T52 Arg2:T47	
+T41	anaphor 91 105	the shortening
+T44	anaphor 380 400	2 teaspoons of water
+T45	anaphor 402 425	1 tablespoon of raisins
+T46	anaphor 430 476	1 tablespoon of mini semisweet chocolate chips
+T47	anaphor 500 521	teaspoonfuls of dough

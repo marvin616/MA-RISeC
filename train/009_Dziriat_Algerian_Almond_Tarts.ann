@@ -1,0 +1,219 @@
+T2	FOOD 9 24	6 cups of water
+T4	AC 39 45	Remove
+T5	OTHER 51 55	heat
+T6	AC 61 64	add
+T7	FOOD 65 76	the almonds
+T8	FOOD 85 96	the almonds
+T9	AC 97 101	soak
+T10	FOOD 105 110	water
+T11	DUR 121 130	5 minutes
+T12	AC 137 142	drain
+T13	AC 147 151	peel
+T14	AC 156 162	Spread
+T15	FOOD 163 174	the almonds
+T16	TOOL 178 191	baking sheets
+T17	AC 197 201	bake
+T18	TEMPERATURE 205 232	200 degrees F(95 degrees C)
+T20	CONDITION_CLAUSE 233 265	until completely dry and toasted
+T21	DUR 281 294	several hours
+T22	AC 342 353	not to burn
+T23	FOOD 354 362	the nuts
+T24	AC 416 423	Combine
+T25	FOOD 424 435	1 cup sugar
+T26	FOOD 440 451	1 cup water
+T27	TOOL 455 465	a saucepan
+T30	AC 491 494	Add
+T31	FOOD 495 517	1 teaspoon lemon juice
+T32	AC 519 525	reduce
+T33	OTHER 526 530	heat
+T34	TEMPERATURE 534 537	low
+T35	AC 550 556	simmer
+T36	FOOD 547 549	it
+T37	DUR 577 593	30 to 40 minutes
+T38	AC 598 605	Stir in
+T39	FOOD 606 626	orange blossom water
+T40	AC 632 638	remove
+T41	OTHER 644 648	heat
+T42	AC 654 657	Set
+T43	FOOD 658 669	sugar syrup
+T44	AC 681 688	Combine
+T45	FOOD 689 694	flour
+T46	FOOD 699 703	salt
+T47	TOOL 707 726	a large mixing bowl
+T48	AC 732 736	Make
+T49	OTHER 737 743	a hole
+T50	FOOD 747 757	the center
+T51	AC 763 767	pour
+T52	FOOD 768 771	oil
+T53	FOOD 773 776	egg
+T54	FOOD 778 802	1/2 teaspoon lemon juice
+T55	FOOD 808 841	1 tablespoon orange blossom water
+T56	FOOD 847 857	the center
+T57	AC 863 866	Mix
+T58	TOOL 872 879	fingers
+T59	CONDITION_CLAUSE 880 919	until the dough resembles coarse crumbs
+T60	AC 935 943	sprinkle
+T61	FOOD 949 959	warm water
+T62	AC 966 972	mixing
+T63	CONDITION_CLAUSE 973 1013	until the dough becomes soft and pliable
+T64	AC 1019 1025	Divide
+T65	FOOD 1031 1047	4 equal portions
+T66	AC 1053 1058	Cover
+T67	FOOD 1059 1064	dough
+T68	TOOL 1070 1081	a wet cloth
+T69	AC 1087 1096	set aside
+T70	TOOL 1105 1121	a food processor
+T71	AC 1130 1135	grind
+T72	FOOD 1136 1147	the almonds
+T73	AC 1153 1160	Measure
+T74	FOOD 1161 1196	3 cups of the finely ground almonds
+T75	TOOL 1202 1215	a mixing bowl
+T76	AC 1221 1225	stir
+T77	FOOD 1240 1251	1 cup sugar
+T78	FOOD 1253 1266	baking powder
+T79	FOOD 1268 1282	vanilla powder
+T80	FOOD 1284 1294	lemon zest
+T81	FOOD 1300 1333	2 tablespoons orange flower water
+T82	AC 1339 1345	Mix in
+T83	FOOD 1346 1356	three eggs
+T84	AC 1372 1380	stirring
+T85	AC 1393 1396	mix
+T86	CONDITION_CLAUSE 1397 1439	until you get a sticky, paste-like mixture
+T87	AC 1445 1453	Sprinkle
+T88	FOOD 1454 1464	cornstarch
+T89	FOOD 1468 1487	the rolling surface
+T90	PURPOSE_CLAUSE 1488 1507	to prevent sticking
+T92	AC 1513 1517	Roll
+T93	FOOD 1518 1539	each portion of dough
+T95	OTHER 1553 1571	1 to 2 millimeters
+T96	OTHER 1573 1582	1/16 inch
+T97	AC 1589 1592	Cut
+T98	FOOD 1593 1609	the rolled dough
+T99	FOOD 1615 1622	circles
+T100	OTHER 1632 1646	10 centimeters
+T101	OTHER 1648 1656	4 inches
+T102	AC 1688 1692	wipe
+T103	FOOD 1693 1719	the surface of each circle
+T105	FOOD 1725 1735	cornstarch
+T106	AC 1741 1744	fit
+T107	TOOL 1750 1761	a tart mold
+T108	FOOD 1763 1778	cornstarch side
+T111	AC 1816 1821	press
+T112	FOOD 1822 1831	the dough
+T113	TOOL 1837 1869	the sides and bottom of the mold
+T115	AC 1875 1879	trim
+T116	FOOD 1880 1891	extra dough
+T117	TOOL 1904 1911	the rim
+T118	AC 1917 1921	Fill
+T119	TOOL 1922 1949	three quarters of each mold
+T121	FOOD 1955 1973	the almond filling
+T122	AC 1979 1983	Bake
+T123	TOOL 1987 2000	the top shelf
+T124	TEMPERATURE 2004 2017	350 degrees F
+T125	TEMPERATURE 2019 2032	175 degrees C
+T126	DUR 2038 2054	20 to 25 minutes
+T127	CONDITION_CLAUSE 2059 2120	until the surface of the tart is golden and the dough is firm
+T128	AC 2126 2132	Remove
+T129	FOOD 2133 2142	the tarts
+T130	TOOL 2148 2157	the molds
+T131	CONDITION_CLAUSE 2158 2194	as soon as they come out of the oven
+T132	AC 2200 2203	Dip
+T133	FOOD 2204 2213	each tart
+T134	FOOD 2217 2232	the sugar syrup
+T135	CONDITION_CLAUSE 2233 2248	while still hot
+T136	AC 2254 2259	Stick
+T137	FOOD 2260 2270	a pine nut
+T138	FOOD 2276 2299	the middle of each tart
+T140	PURPOSE_CLAUSE 2300 2314	for decoration
+T141	AC 2320 2325	Place
+T142	TOOL 2329 2340	a wire rack
+T143	PURPOSE_CLAUSE 2341 2349	to drain
+T1	AC 30 34	boil
+T3	AC 482 486	boil
+T28	CONDITION_CLAUSE 557 569	until syrupy
+T19	PURPOSE_CLAUSE 1784 1803	to prevent sticking
+T29	zav 39 45	Remove
+R1	zav_anaphor Arg1:T29 Arg2:T91	
+T94	zav 61 64	add
+R2	zav_zav Arg1:T94 Arg2:T29	
+T104	zav 197 201	bake
+R3	zav_anaphor Arg1:T104 Arg2:T109	
+T120	zav 482 486	boil
+T139	zav 491 494	Add
+R4	zav_anaphor Arg1:T120 Arg2:T114	
+R5	zav_anaphor Arg1:T120 Arg2:T110	
+R6	zav_zav Arg1:T139 Arg2:T120	
+T144	zav 550 556	simmer
+R7	zav_zav Arg1:T144 Arg2:T139	
+R8	zav_anaphor Arg1:T144 Arg2:T145	
+T146	zav 598 605	Stir in
+R9	zav_zav Arg1:T146 Arg2:T144	
+T148	zav 632 638	remove
+R10	zav_anaphor Arg1:T148 Arg2:T147	
+R11	zav_zav Arg1:T148 Arg2:T146	
+T149	zav 732 736	Make
+R12	zav_anaphor Arg1:T149 Arg2:T150	
+R13	zav_anaphor Arg1:T149 Arg2:T151	
+T152	zav 763 767	pour
+R14	zav_zav Arg1:T152 Arg2:T149	
+T153	zav 863 866	Mix
+R15	zav_zav Arg1:T153 Arg2:T152	
+R16	zav_anaphor Arg1:T153 Arg2:T154	
+R17	zav_anaphor Arg1:T153 Arg2:T155	
+R18	zav_anaphor Arg1:T153 Arg2:T156	
+R19	zav_anaphor Arg1:T153 Arg2:T157	
+T158	zav 935 943	sprinkle
+R20	zav_zav Arg1:T158 Arg2:T153	
+T159	zav 1019 1025	Divide
+R21	zav_zav Arg1:T159 Arg2:T158	
+R22	zav_anaphor Arg1:T159 Arg2:T160	
+T162	zav 1087 1096	set aside
+R23	zav_anaphor Arg1:T162 Arg2:T161	
+T164	zav 1221 1225	stir
+R24	zav_anaphor Arg1:T164 Arg2:T163	
+T170	zav 1339 1345	Mix in
+R25	zav_zav Arg1:T170 Arg2:T164	
+R26	zav_anaphor Arg1:T170 Arg2:T165	
+R27	zav_anaphor Arg1:T170 Arg2:T166	
+R28	zav_anaphor Arg1:T170 Arg2:T167	
+R29	zav_anaphor Arg1:T170 Arg2:T168	
+R30	zav_anaphor Arg1:T170 Arg2:T169	
+T172	zav 1372 1380	stirring
+R31	zav_zav Arg1:T172 Arg2:T170	
+R32	zav_anaphor Arg1:T172 Arg2:T171	
+T173	zav 1393 1396	mix
+R33	zav_zav Arg1:T173 Arg2:T172	
+T174	zav 1741 1744	fit
+R34	zav_anaphor Arg1:T174 Arg2:T175	
+R35	zav_anaphor Arg1:T174 Arg2:T176	
+T178	zav 1979 1983	Bake
+R36	zav_anaphor Arg1:T178 Arg2:T177	
+T179	zav 2320 2325	Place
+R37	zav_anaphor Arg1:T179 Arg2:T180	
+R38	zav_anaphor Arg1:T179 Arg2:T181	
+T91	anaphor 9 24	6 cups of water
+T109	anaphor 163 174	the almonds
+T110	anaphor 424 435	1 cup sugar
+T114	anaphor 440 451	1 cup water
+T145	anaphor 495 517	1 teaspoon lemon juice
+T147	anaphor 606 626	orange blossom water
+T150	anaphor 689 694	flour
+T151	anaphor 699 703	salt
+T154	anaphor 768 771	oil
+T155	anaphor 773 776	egg
+T156	anaphor 778 802	1/2 teaspoon lemon juice
+T157	anaphor 808 841	1 tablespoon orange blossom water
+T160	anaphor 949 959	warm water
+T161	anaphor 1059 1064	dough
+T163	anaphor 1161 1196	3 cups of the finely ground almonds
+T165	anaphor 1240 1251	1 cup sugar
+T166	anaphor 1253 1266	baking powder
+T167	anaphor 1268 1282	vanilla powder
+T168	anaphor 1284 1294	lemon zest
+T169	anaphor 1300 1333	2 tablespoons orange flower water
+T171	anaphor 1346 1356	three eggs
+T175	anaphor 1693 1719	the surface of each circle
+T176	anaphor 1725 1735	cornstarch
+T177	anaphor 1955 1973	the almond filling
+T180	anaphor 2260 2270	a pine nut
+T181	anaphor 2276 2299	the middle of each tart

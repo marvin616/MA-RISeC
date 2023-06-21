@@ -1,0 +1,30 @@
+T1	TOOL 6 22	a large saucepan
+T2	TEMPERATURE 26 37	medium heat
+T3	AC 39 44	saute
+T4	FOOD 45 50	onion
+T5	CONDITION_CLAUSE 51 62	until clear
+T6	AC 67 70	Add
+T7	FOOD 71 82	tomato soup
+T8	FOOD 84 97	mushroom soup
+T9	FOOD 103 118	canned tomatoes
+T10	AC 123 129	Simmer
+T11	DUR 134 144	15 minutes
+T12	AC 149 154	Place
+T13	FOOD 155 167	the crawfish
+T14	TOOL 173 180	the pan
+T15	AC 185 191	simmer
+T16	DUR 196 206	25 minutes
+T22	zav 67 70	Add
+R1	zav_anaphor Arg1:T22 Arg2:T17	
+T23	zav 123 129	Simmer
+R2	zav_zav Arg1:T23 Arg2:T22	
+R3	zav_anaphor Arg1:T23 Arg2:T18	
+R4	zav_anaphor Arg1:T23 Arg2:T19	
+R5	zav_anaphor Arg1:T23 Arg2:T20	
+T24	zav 185 191	simmer
+R6	zav_anaphor Arg1:T24 Arg2:T21	
+T17	anaphor 45 50	onion
+T18	anaphor 71 82	tomato soup
+T19	anaphor 84 97	mushroom soup
+T20	anaphor 103 118	canned tomatoes
+T21	anaphor 155 167	the crawfish

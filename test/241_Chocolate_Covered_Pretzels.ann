@@ -1,0 +1,23 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 17	chocolate
+T3	FOOD 22 27	cream
+T4	TOOL 31 44	double boiler
+T5	TEMPERATURE 50 58	low heat
+T6	AC 60 68	stirring
+T7	AC 84 87	Dip
+T8	FOOD 88 96	pretzels
+T9	AC 164 169	Place
+T10	FOOD 170 178	pretzels
+T11	TOOL 182 191	wax paper
+T12	PURPOSE_CLAUSE 192 207	to set and cool
+T13	PURPOSE_CLAUSE 119 159	to coat while mixture is still very warm
+T18	zav 60 68	stirring
+R1	zav_anaphor Arg1:T18 Arg2:T15	
+R2	zav_anaphor Arg1:T18 Arg2:T14	
+T19	zav 195 198	set
+R3	zav_anaphor Arg1:T19 Arg2:T17	
+T20	zav 203 207	cool
+R4	zav_anaphor Arg1:T20 Arg2:T17	
+T14	anaphor 8 17	chocolate
+T15	anaphor 22 27	cream
+T17	anaphor 170 178	pretzels

@@ -1,0 +1,65 @@
+T1	AC 37 40	fry
+T2	TOOL 6 21	a large skillet
+T3	TOOL 25 35	deep fryer
+T4	FOOD 41 54	chicken wings
+T5	FOOD 58 61	oil
+T6	CONDITION_CLAUSE 62 72	until done
+T7	DUR 74 90	about 10 minutes
+T8	AC 95 101	Remove
+T9	FOOD 102 109	chicken
+T10	FOOD 114 117	oil
+T11	TOOL 123 130	skillet
+T12	AC 132 137	drain
+T13	FOOD 138 141	oil
+T14	AC 146 153	reserve
+T15	FOOD 154 161	chicken
+T16	AC 166 170	Melt
+T17	FOOD 171 177	butter
+T18	TOOL 181 188	skillet
+T19	AC 195 198	add
+T20	FOOD 199 206	vinegar
+T21	FOOD 211 220	hot sauce
+T22	AC 225 231	Season
+T23	FOOD 237 241	salt
+T24	FOOD 246 252	pepper
+T25	AC 256 261	taste
+T26	AC 266 269	Add
+T27	FOOD 270 284	cooked chicken
+T28	FOOD 288 293	sauce
+T29	AC 298 302	stir
+T30	TEMPERATURE 308 316	low heat
+T31	AC 399 404	Serve
+T32	AC 350 356	simmer
+T33	FOOD 340 349	the wings
+T34	FOOD 360 369	the sauce
+T35	OTHER 329 339	The longer
+T36	PURPOSE_CLAUSE 371 394	the hotter they will be
+T37	PURPOSE_CLAUSE 317 324	to coat
+T53	zav 132 137	drain
+R1	zav_anaphor Arg1:T53 Arg2:T40	
+T54	zav 195 198	add
+R2	zav_anaphor Arg1:T54 Arg2:T44	
+T55	zav 225 231	Season
+R3	zav_zav Arg1:T55 Arg2:T54	
+R4	zav_anaphor Arg1:T55 Arg2:T45	
+R5	zav_anaphor Arg1:T55 Arg2:T46	
+T56	zav 256 261	taste
+R6	zav_anaphor Arg1:T56 Arg2:T48	
+R7	zav_anaphor Arg1:T56 Arg2:T47	
+R8	zav_zav Arg1:T56 Arg2:T55	
+T58	zav 298 302	stir
+R9	zav_anaphor Arg1:T58 Arg2:T50	
+R10	zav_anaphor Arg1:T58 Arg2:T49	
+T57	zav 399 404	Serve
+R11	zav_anaphor Arg1:T57 Arg2:T51	
+T40	anaphor 102 109	chicken
+T44	anaphor 171 177	butter
+T45	anaphor 199 206	vinegar
+T46	anaphor 211 220	hot sauce
+T47	anaphor 237 241	salt
+T48	anaphor 246 252	pepper
+T49	anaphor 270 284	cooked chicken
+T50	anaphor 288 293	sauce
+T51	anaphor 340 349	the wings
+T38	anaphor 360 369	the sauce
+R12	zav_anaphor Arg1:T57 Arg2:T38	

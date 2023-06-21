@@ -1,0 +1,21 @@
+T1	AC 3 7	Wrap
+T2	FOOD 8 26	1/2 slice of bacon
+T3	FOOD 34 55	each piece of hot dog
+T4	AC 60 66	Secure
+T5	FOOD 67 76	the bacon
+T6	TOOL 82 93	a toothpick
+T7	AC 98 103	Place
+T8	FOOD 104 112	hot dogs
+T9	FOOD 118 131	a slow cooker
+T10	TEMPERATURE 135 143	low heat
+T11	AC 148 152	Pour
+T12	FOOD 153 164	brown sugar
+T13	FOOD 170 178	hot dogs
+T14	AC 184 188	cook
+T15	DUR 193 205	5 to 6 hours
+T16	CONDITION_CLAUSE 207 232	until the bacon is cooked
+T24	zav 184 188	cook
+R1	zav_anaphor Arg1:T24 Arg2:T23	
+R2	zav_anaphor Arg1:T24 Arg2:T22	
+T22	anaphor 153 164	brown sugar
+T23	anaphor 170 178	hot dogs

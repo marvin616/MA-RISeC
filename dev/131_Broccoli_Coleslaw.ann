@@ -1,0 +1,39 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 19 26	combine
+T3	FOOD 27 30	oil
+T4	FOOD 32 39	vinegar
+T5	FOOD 41 46	sugar
+T6	FOOD 51 94	the seasoning packet from the ramen noodles
+T8	AC 99 102	Mix
+T9	AC 112 123	refrigerate
+T10	DUR 124 141	at least one hour
+T11	CONDITION_CLAUSE 142 156	before serving
+T12	DUR 161 170	overnight
+T13	TOOL 178 190	a large bowl
+T14	AC 191 198	combine
+T15	FOOD 199 207	broccoli
+T16	FOOD 209 216	carrots
+T17	FOOD 218 230	green onions
+T18	FOOD 235 250	sunflower seeds
+T19	AC 255 260	Crush
+T20	FOOD 261 274	ramen noodles
+T21	AC 279 286	stir in
+T22	AC 291 295	Pour
+T23	FOOD 310 315	salad
+T24	FOOD 296 304	dressing
+T25	DUR 322 332	10 minutes
+T26	CONDITION_CLAUSE 333 347	before serving
+T7	zav 99 102	Mix
+R1	zav_anaphor Arg1:T7 Arg2:T30	
+R2	zav_anaphor Arg1:T7 Arg2:T29	
+R3	zav_anaphor Arg1:T7 Arg2:T28	
+R4	zav_anaphor Arg1:T7 Arg2:T27	
+T31	zav 112 123	refrigerate
+R5	zav_zav Arg1:T31 Arg2:T7	
+T32	zav 279 286	stir in
+R6	zav_anaphor Arg1:T32 Arg2:T33	
+T27	anaphor 27 30	oil
+T28	anaphor 32 39	vinegar
+T29	anaphor 41 46	sugar
+T30	anaphor 51 94	the seasoning packet from the ramen noodles
+T33	anaphor 261 274	ramen noodles

@@ -1,0 +1,31 @@
+T1	AC 3 7	Fill
+T2	TOOL 8 26	sterile containers
+T3	FOOD 32 38	garlic
+T4	FOOD 40 58	chopped fresh dill
+T5	FOOD 63 77	cayenne pepper
+T6	OTHER 81 106	within an inch of the top
+T7	AC 111 114	Mix
+T8	FOOD 115 142	the distilled white vinegar
+T9	FOOD 147 151	salt
+T10	TOOL 155 172	a medium saucepan
+T11	AC 188 192	boil
+T12	AC 197 201	Pour
+T13	FOOD 202 250	the hot distilled white vinegar and salt mixture
+T14	TOOL 256 294	the containers with the garlic mixture
+T15	AC 299 303	Fill
+T16	OTHER 307 342	approximately 1/4 inch from the top
+T17	AC 347 351	Seal
+T18	AC 356 361	store
+T19	TOOL 365 381	the refrigerator
+T26	zav 188 192	boil
+R1	zav_anaphor Arg1:T26 Arg2:T23	
+R2	zav_anaphor Arg1:T26 Arg2:T24	
+T27	zav 299 303	Fill
+R3	zav_anaphor Arg1:T27 Arg2:T25	
+T28	zav 347 351	Seal
+R4	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 356 361	store
+R5	zav_zav Arg1:T29 Arg2:T28	
+T23	anaphor 115 142	the distilled white vinegar
+T24	anaphor 147 151	salt
+T25	anaphor 202 250	the hot distilled white vinegar and salt mixture

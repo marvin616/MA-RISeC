@@ -1,0 +1,82 @@
+T1	AC 3 8	Place
+T2	FOOD 9 24	frozen burritos
+T3	TOOL 28 55	a greased 13-in baking dish
+T4	AC 57 66	set aside
+T5	TOOL 74 84	a saucepan
+T6	AC 86 90	melt
+T7	FOOD 91 97	butter
+T8	AC 102 109	Stir in
+T9	FOOD 110 115	flour
+T10	CONDITION_CLAUSE 116 128	until smooth
+T11	AC 140 147	stir in
+T12	FOOD 148 153	water
+T13	AC 169 173	boil
+T14	AC 175 179	cook
+T15	AC 184 188	stir
+T16	DUR 193 202	2 minutes
+T17	CONDITION_CLAUSE 206 221	until thickened
+T18	AC 226 229	Add
+T19	FOOD 230 246	the tomato sauce
+T20	FOOD 248 260	chili powder
+T21	FOOD 262 270	bouillon
+T22	FOOD 272 277	cumin
+T23	FOOD 282 286	salt
+T24	AC 291 297	Simmer
+T25	DUR 314 323	5 minutes
+T26	CONDITION_CLAUSE 327 342	until thickened
+T27	AC 347 351	Pour
+T28	FOOD 357 369	the burritos
+T29	AC 374 382	Sprinkle
+T30	FOOD 388 394	cheese
+T31	FOOD 396 402	olives
+T32	FOOD 418 424	onions
+T33	AC 429 433	Bake
+T34	TEMPERATURE 449 462	350 degrees F
+T35	DUR 467 480	35-40 minutes
+T36	CONDITION_CLAUSE 484 504	until heated through
+T50	zav 57 66	set aside
+R1	zav_anaphor Arg1:T50 Arg2:T37	
+T51	zav 102 109	Stir in
+R2	zav_anaphor Arg1:T51 Arg2:T38	
+T52	zav 140 147	stir in
+R3	zav_zav Arg1:T52 Arg2:T51	
+R4	zav_anaphor Arg1:T52 Arg2:T39	
+T53	zav 169 173	boil
+R5	zav_anaphor Arg1:T53 Arg2:T40	
+R6	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 175 179	cook
+R7	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 184 188	stir
+R8	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 226 229	Add
+R9	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 291 297	Simmer
+R10	zav_zav Arg1:T57 Arg2:T56	
+R11	zav_anaphor Arg1:T57 Arg2:T41	
+R12	zav_anaphor Arg1:T57 Arg2:T42	
+R13	zav_anaphor Arg1:T57 Arg2:T43	
+R14	zav_anaphor Arg1:T57 Arg2:T44	
+R15	zav_anaphor Arg1:T57 Arg2:T45	
+T58	zav 347 351	Pour
+R16	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 374 382	Sprinkle
+R17	zav_zav Arg1:T59 Arg2:T58	
+R18	zav_anaphor Arg1:T59 Arg2:T46	
+T60	zav 429 433	Bake
+R19	zav_zav Arg1:T60 Arg2:T59	
+R20	zav_anaphor Arg1:T60 Arg2:T47	
+R21	zav_anaphor Arg1:T60 Arg2:T48	
+R22	zav_anaphor Arg1:T60 Arg2:T49	
+T37	anaphor 9 24	frozen burritos
+T38	anaphor 91 97	butter
+T39	anaphor 110 115	flour
+T40	anaphor 148 153	water
+T41	anaphor 230 246	the tomato sauce
+T42	anaphor 248 260	chili powder
+T43	anaphor 262 270	bouillon
+T44	anaphor 272 277	cumin
+T45	anaphor 282 286	salt
+T46	anaphor 357 369	the burritos
+T47	anaphor 388 394	cheese
+T48	anaphor 396 402	olives
+T49	anaphor 418 424	onions

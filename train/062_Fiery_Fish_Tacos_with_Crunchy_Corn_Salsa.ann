@@ -1,0 +1,57 @@
+T1	AC 3 10	Preheat
+T2	AC 53 56	mix
+T3	AC 174 181	combine
+T4	AC 232 237	Brush
+T5	AC 295 302	Arrange
+T6	AC 331 335	cook
+T7	AC 389 392	top
+T8	TOOL 11 16	grill
+T9	TEMPERATURE 21 30	high heat
+T10	TOOL 38 51	a medium bowl
+T11	FOOD 66 70	corn
+T12	FOOD 72 81	red onion
+T13	FOOD 83 89	jicama
+T14	FOOD 91 106	red bell pepper
+T15	FOOD 112 120	cilantro
+T16	FOOD 133 143	lime juice
+T17	FOOD 148 152	zest
+T18	FOOD 182 196	cayenne pepper
+T19	FOOD 198 217	ground black pepper
+T20	FOOD 223 227	salt
+T21	TOOL 160 172	a small bowl
+T22	FOOD 255 264	olive oil
+T23	FOOD 303 310	fillets
+T24	TOOL 314 325	grill grate
+T25	DUR 340 349	3 minutes
+T26	FOOD 417 421	fish
+T27	FOOD 423 433	sour cream
+T28	FOOD 439 449	corn salsa
+T29	FOOD 284 290	spices
+T30	AC 270 278	sprinkle
+T31	AC 125 132	Stir in
+T32	FOOD 238 249	each fillet
+T33	OTHER 350 358	per side
+T34	FOOD 393 411	two corn tortillas
+T35	FOOD 363 387	For each fiery fish taco
+T55	zav 125 132	Stir in
+R1	zav_anaphor Arg1:T55 Arg2:T36	
+R2	zav_anaphor Arg1:T55 Arg2:T37	
+R3	zav_anaphor Arg1:T55 Arg2:T38	
+R4	zav_anaphor Arg1:T55 Arg2:T39	
+R5	zav_anaphor Arg1:T55 Arg2:T40	
+T56	zav 270 278	sprinkle
+R6	zav_anaphor Arg1:T56 Arg2:T46	
+R7	zav_anaphor Arg1:T56 Arg2:T52	
+T57	zav 331 335	cook
+R8	zav_anaphor Arg1:T57 Arg2:T47	
+T58	zav 389 392	top
+R9	zav_anaphor Arg1:T58 Arg2:T54	
+T36	anaphor 66 70	corn
+T37	anaphor 72 81	red onion
+T38	anaphor 83 89	jicama
+T39	anaphor 91 106	red bell pepper
+T40	anaphor 112 120	cilantro
+T46	anaphor 255 264	olive oil
+T47	anaphor 303 310	fillets
+T52	anaphor 238 249	each fillet
+T54	anaphor 363 387	For each fiery fish taco

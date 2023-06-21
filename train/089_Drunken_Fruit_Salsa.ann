@@ -1,0 +1,27 @@
+T1	AC 3 7	Stir
+T2	FOOD 17 22	mango
+T3	FOOD 24 36	strawberries
+T4	FOOD 38 42	kiwi
+T5	FOOD 44 52	jalapeno
+T6	FOOD 54 58	mint
+T7	FOOD 64 67	rum
+T8	TOOL 71 83	a glass bowl
+T9	AC 88 99	Refrigerate
+T10	DUR 104 116	1 to 3 hours
+T11	AC 118 126	stirring
+T12	OTHER 127 140	once or twice
+T19	zav 88 99	Refrigerate
+R1	zav_anaphor Arg1:T19 Arg2:T13	
+R2	zav_anaphor Arg1:T19 Arg2:T14	
+R3	zav_anaphor Arg1:T19 Arg2:T15	
+R4	zav_anaphor Arg1:T19 Arg2:T16	
+R5	zav_anaphor Arg1:T19 Arg2:T17	
+R6	zav_anaphor Arg1:T19 Arg2:T18	
+T20	zav 118 126	stirring
+R7	zav_zav Arg1:T20 Arg2:T19	
+T13	anaphor 17 22	mango
+T14	anaphor 24 36	strawberries
+T15	anaphor 38 42	kiwi
+T16	anaphor 44 52	jalapeno
+T17	anaphor 54 58	mint
+T18	anaphor 64 67	rum

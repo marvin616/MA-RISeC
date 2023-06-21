@@ -1,0 +1,202 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 85	2 (9 inch) pans
+T8	AC 90 94	Sift
+T9	FOOD 104 113	the flour
+T10	FOOD 115 126	baking soda
+T11	FOOD 131 135	salt
+T12	AC 140 149	Set aside
+T13	AC 185 189	heat
+T14	FOOD 190 208	6 ounces chocolate
+T15	AC 210 218	stirring
+T16	CONDITION_CLAUSE 233 269	until chocolate is melted and smooth
+T17	TOOL 157 183	the top of a double boiler
+T18	AC 274 280	Remove
+T19	OTHER 286 290	heat
+T20	AC 304 308	cool
+T21	TEMPERATURE 312 320	lukewarm
+T22	TOOL 328 340	a large bowl
+T23	AC 342 347	cream
+T24	FOOD 357 367	the butter
+T25	FOOD 372 383	brown sugar
+T26	CONDITION_CLAUSE 384 406	until light and fluffy
+T27	AC 411 418	Beat in
+T28	FOOD 419 427	the eggs
+T29	AC 448 455	stir in
+T30	FOOD 456 478	1 1/2 teaspoon vanilla
+T31	AC 483 490	Stir in
+T32	FOOD 491 511	the melted chocolate
+T33	AC 517 524	Beat in
+T34	FOOD 525 542	the flour mixture
+T35	FOOD 560 574	the sour cream
+T36	AC 580 587	Stir in
+T37	FOOD 588 601	boiling water
+T38	PURPOSE_CLAUSE 603 622	batter will be thin
+T39	AC 629 633	Pour
+T40	FOOD 634 640	batter
+T41	TOOL 646 659	prepared pans
+T42	AC 665 669	Bake
+T43	TOOL 673 691	the preheated oven
+T44	DUR 696 712	35 to 40 minutes
+T45	CONDITION_CLAUSE 717 787	until a toothpick inserted into the center of the cake comes out clean
+T46	AC 797 801	cool
+T47	TOOL 805 808	pan
+T48	DUR 813 823	10 minutes
+T49	TOOL 844 855	a wire rack
+T50	AC 860 864	cool
+T51	AC 830 838	turn out
+T52	TOOL 925 951	the top of a double boiler
+T53	AC 953 957	heat
+T54	FOOD 958 976	6 ounces chocolate
+T55	AC 978 986	stirring
+T56	CONDITION_CLAUSE 1001 1037	until chocolate is melted and smooth
+T57	TOOL 1046 1058	a large bowl
+T58	AC 1060 1064	whip
+T59	FOOD 1065 1075	the butter
+T60	DUR 1086 1096	10 minutes
+T61	CONDITION_CLAUSE 1097 1121	until it is super fluffy
+T62	AC 1123 1130	beat in
+T63	FOOD 1131 1139	egg yolk
+T64	AC 1155 1163	blend in
+T65	FOOD 1164 1188	the confectioners' sugar
+T66	AC 1259 1267	blend in
+T67	FOOD 1268 1288	the melted chocolate
+T68	AC 1190 1201	alternating
+T69	FOOD 1207 1228	2 tablespoons vanilla
+T70	FOOD 1233 1252	2 tablespoons cream
+T71	AC 1294 1301	Beat in
+T72	FOOD 1302 1327	the softened cream cheese
+T73	TOOL 1354 1370	a large saucepan
+T74	AC 1372 1379	combine
+T75	FOOD 1380 1395	chocolate chips
+T76	FOOD 1400 1417	1 cup heavy cream
+T77	AC 1423 1427	Heat
+T78	AC 1429 1437	stirring
+T79	CONDITION_CLAUSE 1450 1486	until chocolate is melted and smooth
+T80	AC 1492 1498	Remove
+T81	OTHER 1504 1508	heat
+T82	AC 1513 1522	set aside
+T83	CONDITION_CLAUSE 1547 1577	When cake is completely cooled
+T84	AC 1579 1584	cover
+T85	FOOD 1585 1606	the bottom cake layer
+T86	FOOD 1620 1627	ganache
+T87	AC 1644 1655	Refrigerate
+T88	DUR 1660 1669	5 minutes
+T89	CONDITION_CLAUSE 1674 1695	until ganache has set
+T90	AC 1701 1707	Spread
+T91	FOOD 1708 1716	frosting
+T92	FOOD 1722 1733	the ganache
+T93	AC 1739 1744	Cover
+T94	FOOD 1750 1767	top layer of cake
+T95	FOOD 1798 1809	buttercream
+T96	AC 1815 1822	garnish
+T97	FOOD 1828 1840	more ganache
+T98	FOOD 1779 1792	top and sides
+T99	AC 1773 1778	Frost
+T100	OTHER 428 441	one at a time
+T101	PURPOSE_CLAUSE 881 920	Make the Chocolate Buttercream Frosting
+T102	PURPOSE_CLAUSE 1333 1349	Make the Ganache
+T103	PURPOSE_CLAUSE 1528 1545	Assemble the cake
+T135	zav 140 149	Set aside
+R1	zav_anaphor Arg1:T135 Arg2:T104	
+R2	zav_anaphor Arg1:T135 Arg2:T105	
+R3	zav_anaphor Arg1:T135 Arg2:T106	
+T136	zav 210 218	stirring
+R4	zav_anaphor Arg1:T136 Arg2:T107	
+T137	zav 274 280	Remove
+R5	zav_zav Arg1:T137 Arg2:T136	
+T138	zav 304 308	cool
+R6	zav_zav Arg1:T138 Arg2:T137	
+T139	zav 411 418	Beat in
+R7	zav_anaphor Arg1:T139 Arg2:T108	
+R8	zav_anaphor Arg1:T139 Arg2:T109	
+T140	zav 448 455	stir in
+R9	zav_anaphor Arg1:T140 Arg2:T110	
+R10	zav_zav Arg1:T140 Arg2:T139	
+T141	zav 483 490	Stir in
+R11	zav_zav Arg1:T141 Arg2:T140	
+R12	zav_anaphor Arg1:T141 Arg2:T111	
+T142	zav 517 524	Beat in
+R13	zav_zav Arg1:T142 Arg2:T141	
+R14	zav_anaphor Arg1:T142 Arg2:T112	
+T143	zav 580 587	Stir in
+R15	zav_zav Arg1:T143 Arg2:T142	
+R16	zav_anaphor Arg1:T143 Arg2:T113	
+R17	zav_anaphor Arg1:T143 Arg2:T114	
+T144	zav 665 669	Bake
+R18	zav_anaphor Arg1:T144 Arg2:T116	
+T145	zav 797 801	cool
+R19	zav_zav Arg1:T145 Arg2:T144	
+T146	zav 830 838	turn out
+R20	zav_zav Arg1:T146 Arg2:T145	
+T147	zav 860 864	cool
+R21	zav_zav Arg1:T147 Arg2:T146	
+T148	zav 978 986	stirring
+R22	zav_anaphor Arg1:T148 Arg2:T117	
+T149	zav 1123 1130	beat in
+R23	zav_anaphor Arg1:T149 Arg2:T118	
+T150	zav 1155 1163	blend in
+R24	zav_zav Arg1:T150 Arg2:T149	
+R25	zav_anaphor Arg1:T150 Arg2:T119	
+T151	zav 1259 1267	blend in
+R26	zav_zav Arg1:T151 Arg2:T150	
+R27	zav_anaphor Arg1:T151 Arg2:T120	
+R28	zav_anaphor Arg1:T151 Arg2:T122	
+R29	zav_anaphor Arg1:T151 Arg2:T123	
+T152	zav 1294 1301	Beat in
+R30	zav_zav Arg1:T152 Arg2:T151	
+R31	zav_anaphor Arg1:T152 Arg2:T121	
+T153	zav 1423 1427	Heat
+R32	zav_anaphor Arg1:T153 Arg2:T125	
+R33	zav_anaphor Arg1:T153 Arg2:T126	
+T154	zav 1429 1437	stirring
+R34	zav_zav Arg1:T154 Arg2:T153	
+T155	zav 1492 1498	Remove
+R35	zav_zav Arg1:T155 Arg2:T154	
+T156	zav 1513 1522	set aside
+R36	zav_zav Arg1:T156 Arg2:T155	
+T157	zav 1644 1655	Refrigerate
+R37	zav_anaphor Arg1:T157 Arg2:T127	
+R38	zav_anaphor Arg1:T157 Arg2:T128	
+T158	zav 1739 1744	Cover
+R39	zav_anaphor Arg1:T158 Arg2:T129	
+R40	zav_anaphor Arg1:T158 Arg2:T130	
+T159	zav 1815 1822	garnish
+R41	zav_anaphor Arg1:T159 Arg2:T132	
+R42	zav_anaphor Arg1:T159 Arg2:T134	
+T160	zav 1773 1778	Frost
+R43	zav_zav Arg1:T160 Arg2:T158	
+R44	zav_anaphor Arg1:T160 Arg2:T131	
+R45	zav_zav Arg1:T159 Arg2:T160	
+T104	anaphor 104 113	the flour
+T105	anaphor 115 126	baking soda
+T106	anaphor 131 135	salt
+T107	anaphor 190 208	6 ounces chocolate
+T108	anaphor 357 367	the butter
+T109	anaphor 372 383	brown sugar
+T110	anaphor 419 427	the eggs
+T111	anaphor 456 478	1 1/2 teaspoon vanilla
+T112	anaphor 491 511	the melted chocolate
+T113	anaphor 525 542	the flour mixture
+T114	anaphor 560 574	the sour cream
+T116	anaphor 634 640	batter
+T117	anaphor 958 976	6 ounces chocolate
+T118	anaphor 1065 1075	the butter
+T119	anaphor 1131 1139	egg yolk
+T120	anaphor 1164 1188	the confectioners' sugar
+T121	anaphor 1268 1288	the melted chocolate
+T122	anaphor 1207 1228	2 tablespoons vanilla
+T123	anaphor 1233 1252	2 tablespoons cream
+T125	anaphor 1380 1395	chocolate chips
+T126	anaphor 1400 1417	1 cup heavy cream
+T127	anaphor 1585 1606	the bottom cake layer
+T128	anaphor 1620 1627	ganache
+T129	anaphor 1708 1716	frosting
+T130	anaphor 1722 1733	the ganache
+T131	anaphor 1750 1767	top layer of cake
+T132	anaphor 1798 1809	buttercream
+T134	anaphor 1779 1792	top and sides

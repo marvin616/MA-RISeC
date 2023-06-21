@@ -1,0 +1,78 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 32	crushed cookie crumbs
+T3	FOOD 34 40	pecans
+T4	FOOD 46 52	butter
+T5	FOOD 56 65	margarine
+T6	AC 70 75	Press
+T7	TOOL 81 98	a 9 x 13 inch pan
+T8	AC 103 107	Bake
+T9	TEMPERATURE 111 124	375 degrees F
+T10	TEMPERATURE 126 139	190 degrees C
+T11	DUR 145 154	5 minutes
+T12	AC 159 163	Cool
+T13	AC 168 175	Combine
+T14	FOOD 176 191	chocolate chips
+T15	FOOD 193 203	1 cup milk
+T16	FOOD 209 228	2 cups marshmallows
+T17	TOOL 232 243	a sauce pan
+T18	AC 248 252	Stir
+T19	TEMPERATURE 258 266	low heat
+T20	CONDITION_CLAUSE 267 279	until melted
+T21	AC 284 288	Pour
+T22	FOOD 294 306	cooled crust
+T23	AC 311 316	Chill
+T24	DUR 321 327	1 hour
+T25	AC 332 339	Arrange
+T26	FOOD 340 353	banana slices
+T27	FOOD 359 382	chilled chocolate layer
+T28	AC 388 395	Prepare
+T29	FOOD 396 407	pudding mix
+T30	AC 463 470	Fold in
+T31	FOOD 471 495	nondairy whipped topping
+T32	FOOD 500 522	remaining marshmallows
+T33	AC 528 532	Pour
+T34	FOOD 533 548	pudding mixture
+T35	FOOD 554 561	bananas
+T36	AC 567 572	Grate
+T37	FOOD 573 586	chocolate bar
+T38	FOOD 592 599	the top
+T39	AC 605 610	Chill
+T40	DUR 615 627	2 to 3 hours
+T41	CONDITION_CLAUSE 628 642	before serving
+T42	OTHER 408 426	as directed on box
+T60	zav 70 75	Press
+R1	zav_anaphor Arg1:T60 Arg2:T43	
+R2	zav_anaphor Arg1:T60 Arg2:T44	
+R3	zav_anaphor Arg1:T60 Arg2:T45	
+R4	zav_anaphor Arg1:T60 Arg2:T46	
+T61	zav 103 107	Bake
+R5	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 159 163	Cool
+R6	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 248 252	Stir
+R7	zav_anaphor Arg1:T63 Arg2:T47	
+R8	zav_anaphor Arg1:T63 Arg2:T48	
+R9	zav_anaphor Arg1:T63 Arg2:T49	
+T64	zav 284 288	Pour
+R10	zav_zav Arg1:T64 Arg2:T63	
+T65	zav 311 316	Chill
+R11	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 463 470	Fold in
+R12	zav_anaphor Arg1:T66 Arg2:T67	
+T68	zav 567 572	Grate
+R13	zav_anaphor Arg1:T68 Arg2:T56	
+R14	zav_anaphor Arg1:T68 Arg2:T57	
+T69	zav 605 610	Chill
+R15	zav_anaphor Arg1:T69 Arg2:T58	
+R16	zav_zav Arg1:T69 Arg2:T68	
+T43	anaphor 11 32	crushed cookie crumbs
+T44	anaphor 34 40	pecans
+T45	anaphor 46 52	butter
+T46	anaphor 56 65	margarine
+T47	anaphor 176 191	chocolate chips
+T48	anaphor 193 203	1 cup milk
+T49	anaphor 209 228	2 cups marshmallows
+T56	anaphor 533 548	pudding mixture
+T57	anaphor 554 561	bananas
+T58	anaphor 573 586	chocolate bar
+T67	anaphor 443 457	3 cups of milk

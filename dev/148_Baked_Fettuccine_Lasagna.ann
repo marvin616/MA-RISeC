@@ -1,0 +1,106 @@
+T1	FOOD 9 44	a large pot of lightly salted water
+T2	AC 50 54	boil
+T3	AC 59 63	Cook
+T4	FOOD 64 69	pasta
+T5	DUR 74 89	8 to 10 minutes
+T6	CONDITION_CLAUSE 94 108	until al dente
+T7	AC 110 115	drain
+T8	TOOL 123 138	a large skillet
+T9	AC 140 145	brown
+T10	FOOD 146 150	beef
+T11	TEMPERATURE 156 167	medium heat
+T12	AC 172 177	Drain
+T13	TOOL 187 190	pan
+T14	OTHER 178 181	fat
+T15	AC 196 204	transfer
+T16	FOOD 205 209	meat
+T17	TOOL 213 219	a bowl
+T18	TOOL 227 243	the same skillet
+T19	AC 245 249	cook
+T20	FOOD 250 255	onion
+T21	FOOD 260 271	bell pepper
+T22	FOOD 275 281	butter
+T23	CONDITION_CLAUSE 282 294	until tender
+T24	AC 299 306	Stir in
+T25	FOOD 307 315	tomatoes
+T26	FOOD 317 326	mushrooms
+T27	FOOD 328 334	olives
+T28	FOOD 341 345	beef
+T29	AC 351 357	season
+T30	FOOD 363 370	oregano
+T31	AC 375 381	Simmer
+T32	DUR 386 396	10 minutes
+T33	AC 401 408	Preheat
+T34	TEMPERATURE 417 430	350 degrees F
+T35	TEMPERATURE 432 445	175 degrees C
+T36	AC 459 465	grease
+T37	TOOL 466 489	a 9x13 inch baking dish
+T38	AC 495 502	Arrange
+T39	FOOD 503 532	half of the cooked fettuccine
+T40	TOOL 536 553	the prepared dish
+T41	AC 555 558	top
+T42	FOOD 564 602	half of the beef and vegetable mixture
+T43	AC 608 616	sprinkle
+T44	FOOD 622 647	1/2 cup of Cheddar cheese
+T45	FOOD 652 680	1/2 cup of mozzarella cheese
+T46	AC 686 692	Repeat
+T47	FOOD 693 699	layers
+T48	AC 705 708	Mix
+T49	FOOD 718 722	soup
+T50	FOOD 727 737	beef broth
+T51	CONDITION_CLAUSE 738 750	until smooth
+T52	AC 756 760	pour
+T53	FOOD 766 775	casserole
+T54	AC 781 789	Sprinkle
+T55	FOOD 795 810	Parmesan cheese
+T56	AC 816 820	Bake
+T57	TOOL 824 838	preheated oven
+T58	DUR 843 859	30 to 35 minutes
+T59	CONDITION_CLAUSE 864 884	until heated through
+T60	TOOL 409 413	oven
+T82	zav 110 115	drain
+R1	zav_anaphor Arg1:T82 Arg2:T62	
+T83	zav 299 306	Stir in
+R2	zav_anaphor Arg1:T83 Arg2:T65	
+T84	zav 245 249	cook
+R3	zav_anaphor Arg1:T84 Arg2:T63	
+R4	zav_zav Arg1:T83 Arg2:T84	
+R5	zav_anaphor Arg1:T83 Arg2:T66	
+R6	zav_anaphor Arg1:T83 Arg2:T67	
+T85	zav 375 381	Simmer
+T86	zav 351 357	season
+R7	zav_zav Arg1:T86 Arg2:T83	
+R8	zav_anaphor Arg1:T86 Arg2:T68	
+R9	zav_anaphor Arg1:T86 Arg2:T69	
+R10	zav_anaphor Arg1:T86 Arg2:T70	
+R11	zav_anaphor Arg1:T86 Arg2:T71	
+R12	zav_zav Arg1:T85 Arg2:T86	
+R13	zav_anaphor Arg1:T85 Arg2:T72	
+T87	zav 555 558	top
+R14	zav_anaphor Arg1:T87 Arg2:T73	
+T88	zav 608 616	sprinkle
+R15	zav_anaphor Arg1:T88 Arg2:T74	
+R16	zav_zav Arg1:T88 Arg2:T87	
+T89	zav 756 760	pour
+R17	zav_anaphor Arg1:T89 Arg2:T79	
+R18	zav_anaphor Arg1:T89 Arg2:T78	
+T90	zav 781 789	Sprinkle
+R19	zav_zav Arg1:T90 Arg2:T89	
+T91	zav 816 820	Bake
+R20	zav_zav Arg1:T91 Arg2:T90	
+R21	zav_anaphor Arg1:T91 Arg2:T81	
+T62	anaphor 64 69	pasta
+T63	anaphor 146 150	beef
+T65	anaphor 250 255	onion
+T66	anaphor 260 271	bell pepper
+T67	anaphor 275 281	butter
+T68	anaphor 307 315	tomatoes
+T69	anaphor 317 326	mushrooms
+T70	anaphor 328 334	olives
+T71	anaphor 341 345	beef
+T72	anaphor 363 370	oregano
+T73	anaphor 503 532	half of the cooked fettuccine
+T74	anaphor 564 602	half of the beef and vegetable mixture
+T78	anaphor 718 722	soup
+T79	anaphor 727 737	beef broth
+T81	anaphor 795 810	Parmesan cheese

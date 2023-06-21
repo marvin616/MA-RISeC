@@ -1,0 +1,46 @@
+T1	TOOL 6 24	a 1 pint glass jar
+T2	AC 36 43	combine
+T3	FOOD 44 54	the garlic
+T4	FOOD 56 62	ginger
+T5	FOOD 64 73	olive oil
+T6	FOOD 75 87	rice vinegar
+T7	FOOD 89 98	soy sauce
+T8	FOOD 100 105	honey
+T9	FOOD 111 116	water
+T10	AC 121 126	Cover
+T11	TOOL 127 134	the jar
+T12	TOOL 140 159	a tight fitting lid
+T13	AC 165 170	shake
+T14	AC 180 186	Remove
+T15	TOOL 187 190	lid
+T16	AC 196 200	heat
+T17	TOOL 201 204	jar
+T18	TOOL 208 221	the microwave
+T19	DUR 226 234	1 minute
+T20	PURPOSE_CLAUSE 240 261	to dissolve the honey
+T22	AC 270 274	cool
+T23	AC 280 285	shake
+T25	AC 310 315	Store
+T27	TOOL 327 343	the refrigerator
+T24	CONDITION_CLAUSE 291 305	before serving
+T21	zav 165 170	shake
+T28	zav 270 274	cool
+T36	zav 280 285	shake
+T37	zav 310 315	Store
+R1	zav_anaphor Arg1:T21 Arg2:T29	
+R2	zav_anaphor Arg1:T21 Arg2:T30	
+R3	zav_anaphor Arg1:T21 Arg2:T31	
+R4	zav_anaphor Arg1:T21 Arg2:T32	
+R5	zav_anaphor Arg1:T21 Arg2:T33	
+R6	zav_anaphor Arg1:T21 Arg2:T34	
+R7	zav_anaphor Arg1:T21 Arg2:T35	
+R10	zav_zav Arg1:T36 Arg2:T28	
+R11	zav_zav Arg1:T37 Arg2:T36	
+R8	zav_zav Arg1:T28 Arg2:T21	
+T29	anaphor 44 54	the garlic
+T30	anaphor 56 62	ginger
+T31	anaphor 64 73	olive oil
+T32	anaphor 75 87	rice vinegar
+T33	anaphor 89 98	soy sauce
+T34	anaphor 100 105	honey
+T35	anaphor 111 116	water

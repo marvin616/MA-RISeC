@@ -1,0 +1,31 @@
+T1	AC 3 8	Place
+T2	FOOD 9 14	sugar
+T3	FOOD 16 21	water
+T4	FOOD 26 39	pandan leaves
+T5	TOOL 43 58	a deep saucepan
+T8	OTHER 80 90	lower heat
+T9	AC 95 101	simmer
+T10	CONDITION_CLAUSE 102 126	until sugar is dissolved
+T11	AC 131 137	Remove
+T12	FOOD 138 151	pandan leaves
+T13	AC 156 162	strain
+T14	FOOD 163 172	the syrup
+T17	AC 186 190	cool
+T18	AC 220 225	Store
+T19	FOOD 226 235	the syrup
+T20	TOOL 239 247	a bottle
+T21	TOOL 251 267	the refrigerator
+T6	AC 74 78	boil
+T7	PURPOSE_CLAUSE 191 215	for use as a basic syrup
+T15	zav 74 78	boil
+R1	zav_anaphor Arg1:T15 Arg2:T16	
+R2	zav_anaphor Arg1:T15 Arg2:T22	
+R3	zav_anaphor Arg1:T15 Arg2:T23	
+T24	zav 95 101	simmer
+R4	zav_zav Arg1:T24 Arg2:T15	
+T25	zav 186 190	cool
+R5	zav_anaphor Arg1:T25 Arg2:T26	
+T16	anaphor 9 14	sugar
+T22	anaphor 16 21	water
+T23	anaphor 26 39	pandan leaves
+T26	anaphor 163 172	the syrup

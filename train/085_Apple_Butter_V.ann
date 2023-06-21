@@ -1,0 +1,58 @@
+T1	AC 3 8	Place
+T2	AC 40 47	Pour in
+T3	AC 82 86	cook
+T4	AC 132 137	Press
+T5	AC 383 387	Cook
+T6	AC 438 449	Refrigerate
+T7	FOOD 48 57	the cider
+T8	FOOD 9 19	the apples
+T9	TOOL 23 35	a Dutch oven
+T10	TEMPERATURE 90 101	medium heat
+T11	DUR 102 112	30 minutes
+T12	FOOD 138 158	the softened mixture
+T13	TOOL 167 178	a food mill
+T14	TEMPERATURE 203 216	a medium boil
+T15	DUR 221 231	30 minutes
+T16	AC 233 241	stirring
+T17	FOOD 266 275	the sugar
+T18	FOOD 277 285	cinnamon
+T19	FOOD 290 296	cloves
+T20	TEMPERATURE 323 331	low heat
+T21	AC 359 367	stirring
+T22	FOOD 450 475	the finished apple butter
+T23	TOOL 479 497	sterile containers
+T24	CONDITION_CLAUSE 117 127	until soft
+T25	CONDITION_CLAUSE 388 433	until the desired thickness has been attained
+T26	CONDITION_CLAUSE 332 357	until the sugar dissolves
+T27	AC 73 77	boil
+T28	AC 192 199	cooking
+T29	AC 310 317	cooking
+T30	AC 259 265	Mix in
+T38	zav 40 47	Pour in
+R1	zav_anaphor Arg1:T38 Arg2:T32	
+T39	zav 73 77	boil
+R2	zav_zav Arg1:T39 Arg2:T38	
+R3	zav_anaphor Arg1:T39 Arg2:T31	
+T40	zav 82 86	cook
+R4	zav_zav Arg1:T40 Arg2:T39	
+T41	zav 192 199	cooking
+R5	zav_anaphor Arg1:T41 Arg2:T33	
+T42	zav 233 241	stirring
+R6	zav_zav Arg1:T42 Arg2:T41	
+T43	zav 259 265	Mix in
+R7	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 310 317	cooking
+R8	zav_zav Arg1:T44 Arg2:T43	
+R9	zav_anaphor Arg1:T44 Arg2:T34	
+R10	zav_anaphor Arg1:T44 Arg2:T35	
+R11	zav_anaphor Arg1:T44 Arg2:T36	
+T45	zav 359 367	stirring
+R12	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 383 387	Cook
+R13	zav_zav Arg1:T46 Arg2:T45	
+T31	anaphor 48 57	the cider
+T32	anaphor 9 19	the apples
+T33	anaphor 138 158	the softened mixture
+T34	anaphor 266 275	the sugar
+T35	anaphor 277 285	cinnamon
+T36	anaphor 290 296	cloves

@@ -1,0 +1,62 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Warm
+T6	FOOD 58 61	oil
+T7	TOOL 65 72	skillet
+T8	AC 77 80	add
+T9	FOOD 81 88	chicken
+T10	FOOD 93 98	onion
+T11	AC 103 107	Cook
+T12	DUR 108 118	15 minutes
+T13	CONDITION_CLAUSE 122 166	until chicken is browned and just about done
+T14	AC 171 174	Add
+T15	FOOD 175 179	salt
+T16	FOOD 184 190	pepper
+T17	PURPOSE_CLAUSE 191 199	to taste
+T18	AC 204 209	Place
+T19	FOOD 210 217	chicken
+T20	TOOL 221 233	cookie sheet
+T21	AC 238 241	top
+T22	FOOD 242 253	each breast
+T23	FOOD 259 282	1 to 2 slices of tomato
+T24	FOOD 287 310	2 to 3 slices of cheese
+T25	AC 315 320	Place
+T26	TOOL 324 328	oven
+T27	DUR 333 349	10 to 15 minutes
+T28	CONDITION_CLAUSE 351 369	until cheese melts
+T29	AC 374 380	Remove
+T30	TOOL 386 390	oven
+T31	AC 392 395	add
+T32	FOOD 396 420	2 to 3 slices of avocado
+T33	FOOD 424 442	top of each breast
+T35	AC 448 453	serve
+T34	zav 103 107	Cook
+T39	zav 77 80	add
+R1	zav_anaphor Arg1:T39 Arg2:T36	
+R2	zav_anaphor Arg1:T34 Arg2:T37	
+R3	zav_anaphor Arg1:T34 Arg2:T38	
+R4	zav_zav Arg1:T34 Arg2:T39	
+T40	zav 171 174	Add
+R5	zav_zav Arg1:T40 Arg2:T34	
+T41	zav 315 320	Place
+R6	zav_anaphor Arg1:T41 Arg2:T42	
+R7	zav_anaphor Arg1:T41 Arg2:T43	
+R8	zav_anaphor Arg1:T41 Arg2:T44	
+T45	zav 374 380	Remove
+T46	zav 392 395	add
+T47	zav 448 453	serve
+R9	zav_zav Arg1:T45 Arg2:T41	
+R10	zav_zav Arg1:T46 Arg2:T45	
+R11	zav_zav Arg1:T47 Arg2:T46	
+R12	zav_anaphor Arg1:T47 Arg2:T48	
+R13	zav_anaphor Arg1:T47 Arg2:T49	
+T36	anaphor 58 61	oil
+T37	anaphor 81 88	chicken
+T38	anaphor 93 98	onion
+T42	anaphor 210 217	chicken
+T43	anaphor 259 282	1 to 2 slices of tomato
+T44	anaphor 287 310	2 to 3 slices of cheese
+T48	anaphor 396 420	2 to 3 slices of avocado
+T49	anaphor 424 442	top of each breast

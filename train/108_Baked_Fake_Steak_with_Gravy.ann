@@ -1,0 +1,110 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 33 48	the ground beef
+T4	FOOD 50 66	saltine crackers
+T5	FOOD 71 75	milk
+T6	AC 80 86	Season
+T7	FOOD 92 105	garlic powder
+T8	FOOD 107 119	onion powder
+T9	FOOD 121 125	salt
+T10	FOOD 130 136	pepper
+T11	AC 142 145	mix
+T12	CONDITION_CLAUSE 146 164	until well blended
+T13	AC 169 173	Line
+T14	TOOL 174 200	a 10x15 inch jellyroll pan
+T15	TOOL 206 217	waxed paper
+T16	AC 222 227	Press
+T17	FOOD 228 244	the beef mixture
+T18	TOOL 257 264	the pan
+T19	AC 269 274	Cover
+T20	TOOL 280 292	plastic wrap
+T21	AC 298 309	refrigerate
+T22	DUR 310 323	8 to 10 hours
+T23	DUR 328 337	overnight
+T24	AC 342 349	Preheat
+T25	TOOL 350 358	the oven
+T26	TEMPERATURE 362 375	350 degrees F
+T27	TEMPERATURE 377 390	175 degrees C
+T28	AC 396 402	Remove
+T29	TOOL 403 415	plastic wrap
+T30	FOOD 421 425	meat
+T31	AC 431 434	rub
+T32	FOOD 435 440	flour
+T33	FOOD 446 470	the top side of the beef
+T34	AC 475 479	Flip
+T35	TOOL 487 494	the pan
+T36	AC 557 560	Cut
+T37	TOOL 500 511	waxed paper
+T38	AC 517 520	rub
+T39	FOOD 521 526	flour
+T40	FOOD 530 544	the other side
+T41	OTHER 566 572	pieces
+T42	AC 601 605	Heat
+T43	FOOD 606 609	oil
+T44	TOOL 613 634	a large heavy skillet
+T45	TEMPERATURE 640 656	medium-high heat
+T46	AC 662 665	Fry
+T47	FOOD 666 674	the meat
+T48	CONDITION_CLAUSE 675 701	until browned on each side
+T49	AC 703 710	turning
+T50	AC 726 732	Remove
+T51	TOOL 736 759	a 9x13 inch baking dish
+T52	TOOL 768 781	a medium bowl
+T53	AC 783 786	mix
+T54	FOOD 796 805	the water
+T55	FOOD 807 821	condensed soup
+T56	FOOD 827 836	gravy mix
+T57	AC 842 846	Pour
+T58	FOOD 852 872	the meat in the dish
+T59	AC 878 883	Cover
+T60	TOOL 884 892	the dish
+T61	TOOL 906 919	aluminum foil
+T62	AC 925 929	Bake
+T63	DUR 934 940	1 hour
+T64	TOOL 944 962	the preheated oven
+T65	AC 968 973	Serve
+T66	FOOD 974 994	fake steak and gravy
+T67	FOOD 1000 1008	potatoes
+T68	FOOD 1010 1014	rice
+T69	FOOD 1019 1026	noodles
+T93	zav 80 86	Season
+R1	zav_anaphor Arg1:T93 Arg2:T70	
+R2	zav_anaphor Arg1:T93 Arg2:T71	
+R3	zav_anaphor Arg1:T93 Arg2:T72	
+T94	zav 142 145	mix
+R4	zav_anaphor Arg1:T94 Arg2:T76	
+R5	zav_anaphor Arg1:T94 Arg2:T75	
+R6	zav_anaphor Arg1:T94 Arg2:T74	
+R7	zav_anaphor Arg1:T94 Arg2:T73	
+R8	zav_zav Arg1:T94 Arg2:T93	
+T95	zav 269 274	Cover
+R9	zav_anaphor Arg1:T95 Arg2:T77	
+T96	zav 298 309	refrigerate
+R10	zav_zav Arg1:T96 Arg2:T95	
+T97	zav 557 560	Cut
+R11	zav_anaphor Arg1:T97 Arg2:T98	
+T99	zav 703 710	turning
+R12	zav_anaphor Arg1:T99 Arg2:T84	
+T100	zav 726 732	Remove
+R13	zav_zav Arg1:T100 Arg2:T99	
+T101	zav 842 846	Pour
+R14	zav_anaphor Arg1:T101 Arg2:T85	
+R15	zav_anaphor Arg1:T101 Arg2:T86	
+R16	zav_anaphor Arg1:T101 Arg2:T87	
+T102	zav 925 929	Bake
+R17	zav_zav Arg1:T102 Arg2:T101	
+R18	zav_anaphor Arg1:T102 Arg2:T88	
+T70	anaphor 33 48	the ground beef
+T71	anaphor 50 66	saltine crackers
+T72	anaphor 71 75	milk
+T73	anaphor 92 105	garlic powder
+T74	anaphor 107 119	onion powder
+T75	anaphor 121 125	salt
+T76	anaphor 130 136	pepper
+T77	anaphor 228 244	the beef mixture
+T84	anaphor 666 674	the meat
+T85	anaphor 796 805	the water
+T86	anaphor 807 821	condensed soup
+T87	anaphor 827 836	gravy mix
+T88	anaphor 852 872	the meat in the dish
+T98	anaphor 466 470	beef

@@ -1,0 +1,31 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 39	the oranges
+T4	FOOD 41 50	pineapple
+T5	FOOD 52 67	whipped topping
+T6	FOOD 69 76	coconut
+T7	FOOD 78 90	marshmallows
+T8	FOOD 95 99	milk
+T9	AC 104 107	Mix
+T10	AC 126 131	chill
+T11	DUR 132 138	1 hour
+T12	CONDITION_CLAUSE 139 153	before serving
+T13	AC 158 165	Garnish
+T14	FOOD 171 179	cherries
+T22	zav 104 107	Mix
+R1	zav_anaphor Arg1:T22 Arg2:T15	
+R2	zav_anaphor Arg1:T22 Arg2:T16	
+R3	zav_anaphor Arg1:T22 Arg2:T17	
+R4	zav_anaphor Arg1:T22 Arg2:T18	
+R5	zav_anaphor Arg1:T22 Arg2:T19	
+R6	zav_anaphor Arg1:T22 Arg2:T20	
+T23	zav 126 131	chill
+R7	zav_zav Arg1:T23 Arg2:T22	
+T24	zav 158 165	Garnish
+R8	zav_zav Arg1:T24 Arg2:T23	
+T15	anaphor 28 39	the oranges
+T16	anaphor 41 50	pineapple
+T17	anaphor 52 67	whipped topping
+T18	anaphor 69 76	coconut
+T19	anaphor 78 90	marshmallows
+T20	anaphor 95 99	milk

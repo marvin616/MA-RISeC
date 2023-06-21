@@ -1,0 +1,77 @@
+T1	TOOL 6 17	a large pot
+T2	TEMPERATURE 23 34	medium heat
+T3	AC 36 40	cook
+T4	FOOD 41 55	chicken pieces
+T5	FOOD 59 62	oil
+T6	CONDITION_CLAUSE 63 90	until browned on both sides
+T7	AC 95 102	Stir in
+T8	FOOD 103 108	onion
+T9	AC 113 117	cook
+T10	DUR 118 132	2 minutes more
+T11	AC 137 144	Pour in
+T12	FOOD 145 150	water
+T13	FOOD 155 171	chicken bouillon
+T14	AC 187 191	boil
+T15	AC 196 202	Reduce
+T16	OTHER 203 207	heat
+T17	AC 212 218	simmer
+T18	DUR 219 229	45 minutes
+T19	AC 234 241	Stir in
+T20	FOOD 242 248	celery
+T21	FOOD 250 257	carrots
+T22	FOOD 259 265	garlic
+T23	FOOD 267 271	salt
+T24	FOOD 276 282	pepper
+T25	AC 287 293	Simmer
+T26	CONDITION_CLAUSE 294 323	until carrots are just tender
+T27	AC 328 334	Remove
+T28	FOOD 335 349	chicken pieces
+T29	AC 354 358	pull
+T30	FOOD 359 367	the meat
+T31	FOOD 373 381	the bone
+T32	AC 386 390	Stir
+T33	FOOD 391 402	the noodles
+T34	TOOL 408 415	the pot
+T35	AC 420 424	cook
+T36	CONDITION_CLAUSE 425 437	until tender
+T37	DUR 439 449	10 minutes
+T38	AC 454 460	Return
+T39	FOOD 461 473	chicken meat
+T40	TOOL 477 480	pot
+T41	CONDITION_CLAUSE 486 500	before serving
+T57	zav 95 102	Stir in
+R1	zav_anaphor Arg1:T57 Arg2:T42	
+R2	zav_anaphor Arg1:T57 Arg2:T43	
+T58	zav 113 117	cook
+R3	zav_anaphor Arg1:T58 Arg2:T44	
+R4	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 137 144	Pour in
+R5	zav_zav Arg1:T59 Arg2:T58	
+T60	zav 187 191	boil
+R6	zav_anaphor Arg1:T60 Arg2:T46	
+R7	zav_anaphor Arg1:T60 Arg2:T45	
+R8	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 212 218	simmer
+R9	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 234 241	Stir in
+R10	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 287 293	Simmer
+R11	zav_zav Arg1:T63 Arg2:T62	
+R12	zav_anaphor Arg1:T63 Arg2:T47	
+R13	zav_anaphor Arg1:T63 Arg2:T48	
+R14	zav_anaphor Arg1:T63 Arg2:T49	
+R15	zav_anaphor Arg1:T63 Arg2:T50	
+R16	zav_anaphor Arg1:T63 Arg2:T51	
+T64	zav 420 424	cook
+R17	zav_anaphor Arg1:T64 Arg2:T55	
+T42	anaphor 41 55	chicken pieces
+T43	anaphor 59 62	oil
+T44	anaphor 103 108	onion
+T45	anaphor 145 150	water
+T46	anaphor 155 171	chicken bouillon
+T47	anaphor 242 248	celery
+T48	anaphor 250 257	carrots
+T49	anaphor 259 265	garlic
+T50	anaphor 267 271	salt
+T51	anaphor 276 282	pepper
+T55	anaphor 391 402	the noodles

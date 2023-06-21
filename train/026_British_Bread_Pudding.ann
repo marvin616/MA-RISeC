@@ -1,0 +1,62 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	TOOL 56 68	a large bowl
+T6	AC 70 77	combine
+T7	FOOD 78 83	bread
+T8	FOOD 88 92	milk
+T9	AC 98 107	set aside
+T12	AC 139 146	stir in
+T13	FOOD 147 150	egg
+T14	FOOD 152 158	butter
+T15	FOOD 160 167	raisins
+T16	FOOD 169 180	mixed fruit
+T17	FOOD 182 193	brown sugar
+T18	FOOD 195 201	nutmeg
+T19	FOOD 207 215	cinnamon
+T20	AC 220 223	Mix
+T21	AC 233 238	Press
+T22	FOOD 239 250	the mixture
+T23	TOOL 256 283	a  9-inch square baking pan
+T24	AC 288 292	Bake
+T25	TOOL 296 310	preheated oven
+T26	CONDITION_CLAUSE 311 341	until golden and firm to touch
+T27	DUR 349 359	35 minutes
+T28	TOOL 373 383	baking pan
+T29	PURPOSE_CLAUSE 384 391	to cool
+T30	AC 398 401	cut
+T31	OTHER 407 414	squares
+T32	AC 364 369	Leave
+T10	PURPOSE_CLAUSE 108 129	to soak for 5 minutes
+T11	zav 98 107	set aside
+R1	zav_anaphor Arg1:T11 Arg2:T34	
+R2	zav_anaphor Arg1:T11 Arg2:T33	
+T35	zav 139 146	stir in
+R3	zav_zav Arg1:T35 Arg2:T11	
+T36	zav 220 223	Mix
+R4	zav_anaphor Arg1:T36 Arg2:T37	
+R5	zav_zav Arg1:T36 Arg2:T35	
+R6	zav_anaphor Arg1:T36 Arg2:T38	
+R7	zav_anaphor Arg1:T36 Arg2:T39	
+R8	zav_anaphor Arg1:T36 Arg2:T40	
+R9	zav_anaphor Arg1:T36 Arg2:T41	
+R10	zav_anaphor Arg1:T36 Arg2:T42	
+R11	zav_anaphor Arg1:T36 Arg2:T43	
+T44	zav 233 238	Press
+R12	zav_zav Arg1:T44 Arg2:T36	
+T45	zav 288 292	Bake
+R13	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 364 369	Leave
+R14	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 398 401	cut
+R15	zav_zav Arg1:T47 Arg2:T46	
+T33	anaphor 78 83	bread
+T34	anaphor 88 92	milk
+T37	anaphor 147 150	egg
+T38	anaphor 152 158	butter
+T39	anaphor 160 167	raisins
+T40	anaphor 169 180	mixed fruit
+T41	anaphor 182 193	brown sugar
+T42	anaphor 195 201	nutmeg
+T43	anaphor 207 215	cinnamon

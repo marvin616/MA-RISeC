@@ -1,0 +1,96 @@
+T1	AC 3 7	Peel
+T2	AC 12 16	dice
+T3	AC 28 31	Add
+T4	AC 55 59	Cook
+T5	AC 90 94	Cook
+T6	CONDITION_CLAUSE 95 105	until soft
+T7	AC 112 116	mash
+T8	TOOL 122 126	fork
+T9	PURPOSE_CLAUSE 127 153	to form a thick applesauce
+T10	TOOL 63 73	a saucepan
+T11	FOOD 32 37	sugar
+T12	FOOD 42 50	cinnamon
+T13	TEMPERATURE 77 85	low heat
+T14	AC 158 162	Sift
+T15	AC 217 220	Add
+T16	AC 249 257	Roll out
+T17	AC 305 308	Cut
+T18	AC 379 384	place
+T19	AC 417 424	Moisten
+T20	AC 485 489	Heat
+T21	AC 538 541	Fry
+T22	AC 623 628	Drain
+T23	AC 650 658	Sprinkle
+T24	FOOD 664 683	confectioners sugar
+T25	TOOL 632 644	paper towels
+T26	FOOD 542 546	pies
+T27	FOOD 490 493	oil
+T28	TOOL 497 512	a large skillet
+T29	TEMPERATURE 516 532	medium-high heat
+T30	FOOD 436 446	cold water
+T31	AC 448 452	fold
+T32	AC 457 462	press
+T33	TOOL 473 479	a fork
+T34	FOOD 385 411	1 heaping tablespoon fruit
+T35	TOOL 314 335	a large cookie cutter
+T36	FOOD 221 226	water
+T37	AC 231 234	mix
+T38	TOOL 240 244	fork
+T39	FOOD 163 168	flour
+T40	FOOD 173 177	salt
+T41	FOOD 198 212	the shortening
+T42	AC 191 197	Cut in
+T43	DUR 565 592	2 to 3 minutes on each side
+T44	AC 594 598	cook
+T45	CONDITION_CLAUSE 599 617	until golden brown
+T46	TOOL 285 300	a floured board
+T47	OTHER 261 281	about 1/8 inch thick
+T48	OTHER 425 430	edges
+T49	FOOD 17 23	apples
+T50	OTHER 463 467	edge
+T51	OTHER 367 377	each round
+T64	zav 28 31	Add
+R1	zav_anaphor Arg1:T64 Arg2:T63	
+T65	zav 55 59	Cook
+R2	zav_zav Arg1:T65 Arg2:T64	
+R3	zav_anaphor Arg1:T65 Arg2:T52	
+R4	zav_anaphor Arg1:T65 Arg2:T53	
+T66	zav 90 94	Cook
+R5	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 112 116	mash
+R6	zav_zav Arg1:T67 Arg2:T66	
+T68	zav 191 197	Cut in
+R7	zav_anaphor Arg1:T68 Arg2:T60	
+R8	zav_anaphor Arg1:T68 Arg2:T61	
+T69	zav 217 220	Add
+R9	zav_zav Arg1:T69 Arg2:T68	
+R10	zav_anaphor Arg1:T69 Arg2:T62	
+T70	zav 231 234	mix
+R11	zav_anaphor Arg1:T70 Arg2:T59	
+R12	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 305 308	Cut
+T72	zav 249 257	Roll out
+R13	zav_zav Arg1:T72 Arg2:T70	
+R14	zav_zav Arg1:T71 Arg2:T72	
+T73	zav 379 384	place
+R15	zav_zav Arg1:T73 Arg2:T71	
+T74	zav 417 424	Moisten
+R16	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 448 452	fold
+R17	zav_zav Arg1:T75 Arg2:T74	
+T76	zav 457 462	press
+R18	zav_zav Arg1:T76 Arg2:T75	
+T77	zav 594 598	cook
+R19	zav_anaphor Arg1:T77 Arg2:T55	
+T78	zav 623 628	Drain
+R20	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 650 658	Sprinkle
+R21	zav_zav Arg1:T79 Arg2:T78	
+T52	anaphor 32 37	sugar
+T53	anaphor 42 50	cinnamon
+T55	anaphor 542 546	pies
+T59	anaphor 221 226	water
+T60	anaphor 163 168	flour
+T61	anaphor 173 177	salt
+T62	anaphor 198 212	the shortening
+T63	anaphor 17 23	apples

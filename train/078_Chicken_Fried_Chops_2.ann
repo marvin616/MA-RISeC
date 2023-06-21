@@ -1,0 +1,53 @@
+T1	AC 22 29	combine
+T2	AC 106 111	brown
+T3	AC 147 152	Place
+T4	AC 174 181	Combine
+T5	AC 218 223	Cover
+T6	AC 198 202	pour
+T7	AC 294 301	thicken
+T8	AC 317 322	serve
+T9	TOOL 6 20	a shallow bowl
+T10	FOOD 30 35	flour
+T11	FOOD 37 41	salt
+T12	FOOD 43 50	mustard
+T13	FOOD 55 68	garlic powder
+T14	AC 70 76	dredge
+T15	FOOD 77 87	pork chops
+T16	TOOL 95 104	a skillet
+T17	FOOD 112 121	the chops
+T18	FOOD 139 142	oil
+T19	FOOD 125 135	both sides
+T20	TOOL 156 169	a slow cooker
+T21	FOOD 182 186	soup
+T22	FOOD 191 196	water
+T23	FOOD 208 213	chops
+T24	AC 228 232	cook
+T25	TEMPERATURE 236 239	low
+T26	DUR 244 253	6-8 hours
+T27	FOOD 302 312	pan juices
+T28	FOOD 328 342	the pork chops
+T29	CONDITION_CLAUSE 282 292	If desired
+T30	CONDITION_CLAUSE 257 277	until meat is tender
+T44	zav 70 76	dredge
+R1	zav_anaphor Arg1:T44 Arg2:T34	
+R2	zav_anaphor Arg1:T44 Arg2:T33	
+R3	zav_anaphor Arg1:T44 Arg2:T32	
+R4	zav_anaphor Arg1:T44 Arg2:T31	
+T45	zav 147 152	Place
+R5	zav_anaphor Arg1:T45 Arg2:T36	
+T46	zav 198 202	pour
+R6	zav_anaphor Arg1:T46 Arg2:T40	
+R7	zav_anaphor Arg1:T46 Arg2:T39	
+T47	zav 218 223	Cover
+R8	zav_anaphor Arg1:T47 Arg2:T41	
+R9	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 228 232	cook
+R10	zav_zav Arg1:T48 Arg2:T47	
+T31	anaphor 30 35	flour
+T32	anaphor 37 41	salt
+T33	anaphor 43 50	mustard
+T34	anaphor 55 68	garlic powder
+T36	anaphor 112 121	the chops
+T39	anaphor 182 186	soup
+T40	anaphor 191 196	water
+T41	anaphor 208 213	chops

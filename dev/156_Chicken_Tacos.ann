@@ -1,0 +1,59 @@
+T1	TOOL 6 21	a large skillet
+T2	TEMPERATURE 27 38	medium heat
+T3	AC 40 47	combine
+T4	FOOD 48 55	chicken
+T5	FOOD 57 65	lemonade
+T6	FOOD 67 76	olive oil
+T7	FOOD 78 88	lime juice
+T8	FOOD 94 114	Worcestershire sauce
+T9	AC 119 125	Season
+T10	FOOD 131 144	garlic powder
+T11	FOOD 146 158	onion powder
+T12	FOOD 164 172	bay leaf
+T13	AC 177 183	Simmer
+T14	CONDITION_CLAUSE 184 237	until chicken is no longer pink, and juices run clear
+T15	DUR 239 255	15 to 20 minutes
+T16	AC 271 275	warm
+T17	FOOD 276 289	the tortillas
+T18	TOOL 293 301	the oven
+T19	AC 305 314	microwave
+T20	CONDITION_CLAUSE 315 325	until soft
+T21	CONDITION_CLAUSE 330 358	When chicken is fully cooked
+T22	AC 360 368	transfer
+T23	TOOL 372 384	serving bowl
+T24	AC 389 394	Place
+T25	FOOD 395 402	lettuce
+T26	FOOD 404 412	tomatoes
+T27	FOOD 414 420	cheese
+T28	FOOD 422 427	salsa
+T29	FOOD 433 443	sour cream
+T30	TOOL 447 461	serving dishes
+T31	AC 505 510	using
+T32	FOOD 511 538	their preferred ingredients
+T33	OTHER 466 477	Each person
+T34	FOOD 489 503	their own wrap
+T35	AC 482 488	create
+T52	zav 119 125	Season
+R1	zav_anaphor Arg1:T52 Arg2:T36	
+R2	zav_anaphor Arg1:T52 Arg2:T37	
+R3	zav_anaphor Arg1:T52 Arg2:T38	
+R4	zav_anaphor Arg1:T52 Arg2:T39	
+R5	zav_anaphor Arg1:T52 Arg2:T40	
+T53	zav 177 183	Simmer
+R6	zav_zav Arg1:T53 Arg2:T52	
+R7	zav_anaphor Arg1:T53 Arg2:T41	
+R8	zav_anaphor Arg1:T53 Arg2:T42	
+R9	zav_anaphor Arg1:T53 Arg2:T43	
+T54	zav 305 314	microwave
+R10	zav_anaphor Arg1:T54 Arg2:T44	
+T55	zav 360 368	transfer
+R11	zav_anaphor Arg1:T55 Arg2:T44	
+T36	anaphor 48 55	chicken
+T37	anaphor 57 65	lemonade
+T38	anaphor 67 76	olive oil
+T39	anaphor 78 88	lime juice
+T40	anaphor 94 114	Worcestershire sauce
+T41	anaphor 131 144	garlic powder
+T42	anaphor 146 158	onion powder
+T43	anaphor 164 172	bay leaf
+T44	anaphor 276 289	the tortillas

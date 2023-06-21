@@ -1,0 +1,52 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Score
+T3	AC 87 92	place
+T4	AC 124 131	Combine
+T5	AC 175 179	pour
+T6	AC 195 202	Arrange
+T7	AC 230 235	Place
+T8	AC 267 272	Place
+T9	AC 304 310	reduce
+T10	AC 353 357	Bake
+T11	AC 399 405	adjust
+T12	FOOD 132 137	water
+T13	FOOD 139 147	soup mix
+T14	FOOD 153 173	Worcestershire sauce
+T15	FOOD 185 190	roast
+T16	FOOD 59 64	roast
+T17	TEMPERATURE 19 32	350 degrees F
+T18	TOOL 11 15	oven
+T19	TOOL 96 119	a medium sized oven bag
+T20	FOOD 203 213	vegetables
+T21	FOOD 221 225	meat
+T22	TOOL 236 244	oven bag
+T23	TOOL 248 262	a roasting pan
+T24	FOOD 273 278	roast
+T25	TOOL 282 286	oven
+T26	TEMPERATURE 319 332	300 degrees F
+T27	DUR 362 373	1 1/2 hours
+T28	TOOL 311 315	heat
+T29	OTHER 406 410	time
+T30	TEMPERATURE 334 347	150 degrees C
+T31	TEMPERATURE 34 47	175 degrees C
+T32	OTHER 68 81	top and sides
+T33	PURPOSE_CLAUSE 374 394	for medium well done
+T34	PURPOSE_CLAUSE 411 431	for desired doneness
+T43	zav 87 92	place
+R1	zav_anaphor Arg1:T43 Arg2:T39	
+T44	zav 175 179	pour
+R2	zav_anaphor Arg1:T44 Arg2:T37	
+R3	zav_anaphor Arg1:T44 Arg2:T36	
+R4	zav_anaphor Arg1:T44 Arg2:T35	
+T45	zav 230 235	Place
+R5	zav_anaphor Arg1:T45 Arg2:T40	
+R6	zav_anaphor Arg1:T45 Arg2:T41	
+T46	zav 353 357	Bake
+R7	zav_anaphor Arg1:T46 Arg2:T42	
+T35	anaphor 132 137	water
+T36	anaphor 139 147	soup mix
+T37	anaphor 153 173	Worcestershire sauce
+T39	anaphor 59 64	roast
+T40	anaphor 203 213	vegetables
+T41	anaphor 221 225	meat
+T42	anaphor 273 278	roast

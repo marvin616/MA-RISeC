@@ -1,0 +1,39 @@
+T1	AC 23 27	cook
+T2	AC 63 71	stirring
+T3	AC 123 126	Add
+T4	AC 137 141	heat
+T5	AC 154 160	Season
+T6	AC 186 191	Serve
+T7	TOOL 6 21	a large skillet
+T8	FOOD 28 36	potatoes
+T9	FOOD 38 41	ham
+T10	FOOD 46 51	onion
+T11	FOOD 55 61	butter
+T12	FOOD 127 135	broccoli
+T13	FOOD 166 170	salt
+T14	FOOD 175 181	pepper
+T15	FOOD 197 207	sour cream
+T16	CONDITION_CLAUSE 84 118	until potatoes are lightly browned
+T25	zav 63 71	stirring
+R1	zav_anaphor Arg1:T25 Arg2:T20	
+R2	zav_anaphor Arg1:T25 Arg2:T19	
+R3	zav_anaphor Arg1:T25 Arg2:T18	
+R4	zav_anaphor Arg1:T25 Arg2:T17	
+T26	zav 123 126	Add
+R5	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 137 141	heat
+R6	zav_anaphor Arg1:T27 Arg2:T21	
+R7	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 154 160	Season
+R8	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 186 191	Serve
+R9	zav_zav Arg1:T29 Arg2:T28	
+R10	zav_anaphor Arg1:T29 Arg2:T22	
+R11	zav_anaphor Arg1:T29 Arg2:T23	
+T17	anaphor 28 36	potatoes
+T18	anaphor 38 41	ham
+T19	anaphor 46 51	onion
+T20	anaphor 55 61	butter
+T21	anaphor 127 135	broccoli
+T22	anaphor 166 170	salt
+T23	anaphor 175 181	pepper

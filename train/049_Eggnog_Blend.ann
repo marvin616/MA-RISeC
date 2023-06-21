@@ -1,0 +1,57 @@
+T1	TOOL 6 16	a saucepan
+T2	OTHER 22 30	low heat
+T3	AC 32 36	stir
+T4	FOOD 46 63	the half-and-half
+T5	FOOD 68 73	sugar
+T6	AC 78 86	Whisk in
+T7	FOOD 87 96	egg yolks
+T8	AC 101 105	cook
+T9	CONDITION_CLAUSE 106 131	until light custard forms
+T11	AC 149 155	Remove
+T12	OTHER 161 165	heat
+T13	AC 170 174	cool
+T14	AC 181 186	place
+T15	TOOL 190 202	refrigerator
+T16	AC 207 212	chill
+T17	DUR 213 222	overnight
+T18	FOOD 232 251	the chilled mixture
+T19	AC 253 260	stir in
+T20	FOOD 261 268	vanilla
+T21	FOOD 270 275	cream
+T22	FOOD 277 285	dark rum
+T23	FOOD 287 293	scotch
+T24	FOOD 299 316	vanilla ice cream
+T25	AC 321 326	Serve
+T10	AC 136 144	not boil
+T26	zav 78 86	Whisk in
+R1	zav_anaphor Arg1:T26 Arg2:T27	
+R2	zav_anaphor Arg1:T26 Arg2:T28	
+T29	zav 101 105	cook
+R3	zav_anaphor Arg1:T29 Arg2:T30	
+R4	zav_zav Arg1:T29 Arg2:T26	
+T31	zav 149 155	Remove
+R5	zav_zav Arg1:T31 Arg2:T29	
+T32	zav 170 174	cool
+R6	zav_zav Arg1:T32 Arg2:T31	
+T33	zav 181 186	place
+R7	zav_zav Arg1:T33 Arg2:T32	
+T34	zav 207 212	chill
+R8	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 253 260	stir in
+R9	zav_anaphor Arg1:T35 Arg2:T36	
+T37	zav 321 326	Serve
+R10	zav_zav Arg1:T37 Arg2:T35	
+R11	zav_anaphor Arg1:T37 Arg2:T38	
+R12	zav_anaphor Arg1:T37 Arg2:T39	
+R13	zav_anaphor Arg1:T37 Arg2:T40	
+R14	zav_anaphor Arg1:T37 Arg2:T41	
+R15	zav_anaphor Arg1:T37 Arg2:T42	
+T27	anaphor 46 63	the half-and-half
+T28	anaphor 68 73	sugar
+T30	anaphor 87 96	egg yolks
+T36	anaphor 232 251	the chilled mixture
+T38	anaphor 261 268	vanilla
+T39	anaphor 270 275	cream
+T40	anaphor 277 285	dark rum
+T41	anaphor 287 293	scotch
+T42	anaphor 299 316	vanilla ice cream

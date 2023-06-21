@@ -1,0 +1,76 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 36	potatoes
+T4	FOOD 38 42	eggs
+T5	FOOD 44 50	celery
+T6	FOOD 52 64	green onions
+T7	FOOD 66 74	radishes
+T8	FOOD 76 80	salt
+T9	FOOD 85 91	pepper
+T10	AC 93 102	set aside
+T11	AC 121 128	combine
+T12	FOOD 129 133	eggs
+T13	FOOD 135 142	vinegar
+T14	FOOD 144 149	sugar
+T15	FOOD 151 162	dry mustard
+T16	FOOD 167 171	salt
+T17	TOOL 175 185	a saucepan
+T18	AC 190 194	Cook
+T19	AC 199 203	stir
+T20	TEMPERATURE 209 220	medium heat
+T21	CONDITION_CLAUSE 221 236	until thickened
+T22	AC 241 245	Cool
+T23	AC 250 257	Stir in
+T24	FOOD 258 268	mayonnaise
+T25	AC 270 273	mix
+T26	AC 283 287	Pour
+T27	FOOD 293 307	potato mixture
+T28	AC 309 313	toss
+T29	PURPOSE_CLAUSE 314 321	to coat
+T30	AC 326 337	Refrigerate
+T31	DUR 342 355	several hours
+T32	PURPOSE_CLAUSE 107 119	For dressing
+T47	zav 93 102	set aside
+R1	zav_anaphor Arg1:T47 Arg2:T39	
+R2	zav_anaphor Arg1:T47 Arg2:T38	
+R3	zav_anaphor Arg1:T47 Arg2:T37	
+R4	zav_anaphor Arg1:T47 Arg2:T36	
+R5	zav_anaphor Arg1:T47 Arg2:T35	
+R6	zav_anaphor Arg1:T47 Arg2:T34	
+R7	zav_anaphor Arg1:T47 Arg2:T33	
+T48	zav 190 194	Cook
+R8	zav_anaphor Arg1:T48 Arg2:T40	
+R9	zav_anaphor Arg1:T48 Arg2:T41	
+R10	zav_anaphor Arg1:T48 Arg2:T42	
+R11	zav_anaphor Arg1:T48 Arg2:T43	
+R12	zav_anaphor Arg1:T48 Arg2:T44	
+T49	zav 199 203	stir
+R13	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 241 245	Cool
+R14	zav_zav Arg1:T50 Arg2:T49	
+T51	zav 250 257	Stir in
+R15	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 270 273	mix
+R16	zav_anaphor Arg1:T52 Arg2:T45	
+R17	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 283 287	Pour
+R18	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 309 313	toss
+R19	zav_anaphor Arg1:T54 Arg2:T46	
+R20	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 326 337	Refrigerate
+R21	zav_zav Arg1:T55 Arg2:T54	
+T33	anaphor 28 36	potatoes
+T34	anaphor 38 42	eggs
+T35	anaphor 44 50	celery
+T36	anaphor 52 64	green onions
+T37	anaphor 66 74	radishes
+T38	anaphor 76 80	salt
+T39	anaphor 85 91	pepper
+T40	anaphor 129 133	eggs
+T41	anaphor 135 142	vinegar
+T42	anaphor 144 149	sugar
+T43	anaphor 151 162	dry mustard
+T44	anaphor 167 171	salt
+T45	anaphor 258 268	mayonnaise
+T46	anaphor 293 307	potato mixture

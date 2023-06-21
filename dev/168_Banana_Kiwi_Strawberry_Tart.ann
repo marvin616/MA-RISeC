@@ -1,0 +1,134 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 18	sift
+T3	FOOD 28 37	the flour
+T4	FOOD 39 56	light brown sugar
+T5	FOOD 58 66	cinnamon
+T6	FOOD 72 76	salt
+T7	AC 81 87	Cut in
+T8	FOOD 88 98	the butter
+T9	CONDITION_CLAUSE 99 140	until the mixture resembles coarse crumbs
+T10	AC 145 153	Sprinkle
+T11	FOOD 159 172	the ice water
+T12	AC 178 182	toss
+T13	FOOD 183 194	the mixture
+T14	TOOL 200 206	a fork
+T15	CONDITION_CLAUSE 207 229	until evenly moistened
+T16	AC 234 237	Pat
+T17	AC 256 260	wrap
+T18	TOOL 264 271	plastic
+T19	AC 276 287	Refrigerate
+T20	OTHER 243 250	a round
+T21	DUR 292 302	30 minutes
+T22	TOOL 310 341	the top half of a double boiler
+T23	AC 343 347	heat
+T24	FOOD 348 356	the milk
+T25	CONDITION_CLAUSE 357 382	until it begins to bubble
+T26	TOOL 390 396	a bowl
+T27	AC 398 402	beat
+T28	FOOD 412 426	the egg whites
+T29	FOOD 428 433	sugar
+T30	FOOD 439 467	1 tablespoon of the hot milk
+T31	AC 472 477	Whisk
+T32	FOOD 478 499	the egg white mixture
+T33	FOOD 505 527	the remaining hot milk
+T34	AC 532 536	Cook
+T35	AC 541 545	stir
+T36	DUR 568 578	10 minutes
+T37	CONDITION_CLAUSE 580 613	until the mixture is thick enough
+T38	PURPOSE_CLAUSE 614 647	to coat the back of a metal spoon
+T39	AC 653 659	Remove
+T40	OTHER 665 669	heat
+T41	AC 675 682	stir in
+T42	FOOD 683 694	the vanilla
+T43	AC 700 704	Cool
+T44	TEMPERATURE 708 724	room temperature
+T45	AC 730 737	Preheat
+T46	TOOL 738 742	oven
+T47	TEMPERATURE 746 760	375  degrees F
+T48	TEMPERATURE 762 775	190 degrees C
+T49	AC 790 796	grease
+T50	TOOL 797 815	an 8 inch tart pan
+T51	TOOL 848 865	a floured surface
+T52	AC 867 871	roll
+T53	FOOD 872 886	the tart dough
+T54	FOOD 894 912	1/4 inch thickness
+T55	AC 918 923	Press
+T56	FOOD 924 941	the chilled dough
+T57	TOOL 947 968	the prepared tart pan
+T58	AC 974 978	Trim
+T59	FOOD 979 988	the edges
+T60	AC 994 1000	pierce
+T61	FOOD 1001 1011	the bottom
+T62	TOOL 1017 1023	a fork
+T63	AC 1029 1033	Bake
+T64	DUR 1034 1050	15 to 18 minutes
+T65	TOOL 1054 1072	the preheated oven
+T66	CONDITION_CLAUSE 1074 1092	until golden brown
+T67	AC 1098 1104	Remove
+T68	TOOL 1108 1119	a wire rack
+T69	AC 1125 1129	cool
+T70	AC 1146 1151	Spoon
+T71	FOOD 1152 1171	the filling mixture
+T72	FOOD 1177 1186	the crust
+T73	AC 1192 1196	Bake
+T74	DUR 1197 1213	18 to 20 minutes
+T75	TOOL 1217 1235	the preheated oven
+T76	AC 1241 1245	Cool
+T77	TEMPERATURE 1249 1265	room temperature
+T78	TOOL 1269 1280	a wire rack
+T79	AC 1286 1297	Refrigerate
+T80	DUR 1298 1305	8 hours
+T102	zav 81 87	Cut in
+R1	zav_anaphor Arg1:T102 Arg2:T81	
+R2	zav_anaphor Arg1:T102 Arg2:T82	
+R3	zav_anaphor Arg1:T102 Arg2:T83	
+R4	zav_anaphor Arg1:T102 Arg2:T84	
+T103	zav 145 153	Sprinkle
+R5	zav_zav Arg1:T103 Arg2:T102	
+R6	zav_anaphor Arg1:T103 Arg2:T85	
+T104	zav 178 182	toss
+R7	zav_anaphor Arg1:T104 Arg2:T86	
+R8	zav_zav Arg1:T104 Arg2:T103	
+T105	zav 234 237	Pat
+R9	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 256 260	wrap
+R10	zav_zav Arg1:T106 Arg2:T105	
+T107	zav 276 287	Refrigerate
+R11	zav_zav Arg1:T107 Arg2:T106	
+T108	zav 532 536	Cook
+R12	zav_anaphor Arg1:T108 Arg2:T92	
+R13	zav_anaphor Arg1:T108 Arg2:T93	
+T109	zav 541 545	stir
+R14	zav_zav Arg1:T109 Arg2:T108	
+T110	zav 653 659	Remove
+R15	zav_zav Arg1:T110 Arg2:T109	
+T111	zav 675 682	stir in
+R16	zav_zav Arg1:T111 Arg2:T110	
+T112	zav 700 704	Cool
+R17	zav_anaphor Arg1:T112 Arg2:T94	
+R18	zav_zav Arg1:T112 Arg2:T111	
+T113	zav 1029 1033	Bake
+R19	zav_anaphor Arg1:T113 Arg2:T97	
+T114	zav 1098 1104	Remove
+R20	zav_zav Arg1:T114 Arg2:T113	
+T115	zav 1125 1129	cool
+R21	zav_zav Arg1:T115 Arg2:T114	
+T116	zav 1192 1196	Bake
+R22	zav_anaphor Arg1:T116 Arg2:T100	
+R23	zav_anaphor Arg1:T116 Arg2:T101	
+T117	zav 1241 1245	Cool
+R24	zav_zav Arg1:T117 Arg2:T116	
+T118	zav 1286 1297	Refrigerate
+R25	zav_zav Arg1:T118 Arg2:T117	
+T81	anaphor 28 37	the flour
+T82	anaphor 39 56	light brown sugar
+T83	anaphor 58 66	cinnamon
+T84	anaphor 72 76	salt
+T85	anaphor 88 98	the butter
+T86	anaphor 159 172	the ice water
+T92	anaphor 478 499	the egg white mixture
+T93	anaphor 505 527	the remaining hot milk
+T94	anaphor 683 694	the vanilla
+T97	anaphor 924 941	the chilled dough
+T100	anaphor 1152 1171	the filling mixture
+T101	anaphor 1177 1186	the crust

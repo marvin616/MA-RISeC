@@ -1,0 +1,65 @@
+T1	AC 3 7	Melt
+T2	AC 55 62	Stir in
+T3	AC 110 114	Pour
+T4	AC 138 144	Mix in
+T5	AC 188 194	Season
+T6	AC 303 307	Stir
+T7	AC 226 232	reduce
+T8	AC 243 249	simmer
+T9	CONDITION_CLAUSE 262 298	until vegetables and rice are tender
+T10	FOOD 308 315	spinach
+T11	FOOD 320 331	heavy cream
+T12	FOOD 337 353	the soup mixture
+T13	AC 368 375	cooking
+T14	DUR 382 391	5 minutes
+T15	AC 399 406	serving
+T16	DUR 250 260	30 minutes
+T17	TOOL 233 237	heat
+T18	AC 220 224	boil
+T19	FOOD 200 204	salt
+T20	FOOD 145 153	potatoes
+T21	FOOD 155 162	carrots
+T22	FOOD 164 173	asparagus
+T23	FOOD 179 183	rice
+T24	FOOD 115 120	water
+T25	TOOL 126 133	the pot
+T26	FOOD 63 72	the leeks
+T27	FOOD 77 82	onion
+T28	AC 88 92	cook
+T29	CONDITION_CLAUSE 93 105	until tender
+T30	FOOD 8 18	the butter
+T31	TOOL 22 33	a large pot
+T32	TEMPERATURE 39 50	medium heat
+T45	zav 55 62	Stir in
+R1	zav_anaphor Arg1:T45 Arg2:T44	
+T46	zav 88 92	cook
+R2	zav_anaphor Arg1:T46 Arg2:T43	
+R3	zav_anaphor Arg1:T46 Arg2:T42	
+R4	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 138 144	Mix in
+R5	zav_anaphor Arg1:T47 Arg2:T41	
+T48	zav 188 194	Season
+R6	zav_zav Arg1:T48 Arg2:T47	
+R7	zav_anaphor Arg1:T48 Arg2:T37	
+R8	zav_anaphor Arg1:T48 Arg2:T38	
+R9	zav_anaphor Arg1:T48 Arg2:T39	
+R10	zav_anaphor Arg1:T48 Arg2:T40	
+T49	zav 220 224	boil
+R11	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 243 249	simmer
+R12	zav_zav Arg1:T50 Arg2:T49	
+T51	zav 368 375	cooking
+R13	zav_anaphor Arg1:T51 Arg2:T35	
+R14	zav_anaphor Arg1:T51 Arg2:T34	
+R15	zav_anaphor Arg1:T51 Arg2:T33	
+T33	anaphor 308 315	spinach
+T34	anaphor 320 331	heavy cream
+T35	anaphor 337 353	the soup mixture
+T37	anaphor 145 153	potatoes
+T38	anaphor 155 162	carrots
+T39	anaphor 164 173	asparagus
+T40	anaphor 179 183	rice
+T41	anaphor 115 120	water
+T42	anaphor 63 72	the leeks
+T43	anaphor 77 82	onion
+T44	anaphor 8 18	the butter

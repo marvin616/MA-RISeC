@@ -1,0 +1,34 @@
+T1	AC 3 7	Sift
+T2	FOOD 17 24	creamer
+T3	FOOD 26 43	hot chocolate mix
+T4	FOOD 45 59	instant coffee
+T5	FOOD 61 69	cinnamon
+T6	FOOD 74 80	nutmeg
+T7	AC 85 89	Pour
+T8	TOOL 95 100	a jar
+T9	AC 105 109	seal
+T10	TOOL 115 120	a lid
+T11	PURPOSE_CLAUSE 125 135	To prepare
+T12	AC 137 141	Stir
+T13	FOOD 142 164	3 teaspoons of mixture
+T14	FOOD 170 188	1 cup of hot water
+T15	AC 193 199	Adjust
+T16	PURPOSE_CLAUSE 200 208	to taste
+T24	zav 85 89	Pour
+R1	zav_anaphor Arg1:T24 Arg2:T17	
+R2	zav_anaphor Arg1:T24 Arg2:T18	
+R3	zav_anaphor Arg1:T24 Arg2:T19	
+R4	zav_anaphor Arg1:T24 Arg2:T20	
+R5	zav_anaphor Arg1:T24 Arg2:T21	
+T25	zav 105 109	seal
+R6	zav_zav Arg1:T25 Arg2:T24	
+T26	zav 193 199	Adjust
+R7	zav_anaphor Arg1:T26 Arg2:T22	
+R8	zav_anaphor Arg1:T26 Arg2:T23	
+T17	anaphor 17 24	creamer
+T18	anaphor 26 43	hot chocolate mix
+T19	anaphor 45 59	instant coffee
+T20	anaphor 61 69	cinnamon
+T21	anaphor 74 80	nutmeg
+T22	anaphor 142 164	3 teaspoons of mixture
+T23	anaphor 170 188	1 cup of hot water

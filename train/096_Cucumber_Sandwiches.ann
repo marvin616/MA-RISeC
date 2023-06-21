@@ -1,0 +1,32 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 21	combine
+T3	FOOD 22 34	cream cheese
+T4	FOOD 39 51	dressing mix
+T5	AC 56 62	Spread
+T6	FOOD 66 97	one side of each slice of bread
+T7	AC 102 106	Peel
+T8	FOOD 107 116	cucumbers
+T9	AC 135 140	slice
+T10	AC 145 150	place
+T11	AC 178 181	Top
+T12	FOOD 187 202	remaining bread
+T13	AC 207 212	Serve
+T14	FOOD 154 173	six slices of bread
+T21	zav 56 62	Spread
+R1	zav_anaphor Arg1:T21 Arg2:T15	
+R2	zav_anaphor Arg1:T21 Arg2:T16	
+T22	zav 135 140	slice
+R3	zav_anaphor Arg1:T22 Arg2:T18	
+T23	zav 145 150	place
+R4	zav_zav Arg1:T23 Arg2:T22	
+T24	zav 178 181	Top
+R5	zav_anaphor Arg1:T24 Arg2:T20	
+R6	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 207 212	Serve
+R7	zav_zav Arg1:T25 Arg2:T24	
+R8	zav_anaphor Arg1:T25 Arg2:T19	
+T15	anaphor 22 34	cream cheese
+T16	anaphor 39 51	dressing mix
+T18	anaphor 107 116	cucumbers
+T19	anaphor 187 202	remaining bread
+T20	anaphor 154 173	six slices of bread

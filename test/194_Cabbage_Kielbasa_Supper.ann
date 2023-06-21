@@ -1,0 +1,41 @@
+T1	TOOL 6 25	a 5-qt. slow cooker
+T2	AC 27 34	combine
+T3	FOOD 35 46	the cabbage
+T4	FOOD 48 56	potatoes
+T5	FOOD 58 63	onion
+T6	FOOD 65 69	salt
+T7	FOOD 74 80	pepper
+T8	AC 85 89	Pour
+T9	FOOD 90 95	broth
+T10	FOOD 101 104	all
+T11	AC 109 114	Place
+T12	FOOD 115 122	sausage
+T13	FOOD 126 129	top
+T14	AC 189 194	Cover
+T15	AC 199 203	cook
+T16	TEMPERATURE 207 210	low
+T17	DUR 215 224	8-9 hours
+T18	CONDITION_CLAUSE 228 285	until vegetables are tender and sausage is heated through
+T28	zav 85 89	Pour
+R1	zav_anaphor Arg1:T28 Arg2:T19	
+R2	zav_anaphor Arg1:T28 Arg2:T20	
+R3	zav_anaphor Arg1:T28 Arg2:T21	
+R4	zav_anaphor Arg1:T28 Arg2:T22	
+R5	zav_anaphor Arg1:T28 Arg2:T23	
+T29	zav 109 114	Place
+R6	zav_zav Arg1:T29 Arg2:T28	
+R7	zav_anaphor Arg1:T29 Arg2:T24	
+T30	zav 189 194	Cover
+R8	zav_zav Arg1:T30 Arg2:T29	
+R9	zav_anaphor Arg1:T30 Arg2:T26	
+R10	zav_anaphor Arg1:T30 Arg2:T27	
+T31	zav 199 203	cook
+R11	zav_zav Arg1:T31 Arg2:T30	
+T19	anaphor 35 46	the cabbage
+T20	anaphor 48 56	potatoes
+T21	anaphor 58 63	onion
+T22	anaphor 65 69	salt
+T23	anaphor 74 80	pepper
+T24	anaphor 90 95	broth
+T26	anaphor 115 122	sausage
+T27	anaphor 126 129	top

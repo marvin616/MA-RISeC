@@ -1,0 +1,60 @@
+T1	AC 3 10	Preheat
+T2	AC 50 56	Butter
+T3	AC 107 110	mix
+T4	AC 178 183	Place
+T5	AC 230 237	combine
+T8	AC 331 339	Sprinkle
+T9	AC 356 360	Bake
+T10	TOOL 11 15	oven
+T11	TEMPERATURE 19 32	375 degrees F
+T12	TOOL 57 85	an 8 inch square baking dish
+T13	TOOL 93 105	a large bowl
+T14	FOOD 120 126	apples
+T15	FOOD 128 139	cranberries
+T16	FOOD 141 152	white sugar
+T17	FOOD 154 162	cinnamon
+T18	FOOD 167 173	nutmeg
+T19	TOOL 196 207	baking dish
+T20	TOOL 215 228	the same bowl
+T21	FOOD 238 242	oats
+T22	FOOD 244 249	flour
+T23	FOOD 254 265	brown sugar
+T24	TOOL 275 281	a fork
+T25	FOOD 290 296	butter
+T26	FOOD 323 329	pecans
+T27	FOOD 345 351	apples
+T28	TOOL 364 378	preheated oven
+T29	DUR 383 399	40 to 50 minutes
+T32	CONDITION_CLAUSE 297 310	until crumbly
+T30	CONDITION_CLAUSE 404 456	until topping is golden brown, and apples are tender
+T6	AC 283 289	mix in
+T7	AC 315 322	Stir in
+T31	TEMPERATURE 34 48	190 degrees C.
+T33	zav 178 183	Place
+R1	zav_anaphor Arg1:T33 Arg2:T34	
+R2	zav_anaphor Arg1:T33 Arg2:T35	
+R3	zav_anaphor Arg1:T33 Arg2:T36	
+R4	zav_anaphor Arg1:T33 Arg2:T37	
+R5	zav_anaphor Arg1:T33 Arg2:T38	
+T39	zav 283 289	mix in
+R6	zav_anaphor Arg1:T39 Arg2:T40	
+R7	zav_anaphor Arg1:T39 Arg2:T41	
+R8	zav_anaphor Arg1:T39 Arg2:T42	
+T43	zav 315 322	Stir in
+R9	zav_zav Arg1:T43 Arg2:T39	
+T44	zav 331 339	Sprinkle
+R10	zav_zav Arg1:T44 Arg2:T43	
+R11	zav_anaphor Arg1:T44 Arg2:T45	
+T46	zav 356 360	Bake
+R12	zav_zav Arg1:T46 Arg2:T44	
+R13	zav_anaphor Arg1:T46 Arg2:T47	
+T34	anaphor 120 126	apples
+T35	anaphor 128 139	cranberries
+T36	anaphor 141 152	white sugar
+T37	anaphor 154 162	cinnamon
+T38	anaphor 167 173	nutmeg
+T40	anaphor 238 242	oats
+T41	anaphor 244 249	flour
+T42	anaphor 254 265	brown sugar
+T45	anaphor 323 329	pecans
+T47	anaphor 345 351	apples

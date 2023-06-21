@@ -1,0 +1,66 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 31	a large saucepan
+T4	OTHER 37 53	medium-high heat
+T5	AC 58 64	Sautee
+T6	FOOD 65 74	the onion
+T7	FOOD 76 92	red bell peppers
+T8	FOOD 94 102	jalapeno
+T9	FOOD 104 113	mushrooms
+T10	FOOD 115 123	tomatoes
+T11	FOOD 128 132	corn
+T12	DUR 137 147	10 minutes
+T13	CONDITION_CLAUSE 151 183	until the onions are translucent
+T14	AC 188 194	Season
+T15	FOOD 200 212	black pepper
+T16	FOOD 214 219	cumin
+T17	FOOD 224 236	chili powder
+T18	AC 241 248	Stir in
+T19	FOOD 249 264	the black beans
+T20	FOOD 266 279	chicken broth
+T21	FOOD 284 288	salt
+T22	AC 304 308	boil
+T23	AC 313 319	Remove
+T24	FOOD 320 342	1 1/2 cups of the soup
+T25	TOOL 346 360	food processor
+T26	TOOL 364 371	blender
+T27	AC 373 378	puree
+T28	AC 383 387	stir
+T29	FOOD 388 404	the bean mixture
+T30	FOOD 415 423	the soup
+T31	AC 428 433	Serve
+T33	OTHER 451 460	over rice
+T32	zav 188 194	Season
+R1	zav_anaphor Arg1:T32 Arg2:T34	
+R2	zav_anaphor Arg1:T32 Arg2:T35	
+R3	zav_anaphor Arg1:T32 Arg2:T36	
+R4	zav_anaphor Arg1:T32 Arg2:T37	
+R5	zav_anaphor Arg1:T32 Arg2:T38	
+R6	zav_anaphor Arg1:T32 Arg2:T39	
+T40	zav 241 248	Stir in
+R7	zav_zav Arg1:T40 Arg2:T32	
+R8	zav_anaphor Arg1:T40 Arg2:T41	
+R9	zav_anaphor Arg1:T40 Arg2:T42	
+R10	zav_anaphor Arg1:T40 Arg2:T43	
+T44	zav 304 308	boil
+R11	zav_zav Arg1:T44 Arg2:T40	
+R12	zav_anaphor Arg1:T44 Arg2:T45	
+R13	zav_anaphor Arg1:T44 Arg2:T46	
+R14	zav_anaphor Arg1:T44 Arg2:T47	
+T48	zav 428 433	Serve
+R15	zav_anaphor Arg1:T48 Arg2:T49	
+R16	zav_anaphor Arg1:T48 Arg2:T50	
+T34	anaphor 65 74	the onion
+T35	anaphor 76 92	red bell peppers
+T36	anaphor 94 102	jalapeno
+T37	anaphor 104 113	mushrooms
+T38	anaphor 115 123	tomatoes
+T39	anaphor 128 132	corn
+T41	anaphor 200 212	black pepper
+T42	anaphor 214 219	cumin
+T43	anaphor 224 236	chili powder
+T45	anaphor 249 264	the black beans
+T46	anaphor 266 279	chicken broth
+T47	anaphor 284 288	salt
+T49	anaphor 388 404	the bean mixture
+T50	anaphor 415 423	the soup

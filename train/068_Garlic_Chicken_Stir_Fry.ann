@@ -1,0 +1,86 @@
+T1	AC 3 7	Heat
+T2	AC 154 158	Stir
+T3	AC 216 219	Add
+T4	AC 271 274	Add
+T5	AC 378 381	mix
+T6	AC 453 456	Add
+T7	AC 490 494	stir
+T8	AC 564 569	Serve
+T9	FOOD 8 18	peanut oil
+T10	TOOL 22 27	a wok
+T11	TOOL 31 44	large skillet
+T12	FOOD 91 113	2 cloves minced garlic
+T13	FOOD 115 126	ginger root
+T14	FOOD 128 140	green onions
+T15	FOOD 145 149	salt
+T16	FOOD 220 227	chicken
+T17	AC 232 236	stir
+T18	FOOD 275 287	sweet onions
+T19	FOOD 289 296	cabbage
+T20	FOOD 298 309	bell pepper
+T21	FOOD 311 315	peas
+T22	FOOD 320 346	1/2 cup of the broth/water
+T23	AC 351 356	cover
+T24	TOOL 364 376	a small bowl
+T25	FOOD 417 426	soy sauce
+T26	FOOD 428 433	sugar
+T27	FOOD 438 448	cornstarch
+T28	FOOD 457 470	sauce mixture
+T29	TOOL 474 485	wok/skillet
+T30	FOOD 588 596	hot rice
+T31	CONDITION_CLAUSE 49 73	When oil begins to smoke
+T32	AC 83 90	stir in
+T33	CONDITION_CLAUSE 163 194	until onion becomes translucent
+T34	CONDITION_CLAUSE 237 249	until opaque
+T35	DUR 196 211	about 2 minutes
+T36	DUR 251 266	about 3 minutes
+T37	FOOD 382 415	the remaining 1/2 cup broth/water
+T38	CONDITION_CLAUSE 495 559	until chicken and vegetables are coated with the thickened sauce
+T56	zav 83 90	stir in
+R1	zav_anaphor Arg1:T56 Arg2:T39	
+T58	zav 216 219	Add
+T59	zav 232 236	stir
+R7	zav_zav Arg1:T59 Arg2:T58	
+R8	zav_anaphor Arg1:T59 Arg2:T44	
+T60	zav 271 274	Add
+R9	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 351 356	cover
+R10	zav_anaphor Arg1:T61 Arg2:T49	
+R11	zav_anaphor Arg1:T61 Arg2:T48	
+R12	zav_anaphor Arg1:T61 Arg2:T47	
+R13	zav_anaphor Arg1:T61 Arg2:T46	
+R14	zav_anaphor Arg1:T61 Arg2:T45	
+R15	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 453 456	Add
+R16	zav_anaphor Arg1:T62 Arg2:T55	
+R17	zav_anaphor Arg1:T62 Arg2:T50	
+R18	zav_anaphor Arg1:T62 Arg2:T51	
+R19	zav_anaphor Arg1:T62 Arg2:T52	
+T63	zav 490 494	stir
+R20	zav_zav Arg1:T63 Arg2:T62	
+R21	zav_anaphor Arg1:T63 Arg2:T53	
+T64	zav 564 569	Serve
+R22	zav_zav Arg1:T64 Arg2:T63	
+T39	anaphor 8 18	peanut oil
+T40	anaphor 91 113	2 cloves minced garlic
+T41	anaphor 115 126	ginger root
+T42	anaphor 128 140	green onions
+T43	anaphor 145 149	salt
+T44	anaphor 220 227	chicken
+T45	anaphor 275 287	sweet onions
+T46	anaphor 289 296	cabbage
+T47	anaphor 298 309	bell pepper
+T48	anaphor 311 315	peas
+T49	anaphor 320 346	1/2 cup of the broth/water
+T50	anaphor 417 426	soy sauce
+T51	anaphor 428 433	sugar
+T52	anaphor 438 448	cornstarch
+T53	anaphor 457 470	sauce mixture
+T55	anaphor 382 415	the remaining 1/2 cup broth/water
+T54	zav 154 162	Stir fry
+R2	zav_zav Arg1:T54 Arg2:T56	
+R3	zav_anaphor Arg1:T54 Arg2:T40	
+R4	zav_anaphor Arg1:T54 Arg2:T41	
+R5	zav_anaphor Arg1:T54 Arg2:T42	
+R6	zav_anaphor Arg1:T54 Arg2:T43	
+R23	zav_zav Arg1:T58 Arg2:T54	

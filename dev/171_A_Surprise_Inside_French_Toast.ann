@@ -1,0 +1,55 @@
+T1	AC 3 6	Cut
+T2	OTHER 7 15	a pocket
+T3	FOOD 19 38	each slice of bread
+T4	AC 43 47	Open
+T5	TOOL 64 76	a large bowl
+T6	AC 78 85	combine
+T7	FOOD 86 97	the ricotta
+T8	FOOD 99 106	cottage
+T9	FOOD 107 113	cheese
+T10	FOOD 118 130	cream cheese
+T11	AC 135 138	Add
+T12	FOOD 139 148	the sugar
+T13	FOOD 153 170	flavoring extract
+T14	AC 175 179	beat
+T15	CONDITION_CLAUSE 180 192	until smooth
+T16	AC 197 203	Spread
+T17	FOOD 204 215	the mixture
+T18	FOOD 228 245	each bread pocket
+T19	AC 250 254	Beat
+T20	FOOD 264 283	the egg substitutes
+T21	FOOD 288 292	milk
+T22	AC 297 300	Dip
+T23	FOOD 301 320	the slices of bread
+T24	FOOD 324 339	the egg mixture
+T25	AC 344 348	Heat
+T26	TOOL 349 363	a nonstick pan
+T27	TEMPERATURE 369 385	medium-high heat
+T28	AC 390 394	Coat
+T29	FOOD 400 413	cooking spray
+T30	AC 419 423	Cook
+T31	FOOD 424 433	the toast
+T32	OTHER 437 446	each side
+T33	DUR 457 471	3 to 4 minutes
+T34	OTHER 472 480	per side
+T35	CONDITION_CLAUSE 481 499	until golden brown
+T51	zav 43 47	Open
+R1	zav_anaphor Arg1:T51 Arg2:T36	
+T52	zav 135 138	Add
+R2	zav_anaphor Arg1:T52 Arg2:T37	
+R3	zav_anaphor Arg1:T52 Arg2:T38	
+R4	zav_anaphor Arg1:T52 Arg2:T39	
+R5	zav_anaphor Arg1:T52 Arg2:T40	
+T53	zav 175 179	beat
+R6	zav_anaphor Arg1:T53 Arg2:T42	
+R7	zav_anaphor Arg1:T53 Arg2:T41	
+R8	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 197 203	Spread
+R9	zav_zav Arg1:T54 Arg2:T53	
+T36	anaphor 19 38	each slice of bread
+T37	anaphor 86 97	the ricotta
+T38	anaphor 99 106	cottage
+T39	anaphor 107 113	cheese
+T40	anaphor 118 130	cream cheese
+T41	anaphor 139 148	the sugar
+T42	anaphor 153 170	flavoring extract

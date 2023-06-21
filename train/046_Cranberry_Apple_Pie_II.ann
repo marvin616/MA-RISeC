@@ -1,0 +1,55 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Line
+T6	TOOL 58 69	a pie plate
+T7	FOOD 75 81	pastry
+T8	AC 86 90	Peel
+T9	AC 92 96	core
+T10	AC 102 107	slice
+T11	FOOD 108 118	the apples
+T12	AC 123 130	Combine
+T13	FOOD 131 137	apples
+T14	FOOD 142 157	cranberry sauce
+T15	TOOL 161 187	a medium-sized mixing bowl
+T16	AC 192 199	Combine
+T17	FOOD 200 211	brown sugar
+T18	FOOD 213 218	flour
+T19	FOOD 220 228	cinnamon
+T20	FOOD 234 240	nutmeg
+T21	AC 242 245	add
+T22	FOOD 249 266	the apple mixture
+T23	AC 271 274	Mix
+T24	AC 290 294	Turn
+T25	FOOD 295 302	filling
+T26	TOOL 308 328	the pastry lined pan
+T27	AC 333 338	Cover
+T28	FOOD 344 353	top crust
+T29	AC 358 363	Crimp
+T30	FOOD 364 369	edges
+T31	AC 375 378	Cut
+T32	FOOD 379 384	slits
+T33	FOOD 388 397	top crust
+T34	AC 403 407	Bake
+T35	DUR 412 418	1 hour
+T36	CONDITION_CLAUSE 423 477	until the crust is golden brown and the filling bubbly
+T41	zav 242 245	add
+R1	zav_anaphor Arg1:T41 Arg2:T40	
+R2	zav_anaphor Arg1:T41 Arg2:T39	
+R3	zav_anaphor Arg1:T41 Arg2:T38	
+R4	zav_anaphor Arg1:T41 Arg2:T37	
+T42	zav 271 274	Mix
+R5	zav_zav Arg1:T42 Arg2:T41	
+R6	zav_anaphor Arg1:T42 Arg2:T43	
+T44	zav 290 294	Turn
+R7	zav_zav Arg1:T44 Arg2:T42	
+T45	zav 333 338	Cover
+R8	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 403 407	Bake
+R9	zav_zav Arg1:T46 Arg2:T45	
+T37	anaphor 200 211	brown sugar
+T38	anaphor 213 218	flour
+T39	anaphor 220 228	cinnamon
+T40	anaphor 234 240	nutmeg
+T43	anaphor 249 266	the apple mixture

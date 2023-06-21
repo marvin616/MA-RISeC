@@ -1,0 +1,66 @@
+T1	AC 3 9	Butter
+T2	AC 38 45	Arrange
+T3	TOOL 87 99	a large bowl
+T4	AC 101 105	beat
+T5	FOOD 115 119	eggs
+T6	FOOD 121 125	milk
+T7	FOOD 127 132	cream
+T8	FOOD 134 141	vanilla
+T9	FOOD 146 154	cinnamon
+T10	AC 183 188	cover
+T11	AC 194 205	refrigerate
+T12	AC 238 245	preheat
+T13	TOOL 246 250	oven
+T14	TEMPERATURE 254 267	350 degrees F
+T15	TOOL 291 307	a small saucepan
+T16	AC 309 316	combine
+T17	FOOD 317 323	butter
+T18	FOOD 325 336	brown sugar
+T19	FOOD 341 351	corn syrup
+T20	AC 353 357	heat
+T21	CONDITION_CLAUSE 358 372	until bubbling
+T22	AC 377 381	Pour
+T23	FOOD 387 392	bread
+T24	FOOD 397 408	egg mixture
+T25	AC 413 417	Bake
+T26	TOOL 421 435	preheated oven
+T27	DUR 452 462	40 minutes
+T28	FOOD 169 181	bread slices
+T29	FOOD 46 65	the slices of bread
+T30	TOOL 69 79	the bottom
+T31	TOOL 10 33	a 9x13 inch baking dish
+T32	AC 159 163	Pour
+T33	OTHER 220 236	The next morning
+T34	TEMPERATURE 269 282	175 degrees C
+T47	zav 159 163	Pour
+R1	zav_anaphor Arg1:T47 Arg2:T35	
+R2	zav_anaphor Arg1:T47 Arg2:T36	
+R3	zav_anaphor Arg1:T47 Arg2:T37	
+R4	zav_anaphor Arg1:T47 Arg2:T38	
+R5	zav_anaphor Arg1:T47 Arg2:T39	
+T48	zav 183 188	cover
+R6	zav_anaphor Arg1:T48 Arg2:T45	
+R7	zav_zav Arg1:T48 Arg2:T47	
+T49	zav 194 205	refrigerate
+R8	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 353 357	heat
+R9	zav_anaphor Arg1:T50 Arg2:T42	
+R10	zav_anaphor Arg1:T50 Arg2:T41	
+R11	zav_anaphor Arg1:T50 Arg2:T40	
+T51	zav 377 381	Pour
+R12	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 413 417	Bake
+R13	zav_zav Arg1:T52 Arg2:T51	
+R14	zav_anaphor Arg1:T52 Arg2:T43	
+R15	zav_anaphor Arg1:T52 Arg2:T44	
+T35	anaphor 115 119	eggs
+T36	anaphor 121 125	milk
+T37	anaphor 127 132	cream
+T38	anaphor 134 141	vanilla
+T39	anaphor 146 154	cinnamon
+T40	anaphor 317 323	butter
+T41	anaphor 325 336	brown sugar
+T42	anaphor 341 351	corn syrup
+T43	anaphor 387 392	bread
+T44	anaphor 397 408	egg mixture
+T45	anaphor 169 181	bread slices

@@ -1,0 +1,78 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 39	the chicken
+T4	FOOD 41 49	broccoli
+T5	FOOD 51 57	onions
+T6	FOOD 59 70	bell pepper
+T7	FOOD 72 78	cheese
+T8	FOOD 80 90	mayonnaise
+T9	FOOD 92 99	mustard
+T10	FOOD 101 105	salt
+T11	FOOD 107 113	pepper
+T12	FOOD 118 124	garlic
+T13	AC 129 132	Mix
+T14	FOOD 133 136	all
+T15	AC 150 157	Preheat
+T16	TOOL 158 162	oven
+T17	TEMPERATURE 166 179	400 degrees F
+T18	TEMPERATURE 181 194	200 degrees C
+T19	AC 200 205	Cover
+T20	TOOL 206 220	a cookie sheet
+T21	TOOL 226 239	aluminum foil
+T22	AC 244 249	Place
+T23	TOOL 250 257	a glass
+T24	TOOL 273 303	the center of the cookie sheet
+T25	AC 308 316	Roll out
+T26	FOOD 317 331	crescent rolls
+T27	TOOL 339 360	the base of the glass
+T28	CONDITION_CLAUSE 400 420	when you're finished
+T29	OTHER 422 437	the arrangement
+T30	AC 443 452	look like
+T31	OTHER 453 460	the sun
+T32	AC 465 470	Spoon
+T33	FOOD 471 498	some of the chicken mixture
+T34	FOOD 504 540	the thick part of each crescent roll
+T35	AC 545 549	Fold
+T36	FOOD 583 605	the top of the mixture
+T37	AC 610 617	tuck in
+T38	OTHER 618 628	the middle
+T39	AC 633 639	Remove
+T40	TOOL 640 645	glass
+T41	TOOL 651 663	cookie sheet
+T42	OTHER 669 689	Arrangement of rolls
+T43	AC 699 708	look like
+T44	OTHER 709 727	a fluted tube cake
+T45	AC 733 737	Bake
+T46	TOOL 741 755	preheated oven
+T47	DUR 760 776	25 to 30 minutes
+T48	CONDITION_CLAUSE 781 809	until rolls are golden brown
+T49	FOOD 550 577	the pointy end of each roll
+T66	zav 129 132	Mix
+R1	zav_anaphor Arg1:T66 Arg2:T50	
+R2	zav_anaphor Arg1:T66 Arg2:T51	
+R3	zav_anaphor Arg1:T66 Arg2:T52	
+R4	zav_anaphor Arg1:T66 Arg2:T53	
+R5	zav_anaphor Arg1:T66 Arg2:T54	
+R6	zav_anaphor Arg1:T66 Arg2:T55	
+R7	zav_anaphor Arg1:T66 Arg2:T56	
+R8	zav_anaphor Arg1:T66 Arg2:T57	
+R9	zav_anaphor Arg1:T66 Arg2:T58	
+R10	zav_anaphor Arg1:T66 Arg2:T59	
+T67	zav 200 205	Cover
+R11	zav_zav Arg1:T67 Arg2:T66	
+T68	zav 610 617	tuck in
+R12	zav_anaphor Arg1:T68 Arg2:T65	
+T69	zav 733 737	Bake
+R13	zav_anaphor Arg1:T69 Arg2:T70	
+T50	anaphor 28 39	the chicken
+T51	anaphor 41 49	broccoli
+T52	anaphor 51 57	onions
+T53	anaphor 59 70	bell pepper
+T54	anaphor 72 78	cheese
+T55	anaphor 80 90	mayonnaise
+T56	anaphor 92 99	mustard
+T57	anaphor 101 105	salt
+T58	anaphor 107 113	pepper
+T59	anaphor 118 124	garlic
+T65	anaphor 550 577	the pointy end of each roll
+T70	anaphor 684 689	rolls

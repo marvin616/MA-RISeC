@@ -1,0 +1,67 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 27	the chocolate chips
+T3	TOOL 31 47	a heavy saucepan
+T4	TEMPERATURE 53 66	very low heat
+T5	AC 71 75	Stir
+T6	AC 95 100	Cream
+T7	FOOD 110 120	the butter
+T8	FOOD 125 131	sugars
+T9	CONDITION_CLAUSE 132 143	until light
+T10	AC 148 155	Beat in
+T11	FOOD 156 164	the eggs
+T12	OTHER 166 179	one at a time
+T13	AC 184 191	Stir in
+T14	FOOD 192 212	the melted chocolate
+T15	FOOD 217 224	vanilla
+T16	TOOL 232 238	a bowl
+T17	AC 240 245	whisk
+T18	FOOD 255 264	the flour
+T19	FOOD 266 279	baking powder
+T20	FOOD 284 295	baking soda
+T21	AC 300 303	Add
+T22	FOOD 307 325	the butter mixture
+T23	AC 337 342	Blend
+T24	AC 358 363	Shape
+T25	FOOD 369 381	1-inch balls
+T26	AC 386 391	place
+T27	TOOL 395 417	a greased cookie sheet
+T28	AC 423 427	Bake
+T29	TEMPERATURE 431 444	350 degrees F
+T30	TEMPERATURE 446 459	180 degrees C
+T31	DUR 465 481	12 to 14 minutes
+T32	AC 491 494	sit
+T33	TOOL 498 510	cookie sheet
+T34	DUR 515 530	a minute or two
+T35	CONDITION_CLAUSE 531 564	before removing to a rack to cool
+T36	PURPOSE_CLAUSE 76 90	to evenly melt
+T48	zav 71 75	Stir
+R1	zav_anaphor Arg1:T48 Arg2:T37	
+T49	zav 148 155	Beat in
+R2	zav_anaphor Arg1:T49 Arg2:T38	
+R3	zav_anaphor Arg1:T49 Arg2:T39	
+T50	zav 184 191	Stir in
+R4	zav_zav Arg1:T50 Arg2:T49	
+R5	zav_anaphor Arg1:T50 Arg2:T40	
+T51	zav 300 303	Add
+R6	zav_anaphor Arg1:T51 Arg2:T43	
+R7	zav_anaphor Arg1:T51 Arg2:T44	
+R8	zav_anaphor Arg1:T51 Arg2:T45	
+T52	zav 337 342	Blend
+R9	zav_anaphor Arg1:T52 Arg2:T46	
+R10	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 358 363	Shape
+R11	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 386 391	place
+R12	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 423 427	Bake
+R13	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 491 494	sit
+R14	zav_zav Arg1:T56 Arg2:T55	
+T37	anaphor 8 27	the chocolate chips
+T38	anaphor 110 120	the butter
+T39	anaphor 125 131	sugars
+T40	anaphor 156 164	the eggs
+T43	anaphor 255 264	the flour
+T44	anaphor 266 279	baking powder
+T45	anaphor 284 295	baking soda
+T46	anaphor 307 325	the butter mixture

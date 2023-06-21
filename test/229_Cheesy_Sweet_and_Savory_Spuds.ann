@@ -1,0 +1,62 @@
+T1	FOOD 9 21	the potatoes
+T2	AC 3 8	Place
+T3	FOOD 26 40	sweet potatoes
+T4	TOOL 44 55	a large pot
+T5	FOOD 61 73	enough water
+T6	AC 98 102	boil
+T7	AC 107 113	Remove
+T8	TOOL 119 123	heat
+T9	AC 129 134	drain
+T10	AC 139 146	Preheat
+T11	TOOL 147 163	the oven broiler
+T12	TOOL 171 183	a large bowl
+T13	AC 185 189	mash
+T14	FOOD 190 202	the potatoes
+T15	AC 217 223	mix in
+T16	FOOD 224 230	butter
+T17	FOOD 232 243	heavy cream
+T18	FOOD 245 261	chicken bouillon
+T19	FOOD 263 274	brown sugar
+T20	FOOD 280 286	pepper
+T21	FOOD 300 311	the mixture
+T22	AC 291 299	Transfer
+T23	TOOL 315 335	a medium baking dish
+T24	AC 341 344	top
+T25	FOOD 350 370	Monterey Jack cheese
+T26	AC 375 380	Broil
+T27	TOOL 394 412	the preheated oven
+T28	DUR 413 423	10 minutes
+T29	CONDITION_CLAUSE 428 474	until the cheese is melted and lightly browned
+T41	zav 98 102	boil
+R1	zav_anaphor Arg1:T41 Arg2:T30	
+R2	zav_anaphor Arg1:T41 Arg2:T31	
+R3	zav_anaphor Arg1:T41 Arg2:T32	
+T42	zav 107 113	Remove
+T43	zav 129 134	drain
+R5	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 217 223	mix in
+R6	zav_anaphor Arg1:T44 Arg2:T33	
+T45	zav 291 299	Transfer
+R7	zav_zav Arg1:T45 Arg2:T44	
+R8	zav_anaphor Arg1:T45 Arg2:T34	
+R9	zav_anaphor Arg1:T45 Arg2:T35	
+R10	zav_anaphor Arg1:T45 Arg2:T36	
+R11	zav_anaphor Arg1:T45 Arg2:T37	
+R12	zav_anaphor Arg1:T45 Arg2:T38	
+T46	zav 341 344	top
+R13	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 375 380	Broil
+R14	zav_zav Arg1:T47 Arg2:T46	
+R15	zav_anaphor Arg1:T47 Arg2:T40	
+T30	anaphor 9 21	the potatoes
+T31	anaphor 26 40	sweet potatoes
+T32	anaphor 61 73	enough water
+T33	anaphor 190 202	the potatoes
+T34	anaphor 224 230	butter
+T35	anaphor 232 243	heavy cream
+T36	anaphor 245 261	chicken bouillon
+T37	anaphor 263 274	brown sugar
+T38	anaphor 280 286	pepper
+T40	anaphor 350 370	Monterey Jack cheese
+R4	zav_anaphor Arg1:T42 Arg2:T30	
+R16	zav_anaphor Arg1:T42 Arg2:T31	

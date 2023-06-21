@@ -1,0 +1,75 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 20	the flour
+T3	FOOD 26 43	the baking powder
+T4	FOOD 45 56	baking soda
+T5	FOOD 58 62	salt
+T6	FOOD 67 73	nutmeg
+T7	TOOL 81 112	a clean 1 liter sized glass jar
+T8	AC 131 136	layer
+T9	FOOD 137 152	the white sugar
+T10	FOOD 165 182	the flour mixture
+T11	AC 187 192	Press
+T12	AC 213 217	seal
+T13	AC 222 228	Attach
+T14	TOOL 229 235	a card
+T15	TOOL 272 284	a large bowl
+T16	AC 286 290	beat
+T17	FOOD 291 296	1 egg
+T18	FOOD 302 323	1 cup softened butter
+T19	FOOD 327 336	margarine
+T20	CONDITION_CLAUSE 337 359	until light and fluffy
+T21	TOOL 380 397	an electric mixer
+T22	AC 398 401	add
+T23	FOOD 402 420	1/2 cup sour cream
+T24	FOOD 422 440	1 teaspoon vanilla
+T25	FOOD 445 460	contents of Jar
+T26	AC 465 468	Mix
+T27	CONDITION_CLAUSE 469 483	until combined
+T28	AC 488 494	Remove
+T29	FOOD 495 500	dough
+T30	TOOL 506 522	the refrigerator
+T31	AC 527 534	Preheat
+T32	TOOL 535 539	oven
+T33	TEMPERATURE 543 556	375 degrees F
+T34	TEMPERATURE 558 571	190 degrees C
+T35	AC 577 581	Roll
+T36	FOOD 582 595	chilled dough
+T37	TOOL 603 628	a lightly floured surface
+T38	OTHER 632 646	1/8 inch thick
+T39	AC 652 655	Cut
+T40	FOOD 656 661	dough
+T41	OTHER 667 681	desired shapes
+T42	AC 687 692	Place
+T43	TOOL 696 721	an ungreased cookie sheet
+T44	AC 726 730	bake
+T45	TEMPERATURE 734 747	375 degrees F
+T46	TEMPERATURE 749 762	190 degrees C
+T47	DUR 768 784	10 to 12 minutes
+T48	OTHER 367 376	low speed
+T65	zav 187 192	Press
+R1	zav_anaphor Arg1:T65 Arg2:T54	
+R2	zav_anaphor Arg1:T65 Arg2:T55	
+T66	zav 213 217	seal
+R3	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 398 401	add
+R4	zav_anaphor Arg1:T67 Arg2:T56	
+R5	zav_anaphor Arg1:T67 Arg2:T57	
+R6	zav_anaphor Arg1:T67 Arg2:T58	
+T68	zav 465 468	Mix
+R7	zav_zav Arg1:T68 Arg2:T67	
+R8	zav_anaphor Arg1:T68 Arg2:T59	
+R9	zav_anaphor Arg1:T68 Arg2:T60	
+R10	zav_anaphor Arg1:T68 Arg2:T61	
+T69	zav 687 692	Place
+R11	zav_anaphor Arg1:T69 Arg2:T64	
+T70	zav 726 730	bake
+R12	zav_zav Arg1:T70 Arg2:T69	
+T54	anaphor 137 152	the white sugar
+T55	anaphor 165 182	the flour mixture
+T56	anaphor 291 296	1 egg
+T57	anaphor 302 323	1 cup softened butter
+T58	anaphor 327 336	margarine
+T59	anaphor 402 420	1/2 cup sour cream
+T60	anaphor 422 440	1 teaspoon vanilla
+T61	anaphor 445 460	contents of Jar
+T64	anaphor 656 661	dough

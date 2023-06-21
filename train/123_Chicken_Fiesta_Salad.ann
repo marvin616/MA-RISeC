@@ -1,0 +1,42 @@
+T1	AC 3 6	Rub
+T2	FOOD 7 14	chicken
+T3	FOOD 27 51	1/2 the fajita seasoning
+T4	AC 56 60	Heat
+T5	FOOD 61 68	the oil
+T6	TOOL 72 81	a skillet
+T7	TEMPERATURE 87 98	medium heat
+T8	AC 104 108	cook
+T9	FOOD 109 120	the chicken
+T10	DUR 121 130	8 minutes
+T11	CONDITION_CLAUSE 148 170	until juices run clear
+T12	AC 172 181	set aside
+T13	TOOL 189 205	a large saucepan
+T14	AC 207 210	mix
+T15	FOOD 211 216	beans
+T16	FOOD 218 222	corn
+T17	FOOD 224 229	salsa
+T18	FOOD 234 263	other 1/2 of fajita seasoning
+T19	AC 268 272	Heat
+T20	TEMPERATURE 278 289	medium heat
+T21	CONDITION_CLAUSE 290 300	until warm
+T22	AC 305 312	Prepare
+T23	FOOD 313 322	the salad
+T24	AC 326 333	tossing
+T25	FOOD 334 344	the greens
+T26	FOOD 346 351	onion
+T27	FOOD 356 362	tomato
+T28	AC 367 370	Top
+T29	FOOD 371 376	salad
+T30	FOOD 382 389	chicken
+T31	AC 394 399	dress
+T32	FOOD 405 413	the bean
+T33	FOOD 418 430	corn mixture
+T34	OTHER 134 143	each side
+T51	zav 172 181	set aside
+R1	zav_anaphor Arg1:T51 Arg2:T38	
+T52	zav 394 399	dress
+R2	zav_anaphor Arg1:T52 Arg2:T48	
+R3	zav_anaphor Arg1:T52 Arg2:T47	
+T38	anaphor 109 120	the chicken
+T47	anaphor 371 376	salad
+T48	anaphor 382 389	chicken

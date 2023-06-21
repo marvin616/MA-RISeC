@@ -1,0 +1,78 @@
+T1	TOOL 6 22	a large saucepan
+T2	TEMPERATURE 28 39	medium heat
+T3	AC 41 45	heat
+T4	FOOD 46 56	peanut oil
+T5	AC 61 68	Stir in
+T6	FOOD 69 75	garlic
+T7	FOOD 77 83	ginger
+T8	FOOD 85 96	lemon grass
+T9	FOOD 98 108	red pepper
+T10	FOOD 110 119	coriander
+T11	FOOD 124 129	cumin
+T12	AC 134 138	cook
+T13	CONDITION_CLAUSE 139 153	until fragrant
+T14	DUR 155 164	2 minutes
+T15	AC 169 176	Stir in
+T16	FOOD 177 184	chicken
+T17	FOOD 189 194	onion
+T18	AC 199 203	cook
+T19	AC 205 213	stirring
+T20	CONDITION_CLAUSE 215 262	until chicken is white and onion is translucent
+T21	DUR 264 273	5 minutes
+T22	AC 278 285	Stir in
+T23	FOOD 286 294	bok choy
+T24	AC 299 303	cook
+T25	CONDITION_CLAUSE 304 327	until it begins to wilt
+T26	DUR 329 344	5 to 10 minutes
+T27	AC 349 356	Stir in
+T28	FOOD 357 362	water
+T29	FOOD 364 376	coconut milk
+T30	FOOD 378 388	fish sauce
+T31	FOOD 393 401	cilantro
+T32	AC 406 412	Simmer
+T33	CONDITION_CLAUSE 413 476	until chicken is thoroughly cooked and flavors are well blended
+T34	DUR 478 488	30 minutes
+T35	zav 61 68	Stir in
+R1	zav_anaphor Arg1:T35 Arg2:T36	
+T37	zav 134 138	cook
+R2	zav_zav Arg1:T37 Arg2:T35	
+R3	zav_anaphor Arg1:T37 Arg2:T43	
+R4	zav_anaphor Arg1:T37 Arg2:T42	
+R5	zav_anaphor Arg1:T37 Arg2:T41	
+R6	zav_anaphor Arg1:T37 Arg2:T40	
+R7	zav_anaphor Arg1:T37 Arg2:T39	
+R8	zav_anaphor Arg1:T37 Arg2:T38	
+T44	zav 169 176	Stir in
+R9	zav_zav Arg1:T44 Arg2:T37	
+T47	zav 199 203	cook
+R10	zav_anaphor Arg1:T47 Arg2:T46	
+R11	zav_anaphor Arg1:T47 Arg2:T45	
+R12	zav_zav Arg1:T47 Arg2:T44	
+T48	zav 205 213	stirring
+R13	zav_zav Arg1:T48 Arg2:T47	
+T49	zav 278 285	Stir in
+R14	zav_zav Arg1:T49 Arg2:T48	
+T51	zav 299 303	cook
+R15	zav_anaphor Arg1:T51 Arg2:T50	
+R16	zav_zav Arg1:T51 Arg2:T49	
+T52	zav 349 356	Stir in
+R17	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 406 412	Simmer
+R18	zav_anaphor Arg1:T53 Arg2:T57	
+R19	zav_anaphor Arg1:T53 Arg2:T56	
+R20	zav_anaphor Arg1:T53 Arg2:T55	
+R21	zav_anaphor Arg1:T53 Arg2:T54	
+T36	anaphor 46 56	peanut oil
+T38	anaphor 69 75	garlic
+T39	anaphor 77 83	ginger
+T40	anaphor 85 96	lemon grass
+T41	anaphor 98 108	red pepper
+T42	anaphor 110 119	coriander
+T43	anaphor 124 129	cumin
+T45	anaphor 177 184	chicken
+T46	anaphor 189 194	onion
+T50	anaphor 286 294	bok choy
+T54	anaphor 357 362	water
+T55	anaphor 364 376	coconut milk
+T56	anaphor 378 388	fish sauce
+T57	anaphor 393 401	cilantro

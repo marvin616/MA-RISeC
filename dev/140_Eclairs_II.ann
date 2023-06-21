@@ -1,0 +1,151 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	450 degrees F
+T4	TEMPERATURE 34 47	230 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 74	a cookie sheet
+T7	TOOL 82 99	a medium saucepan
+T8	AC 101 108	combine
+T9	FOOD 109 123	1/2 cup butter
+T10	FOOD 128 139	1 cup water
+T11	AC 155 159	boil
+T12	AC 161 169	stirring
+T13	CONDITION_CLAUSE 170 199	until butter melts completely
+T14	AC 204 210	Reduce
+T15	OTHER 211 215	heat
+T16	TEMPERATURE 219 222	low
+T17	AC 228 231	add
+T18	FOOD 232 237	flour
+T19	FOOD 242 246	salt
+T20	AC 251 255	Stir
+T21	CONDITION_CLAUSE 267 340	until mixture leaves the sides of the pan and begins to form a stiff ball
+T22	AC 345 351	Remove
+T23	OTHER 357 361	heat
+T24	AC 366 369	Add
+T25	FOOD 370 374	eggs
+T26	OTHER 376 389	one at a time
+T27	AC 391 398	beating
+T28	PURPOSE_CLAUSE 404 449	to incorporate completely after each addition
+T29	AC 516 534	tip, spoon or pipe
+T30	FOOD 535 540	dough
+T31	TOOL 546 558	cookie sheet
+T32	OTHER 562 583	1 1/2 x 4 inch strips
+T33	AC 589 593	Bake
+T34	DUR 594 604	15 minutes
+T35	TOOL 608 626	the preheated oven
+T36	AC 633 639	reduce
+T37	OTHER 640 644	heat
+T38	TEMPERATURE 648 661	325 degrees F
+T39	TEMPERATURE 663 676	165 degrees C
+T40	AC 682 686	bake
+T41	DUR 687 697	20 minutes
+T42	CONDITION_CLAUSE 704 759	until hollow sounding when lightly tapped on the bottom
+T43	AC 765 769	Cool
+T44	TOOL 784 795	a wire rack
+T45	FOOD 805 816	the filling
+T46	AC 818 825	combine
+T47	FOOD 826 837	pudding mix
+T48	FOOD 842 846	milk
+T49	TOOL 850 861	medium bowl
+T50	OTHER 862 893	according to package directions
+T51	TOOL 902 917	a separate bowl
+T52	AC 919 923	beat
+T53	FOOD 924 933	the cream
+T54	TOOL 939 956	an electric mixer
+T55	CONDITION_CLAUSE 957 978	until soft peaks form
+T56	AC 984 991	Beat in
+T57	FOOD 992 1020	1/4 cup confectioners' sugar
+T58	FOOD 1025 1043	1 teaspoon vanilla
+T59	AC 1049 1053	Fold
+T60	FOOD 1054 1067	whipped cream
+T61	FOOD 1073 1080	pudding
+T62	AC 1086 1089	Cut
+T63	OTHER 1090 1094	tops
+T64	TOOL 1128 1141	a sharp knife
+T65	TOOL 459 466	a spoon
+T66	TOOL 470 482	a pastry bag
+T67	AC 1147 1151	Fill
+T68	FOOD 1152 1158	shells
+T69	FOOD 1102 1122	cooled pastry shells
+T70	FOOD 1164 1179	pudding mixture
+T71	AC 1184 1191	replace
+T72	OTHER 1192 1196	tops
+T73	FOOD 1206 1215	the icing
+T74	AC 1217 1221	melt
+T75	FOOD 1222 1235	the chocolate
+T76	FOOD 1240 1260	2 tablespoons butter
+T77	TOOL 1264 1281	a medium saucepan
+T78	TEMPERATURE 1287 1295	low heat
+T79	AC 1301 1308	Stir in
+T80	FOOD 1309 1335	1 cup confectioners' sugar
+T81	FOOD 1340 1358	1 teaspoon vanilla
+T82	AC 1364 1371	Stir in
+T83	FOOD 1372 1381	hot water
+T84	OTHER 1383 1407	one tablespoon at a time
+T85	CONDITION_CLAUSE 1409 1466	until icing is smooth and has reached desired consistency
+T86	AC 1472 1478	Remove
+T87	OTHER 1484 1488	heat
+T88	AC 1490 1494	cool
+T89	AC 1509 1516	drizzle
+T90	FOOD 1522 1536	filled eclairs
+T91	AC 1542 1553	Refrigerate
+T92	CONDITION_CLAUSE 1554 1567	until serving
+T117	zav 155 159	boil
+R1	zav_anaphor Arg1:T117 Arg2:T93	
+R2	zav_anaphor Arg1:T117 Arg2:T94	
+T118	zav 161 169	stirring
+R3	zav_zav Arg1:T118 Arg2:T117	
+T119	zav 228 231	add
+R4	zav_zav Arg1:T119 Arg2:T118	
+T120	zav 251 255	Stir
+R5	zav_zav Arg1:T120 Arg2:T119	
+R6	zav_anaphor Arg1:T120 Arg2:T95	
+R7	zav_anaphor Arg1:T120 Arg2:T96	
+T121	zav 345 351	Remove
+R8	zav_zav Arg1:T121 Arg2:T120	
+T122	zav 366 369	Add
+R9	zav_zav Arg1:T122 Arg2:T121	
+T123	zav 391 398	beating
+R10	zav_anaphor Arg1:T123 Arg2:T97	
+R11	zav_zav Arg1:T123 Arg2:T122	
+T124	zav 589 593	Bake
+R12	zav_anaphor Arg1:T124 Arg2:T98	
+T125	zav 682 686	bake
+R13	zav_zav Arg1:T125 Arg2:T124	
+T126	zav 765 769	Cool
+R14	zav_zav Arg1:T126 Arg2:T125	
+T127	zav 984 991	Beat in
+R15	zav_anaphor Arg1:T127 Arg2:T102	
+T129	zav 1086 1089	Cut
+R16	zav_anaphor Arg1:T129 Arg2:T106	
+R17	zav_anaphor Arg1:T129 Arg2:T105	
+T130	zav 1301 1308	Stir in
+R18	zav_anaphor Arg1:T130 Arg2:T111	
+R19	zav_anaphor Arg1:T130 Arg2:T112	
+T131	zav 1364 1371	Stir in
+R20	zav_zav Arg1:T131 Arg2:T130	
+R21	zav_anaphor Arg1:T131 Arg2:T113	
+R22	zav_anaphor Arg1:T131 Arg2:T114	
+T132	zav 1472 1478	Remove
+R23	zav_zav Arg1:T132 Arg2:T131	
+T133	zav 1490 1494	cool
+R24	zav_zav Arg1:T133 Arg2:T132	
+T134	zav 1509 1516	drizzle
+R25	zav_zav Arg1:T134 Arg2:T133	
+T135	zav 1542 1553	Refrigerate
+R26	zav_zav Arg1:T135 Arg2:T134	
+R27	zav_anaphor Arg1:T135 Arg2:T116	
+T93	anaphor 109 123	1/2 cup butter
+T94	anaphor 128 139	1 cup water
+T95	anaphor 232 237	flour
+T96	anaphor 242 246	salt
+T97	anaphor 370 374	eggs
+T98	anaphor 535 540	dough
+T102	anaphor 924 933	the cream
+T105	anaphor 1054 1067	whipped cream
+T106	anaphor 1073 1080	pudding
+T111	anaphor 1222 1235	the chocolate
+T112	anaphor 1240 1260	2 tablespoons butter
+T113	anaphor 1309 1335	1 cup confectioners' sugar
+T114	anaphor 1340 1358	1 teaspoon vanilla
+T116	anaphor 1522 1536	filled eclairs

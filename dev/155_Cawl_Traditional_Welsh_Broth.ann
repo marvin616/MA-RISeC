@@ -1,0 +1,98 @@
+T1	AC 18 22	boil
+T2	FOOD 9 14	water
+T3	TOOL 26 37	a large pot
+T4	AC 42 47	Place
+T5	FOOD 48 58	beef shank
+T6	AC 67 73	simmer
+T7	DUR 74 85	1 1/2 hours
+T8	AC 94 98	cool
+T9	DUR 99 108	overnight
+T10	AC 113 117	Lift
+T11	FOOD 118 122	meat
+T12	AC 128 136	trim off
+T13	FOOD 137 144	gristle
+T14	AC 149 152	cut
+T15	FOOD 153 157	meat
+T16	OTHER 163 182	medium sized pieces
+T17	AC 184 193	set aside
+T18	AC 198 202	Skim
+T19	TOOL 248 260	a fine sieve
+T20	AC 233 239	strain
+T21	TOOL 212 228	surface of stock
+T22	OTHER 203 206	fat
+T23	AC 265 271	Return
+T24	OTHER 281 285	heat
+T25	AC 302 306	boil
+T26	TOOL 272 277	stock
+T27	AC 311 314	Add
+T28	FOOD 315 321	onions
+T29	FOOD 323 330	carrots
+T30	FOOD 335 343	rutabaga
+T31	AC 348 354	Season
+T32	FOOD 360 364	salt
+T33	FOOD 369 375	pepper
+T34	AC 380 386	Simmer
+T35	DUR 391 397	1 hour
+T36	AC 403 406	Add
+T37	FOOD 407 415	potatoes
+T38	AC 421 427	simmer
+T39	CONDITION_CLAUSE 428 440	until tender
+T40	DUR 442 458	15 to 20 minutes
+T41	AC 464 471	Stir in
+T42	FOOD 472 481	the leeks
+T43	FOOD 483 490	cabbage
+T44	FOOD 492 499	parsley
+T45	FOOD 504 517	reserved meat
+T46	AC 523 529	Simmer
+T47	DUR 530 540	10 minutes
+T48	CONDITION_CLAUSE 545 568	until cabbage is tender
+T64	zav 42 47	Place
+R1	zav_anaphor Arg1:T64 Arg2:T49	
+T65	zav 67 73	simmer
+R2	zav_anaphor Arg1:T65 Arg2:T50	
+R3	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 94 98	cool
+R4	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 184 193	set aside
+R5	zav_anaphor Arg1:T67 Arg2:T53	
+T68	zav 233 239	strain
+R6	zav_zav Arg1:T68 Arg2:T67	
+T69	zav 302 306	boil
+R7	zav_anaphor Arg1:T69 Arg2:T49	
+T70	zav 311 314	Add
+R8	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 348 354	Season
+R9	zav_zav Arg1:T71 Arg2:T70	
+R10	zav_anaphor Arg1:T71 Arg2:T54	
+R11	zav_anaphor Arg1:T71 Arg2:T55	
+R12	zav_anaphor Arg1:T71 Arg2:T56	
+T72	zav 380 386	Simmer
+R13	zav_zav Arg1:T72 Arg2:T71	
+R14	zav_anaphor Arg1:T72 Arg2:T57	
+R15	zav_anaphor Arg1:T72 Arg2:T58	
+T73	zav 403 406	Add
+R16	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 421 427	simmer
+R17	zav_anaphor Arg1:T74 Arg2:T59	
+R18	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 464 471	Stir in
+R19	zav_zav Arg1:T75 Arg2:T74	
+T76	zav 523 529	Simmer
+R20	zav_zav Arg1:T76 Arg2:T75	
+R21	zav_anaphor Arg1:T76 Arg2:T60	
+R22	zav_anaphor Arg1:T76 Arg2:T61	
+R23	zav_anaphor Arg1:T76 Arg2:T62	
+R24	zav_anaphor Arg1:T76 Arg2:T63	
+T49	anaphor 9 14	water
+T50	anaphor 48 58	beef shank
+T53	anaphor 153 157	meat
+T54	anaphor 315 321	onions
+T55	anaphor 323 330	carrots
+T56	anaphor 335 343	rutabaga
+T57	anaphor 360 364	salt
+T58	anaphor 369 375	pepper
+T59	anaphor 407 415	potatoes
+T60	anaphor 472 481	the leeks
+T61	anaphor 483 490	cabbage
+T62	anaphor 492 499	parsley
+T63	anaphor 504 517	reserved meat

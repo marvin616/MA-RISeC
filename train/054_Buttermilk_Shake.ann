@@ -1,0 +1,16 @@
+T1	AC 3 8	Place
+T2	AC 52 57	Cover
+T3	AC 62 69	process
+T4	AC 95 99	Pour
+T5	FOOD 9 24	all ingredients
+T6	TOOL 28 47	a blender container
+T7	TEMPERATURE 73 77	high
+T8	TOOL 105 112	glasses
+T9	CONDITION_CLAUSE 78 90	until smooth
+T10	zav 52 57	Cover
+T11	zav 62 69	process
+T12	zav 95 99	Pour
+R1	zav_anaphor Arg1:T10 Arg2:T13	
+R2	zav_zav Arg1:T11 Arg2:T10	
+R3	zav_zav Arg1:T12 Arg2:T11	
+T13	anaphor 9 24	all ingredients

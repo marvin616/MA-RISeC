@@ -1,0 +1,21 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 25	the mayonnaise
+T3	FOOD 27 31	milk
+T4	FOOD 33 37	salt
+T5	FOOD 42 48	pepper
+T6	TOOL 52 82	a jar with a tight fitting lid
+T8	AC 87 92	Shake
+T9	PURPOSE_CLAUSE 104 110	to mix
+T10	AC 117 121	pour
+T11	FOOD 127 137	your salad
+T7	zav 87 92	Shake
+R1	zav_anaphor Arg1:T7 Arg2:T12	
+R2	zav_anaphor Arg1:T7 Arg2:T13	
+R3	zav_anaphor Arg1:T7 Arg2:T14	
+R4	zav_anaphor Arg1:T7 Arg2:T15	
+T16	zav 117 121	pour
+R5	zav_zav Arg1:T16 Arg2:T7	
+T12	anaphor 11 25	the mayonnaise
+T13	anaphor 27 31	milk
+T14	anaphor 33 37	salt
+T15	anaphor 42 48	pepper

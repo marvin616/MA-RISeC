@@ -1,0 +1,39 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 18	stir
+T3	FOOD 28 34	garlic
+T4	FOOD 36 47	goat cheese
+T5	FOOD 49 55	celery
+T6	FOOD 57 73	balsamic vinegar
+T7	FOOD 79 88	olive oil
+T8	AC 93 99	Season
+T9	PURPOSE_CLAUSE 100 108	to taste
+T10	FOOD 114 118	salt
+T11	FOOD 123 129	pepper
+T12	AC 134 139	Blend
+T13	CONDITION_CLAUSE 145 170	until the sauce is smooth
+T14	AC 175 180	Cover
+T15	AC 186 197	refrigerate
+T16	AC 202 207	Serve
+T24	zav 93 99	Season
+R1	zav_anaphor Arg1:T24 Arg2:T17	
+R2	zav_anaphor Arg1:T24 Arg2:T18	
+R3	zav_anaphor Arg1:T24 Arg2:T19	
+R4	zav_anaphor Arg1:T24 Arg2:T20	
+R5	zav_anaphor Arg1:T24 Arg2:T21	
+T25	zav 134 139	Blend
+R6	zav_zav Arg1:T25 Arg2:T24	
+R7	zav_anaphor Arg1:T25 Arg2:T22	
+R8	zav_anaphor Arg1:T25 Arg2:T23	
+T26	zav 175 180	Cover
+R9	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 186 197	refrigerate
+R10	zav_zav Arg1:T27 Arg2:T26	
+T28	zav 202 207	Serve
+R11	zav_zav Arg1:T28 Arg2:T27	
+T17	anaphor 28 34	garlic
+T18	anaphor 36 47	goat cheese
+T19	anaphor 49 55	celery
+T20	anaphor 57 73	balsamic vinegar
+T21	anaphor 79 88	olive oil
+T22	anaphor 114 118	salt
+T23	anaphor 123 129	pepper

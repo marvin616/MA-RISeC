@@ -1,0 +1,138 @@
+T1	AC 3 7	Wash
+T2	FOOD 8 23	chicken breasts
+T3	FOOD 27 32	water
+T4	AC 42 47	place
+T5	TOOL 51 56	a pot
+T6	FOOD 62 67	water
+T7	PURPOSE_CLAUSE 73 93	to cover the chicken
+T9	AC 98 101	Add
+T10	FOOD 102 111	some salt
+T11	FOOD 116 122	pepper
+T12	FOOD 127 140	garlic powder
+T13	AC 149 153	cool
+T14	TOOL 157 164	the pot
+T15	AC 169 176	Preheat
+T16	TOOL 177 181	oven
+T17	TEMPERATURE 185 198	350 degrees F
+T18	TEMPERATURE 200 213	175 degrees C
+T19	AC 219 223	Wash
+T20	AC 228 231	cut
+T21	FOOD 232 240	potatoes
+T22	OTHER 246 262	bite size pieces
+T23	AC 267 271	boil
+T24	CONDITION_CLAUSE 272 295	till almost fork tender
+T25	AC 300 305	Drain
+T26	AC 310 319	set aside
+T27	AC 324 328	Wash
+T28	FOOD 329 335	celery
+T29	AC 340 343	cut
+T30	OTHER 347 363	bite-size pieces
+T31	AC 368 371	Cut
+T32	FOOD 372 377	onion
+T33	OTHER 381 397	bite-size pieces
+T34	TOOL 405 426	a large heavy skillet
+T35	OTHER 433 444	medium heat
+T36	AC 446 451	saute
+T37	FOOD 452 458	celery
+T38	FOOD 463 468	onion
+T39	FOOD 474 491	2 tablespoons oil
+T40	DUR 497 511	5 to 8 minutes
+T41	AC 517 520	Add
+T42	FOOD 521 542	the frozen vegetables
+T43	AC 547 551	cook
+T44	DUR 560 569	5 minutes
+T45	AC 575 578	Add
+T46	FOOD 579 584	flour
+T47	AC 589 593	cook
+T48	DUR 600 610	30 seconds
+T49	AC 616 619	Add
+T50	FOOD 620 633	chicken broth
+T51	AC 649 653	boil
+T52	CONDITION_CLAUSE 659 684	After it has become thick
+T53	AC 686 689	add
+T54	FOOD 690 698	potatoes
+T55	AC 704 710	Remove
+T56	FOOD 711 718	chicken
+T57	TOOL 724 727	pot
+T58	AC 732 735	cut
+T59	OTHER 741 757	bite-size pieces
+T60	AC 762 765	add
+T61	FOOD 769 786	vegetable mixture
+T62	AC 792 795	Add
+T63	FOOD 796 800	salt
+T64	FOOD 805 811	pepper
+T66	AC 826 830	Pour
+T67	FOOD 831 838	mixture
+T68	TOOL 844 872	a 9 inch deep dish pie plate
+T69	AC 877 882	cover
+T70	FOOD 888 897	pie shell
+T71	AC 917 922	crimp
+T72	FOOD 923 949	the edges of the pie shell
+T74	TOOL 953 962	the plate
+T75	AC 995 999	Bake
+T76	TEMPERATURE 1003 1017	350  degrees F
+T77	TEMPERATURE 1019 1032	175 degrees C
+T78	DUR 1038 1048	45 minutes
+T79	CONDITION_CLAUSE 1052 1094	until pie shell is cooked and golden brown
+T80	PURPOSE_CLAUSE 963 989	so no juices spill in oven
+T65	PURPOSE_CLAUSE 812 820	to taste
+T8	zav 42 47	place
+R1	zav_anaphor Arg1:T8 Arg2:T73	
+T81	zav 98 101	Add
+R2	zav_zav Arg1:T81 Arg2:T8	
+R3	zav_anaphor Arg1:T81 Arg2:T82	
+T86	zav 149 153	cool
+R4	zav_zav Arg1:T86 Arg2:T81	
+R5	zav_anaphor Arg1:T86 Arg2:T84	
+R6	zav_anaphor Arg1:T86 Arg2:T85	
+T87	zav 267 271	boil
+R7	zav_anaphor Arg1:T87 Arg2:T88	
+T89	zav 300 305	Drain
+R8	zav_zav Arg1:T89 Arg2:T87	
+T90	zav 310 319	set aside
+R9	zav_zav Arg1:T90 Arg2:T89	
+T91	zav 517 520	Add
+R10	zav_anaphor Arg1:T91 Arg2:T92	
+R11	zav_anaphor Arg1:T91 Arg2:T93	
+T94	zav 547 551	cook
+R12	zav_zav Arg1:T94 Arg2:T91	
+T95	zav 575 578	Add
+R13	zav_zav Arg1:T95 Arg2:T94	
+T97	zav 589 593	cook
+R14	zav_anaphor Arg1:T97 Arg2:T96	
+R15	zav_zav Arg1:T97 Arg2:T95	
+T98	zav 616 619	Add
+R16	zav_zav Arg1:T98 Arg2:T97	
+T100	zav 649 653	boil
+R17	zav_anaphor Arg1:T100 Arg2:T99	
+R18	zav_zav Arg1:T100 Arg2:T98	
+T101	zav 686 689	add
+R19	zav_zav Arg1:T101 Arg2:T100	
+T102	zav 732 735	cut
+R20	zav_anaphor Arg1:T102 Arg2:T103	
+T104	zav 762 765	add
+R21	zav_zav Arg1:T104 Arg2:T102	
+T105	zav 792 795	Add
+R22	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 826 830	Pour
+R23	zav_zav Arg1:T106 Arg2:T105	
+R24	zav_anaphor Arg1:T106 Arg2:T107	
+R25	zav_anaphor Arg1:T106 Arg2:T108	
+T109	zav 877 882	cover
+R26	zav_zav Arg1:T109 Arg2:T106	
+T110	zav 995 999	Bake
+R27	zav_zav Arg1:T110 Arg2:T109	
+R28	zav_anaphor Arg1:T110 Arg2:T111	
+T73	anaphor 8 23	chicken breasts
+T82	anaphor 62 67	water
+T84	anaphor 116 122	pepper
+T85	anaphor 127 140	garlic powder
+T88	anaphor 232 240	potatoes
+T92	anaphor 452 458	celery
+T93	anaphor 463 468	onion
+T96	anaphor 579 584	flour
+T99	anaphor 620 633	chicken broth
+T103	anaphor 711 718	chicken
+T107	anaphor 796 800	salt
+T108	anaphor 805 811	pepper
+T111	anaphor 888 897	pie shell

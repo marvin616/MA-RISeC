@@ -1,0 +1,64 @@
+T1	AC 38 41	mix
+T2	AC 127 132	Place
+T3	AC 233 237	Seal
+T4	AC 243 251	marinate
+T5	AC 281 288	turning
+T6	AC 302 309	Preheat
+T7	AC 346 349	oil
+T8	AC 370 375	Grill
+T9	TOOL 6 36	a large resealable plastic bag
+T10	FOOD 42 55	the olive oil
+T11	FOOD 57 64	parsley
+T12	FOOD 66 73	oregano
+T13	FOOD 75 80	basil
+T14	FOOD 82 89	vinegar
+T15	FOOD 91 102	kosher salt
+T16	FOOD 104 110	pepper
+T17	FOOD 116 122	garlic
+T18	FOOD 133 142	the onion
+T19	FOOD 144 153	asparagus
+T20	FOOD 155 164	mushrooms
+T21	FOOD 166 174	eggplant
+T22	FOOD 176 191	red bell pepper
+T23	FOOD 197 215	yellow bell pepper
+T24	TOOL 221 228	the bag
+T25	DUR 252 259	2 hours
+T26	TOOL 263 279	the refrigerator
+T27	TOOL 310 319	the grill
+T28	TEMPERATURE 324 333	high heat
+T29	TOOL 350 365	the grill grate
+T30	FOOD 376 390	the vegetables
+T31	DUR 391 400	6 minutes
+T32	CONDITION_CLAUSE 415 427	until tender
+T33	OTHER 401 413	on each side
+T49	zav 233 237	Seal
+R1	zav_anaphor Arg1:T49 Arg2:T42	
+R2	zav_anaphor Arg1:T49 Arg2:T43	
+R3	zav_anaphor Arg1:T49 Arg2:T44	
+R4	zav_anaphor Arg1:T49 Arg2:T45	
+R5	zav_anaphor Arg1:T49 Arg2:T46	
+R6	zav_anaphor Arg1:T49 Arg2:T47	
+R7	zav_anaphor Arg1:T49 Arg2:T34	
+R8	zav_anaphor Arg1:T49 Arg2:T35	
+R9	zav_anaphor Arg1:T49 Arg2:T36	
+R10	zav_anaphor Arg1:T49 Arg2:T37	
+R11	zav_anaphor Arg1:T49 Arg2:T38	
+R12	zav_anaphor Arg1:T49 Arg2:T39	
+R13	zav_anaphor Arg1:T49 Arg2:T40	
+R14	zav_anaphor Arg1:T49 Arg2:T41	
+T50	zav 243 251	marinate
+R15	zav_zav Arg1:T50 Arg2:T49	
+T34	anaphor 42 55	the olive oil
+T35	anaphor 57 64	parsley
+T36	anaphor 66 73	oregano
+T37	anaphor 75 80	basil
+T38	anaphor 82 89	vinegar
+T39	anaphor 91 102	kosher salt
+T40	anaphor 104 110	pepper
+T41	anaphor 116 122	garlic
+T42	anaphor 133 142	the onion
+T43	anaphor 144 153	asparagus
+T44	anaphor 155 164	mushrooms
+T45	anaphor 166 174	eggplant
+T46	anaphor 176 191	red bell pepper
+T47	anaphor 197 215	yellow bell pepper

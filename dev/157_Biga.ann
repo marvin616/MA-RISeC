@@ -1,0 +1,55 @@
+T1	AC 3 8	Place
+T2	FOOD 9 23	the warm water
+T3	TOOL 27 39	a small bowl
+T4	AC 45 53	sprinkle
+T5	FOOD 54 63	the yeast
+T6	FOOD 69 76	the top
+T7	AC 85 90	stand
+T8	CONDITION_CLAUSE 91 129	until yeast has dissolved and is foamy
+T9	DUR 137 147	15 minutes
+T10	AC 152 159	Measure
+T11	FOOD 160 165	flour
+T12	TOOL 171 183	a large bowl
+T13	AC 188 192	Make
+T14	FOOD 203 213	the center
+T15	OTHER 193 199	a well
+T16	AC 219 226	pour in
+T17	FOOD 227 244	the yeast mixture
+T18	FOOD 249 259	cold water
+T19	AC 264 267	Use
+T20	TOOL 268 282	a sturdy spoon
+T21	AC 286 289	mix
+T22	FOOD 290 292	it
+T23	CONDITION_CLAUSE 302 374	until sticky and difficult to stir, but nevertheless thoroughly combined
+T24	AC 379 384	Cover
+T25	AC 398 405	ferment
+T26	DUR 410 418	24 hours
+T27	TOOL 422 438	the refrigerator
+T28	CONDITION_CLAUSE 439 451	before using
+T29	AC 456 461	Store
+T30	TOOL 465 481	the refrigerator
+T31	DUR 486 499	up to 2 weeks
+T40	zav 85 90	stand
+T41	zav 45 53	sprinkle
+R1	zav_anaphor Arg1:T41 Arg2:T32	
+R2	zav_anaphor Arg1:T40 Arg2:T33	
+R3	zav_zav Arg1:T40 Arg2:T41	
+T42	zav 188 192	Make
+R4	zav_anaphor Arg1:T42 Arg2:T35	
+T43	zav 219 226	pour in
+R5	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 286 289	mix
+R6	zav_zav Arg1:T44 Arg2:T43	
+R7	zav_anaphor Arg1:T44 Arg2:T37	
+R8	zav_anaphor Arg1:T44 Arg2:T38	
+T45	zav 379 384	Cover
+R9	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 398 405	ferment
+R10	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 456 461	Store
+R11	zav_zav Arg1:T47 Arg2:T46	
+T32	anaphor 9 23	the warm water
+T33	anaphor 54 63	the yeast
+T35	anaphor 160 165	flour
+T37	anaphor 227 244	the yeast mixture
+T38	anaphor 249 259	cold water

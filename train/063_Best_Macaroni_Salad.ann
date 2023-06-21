@@ -1,0 +1,55 @@
+T1	AC 43 47	cook
+T2	AC 70 75	rinse
+T3	AC 124 131	combine
+T4	AC 158 161	mix
+T5	AC 215 218	Mix
+T6	AC 228 235	Drizzle
+T7	AC 274 285	Refrigerate
+T8	FOOD 179 187	cucumber
+T9	FOOD 189 194	onion
+T10	FOOD 196 199	ham
+T11	FOOD 204 210	cheese
+T12	FOOD 236 239	oil
+T13	FOOD 244 251	vinegar
+T14	TOOL 110 122	a large bowl
+T15	FOOD 48 53	pasta
+T16	AC 97 102	drain
+T17	FOOD 82 92	cold water
+T18	FOOD 143 153	mayonnaise
+T19	FOOD 257 260	top
+T20	AC 265 269	toss
+T21	DUR 290 306	at least 4 hours
+T22	CONDITION_CLAUSE 54 68	until al dente
+T23	FOOD 132 141	the pasta
+T24	AC 171 178	Stir in
+T25	FOOD 6 41	a large pot of salted boiling water
+T38	zav 70 75	rinse
+R1	zav_anaphor Arg1:T38 Arg2:T32	
+T39	zav 97 102	drain
+R2	zav_zav Arg1:T39 Arg2:T38	
+T40	zav 158 161	mix
+R3	zav_anaphor Arg1:T40 Arg2:T34	
+R4	zav_anaphor Arg1:T40 Arg2:T36	
+T41	zav 171 178	Stir in
+R5	zav_zav Arg1:T41 Arg2:T40	
+T42	zav 215 218	Mix
+R6	zav_anaphor Arg1:T42 Arg2:T26	
+R7	zav_zav Arg1:T42 Arg2:T41	
+R8	zav_anaphor Arg1:T42 Arg2:T27	
+R9	zav_anaphor Arg1:T42 Arg2:T28	
+R10	zav_anaphor Arg1:T42 Arg2:T29	
+T43	zav 265 269	toss
+R12	zav_anaphor Arg1:T43 Arg2:T31	
+R13	zav_anaphor Arg1:T43 Arg2:T30	
+T44	zav 274 285	Refrigerate
+R14	zav_zav Arg1:T44 Arg2:T43	
+R11	zav_zav Arg1:T43 Arg2:T42	
+T26	anaphor 179 187	cucumber
+T27	anaphor 189 194	onion
+T28	anaphor 196 199	ham
+T29	anaphor 204 210	cheese
+T30	anaphor 236 239	oil
+T31	anaphor 244 251	vinegar
+T32	anaphor 48 53	pasta
+T34	anaphor 143 153	mayonnaise
+T36	anaphor 132 141	the pasta

@@ -1,0 +1,142 @@
+T1	FOOD 7 13	batter
+T2	AC 15 22	combine
+T3	FOOD 23 31	the eggs
+T4	FOOD 33 38	water
+T5	FOOD 40 45	flour
+T6	FOOD 50 54	salt
+T7	TOOL 58 67	a blender
+T8	AC 72 77	Cover
+T9	AC 82 89	process
+T11	AC 108 113	stand
+T12	DUR 118 128	15 minutes
+T13	TOOL 147 163	a small saucepan
+T14	AC 165 170	saute
+T15	FOOD 171 176	onion
+T16	FOOD 180 186	butter
+T18	AC 204 211	Stir in
+T19	FOOD 212 217	flour
+T20	CONDITION_CLAUSE 218 231	until blended
+T21	AC 246 253	stir in
+T22	FOOD 254 258	milk
+T24	zav 274 278	boil
+T25	TEMPERATURE 284 295	medium heat
+T26	AC 297 305	stirring
+T27	AC 318 322	cook
+T28	AC 327 331	stir
+T29	DUR 336 345	2 minutes
+T30	CONDITION_CLAUSE 349 373	until slightly thickened
+T31	AC 378 384	Reduce
+T32	OTHER 385 389	heat
+T33	TEMPERATURE 393 396	low
+T34	AC 401 408	Stir in
+T35	FOOD 409 423	1/2 cup cheese
+T36	FOOD 425 432	mustard
+T37	FOOD 434 454	Worcestershire sauce
+T38	FOOD 456 462	pepper
+T39	FOOD 467 471	salt
+T42	AC 499 506	Stir in
+T43	FOOD 507 515	broccoli
+T44	AC 521 526	Cover
+T45	AC 528 532	keep
+T47	AC 543 547	Heat
+T48	TOOL 548 588	a lightly greased 8-in. nonstick skillet
+T49	AC 590 594	pour
+T50	FOOD 595 615	2 tablespoons batter
+T51	TOOL 621 642	the center of skillet
+T53	AC 648 652	Lift
+T54	AC 657 661	tilt
+T55	TOOL 662 665	pan
+T58	AC 693 697	Cook
+T62	AC 721 725	turn
+T63	AC 730 734	cook
+T64	DUR 735 748	15-20 seconds
+T65	AC 761 767	Remove
+T66	TOOL 771 782	a wire rack
+T67	AC 788 794	Repeat
+T68	FOOD 800 816	remaining batter
+T69	AC 818 826	greasing
+T70	TOOL 827 834	skillet
+T71	AC 850 855	Spoon
+T72	FOOD 862 877	1/2 cup filling
+T74	FOOD 897 907	each crepe
+T75	AC 909 916	roll up
+T76	AC 922 927	Place
+T77	FOOD 928 937	seam side
+T86	TOOL 946 977	an ungreased 11-in. baking dish
+T78	AC 983 991	Sprinkle
+T79	FOOD 997 1013	remaining cheese
+T80	AC 1019 1023	Bake
+T82	TEMPERATURE 1039 1052	350 degrees F
+T83	DUR 1057 1068	5-7 minutes
+T10	CONDITION_CLAUSE 90 102	until smooth
+T59	CONDITION_CLAUSE 698 719	until top appears dry
+T60	CONDITION_CLAUSE 1072 1094	until cheese is melted
+T23	CONDITION_CLAUSE 472 494	until cheese is melted
+T17	CONDITION_CLAUSE 187 199	until tender
+T40	PURPOSE_CLAUSE 666 687	to evenly coat bottom
+T41	zav 72 77	Cover
+T46	zav 82 89	process
+R1	zav_anaphor Arg1:T41 Arg2:T52	
+R2	zav_anaphor Arg1:T41 Arg2:T56	
+R3	zav_anaphor Arg1:T41 Arg2:T57	
+R4	zav_anaphor Arg1:T41 Arg2:T61	
+R5	zav_zav Arg1:T46 Arg2:T41	
+T73	zav 108 113	stand
+R6	zav_zav Arg1:T73 Arg2:T46	
+T81	zav 204 211	Stir in
+R7	zav_anaphor Arg1:T81 Arg2:T84	
+R8	zav_anaphor Arg1:T81 Arg2:T85	
+T87	zav 246 253	stir in
+R9	zav_zav Arg1:T87 Arg2:T81	
+T89	zav 297 305	stirring
+T90	zav 318 322	cook
+T91	zav 327 331	stir
+R12	zav_zav Arg1:T90 Arg2:T89	
+R13	zav_zav Arg1:T91 Arg2:T90	
+T92	zav 401 408	Stir in
+R14	zav_zav Arg1:T92 Arg2:T91	
+T98	zav 499 506	Stir in
+R15	zav_zav Arg1:T98 Arg2:T92	
+R16	zav_anaphor Arg1:T98 Arg2:T93	
+R17	zav_anaphor Arg1:T98 Arg2:T94	
+R18	zav_anaphor Arg1:T98 Arg2:T95	
+R19	zav_anaphor Arg1:T98 Arg2:T96	
+R20	zav_anaphor Arg1:T98 Arg2:T97	
+T99	zav 521 526	Cover
+T100	zav 528 532	keep
+R21	zav_zav Arg1:T99 Arg2:T98	
+R22	zav_zav Arg1:T100 Arg2:T99	
+T101	zav 693 697	Cook
+R23	zav_anaphor Arg1:T101 Arg2:T102	
+T103	zav 721 725	turn
+T104	zav 730 734	cook
+R24	zav_zav Arg1:T103 Arg2:T101	
+R25	zav_zav Arg1:T104 Arg2:T103	
+T105	zav 761 767	Remove
+R26	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 909 916	roll up
+R27	zav_anaphor Arg1:T106 Arg2:T107	
+T108	zav 983 991	Sprinkle
+R28	zav_anaphor Arg1:T108 Arg2:T109	
+T110	zav 1019 1023	Bake
+R29	zav_anaphor Arg1:T110 Arg2:T111	
+R30	zav_zav Arg1:T110 Arg2:T108	
+T52	anaphor 23 31	the eggs
+T56	anaphor 33 38	water
+T57	anaphor 40 45	flour
+T61	anaphor 50 54	salt
+T84	anaphor 171 176	onion
+T85	anaphor 180 186	butter
+T88	anaphor 254 258	milk
+T93	anaphor 409 423	1/2 cup cheese
+T94	anaphor 425 432	mustard
+T95	anaphor 434 454	Worcestershire sauce
+T96	anaphor 456 462	pepper
+T97	anaphor 467 471	salt
+T102	anaphor 595 615	2 tablespoons batter
+T107	anaphor 862 877	1/2 cup filling
+T109	anaphor 928 937	seam side
+T111	anaphor 997 1013	remaining cheese
+R31	zav_zav Arg1:T24 Arg2:T87	
+R32	zav_anaphor Arg1:T24 Arg2:T88	
+R10	zav_zav Arg1:T89 Arg2:T24	

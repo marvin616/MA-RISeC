@@ -1,0 +1,66 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 14	butter
+T3	AC 19 24	saute
+T4	FOOD 25 37	Broccoflower
+T5	FOOD 39 48	mushrooms
+T6	FOOD 50 56	onions
+T7	FOOD 61 67	garlic
+T8	DUR 72 82	10 minutes
+T9	AC 87 93	Remove
+T10	FOOD 94 113	sauteed ingredients
+T11	AC 118 129	place aside
+T12	TOOL 137 145	same pan
+T13	AC 147 151	cook
+T14	FOOD 152 160	the rice
+T15	FOOD 171 184	chicken stock
+T16	OTHER 185 202	one-cup at a time
+T17	AC 203 211	stirring
+T18	CONDITION_CLAUSE 212 235	until well incorporated
+T19	CONDITION_CLAUSE 236 262	before adding the next cup
+T20	AC 164 170	adding
+T21	CONDITION_CLAUSE 267 316	Once chicken stock is absorbed and rice is tender
+T22	AC 318 325	stir in
+T23	FOOD 326 332	nutmeg
+T24	FOOD 334 339	herbs
+T25	AC 344 350	season
+T26	FOOD 356 360	salt
+T27	FOOD 365 371	pepper
+T28	CONDITION_CLAUSE 376 403	Once rice risotto is cooked
+T29	AC 405 412	stir in
+T30	FOOD 413 436	the sauteed ingredients
+T31	FOOD 438 442	salt
+T32	FOOD 447 453	pepper
+T33	PURPOSE_CLAUSE 454 462	to taste
+T34	AC 467 474	Stir in
+T35	FOOD 475 490	Parmesan cheese
+T36	CONDITION_CLAUSE 491 505	before serving
+T53	zav 118 129	place aside
+R1	zav_anaphor Arg1:T53 Arg2:T42	
+T54	zav 203 211	stirring
+R2	zav_anaphor Arg1:T54 Arg2:T44	
+R3	zav_anaphor Arg1:T54 Arg2:T43	
+T55	zav 318 325	stir in
+T57	anaphor 302 306	rice
+R5	zav_anaphor Arg1:T55 Arg2:T56	
+T58	zav 344 350	season
+R6	zav_anaphor Arg1:T58 Arg2:T46	
+R7	zav_anaphor Arg1:T58 Arg2:T45	
+R8	zav_zav Arg1:T58 Arg2:T55	
+T60	zav 405 412	stir in
+R9	zav_anaphor Arg1:T60 Arg2:T59	
+T61	zav 467 474	Stir in
+R10	zav_zav Arg1:T61 Arg2:T60	
+R11	zav_anaphor Arg1:T61 Arg2:T49	
+R12	zav_anaphor Arg1:T61 Arg2:T50	
+R13	zav_anaphor Arg1:T61 Arg2:T51	
+T42	anaphor 94 113	sauteed ingredients
+T43	anaphor 152 160	the rice
+T44	anaphor 171 184	chicken stock
+T45	anaphor 326 332	nutmeg
+T46	anaphor 334 339	herbs
+T49	anaphor 413 436	the sauteed ingredients
+T50	anaphor 438 442	salt
+T51	anaphor 447 453	pepper
+T56	anaphor 272 285	chicken stock
+T59	anaphor 381 393	rice risotto
+R4	zav_anaphor Arg1:T55 Arg2:T57	

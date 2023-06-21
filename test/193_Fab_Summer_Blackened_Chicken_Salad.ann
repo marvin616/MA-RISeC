@@ -1,0 +1,75 @@
+T1	AC 71 77	Season
+T2	AC 147 154	Stir in
+T3	FOOD 155 169	crushed garlic
+T4	AC 174 178	Cook
+T5	AC 241 247	Remove
+T6	AC 270 275	drain
+T7	AC 293 297	cool
+T8	AC 312 316	dice
+T9	AC 318 325	discard
+T10	AC 362 365	mix
+T11	AC 459 463	toss
+T12	AC 559 562	Top
+T13	AC 3 7	Warm
+T14	FOOD 8 30	1 tablespoon olive oil
+T15	TOOL 34 49	a large skillet
+T16	TEMPERATURE 55 66	medium heat
+T17	FOOD 78 99	both sides of chicken
+T18	FOOD 105 120	Cajun seasoning
+T19	AC 126 131	place
+T20	FOOD 135 142	hot oil
+T21	FOOD 179 186	chicken
+T22	DUR 187 196	5 minutes
+T23	CONDITION_CLAUSE 214 236	until juices run clear
+T24	FOOD 248 255	chicken
+T25	TOOL 261 268	skillet
+T26	TOOL 279 291	paper towels
+T27	FOOD 326 329	oil
+T28	FOOD 334 340	garlic
+T29	TOOL 348 360	a small bowl
+T30	FOOD 366 385	remaining olive oil
+T31	FOOD 387 403	balsamic vinegar
+T32	FOOD 405 412	mustard
+T33	FOOD 414 418	salt
+T34	FOOD 424 430	pepper
+T35	TOOL 438 450	a large bowl
+T36	FOOD 464 476	the dressing
+T37	FOOD 482 504	the mixed salad greens
+T38	FOOD 506 513	arugula
+T39	FOOD 515 522	avocado
+T40	FOOD 524 542	sun-dried tomatoes
+T41	FOOD 548 554	olives
+T42	FOOD 568 581	diced chicken
+T43	PURPOSE_CLAUSE 582 590	to serve
+T44	OTHER 200 209	each side
+T66	zav 126 131	place
+R1	zav_anaphor Arg1:T66 Arg2:T48	
+R2	zav_anaphor Arg1:T66 Arg2:T47	
+T67	zav 147 154	Stir in
+R3	zav_zav Arg1:T67 Arg2:T66	
+R4	zav_anaphor Arg1:T67 Arg2:T49	
+T68	zav 270 275	drain
+R5	zav_anaphor Arg1:T68 Arg2:T51	
+T69	zav 293 297	cool
+R6	zav_zav Arg1:T69 Arg2:T68	
+T70	zav 312 316	dice
+R7	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 318 325	discard
+R8	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 559 562	Top
+R9	zav_anaphor Arg1:T72 Arg2:T59	
+R10	zav_anaphor Arg1:T72 Arg2:T60	
+R11	zav_anaphor Arg1:T72 Arg2:T61	
+R12	zav_anaphor Arg1:T72 Arg2:T62	
+R13	zav_anaphor Arg1:T72 Arg2:T63	
+R14	zav_anaphor Arg1:T72 Arg2:T64	
+T47	anaphor 78 99	both sides of chicken
+T48	anaphor 105 120	Cajun seasoning
+T49	anaphor 135 142	hot oil
+T51	anaphor 248 255	chicken
+T59	anaphor 464 476	the dressing
+T60	anaphor 482 504	the mixed salad greens
+T61	anaphor 506 513	arugula
+T62	anaphor 515 522	avocado
+T63	anaphor 524 542	sun-dried tomatoes
+T64	anaphor 548 554	olives

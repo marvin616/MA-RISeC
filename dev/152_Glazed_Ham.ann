@@ -1,0 +1,96 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	275 degrees F
+T4	TEMPERATURE 38 51	135 degrees C
+T5	AC 57 62	Place
+T6	FOOD 63 66	ham
+T7	TOOL 70 84	a roasting pan
+T8	AC 89 96	Pour in
+T9	FOOD 97 102	water
+T10	OTHER 106 120	a 2 inch depth
+T11	AC 125 130	Cover
+T12	TOOL 136 155	a tight fitting lid
+T13	AC 160 164	Bake
+T14	DUR 169 181	6 to 8 hours
+T15	TOOL 185 203	the preheated oven
+T16	AC 231 237	Remove
+T17	TOOL 243 251	the oven
+T18	AC 253 261	pour off
+T19	AC 276 283	reserve
+T20	FOOD 262 271	drippings
+T21	OTHER 309 323	any excess fat
+T22	AC 337 343	return
+T23	TOOL 347 363	the roasting pan
+T24	AC 288 294	Debone
+T25	FOOD 295 298	ham
+T26	AC 300 308	removing
+T27	AC 368 372	Skim
+T28	OTHER 373 376	fat
+T29	AC 412 419	discard
+T30	FOOD 382 406	the top of the drippings
+T31	TOOL 427 439	a small bowl
+T32	AC 441 444	mix
+T33	FOOD 445 469	one cup of the drippings
+T34	FOOD 475 480	honey
+T35	FOOD 482 493	brown sugar
+T36	FOOD 495 507	liquid smoke
+T37	FOOD 509 529	Worcestershire sauce
+T38	FOOD 534 540	cloves
+T39	AC 546 550	Pour
+T40	FOOD 551 555	this
+T41	FOOD 561 568	the ham
+T42	AC 570 575	cover
+T43	AC 580 586	return
+T44	TOOL 590 598	the oven
+T45	FOOD 604 623	Remaining drippings
+T46	AC 631 640	discarded
+T47	AC 644 652	reserved
+T48	PURPOSE_CLAUSE 653 667	for other uses
+T49	AC 673 677	Bake
+T50	DUR 690 706	30 to 40 minutes
+T51	TOOL 710 728	the preheated oven
+T52	AC 738 743	stand
+T53	DUR 748 758	10 minutes
+T54	CONDITION_CLAUSE 759 773	before serving
+T69	zav 89 96	Pour in
+R1	zav_anaphor Arg1:T69 Arg2:T55	
+T70	zav 125 130	Cover
+R2	zav_zav Arg1:T70 Arg2:T69	
+R3	zav_anaphor Arg1:T70 Arg2:T56	
+T71	zav 160 164	Bake
+R4	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 231 237	Remove
+R5	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 276 283	reserve
+R6	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 337 343	return
+R7	zav_anaphor Arg1:T74 Arg2:T58	
+T75	zav 412 419	discard
+R8	zav_anaphor Arg1:T75 Arg2:T76	
+T77	zav 546 550	Pour
+R9	zav_anaphor Arg1:T77 Arg2:T61	
+R10	zav_anaphor Arg1:T77 Arg2:T62	
+R11	zav_anaphor Arg1:T77 Arg2:T60	
+R12	zav_anaphor Arg1:T77 Arg2:T63	
+R13	zav_anaphor Arg1:T77 Arg2:T64	
+R14	zav_anaphor Arg1:T77 Arg2:T65	
+T78	zav 570 575	cover
+R15	zav_anaphor Arg1:T78 Arg2:T67	
+R16	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 580 586	return
+R17	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 673 677	Bake
+R18	zav_zav Arg1:T80 Arg2:T79	
+T81	zav 738 743	stand
+R19	zav_zav Arg1:T81 Arg2:T80	
+T55	anaphor 63 66	ham
+T56	anaphor 97 102	water
+T58	anaphor 295 298	ham
+T60	anaphor 445 469	one cup of the drippings
+T61	anaphor 475 480	honey
+T62	anaphor 482 493	brown sugar
+T63	anaphor 495 507	liquid smoke
+T64	anaphor 509 529	Worcestershire sauce
+T65	anaphor 534 540	cloves
+T67	anaphor 561 568	the ham
+T76	anaphor 373 376	fat

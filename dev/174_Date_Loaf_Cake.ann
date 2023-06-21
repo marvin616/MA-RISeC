@@ -1,0 +1,42 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	TEMPERATURE 34 47	200 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 89	a 9x5 inch loaf pan
+T8	TOOL 97 109	a large bowl
+T9	AC 111 118	combine
+T10	FOOD 119 124	dates
+T11	FOOD 126 137	brown sugar
+T12	FOOD 139 148	margarine
+T13	FOOD 153 166	boiling water
+T14	AC 175 180	stand
+T15	DUR 181 191	15 minutes
+T16	AC 196 203	Stir in
+T17	FOOD 204 209	flour
+T18	FOOD 211 215	soda
+T19	FOOD 220 227	vanilla
+T20	AC 232 236	Pour
+T21	FOOD 237 243	batter
+T22	TOOL 249 261	prepared pan
+T23	AC 266 270	Bake
+T24	TOOL 274 292	the preheated oven
+T25	DUR 297 307	45 minutes
+T26	AC 321 325	cool
+T35	zav 175 180	stand
+R1	zav_anaphor Arg1:T35 Arg2:T27	
+R2	zav_anaphor Arg1:T35 Arg2:T28	
+R3	zav_anaphor Arg1:T35 Arg2:T29	
+R4	zav_anaphor Arg1:T35 Arg2:T30	
+T36	zav 196 203	Stir in
+R5	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 266 270	Bake
+R6	zav_anaphor Arg1:T37 Arg2:T34	
+T38	zav 321 325	cool
+R7	zav_zav Arg1:T38 Arg2:T37	
+T27	anaphor 119 124	dates
+T28	anaphor 126 137	brown sugar
+T29	anaphor 139 148	margarine
+T30	anaphor 153 166	boiling water
+T34	anaphor 237 243	batter

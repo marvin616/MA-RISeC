@@ -1,0 +1,122 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	425 degrees F
+T4	TEMPERATURE 34 47	220 degrees C
+T5	TOOL 56 66	a saucepan
+T6	AC 68 75	combine
+T7	FOOD 76 83	chicken
+T8	FOOD 85 92	carrots
+T9	FOOD 94 98	peas
+T10	FOOD 104 110	celery
+T11	AC 115 118	Add
+T12	FOOD 119 124	water
+T13	PURPOSE_CLAUSE 125 133	to cover
+T14	AC 138 142	boil
+T15	DUR 147 157	15 minutes
+T16	AC 162 168	Remove
+T17	OTHER 174 178	heat
+T18	AC 180 185	drain
+T19	AC 190 193	set
+T20	TOOL 207 219	the saucepan
+T21	OTHER 225 236	medium heat
+T22	AC 238 242	cook
+T23	FOOD 243 249	onions
+T24	FOOD 253 259	butter
+T25	CONDITION_CLAUSE 260 286	until soft and translucent
+T26	AC 291 298	Stir in
+T27	FOOD 299 304	flour
+T28	FOOD 306 310	salt
+T29	FOOD 312 318	pepper
+T30	FOOD 324 335	celery seed
+T31	AC 347 354	stir in
+T32	FOOD 355 368	chicken broth
+T33	FOOD 373 377	milk
+T34	AC 382 388	Simmer
+T35	OTHER 394 409	medium-low heat
+T36	CONDITION_CLAUSE 410 421	until thick
+T37	AC 426 432	Remove
+T38	OTHER 438 442	heat
+T39	AC 447 456	set aside
+T40	AC 462 467	Place
+T41	FOOD 468 487	the chicken mixture
+T42	FOOD 491 507	bottom pie crust
+T43	AC 513 517	Pour
+T44	FOOD 518 536	hot liquid mixture
+T45	AC 547 552	Cover
+T46	FOOD 558 567	top crust
+T47	AC 569 573	seal
+T48	FOOD 574 579	edges
+T49	AC 585 593	cut away
+T50	FOOD 594 606	excess dough
+T51	FOOD 617 636	several small slits
+T52	FOOD 640 647	the top
+T54	PURPOSE_CLAUSE 648 672	to allow steam to escape
+T56	AC 612 616	Make
+T57	AC 678 685	Bake in
+T58	TOOL 686 704	the preheated oven
+T59	DUR 709 725	30 to 35 minutes
+T60	CONDITION_CLAUSE 730 780	until pastry is golden brown and filling is bubbly
+T61	AC 786 790	Cool
+T62	DUR 795 805	10 minutes
+T63	AC 813 820	serving
+T53	zav 115 118	Add
+R1	zav_anaphor Arg1:T53 Arg2:T55	
+R2	zav_anaphor Arg1:T53 Arg2:T64	
+R3	zav_anaphor Arg1:T53 Arg2:T65	
+R4	zav_anaphor Arg1:T53 Arg2:T66	
+T67	zav 138 142	boil
+R5	zav_anaphor Arg1:T67 Arg2:T68	
+R6	zav_zav Arg1:T67 Arg2:T53	
+T69	zav 162 168	Remove
+R7	zav_zav Arg1:T69 Arg2:T67	
+T70	zav 180 185	drain
+T71	zav 190 193	set
+R8	zav_zav Arg1:T70 Arg2:T69	
+R9	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 291 298	Stir in
+R10	zav_anaphor Arg1:T72 Arg2:T73	
+R11	zav_anaphor Arg1:T72 Arg2:T74	
+T75	zav 347 354	stir in
+R12	zav_zav Arg1:T75 Arg2:T72	
+R13	zav_anaphor Arg1:T75 Arg2:T76	
+R14	zav_anaphor Arg1:T75 Arg2:T77	
+R15	zav_anaphor Arg1:T75 Arg2:T78	
+R16	zav_anaphor Arg1:T75 Arg2:T79	
+T82	zav 382 388	Simmer
+R17	zav_zav Arg1:T82 Arg2:T75	
+R18	zav_anaphor Arg1:T82 Arg2:T80	
+R19	zav_anaphor Arg1:T82 Arg2:T81	
+T83	zav 426 432	Remove
+R20	zav_zav Arg1:T83 Arg2:T82	
+T84	zav 513 517	Pour
+R21	zav_anaphor Arg1:T84 Arg2:T85	
+T86	zav 547 552	Cover
+R22	zav_zav Arg1:T86 Arg2:T84	
+R23	zav_anaphor Arg1:T86 Arg2:T87	
+R24	zav_anaphor Arg1:T84 Arg2:T88	
+T89	zav 678 682	Bake
+R25	zav_anaphor Arg1:T89 Arg2:T90	
+R26	zav_zav Arg1:T89 Arg2:T86	
+R27	zav_anaphor Arg1:T89 Arg2:T91	
+T92	zav 786 790	Cool
+R28	zav_zav Arg1:T92 Arg2:T89	
+T93	zav 813 820	serving
+R29	zav_zav Arg1:T93 Arg2:T92	
+T55	anaphor 76 83	chicken
+T64	anaphor 85 92	carrots
+T65	anaphor 94 98	peas
+T66	anaphor 104 110	celery
+T68	anaphor 119 124	water
+T73	anaphor 243 249	onions
+T74	anaphor 253 259	butter
+T76	anaphor 299 304	flour
+T77	anaphor 306 310	salt
+T78	anaphor 312 318	pepper
+T79	anaphor 324 335	celery seed
+T80	anaphor 355 368	chicken broth
+T81	anaphor 373 377	milk
+T85	anaphor 468 487	the chicken mixture
+T87	anaphor 518 536	hot liquid mixture
+T88	anaphor 491 507	bottom pie crust
+T90	anaphor 617 636	several small slits
+T91	anaphor 558 567	top crust

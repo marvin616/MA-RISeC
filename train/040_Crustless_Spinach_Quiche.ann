@@ -1,0 +1,66 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 61 67	grease
+T6	TOOL 68 84	a 9 inch pie pan
+T7	AC 89 93	Heat
+T8	FOOD 94 97	oil
+T9	TOOL 101 116	a large skillet
+T10	OTHER 122 138	medium-high heat
+T11	AC 143 146	Add
+T12	FOOD 147 153	onions
+T13	AC 158 162	cook
+T14	AC 164 172	stirring
+T15	CONDITION_CLAUSE 187 208	until onions are soft
+T16	AC 213 220	Stir in
+T17	FOOD 221 228	spinach
+T18	AC 242 249	cooking
+T19	CONDITION_CLAUSE 250 286	until excess moisture has evaporated
+T20	TOOL 294 306	a large bowl
+T21	AC 308 315	combine
+T22	FOOD 316 320	eggs
+T23	FOOD 322 328	cheese
+T24	FOOD 330 334	salt
+T25	FOOD 339 345	pepper
+T26	AC 350 353	Add
+T27	FOOD 354 369	spinach mixture
+T28	AC 374 378	stir
+T29	PURPOSE_CLAUSE 379 387	to blend
+T30	AC 392 397	Scoop
+T31	TOOL 403 419	prepared pie pan
+T32	AC 424 428	Bake
+T33	TOOL 432 446	preheated oven
+T34	CONDITION_CLAUSE 447 466	until eggs have set
+T35	DUR 474 484	30 minutes
+T36	AC 494 498	cool
+T37	DUR 503 513	10 minutes
+T38	CONDITION_CLAUSE 514 528	before serving
+T39	zav 164 172	stirring
+T40	zav 158 162	cook
+R1	zav_anaphor Arg1:T40 Arg2:T41	
+R2	zav_zav Arg1:T39 Arg2:T40	
+T42	zav 213 220	Stir in
+R3	zav_zav Arg1:T42 Arg2:T39	
+T43	zav 242 249	cooking
+R4	zav_zav Arg1:T43 Arg2:T42	
+T48	zav 350 353	Add
+R5	zav_anaphor Arg1:T48 Arg2:T44	
+R6	zav_anaphor Arg1:T48 Arg2:T45	
+R7	zav_anaphor Arg1:T48 Arg2:T46	
+R8	zav_anaphor Arg1:T48 Arg2:T47	
+T50	zav 374 378	stir
+R9	zav_anaphor Arg1:T50 Arg2:T49	
+R10	zav_zav Arg1:T50 Arg2:T48	
+T51	zav 392 397	Scoop
+R11	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 424 428	Bake
+R12	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 494 498	cool
+R13	zav_zav Arg1:T53 Arg2:T52	
+T41	anaphor 147 153	onions
+T44	anaphor 316 320	eggs
+T45	anaphor 322 328	cheese
+T46	anaphor 330 334	salt
+T47	anaphor 339 345	pepper
+T49	anaphor 354 369	spinach mixture

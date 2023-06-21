@@ -1,0 +1,52 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 24 42	the teriyaki sauce
+T4	FOOD 44 56	oyster sauce
+T5	FOOD 58 67	soy sauce
+T6	FOOD 69 76	ketchup
+T7	FOOD 78 91	garlic powder
+T8	FOOD 93 96	gin
+T9	FOOD 98 110	liquid smoke
+T10	FOOD 116 121	sugar
+T11	AC 126 131	Place
+T12	FOOD 132 149	the chicken wings
+T13	TOOL 153 161	the bowl
+T14	AC 163 168	cover
+T15	AC 174 182	marinate
+T16	TOOL 186 202	the refrigerator
+T17	DUR 203 210	8 hours
+T18	DUR 214 223	overnight
+T19	AC 228 235	Preheat
+T20	TOOL 236 245	the grill
+T21	TEMPERATURE 250 258	low heat
+T22	AC 271 274	oil
+T23	TOOL 275 290	the grill grate
+T24	AC 295 302	Arrange
+T25	FOOD 303 310	chicken
+T26	TOOL 314 323	the grill
+T27	AC 329 336	discard
+T28	FOOD 337 349	the marinade
+T29	AC 354 359	Grill
+T30	FOOD 360 377	the chicken wings
+T31	FOOD 381 389	one side
+T32	DUR 394 404	20 minutes
+T33	AC 411 415	turn
+T34	AC 420 425	brush
+T35	FOOD 431 436	honey
+T36	AC 450 458	grilling
+T37	DUR 459 469	25 minutes
+T38	CONDITION_CLAUSE 474 496	until juices run clear
+T53	zav 163 168	cover
+T54	zav 174 182	marinate
+R1	zav_anaphor Arg1:T53 Arg2:T47	
+R2	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 411 415	turn
+R3	zav_anaphor Arg1:T55 Arg2:T50	
+T56	zav 420 425	brush
+R4	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 450 458	grilling
+R5	zav_anaphor Arg1:T57 Arg2:T52	
+R6	zav_zav Arg1:T57 Arg2:T56	
+T47	anaphor 132 149	the chicken wings
+T50	anaphor 360 377	the chicken wings
+T52	anaphor 431 436	honey

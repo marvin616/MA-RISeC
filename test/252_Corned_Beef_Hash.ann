@@ -1,0 +1,27 @@
+T1	TOOL 6 26	a large deep skillet
+T2	TEMPERATURE 33 44	medium heat
+T3	AC 46 53	combine
+T4	FOOD 54 66	the potatoes
+T5	FOOD 68 79	corned beef
+T6	FOOD 81 86	onion
+T7	FOOD 92 102	beef broth
+T8	AC 107 112	Cover
+T9	AC 117 123	simmer
+T10	CONDITION_CLAUSE 124 196	until potatoes are of mashing consistency, and the liquid is almost gone
+T11	AC 201 204	Mix
+T12	AC 215 220	serve
+T17	zav 107 112	Cover
+R1	zav_anaphor Arg1:T17 Arg2:T13	
+R2	zav_anaphor Arg1:T17 Arg2:T14	
+R3	zav_anaphor Arg1:T17 Arg2:T15	
+R4	zav_anaphor Arg1:T17 Arg2:T16	
+T18	zav 117 123	simmer
+R5	zav_zav Arg1:T18 Arg2:T17	
+T19	zav 201 204	Mix
+R6	zav_zav Arg1:T19 Arg2:T18	
+T20	zav 215 220	serve
+R7	zav_zav Arg1:T20 Arg2:T19	
+T13	anaphor 54 66	the potatoes
+T14	anaphor 68 79	corned beef
+T15	anaphor 81 86	onion
+T16	anaphor 92 102	beef broth

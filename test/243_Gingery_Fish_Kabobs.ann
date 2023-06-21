@@ -1,0 +1,66 @@
+T1	TOOL 6 22	a small saucepan
+T2	AC 24 32	dissolve
+T3	FOOD 33 43	cornstarch
+T4	FOOD 47 62	pineapple juice
+T5	AC 67 70	Add
+T6	FOOD 71 80	soy sauce
+T7	FOOD 82 89	vinegar
+T8	FOOD 91 97	garlic
+T9	FOOD 102 108	ginger
+T10	AC 113 119	Simmer
+T11	CONDITION_CLAUSE 120 144	until slightly thickened
+T12	DUR 146 161	about 7 minutes
+T13	AC 170 174	cool
+T14	AC 179 182	Add
+T15	FOOD 183 187	fish
+T16	FOOD 192 201	pineapple
+T17	FOOD 205 210	sauce
+T18	AC 215 223	marinate
+T19	TOOL 227 243	the refrigerator
+T20	DUR 248 258	30 minutes
+T21	AC 263 269	Thread
+T22	FOOD 270 274	fish
+T23	FOOD 276 285	pineapple
+T24	FOOD 290 295	onion
+T25	TOOL 299 306	skewers
+T26	AC 311 316	Place
+T27	TOOL 320 331	a hot grill
+T28	TOOL 336 351	under a broiler
+T29	CONDITION_CLAUSE 353 386	until fish is done to your liking
+T30	AC 391 396	Serve
+T31	FOOD 402 406	rice
+T45	zav 67 70	Add
+R1	zav_anaphor Arg1:T45 Arg2:T32	
+R2	zav_anaphor Arg1:T45 Arg2:T33	
+T46	zav 113 119	Simmer
+R3	zav_zav Arg1:T46 Arg2:T45	
+R4	zav_anaphor Arg1:T46 Arg2:T34	
+R5	zav_anaphor Arg1:T46 Arg2:T35	
+R6	zav_anaphor Arg1:T46 Arg2:T36	
+R7	zav_anaphor Arg1:T46 Arg2:T37	
+T47	zav 170 174	cool
+R8	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 179 182	Add
+T49	zav 215 223	marinate
+R10	zav_anaphor Arg1:T49 Arg2:T38	
+R9	zav_anaphor Arg1:T49 Arg2:T39	
+T50	zav 311 316	Place
+R11	zav_anaphor Arg1:T50 Arg2:T41	
+R12	zav_anaphor Arg1:T50 Arg2:T42	
+R13	zav_anaphor Arg1:T50 Arg2:T43	
+T51	zav 391 396	Serve
+R14	zav_zav Arg1:T51 Arg2:T50	
+T32	anaphor 33 43	cornstarch
+T33	anaphor 47 62	pineapple juice
+T34	anaphor 71 80	soy sauce
+T35	anaphor 82 89	vinegar
+T36	anaphor 91 97	garlic
+T37	anaphor 102 108	ginger
+T38	anaphor 183 187	fish
+T39	anaphor 192 201	pineapple
+T41	anaphor 270 274	fish
+T42	anaphor 276 285	pineapple
+T43	anaphor 290 295	onion
+R15	zav_zav Arg1:T48 Arg2:T47	
+T40	anaphor 205 210	sauce
+R16	zav_anaphor Arg1:T49 Arg2:T40	

@@ -1,0 +1,39 @@
+T1	TOOL 6 18	a large bowl
+T2	FOOD 34 46	the avocados
+T3	FOOD 48 58	lime juice
+T4	FOOD 60 72	orange juice
+T5	FOOD 74 89	pineapple juice
+T6	FOOD 91 96	cumin
+T7	FOOD 98 106	cilantro
+T8	FOOD 111 115	salt
+T9	AC 120 126	Mix in
+T10	FOOD 127 143	hot pepper sauce
+T11	CONDITION_CLAUSE 144 152	if using
+T12	AC 157 162	Place
+T13	FOOD 163 186	one of the avocado pits
+T14	TOOL 192 200	the bowl
+T15	PURPOSE_CLAUSE 201 222	to help keep it fresh
+T16	AC 227 232	Serve
+T17	AC 249 260	refrigerate
+T18	CONDITION_CLAUSE 261 274	until serving
+T19	AC 20 24	stir
+T29	zav 120 126	Mix in
+R1	zav_anaphor Arg1:T29 Arg2:T20	
+R2	zav_anaphor Arg1:T29 Arg2:T21	
+R3	zav_anaphor Arg1:T29 Arg2:T22	
+R4	zav_anaphor Arg1:T29 Arg2:T23	
+R5	zav_anaphor Arg1:T29 Arg2:T24	
+R6	zav_anaphor Arg1:T29 Arg2:T25	
+R7	zav_anaphor Arg1:T29 Arg2:T26	
+T30	zav 227 232	Serve
+R8	zav_anaphor Arg1:T30 Arg2:T28	
+T31	zav 249 260	refrigerate
+R9	zav_zav Arg1:T31 Arg2:T30	
+T20	anaphor 34 46	the avocados
+T21	anaphor 48 58	lime juice
+T22	anaphor 60 72	orange juice
+T23	anaphor 74 89	pineapple juice
+T24	anaphor 91 96	cumin
+T25	anaphor 98 106	cilantro
+T26	anaphor 111 115	salt
+T28	anaphor 163 186	one of the avocado pits

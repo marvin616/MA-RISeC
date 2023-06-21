@@ -1,0 +1,114 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	AC 53 58	Slice
+T5	AC 156 163	Drizzle
+T6	AC 272 277	Roast
+T7	AC 354 360	Change
+T8	TOOL 361 373	oven setting
+T9	TEMPERATURE 384 397	375 degrees F
+T10	AC 429 433	cool
+T11	FOOD 422 428	garlic
+T12	AC 458 463	place
+T13	TOOL 467 490	a 9x13 inch baking dish
+T14	AC 495 501	splash
+T15	FOOD 518 528	white wine
+T16	OTHER 502 512	both sides
+T17	AC 533 538	Broil
+T18	DUR 543 553	25 minutes
+T19	CONDITION_CLAUSE 557 609	until chicken is cooked through and juices run clear
+T20	AC 625 630	place
+T21	FOOD 631 637	butter
+T22	FOOD 641 650	margarine
+T23	FOOD 655 659	milk
+T24	TOOL 663 678	a large skillet
+T25	AC 683 687	heat
+T26	TEMPERATURE 693 704	medium heat
+T27	CONDITION_CLAUSE 705 715	until warm
+T28	FOOD 729 738	the flour
+T29	AC 721 728	Stir in
+T30	AC 755 759	Stir
+T31	TOOL 765 776	medium heat
+T32	CONDITION_CLAUSE 777 806	until sauce begins to thicken
+T33	AC 812 816	Slip
+T34	FOOD 817 837	cooled garlic cloves
+T35	AC 852 855	add
+T36	FOOD 859 868	the sauce
+T37	AC 900 903	Add
+T38	FOOD 904 919	chopped parsley
+T39	AC 943 947	boil
+T40	AC 949 955	reduce
+T41	AC 965 969	stir
+T42	CONDITION_CLAUSE 997 1007	If desired
+T43	AC 1009 1013	pour
+T44	FOOD 1014 1019	sauce
+T45	FOOD 1025 1036	cooked rice
+T46	FOOD 1040 1045	pasta
+T47	AC 1050 1053	top
+T48	FOOD 1059 1074	broiled chicken
+T49	FOOD 169 178	olive oil
+T50	AC 183 188	roast
+T51	TOOL 192 206	preheated oven
+T52	FOOD 59 88	the top of the head of garlic
+T53	DUR 282 292	20 minutes
+T54	CONDITION_CLAUSE 296 349	until cloves are soft and slip from skins when pushed
+T55	OTHER 377 382	broil
+T56	FOOD 843 847	skin
+T57	PURPOSE_CLAUSE 970 991	to control thickening
+T58	PURPOSE_CLAUSE 90 151	just enough to remove paper and expose the tops of the cloves
+T59	TEMPERATURE 34 47	200 degrees C
+T60	TEMPERATURE 399 412	190 degrees C
+T61	FOOD 449 456	chicken
+T62	FOOD 743 749	cheese
+T63	OTHER 956 960	heat
+T82	zav 156 163	Drizzle
+R1	zav_anaphor Arg1:T82 Arg2:T78	
+T83	zav 183 188	roast
+R2	zav_zav Arg1:T83 Arg2:T82	
+T84	zav 272 277	Roast
+R3	zav_zav Arg1:T84 Arg2:T83	
+T85	zav 458 463	place
+R4	zav_anaphor Arg1:T85 Arg2:T80	
+T86	zav 533 538	Broil
+R5	zav_zav Arg1:T86 Arg2:T85	
+R6	zav_anaphor Arg1:T86 Arg2:T65	
+T87	zav 683 687	heat
+R7	zav_anaphor Arg1:T87 Arg2:T68	
+R8	zav_anaphor Arg1:T87 Arg2:T67	
+R9	zav_anaphor Arg1:T87 Arg2:T66	
+T88	zav 721 728	Stir in
+R10	zav_zav Arg1:T88 Arg2:T87	
+T89	zav 755 759	Stir
+R11	zav_zav Arg1:T89 Arg2:T88	
+R12	zav_anaphor Arg1:T89 Arg2:T69	
+R13	zav_anaphor Arg1:T89 Arg2:T81	
+T90	zav 852 855	add
+R14	zav_anaphor Arg1:T90 Arg2:T70	
+T91	zav 900 903	Add
+R15	zav_zav Arg1:T91 Arg2:T90	
+R16	zav_anaphor Arg1:T91 Arg2:T71	
+T92	zav 943 947	boil
+R17	zav_zav Arg1:T92 Arg2:T91	
+R18	zav_anaphor Arg1:T92 Arg2:T72	
+T93	zav 965 969	stir
+R19	zav_zav Arg1:T93 Arg2:T92	
+T94	zav 1050 1053	top
+R20	zav_anaphor Arg1:T94 Arg2:T73	
+R21	zav_anaphor Arg1:T94 Arg2:T74	
+R22	zav_anaphor Arg1:T94 Arg2:T75	
+T65	anaphor 518 528	white wine
+T66	anaphor 631 637	butter
+T67	anaphor 641 650	margarine
+T68	anaphor 655 659	milk
+T69	anaphor 729 738	the flour
+T70	anaphor 817 837	cooled garlic cloves
+T71	anaphor 859 868	the sauce
+T72	anaphor 904 919	chopped parsley
+T73	anaphor 1014 1019	sauce
+T74	anaphor 1025 1036	cooked rice
+T75	anaphor 1040 1045	pasta
+T78	anaphor 59 88	the top of the head of garlic
+T80	anaphor 449 456	chicken
+T81	anaphor 743 749	cheese
+T64	anaphor 169 178	olive oil
+R23	zav_anaphor Arg1:T83 Arg2:T64	

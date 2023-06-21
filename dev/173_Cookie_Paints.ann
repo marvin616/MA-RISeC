@@ -1,0 +1,13 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 24	stir
+T3	FOOD 25 42	the food coloring
+T4	FOOD 48 67	the evaporated milk
+T5	AC 72 77	Paint
+T6	FOOD 83 90	cookies
+T7	TOOL 96 108	a paintbrush
+T8	CONDITION_CLAUSE 109 122	before baking
+T12	zav 72 77	Paint
+R1	zav_anaphor Arg1:T12 Arg2:T9	
+R2	zav_anaphor Arg1:T12 Arg2:T10	
+T9	anaphor 25 42	the food coloring
+T10	anaphor 48 67	the evaporated milk

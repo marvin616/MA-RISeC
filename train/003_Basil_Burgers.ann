@@ -1,0 +1,29 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 27	an outdoor grill
+T3	TEMPERATURE 32 41	high heat
+T4	TOOL 49 55	a bowl
+T5	AC 57 60	mix
+T6	FOOD 61 76	the ground beef
+T7	FOOD 78 98	Worcestershire sauce
+T8	FOOD 100 105	basil
+T9	FOOD 107 118	garlic salt
+T10	FOOD 124 130	pepper
+T11	AC 135 139	Form
+T12	FOOD 140 151	the mixture
+T13	FOOD 157 173	4 burger patties
+T14	AC 186 189	oil
+T15	TOOL 190 205	the grill grate
+T16	AC 211 215	cook
+T17	FOOD 216 223	burgers
+T18	DUR 230 239	6 minutes
+T19	AC 241 248	turning
+T20	OTHER 258 281	an internal temperature
+T21	TEMPERATURE 285 298	160 degrees F
+T22	TEMPERATURE 300 312	70 degrees C
+T24	AC 342 347	Serve
+T25	FOOD 351 365	hamburger buns
+T23	zav 241 248	turning
+R1	zav_anaphor Arg1:T23 Arg2:T26	
+T27	zav 342 347	Serve
+R2	zav_zav Arg1:T27 Arg2:T23	
+T26	anaphor 216 223	burgers

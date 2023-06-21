@@ -1,0 +1,48 @@
+T1	AC 282 287	Serve
+T2	AC 233 237	Cook
+T3	AC 19 22	put
+T4	AC 88 91	Add
+T5	AC 118 126	Dissolve
+T6	AC 157 160	add
+T7	AC 177 180	add
+T8	TOOL 6 17	a large pot
+T9	FOOD 23 40	the chopped onion
+T10	FOOD 42 61	chicken breast meat
+T11	FOOD 63 70	carrots
+T12	FOOD 75 83	potatoes
+T13	FOOD 92 100	the salt
+T14	FOOD 105 113	turmeric
+T15	FOOD 127 143	the tomato paste
+T16	FOOD 147 152	water
+T17	FOOD 181 194	garlic powder
+T18	FOOD 199 218	ground black pepper
+T19	DUR 242 258	1 to 1 1/2 hours
+T20	TEMPERATURE 262 277	medium low heat
+T21	PURPOSE_CLAUSE 219 228	to season
+T32	zav 88 91	Add
+R1	zav_anaphor Arg1:T32 Arg2:T22	
+R2	zav_anaphor Arg1:T32 Arg2:T23	
+R3	zav_anaphor Arg1:T32 Arg2:T24	
+R4	zav_anaphor Arg1:T32 Arg2:T25	
+T33	zav 157 160	add
+R5	zav_anaphor Arg1:T33 Arg2:T27	
+R6	zav_anaphor Arg1:T33 Arg2:T26	
+R7	zav_zav Arg1:T33 Arg2:T32	
+R8	zav_anaphor Arg1:T33 Arg2:T29	
+R9	zav_anaphor Arg1:T33 Arg2:T28	
+T34	zav 177 180	add
+R10	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 233 237	Cook
+R11	zav_zav Arg1:T35 Arg2:T34	
+R12	zav_anaphor Arg1:T35 Arg2:T30	
+R13	zav_anaphor Arg1:T35 Arg2:T31	
+T22	anaphor 23 40	the chopped onion
+T23	anaphor 42 61	chicken breast meat
+T24	anaphor 63 70	carrots
+T25	anaphor 75 83	potatoes
+T26	anaphor 92 100	the salt
+T27	anaphor 105 113	turmeric
+T28	anaphor 127 143	the tomato paste
+T29	anaphor 147 152	water
+T30	anaphor 181 194	garlic powder
+T31	anaphor 199 218	ground black pepper

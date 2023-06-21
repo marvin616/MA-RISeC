@@ -1,0 +1,73 @@
+T1	AC 42 46	boil
+T2	TOOL 9 36	a large pot of salted water
+T3	AC 51 58	Drop in
+T4	FOOD 59 67	potatoes
+T5	AC 72 76	cook
+T6	CONDITION_CLAUSE 77 104	until tender but still firm
+T7	DUR 112 122	15 minutes
+T8	AC 127 132	Drain
+T9	AC 134 138	cool
+T10	AC 153 157	peel
+T11	AC 162 168	Season
+T12	FOOD 174 178	salt
+T13	AC 185 189	mash
+T14	FOOD 190 198	potatoes
+T15	TOOL 204 208	fork
+T16	AC 213 218	Place
+T17	TOOL 222 232	large bowl
+T18	AC 238 245	stir in
+T19	FOOD 246 249	egg
+T20	FOOD 254 263	olive oil
+T21	AC 268 276	Knead in
+T22	FOOD 277 289	enough flour
+T23	TOOL 318 335	a floured surface
+T24	AC 337 341	roll
+T25	FOOD 342 347	dough
+T26	OTHER 353 364	a long rope
+T27	AC 369 372	Cut
+T28	FOOD 373 381	the rope
+T29	OTHER 387 402	1/2-inch pieces
+T30	AC 454 458	boil
+T31	FOOD 413 448	a large pot of lightly salted water
+T32	AC 464 471	Drop in
+T33	FOOD 472 479	gnocchi
+T34	AC 485 489	cook
+T35	CONDITION_CLAUSE 490 517	until they float to the top
+T36	DUR 525 539	3 to 5 minutes
+T37	AC 545 550	Serve
+T38	FOOD 556 567	pasta sauce
+T39	PURPOSE_CLAUSE 290 310	to make a soft dough
+T40	AC 3 8	Bring
+T52	zav 72 76	cook
+R1	zav_anaphor Arg1:T52 Arg2:T41	
+T53	zav 127 132	Drain
+R2	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 134 138	cool
+R3	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 153 157	peel
+R4	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 162 168	Season
+R5	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 213 218	Place
+R6	zav_anaphor Arg1:T57 Arg2:T43	
+R7	zav_anaphor Arg1:T57 Arg2:T42	
+T58	zav 238 245	stir in
+R8	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 268 276	Knead in
+R9	zav_anaphor Arg1:T59 Arg2:T44	
+R10	zav_zav Arg1:T59 Arg2:T58	
+R11	zav_anaphor Arg1:T59 Arg2:T45	
+T60	zav 464 471	Drop in
+R12	zav_anaphor Arg1:T60 Arg2:T49	
+T61	zav 485 489	cook
+R13	zav_anaphor Arg1:T61 Arg2:T50	
+R14	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 545 550	Serve
+R15	zav_zav Arg1:T62 Arg2:T61	
+T41	anaphor 59 67	potatoes
+T42	anaphor 174 178	salt
+T43	anaphor 190 198	potatoes
+T44	anaphor 246 249	egg
+T45	anaphor 254 263	olive oil
+T49	anaphor 413 448	a large pot of lightly salted water
+T50	anaphor 472 479	gnocchi

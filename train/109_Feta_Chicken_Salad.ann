@@ -1,0 +1,47 @@
+T1	TOOL 6 20	a serving bowl
+T2	AC 22 25	mix
+T3	FOOD 35 46	the chicken
+T4	FOOD 48 54	celery
+T5	FOOD 60 69	red onion
+T6	TOOL 77 92	a separate bowl
+T7	AC 94 98	stir
+T8	FOOD 108 122	the mayonnaise
+T9	FOOD 124 134	sour cream
+T10	FOOD 136 147	feta cheese
+T11	FOOD 153 157	dill
+T12	AC 162 166	Pour
+T13	FOOD 172 191	the chicken mixture
+T14	AC 197 201	stir
+T15	PURPOSE_CLAUSE 202 210	to blend
+T16	AC 215 220	Taste
+T17	AC 226 232	season
+T18	FOOD 238 242	salt
+T19	FOOD 247 253	pepper
+T20	AC 268 273	Serve
+T21	AC 290 301	refrigerate
+T22	CONDITION_CLAUSE 302 315	until serving
+T33	zav 162 166	Pour
+R1	zav_anaphor Arg1:T33 Arg2:T26	
+R2	zav_anaphor Arg1:T33 Arg2:T27	
+R3	zav_anaphor Arg1:T33 Arg2:T28	
+R4	zav_anaphor Arg1:T33 Arg2:T29	
+T34	zav 197 201	stir
+R5	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 215 220	Taste
+R6	zav_zav Arg1:T35 Arg2:T34	
+R7	zav_anaphor Arg1:T34 Arg2:T30	
+T36	zav 226 232	season
+R8	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 268 273	Serve
+R9	zav_zav Arg1:T37 Arg2:T36	
+R10	zav_anaphor Arg1:T37 Arg2:T31	
+R11	zav_anaphor Arg1:T37 Arg2:T32	
+T38	zav 290 301	refrigerate
+R12	zav_zav Arg1:T38 Arg2:T37	
+T26	anaphor 108 122	the mayonnaise
+T27	anaphor 124 134	sour cream
+T28	anaphor 136 147	feta cheese
+T29	anaphor 153 157	dill
+T30	anaphor 172 191	the chicken mixture
+T31	anaphor 238 242	salt
+T32	anaphor 247 253	pepper

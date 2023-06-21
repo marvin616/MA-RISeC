@@ -1,0 +1,56 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 40	flour
+T4	FOOD 45 49	salt
+T5	TOOL 57 76	a small mixing bowl
+T6	AC 78 82	beat
+T7	FOOD 83 92	egg yolks
+T8	AC 106 112	adding
+T9	FOOD 113 118	cream
+T10	AC 123 127	Beat
+T11	DUR 132 140	1 minute
+T12	AC 145 148	Add
+T13	FOOD 152 165	flour mixture
+T14	AC 167 174	combine
+T15	OTHER 178 187	low speed
+T16	AC 194 198	beat
+T17	OTHER 202 213	medium-high
+T18	CONDITION_CLAUSE 214 226	until smooth
+T19	TOOL 234 259	another small mixing bowl
+T20	AC 284 288	beat
+T21	FOOD 289 299	egg whites
+T22	CONDITION_CLAUSE 308 330	until stiff peaks form
+T23	OTHER 303 307	high
+T24	AC 342 346	fold
+T25	FOOD 352 358	batter
+T26	AC 363 367	Bake
+T27	TOOL 371 394	a preheated waffle iron
+T28	OTHER 395 433	according to manufacturer's directions
+T29	AC 438 443	Serve
+T30	FOOD 449 465	warm maple syrup
+T31	FOOD 469 490	fresh fruit in season
+T32	TOOL 269 282	clean beaters
+T42	zav 106 112	adding
+R1	zav_anaphor Arg1:T42 Arg2:T35	
+T43	zav 123 127	Beat
+R2	zav_zav Arg1:T43 Arg2:T42	
+R3	zav_anaphor Arg1:T43 Arg2:T36	
+T44	zav 145 148	Add
+R4	zav_zav Arg1:T44 Arg2:T43	
+T45	zav 167 174	combine
+R5	zav_anaphor Arg1:T45 Arg2:T37	
+R6	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 194 198	beat
+R7	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 342 346	fold
+R8	zav_anaphor Arg1:T47 Arg2:T38	
+T48	zav 363 367	Bake
+R9	zav_zav Arg1:T48 Arg2:T47	
+R10	zav_anaphor Arg1:T48 Arg2:T39	
+T49	zav 438 443	Serve
+R11	zav_zav Arg1:T49 Arg2:T48	
+T35	anaphor 83 92	egg yolks
+T36	anaphor 113 118	cream
+T37	anaphor 152 165	flour mixture
+T38	anaphor 289 299	egg whites
+T39	anaphor 352 358	batter

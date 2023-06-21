@@ -1,0 +1,29 @@
+T1	AC 231 236	Serve
+T2	AC 135 140	Grill
+T3	AC 14 21	combine
+T4	AC 54 61	Crumble
+T5	AC 93 96	mix
+T6	AC 106 111	Shape
+T7	TOOL 6 12	a bowl
+T8	FOOD 22 49	the first seven ingredients
+T9	FOOD 62 66	beef
+T10	FOOD 71 78	sausage
+T11	FOOD 84 91	mixture
+T12	FOOD 117 130	eight patties
+T13	TEMPERATURE 158 173	medium-hot heat
+T14	DUR 178 189	4-6 minutes
+T15	FOOD 240 244	buns
+T16	CONDITION_CLAUSE 206 226	until no longer pink
+T23	zav 93 96	mix
+R2	zav_anaphor Arg1:T23 Arg2:T19	
+R3	zav_anaphor Arg1:T23 Arg2:T18	
+R4	zav_anaphor Arg1:T23 Arg2:T17	
+T24	zav 106 111	Shape
+R1	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 135 140	Grill
+R5	zav_zav Arg1:T25 Arg2:T24	
+T26	zav 231 236	Serve
+R6	zav_zav Arg1:T26 Arg2:T25	
+T17	anaphor 22 49	the first seven ingredients
+T18	anaphor 62 66	beef
+T19	anaphor 71 78	sausage

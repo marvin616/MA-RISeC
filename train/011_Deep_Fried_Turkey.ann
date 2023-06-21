@@ -1,0 +1,61 @@
+T1	TOOL 6 22	a large stockpot
+T2	TOOL 26 38	turkey fryer
+T3	AC 40 44	heat
+T4	FOOD 45 48	oil
+T5	TEMPERATURE 52 65	400 degrees F
+T6	TEMPERATURE 67 80	200 degrees C
+T7	AC 97 102	leave
+T8	OTHER 103 107	room
+T9	FOOD 112 122	the turkey
+T10	FOOD 127 134	the oil
+T11	AC 140 145	spill
+T12	AC 155 160	Layer
+T13	TOOL 161 176	a large platter
+T14	TOOL 182 202	food-safe paper bags
+T15	AC 207 212	Rinse
+T16	FOOD 213 219	turkey
+T17	AC 236 239	pat
+T18	OTHER 240 243	dry
+T19	TOOL 249 261	paper towels
+T20	AC 266 269	Rub
+T21	FOOD 270 286	Creole seasoning
+T22	FOOD 292 298	turkey
+T26	AC 423 428	Place
+T27	FOOD 429 444	the whole onion
+T28	FOOD 449 455	turkey
+T29	TOOL 459 471	drain basket
+T30	FOOD 476 486	The turkey
+T31	AC 497 503	placed
+T32	TOOL 507 513	basket
+T33	AC 540 545	lower
+T34	TOOL 546 552	basket
+T35	FOOD 558 565	hot oil
+T36	PURPOSE_CLAUSE 566 592	to completely cover turkey
+T38	AC 598 606	Maintain
+T39	OTHER 607 622	the temperature
+T40	FOOD 626 633	the oil
+T41	TEMPERATURE 637 650	350 degrees F
+T42	TEMPERATURE 652 665	175 degrees C
+T43	AC 672 676	cook
+T44	FOOD 677 683	turkey
+T46	DUR 719 729	45 minutes
+T45	DUR 688 711	3 1/2 minutes per pound
+T47	AC 745 751	remove
+T48	TOOL 752 758	basket
+T49	FOOD 764 767	oil
+T50	AC 773 778	drain
+T51	FOOD 779 785	turkey
+T52	AC 791 797	Insert
+T53	TOOL 798 816	a meat thermometer
+T54	FOOD 822 852	the thickest part of the thigh
+T56	OTHER 854 878	the internal temperature
+T57	TEMPERATURE 887 900	180 degrees F
+T58	TEMPERATURE 902 914	80 degrees C
+T60	AC 928 936	draining
+T61	FOOD 937 943	turkey
+T62	TOOL 947 967	the prepared platter
+T23	PURPOSE_CLAUSE 375 418	so the oil can flow freely through the bird
+T24	CONDITION_CLAUSE 318 374	Make sure the hole at the neck is open at least 2 inches
+T25	zav 236 239	pat
+R1	zav_anaphor Arg1:T25 Arg2:T37	
+T37	anaphor 213 219	turkey

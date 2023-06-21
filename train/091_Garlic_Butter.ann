@@ -1,0 +1,17 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 27	combine
+T3	FOOD 28 43	softened butter
+T4	FOOD 45 58	minced garlic
+T5	FOOD 63 78	parmesan cheese
+T6	AC 83 89	Season
+T7	FOOD 95 106	garlic salt
+T8	FOOD 108 125	Italian seasoning
+T9	FOOD 127 133	pepper
+T10	FOOD 138 145	paprika
+T18	zav 83 89	Season
+R1	zav_anaphor Arg1:T18 Arg2:T11	
+R2	zav_anaphor Arg1:T18 Arg2:T12	
+R3	zav_anaphor Arg1:T18 Arg2:T13	
+T11	anaphor 28 43	softened butter
+T12	anaphor 45 58	minced garlic
+T13	anaphor 63 78	parmesan cheese

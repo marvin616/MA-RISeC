@@ -1,0 +1,65 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	325 degrees F
+T4	TEMPERATURE 38 51	165 degrees C
+T5	AC 57 63	Grease
+T6	AC 68 73	flour
+T7	TOOL 74 96	a 9x13 inch baking pan
+T8	TOOL 104 116	a large bowl
+T9	AC 118 122	beat
+T10	FOOD 123 127	eggs
+T11	FOOD 132 137	sugar
+T12	CONDITION_CLAUSE 138 158	until thick and pale
+T13	AC 163 167	Sift
+T14	FOOD 177 186	the flour
+T15	FOOD 188 201	baking powder
+T16	FOOD 203 207	salt
+T17	FOOD 209 215	cloves
+T18	FOOD 217 225	cinnamon
+T19	FOOD 230 238	allspice
+T20	AC 240 245	blend
+T21	FOOD 251 266	the egg mixture
+T22	FOOD 278 289	the vanilla
+T23	AC 302 309	fold in
+T24	FOOD 310 326	the chopped figs
+T25	FOOD 331 338	walnuts
+T26	AC 343 347	Pour
+T27	FOOD 348 358	the batter
+T28	TOOL 364 380	the prepared pan
+T29	AC 385 391	spread
+T30	AC 403 407	Bake
+T31	DUR 412 428	20 to 25 minutes
+T32	TOOL 432 450	the preheated oven
+T33	CONDITION_CLAUSE 452 473	until lightly toasted
+T34	CONDITION_CLAUSE 478 487	When cool
+T35	AC 489 492	cut
+T36	OTHER 498 505	squares
+T37	AC 510 514	roll
+T38	FOOD 515 526	the squares
+T39	FOOD 530 550	confectioners' sugar
+T55	zav 240 245	blend
+R1	zav_anaphor Arg1:T55 Arg2:T47	
+R2	zav_anaphor Arg1:T55 Arg2:T46	
+R3	zav_anaphor Arg1:T55 Arg2:T45	
+R4	zav_anaphor Arg1:T55 Arg2:T44	
+R5	zav_anaphor Arg1:T55 Arg2:T43	
+R6	zav_anaphor Arg1:T55 Arg2:T42	
+T56	zav 302 309	fold in
+R7	zav_zav Arg1:T56 Arg2:T55	
+R8	zav_anaphor Arg1:T56 Arg2:T48	
+R9	zav_anaphor Arg1:T56 Arg2:T49	
+T57	zav 403 407	Bake
+T58	zav 385 391	spread
+R10	zav_anaphor Arg1:T58 Arg2:T52	
+R11	zav_zav Arg1:T57 Arg2:T58	
+T59	zav 489 492	cut
+R12	zav_zav Arg1:T59 Arg2:T57	
+T42	anaphor 177 186	the flour
+T43	anaphor 188 201	baking powder
+T44	anaphor 203 207	salt
+T45	anaphor 209 215	cloves
+T46	anaphor 217 225	cinnamon
+T47	anaphor 230 238	allspice
+T48	anaphor 251 266	the egg mixture
+T49	anaphor 278 289	the vanilla
+T52	anaphor 348 358	the batter

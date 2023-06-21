@@ -1,0 +1,34 @@
+T1	AC 18 22	cook
+T2	AC 93 98	drain
+T3	AC 158 164	Reduce
+T4	AC 171 176	cover
+T5	AC 181 187	simmer
+T6	TOOL 6 16	a saucepan
+T7	FOOD 23 27	beef
+T8	FOOD 29 34	onion
+T9	FOOD 39 45	garlic
+T10	TEMPERATURE 51 62	medium heat
+T11	FOOD 111 136	the remaining ingredients
+T12	DUR 192 205	10-15 minutes
+T13	CONDITION_CLAUSE 63 91	until meat is no longer pink
+T14	CONDITION_CLAUSE 209 229	until heated through
+T15	AC 103 110	Stir in
+T16	AC 149 153	boil
+T17	TOOL 165 169	heat
+T22	zav 93 98	drain
+R1	zav_anaphor Arg1:T22 Arg2:T20	
+R2	zav_anaphor Arg1:T22 Arg2:T19	
+R3	zav_anaphor Arg1:T22 Arg2:T18	
+T23	zav 103 110	Stir in
+R4	zav_zav Arg1:T23 Arg2:T22	
+T24	zav 149 153	boil
+R5	zav_anaphor Arg1:T24 Arg2:T21	
+R6	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 171 176	cover
+R7	zav_zav Arg1:T25 Arg2:T24	
+T26	zav 181 187	simmer
+R8	zav_zav Arg1:T26 Arg2:T25	
+T18	anaphor 23 27	beef
+T19	anaphor 29 34	onion
+T20	anaphor 39 45	garlic
+T21	anaphor 111 136	the remaining ingredients

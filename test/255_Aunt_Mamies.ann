@@ -1,0 +1,121 @@
+T1	AC 3 7	Beat
+T2	FOOD 17 29	cream cheese
+T3	FOOD 34 43	margarine
+T4	CONDITION_CLAUSE 44 62	until well blended
+T5	AC 67 70	Add
+T6	FOOD 71 76	flour
+T7	AC 78 84	mixing
+T8	AC 94 99	Shape
+T9	FOOD 105 111	a ball
+T10	AC 113 118	cover
+T11	AC 123 128	chill
+T12	DUR 133 140	2 hours
+T13	TOOL 148 156	saucepan
+T14	TEMPERATURE 162 173	medium heat
+T15	AC 175 179	cook
+T16	FOOD 180 185	sugar
+T17	FOOD 190 194	milk
+T18	AC 196 204	stirring
+T19	CONDITION_CLAUSE 218 257	until milk boils and sugar is dissolved
+T20	AC 262 265	Add
+T21	FOOD 266 281	the ground nuts
+T22	AC 286 292	Remove
+T23	OTHER 298 302	heat
+T24	AC 311 315	cool
+T25	CONDITION_CLAUSE 316 357	until mixture is of spreading consistency
+T26	AC 362 370	Roll out
+T27	FOOD 371 384	chilled dough
+T28	TOOL 388 411	lightly floured surface
+T29	OTHER 415 447	a rectangle about 18 X 12 inches
+T30	AC 452 455	Cut
+T31	OTHER 459 474	half lengthwise
+T32	AC 479 485	Spread
+T33	FOOD 486 496	each piece
+T34	FOOD 502 518	milk/nut filling
+T35	AC 523 530	roll up
+T36	OTHER 536 548	a jelly-roll
+T37	AC 583 586	Cut
+T38	FOOD 587 596	each roll
+T39	OTHER 600 604	half
+T40	AC 610 615	Place
+T41	FOOD 616 625	seam side
+T42	TOOL 634 657	ungreased cookie sheets
+T43	AC 785 789	Bake
+T44	TEMPERATURE 793 806	350 degrees F
+T45	TEMPERATURE 808 821	175 degrees C
+T46	DUR 827 843	15 to 20 minutes
+T47	CONDITION_CLAUSE 847 856	till done
+T48	AC 862 868	Remove
+T49	TOOL 874 879	sheet
+T50	AC 884 892	sprinkle
+T51	FOOD 898 918	confectioners' sugar
+T52	AC 716 719	cut
+T53	OTHER 725 746	slices 1/2 inch thick
+T54	CONDITION_CLAUSE 687 714	Leaving roll's shape intact
+T55	AC 924 928	Cool
+T56	TOOL 932 937	racks
+T57	AC 943 946	Cut
+T58	FOOD 947 954	cookies
+T59	AC 980 991	Refrigerate
+T60	AC 995 1001	freeze
+T61	AC 1007 1017	Resprinkle
+T62	FOOD 1023 1043	confectioners' sugar
+T63	CONDITION_CLAUSE 1044 1058	before serving
+T79	zav 67 70	Add
+R1	zav_anaphor Arg1:T79 Arg2:T64	
+R2	zav_anaphor Arg1:T79 Arg2:T65	
+T80	zav 78 84	mixing
+R3	zav_anaphor Arg1:T80 Arg2:T66	
+R4	zav_zav Arg1:T80 Arg2:T79	
+T81	zav 94 99	Shape
+R5	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 113 118	cover
+R6	zav_zav Arg1:T82 Arg2:T81	
+T83	zav 123 128	chill
+R7	zav_zav Arg1:T83 Arg2:T81	
+T84	zav 196 204	stirring
+R8	zav_anaphor Arg1:T84 Arg2:T69	
+R9	zav_anaphor Arg1:T84 Arg2:T68	
+T85	zav 262 265	Add
+R10	zav_zav Arg1:T85 Arg2:T84	
+T86	zav 286 292	Remove
+R11	zav_zav Arg1:T86 Arg2:T85	
+R12	zav_anaphor Arg1:T86 Arg2:T70	
+T87	zav 311 315	cool
+R13	zav_zav Arg1:T87 Arg2:T86	
+T88	zav 452 455	Cut
+R14	zav_anaphor Arg1:T88 Arg2:T71	
+T89	zav 523 530	roll up
+R15	zav_anaphor Arg1:T89 Arg2:T72	
+R16	zav_anaphor Arg1:T89 Arg2:T73	
+T90	zav 610 615	Place
+R17	zav_anaphor Arg1:T90 Arg2:T74	
+T91	zav 716 719	cut
+R18	zav_zav Arg1:T91 Arg2:T90	
+T92	zav 785 789	Bake
+R19	zav_zav Arg1:T92 Arg2:T91	
+T93	zav 862 868	Remove
+R20	zav_zav Arg1:T93 Arg2:T92	
+T94	zav 924 928	Cool
+T95	zav 884 892	sprinkle
+R21	zav_zav Arg1:T95 Arg2:T93	
+R22	zav_zav Arg1:T94 Arg2:T95	
+R23	zav_anaphor Arg1:T94 Arg2:T76	
+T96	zav 980 991	Refrigerate
+R24	zav_anaphor Arg1:T96 Arg2:T77	
+T97	zav 995 1001	freeze
+R25	zav_zav Arg1:T97 Arg2:T96	
+T98	zav 1007 1017	Resprinkle
+R26	zav_zav Arg1:T98 Arg2:T97	
+T64	anaphor 17 29	cream cheese
+T65	anaphor 34 43	margarine
+T66	anaphor 71 76	flour
+T68	anaphor 180 185	sugar
+T69	anaphor 190 194	milk
+T70	anaphor 266 281	the ground nuts
+T71	anaphor 371 384	chilled dough
+T72	anaphor 486 496	each piece
+T73	anaphor 502 518	milk/nut filling
+T74	anaphor 587 596	each roll
+T76	anaphor 898 918	confectioners' sugar
+T77	anaphor 947 954	cookies

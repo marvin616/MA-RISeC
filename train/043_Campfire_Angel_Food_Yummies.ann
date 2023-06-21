@@ -1,0 +1,15 @@
+T1	AC 3 8	Toast
+T2	CONDITION_CLAUSE 83 96	until browned
+T3	TOOL 67 82	toasting sticks
+T4	AC 101 104	Dip
+T5	FOOD 105 121	the toasted cake
+T6	FOOD 127 145	the condensed milk
+T7	AC 151 158	roll in
+T8	FOOD 159 173	coconut flakes
+T9	FOOD 9 34	the angel food cake cubes
+T10	TOOL 40 63	the coals of a campfire
+T11	zav 151 158	roll in
+R1	zav_anaphor Arg1:T11 Arg2:T13	
+R2	zav_anaphor Arg1:T11 Arg2:T12	
+T12	anaphor 105 121	the toasted cake
+T13	anaphor 127 145	the condensed milk

@@ -1,0 +1,67 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 22	the chicken
+T3	FOOD 24 33	soy sauce
+T4	FOOD 35 42	vinegar
+T5	FOOD 44 50	garlic
+T6	FOOD 52 58	ginger
+T7	FOOD 60 70	bay leaves
+T8	FOOD 75 86	peppercorns
+T9	TOOL 90 102	a Dutch oven
+T10	AC 118 122	boil
+T11	TEMPERATURE 128 139	medium heat
+T12	CONDITION_CLAUSE 144 157	Once it boils
+T13	AC 159 165	reduce
+T14	OTHER 166 170	heat
+T15	AC 187 192	Cover
+T16	TOOL 193 200	the pot
+T17	AC 205 211	simmer
+T18	DUR 216 226	30 minutes
+T19	AC 228 235	basting
+T20	FOOD 236 247	the chicken
+T21	CONDITION_CLAUSE 265 281	After 30 minutes
+T22	AC 283 289	remove
+T23	TOOL 290 293	lid
+T24	AC 298 302	cook
+T25	CONDITION_CLAUSE 303 335	until liquid has reduced to half
+T26	AC 340 346	Remove
+T27	FOOD 347 354	chicken
+T28	TOOL 360 367	the pot
+T29	TOOL 371 386	a serving plate
+T30	AC 391 397	Strain
+T31	FOOD 398 408	the liquid
+T32	TOOL 414 421	the pot
+T33	PURPOSE_CLAUSE 425 454	remove all the food particles
+T34	AC 460 469	set aside
+T35	AC 474 479	Serve
+T36	FOOD 480 487	chicken
+T37	FOOD 497 509	steamed rice
+T38	AC 514 521	drizzle
+T39	FOOD 527 541	reserved sauce
+T40	TEMPERATURE 174 182	a simmer
+T54	zav 118 122	boil
+R1	zav_anaphor Arg1:T54 Arg2:T41	
+R2	zav_anaphor Arg1:T54 Arg2:T42	
+R3	zav_anaphor Arg1:T54 Arg2:T43	
+R4	zav_anaphor Arg1:T54 Arg2:T44	
+R5	zav_anaphor Arg1:T54 Arg2:T45	
+R6	zav_anaphor Arg1:T54 Arg2:T46	
+R7	zav_anaphor Arg1:T54 Arg2:T47	
+T55	zav 205 211	simmer
+R8	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 298 302	cook
+R9	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 460 469	set aside
+R10	zav_anaphor Arg1:T57 Arg2:T50	
+T58	zav 514 521	drizzle
+R11	zav_anaphor Arg1:T58 Arg2:T52	
+R12	zav_anaphor Arg1:T58 Arg2:T51	
+T41	anaphor 11 22	the chicken
+T42	anaphor 24 33	soy sauce
+T43	anaphor 35 42	vinegar
+T44	anaphor 44 50	garlic
+T45	anaphor 52 58	ginger
+T46	anaphor 60 70	bay leaves
+T47	anaphor 75 86	peppercorns
+T50	anaphor 398 408	the liquid
+T51	anaphor 480 487	chicken
+T52	anaphor 497 509	steamed rice

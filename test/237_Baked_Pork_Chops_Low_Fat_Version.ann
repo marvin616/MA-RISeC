@@ -1,0 +1,89 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Rinse
+T3	AC 142 147	Place
+T4	AC 210 216	Dredge
+T5	AC 307 311	Heat
+T6	AC 371 376	Place
+T7	AC 451 454	Fry
+T8	AC 537 545	Transfer
+T9	AC 608 612	Bake
+T10	AC 665 672	combine
+T11	AC 657 663	baking
+T12	AC 789 794	cover
+T13	CONDITION_CLAUSE 744 787	After the pork chops have baked for an hour
+T14	FOOD 805 821	the soup mixture
+T15	FOOD 795 799	them
+T16	AC 827 834	Replace
+T17	TOOL 835 839	foil
+T18	AC 845 849	bake
+T19	DUR 854 872	another 30 minutes
+T20	TOOL 11 15	oven
+T21	TEMPERATURE 19 32	350 degrees F
+T22	FOOD 59 69	pork chops
+T23	AC 71 74	pat
+T24	AC 84 90	season
+T25	FOOD 96 109	garlic powder
+T26	FOOD 114 128	seasoning salt
+T27	PURPOSE_CLAUSE 129 137	to taste
+T28	FOOD 148 162	the beaten egg
+T29	FOOD 167 189	egg substitute mixture
+T30	TOOL 193 205	a small bowl
+T31	FOOD 217 231	the pork chops
+T32	FOOD 243 248	flour
+T33	FOOD 257 264	the egg
+T34	AC 250 253	dip
+T35	AC 270 274	coat
+T36	FOOD 290 302	bread crumbs
+T37	FOOD 312 325	the olive oil
+T38	TOOL 329 344	a large skillet
+T39	TEMPERATURE 350 366	medium-high heat
+T40	FOOD 377 391	the pork chops
+T41	TOOL 395 402	the pan
+T42	AC 407 411	coat
+T43	FOOD 426 446	canola cooking spray
+T44	OTHER 412 420	the tops
+T45	FOOD 455 469	the pork chops
+T46	DUR 470 479	5 minutes
+T47	CONDITION_CLAUSE 493 532	until the breading appears well browned
+T48	FOOD 546 555	the chops
+T49	TOOL 559 582	a 9x13 inch baking dish
+T50	AC 588 593	cover
+T51	TOOL 599 603	foil
+T52	TOOL 616 634	the preheated oven
+T53	DUR 639 645	1 hour
+T54	FOOD 673 699	the cream of mushroom soup
+T55	FOOD 701 705	milk
+T56	FOOD 711 721	white wine
+T57	TOOL 725 738	a medium bowl
+T58	TEMPERATURE 34 47	175 degrees C
+T78	zav 71 74	pat
+R1	zav_anaphor Arg1:T78 Arg2:T61	
+T79	zav 84 90	season
+R2	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 250 253	dip
+R3	zav_anaphor Arg1:T80 Arg2:T66	
+R4	zav_anaphor Arg1:T80 Arg2:T67	
+T81	zav 270 274	coat
+R5	zav_anaphor Arg1:T81 Arg2:T68	
+R6	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 407 411	coat
+R7	zav_anaphor Arg1:T82 Arg2:T71	
+T83	zav 588 593	cover
+R8	zav_anaphor Arg1:T83 Arg2:T74	
+T84	zav 608 612	Bake
+R9	zav_zav Arg1:T84 Arg2:T83	
+T85	zav 657 663	baking
+R10	zav_zav Arg1:T85 Arg2:T84	
+T86	zav 789 794	cover
+R11	zav_anaphor Arg1:T86 Arg2:T87	
+T88	zav 845 849	bake
+R12	zav_zav Arg1:T88 Arg2:T86	
+R13	zav_anaphor Arg1:T88 Arg2:T59	
+T59	anaphor 805 821	the soup mixture
+T61	anaphor 59 69	pork chops
+T66	anaphor 217 231	the pork chops
+T67	anaphor 243 248	flour
+T68	anaphor 257 264	the egg
+T71	anaphor 377 391	the pork chops
+T74	anaphor 546 555	the chops
+T87	anaphor 750 764	the pork chops

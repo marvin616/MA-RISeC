@@ -1,0 +1,94 @@
+T1	AC 3 10	Preheat
+T2	AC 53 61	Roll out
+T3	AC 113 117	Line
+T4	AC 196 203	combine
+T5	AC 254 258	Stir
+T6	AC 339 346	combine
+T7	AC 405 409	Beat
+T8	AC 443 449	Spread
+T9	AC 522 526	Seal
+T10	AC 534 537	cut
+T11	AC 573 581	sprinkle
+T12	AC 602 606	Bake
+T13	AC 671 675	Cool
+T14	TOOL 11 15	oven
+T15	FOOD 62 74	pastry shell
+T16	AC 88 92	rest
+T17	TOOL 175 195	a medium mixing bowl
+T18	TEMPERATURE 19 32	425 degrees F
+T19	FOOD 204 215	pie filling
+T20	FOOD 217 225	cinnamon
+T21	FOOD 227 233	nutmeg
+T22	FOOD 239 249	lemon rind
+T23	CONDITION_CLAUSE 259 279	until fully combined
+T24	AC 284 290	spread
+T25	TOOL 296 312	pastry lined pan
+T26	TOOL 320 338	a small mixer bowl
+T27	FOOD 347 350	egg
+T28	FOOD 352 357	sugar
+T29	FOOD 359 370	lemon juice
+T30	FOOD 372 384	cream cheese
+T31	FOOD 390 400	sour cream
+T32	OTHER 413 425	medium speed
+T33	CONDITION_CLAUSE 426 438	until smooth
+T34	FOOD 450 464	cheese mixture
+T35	FOOD 470 483	apple mixture
+T36	AC 489 494	place
+T37	FOOD 495 504	top crust
+T38	FOOD 510 517	filling
+T39	OTHER 527 532	edges
+T40	OTHER 538 554	some steam vents
+T41	FOOD 558 567	top crust
+T42	FOOD 591 596	sugar
+T43	TOOL 610 624	preheated oven
+T44	DUR 629 645	25 to 30 minutes
+T45	CONDITION_CLAUSE 647 665	until golden brown
+T46	TEMPERATURE 34 47	220 degrees C
+T47	TOOL 96 108	refrigerator
+T48	TOOL 118 134	a 9 inch pie pan
+T49	FOOD 140 167	one rolled out pastry crust
+T50	OTHER 582 585	top
+T51	CONDITION_CLAUSE 687 701	before serving
+T69	zav 88 92	rest
+R1	zav_anaphor Arg1:T69 Arg2:T52	
+T70	zav 254 258	Stir
+R2	zav_anaphor Arg1:T70 Arg2:T53	
+R3	zav_anaphor Arg1:T70 Arg2:T54	
+R4	zav_anaphor Arg1:T70 Arg2:T55	
+R5	zav_anaphor Arg1:T70 Arg2:T56	
+T71	zav 284 290	spread
+R6	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 405 409	Beat
+R7	zav_anaphor Arg1:T72 Arg2:T57	
+R8	zav_anaphor Arg1:T72 Arg2:T58	
+R9	zav_anaphor Arg1:T72 Arg2:T59	
+R10	zav_anaphor Arg1:T72 Arg2:T60	
+R11	zav_anaphor Arg1:T72 Arg2:T61	
+T73	zav 522 526	Seal
+T74	zav 489 494	place
+R12	zav_anaphor Arg1:T74 Arg2:T63	
+R13	zav_anaphor Arg1:T74 Arg2:T62	
+T76	zav 573 581	sprinkle
+T77	zav 602 606	Bake
+R18	zav_zav Arg1:T77 Arg2:T76	
+T78	zav 671 675	Cool
+R19	zav_zav Arg1:T78 Arg2:T77	
+T52	anaphor 62 74	pastry shell
+T53	anaphor 204 215	pie filling
+T54	anaphor 217 225	cinnamon
+T55	anaphor 227 233	nutmeg
+T56	anaphor 239 249	lemon rind
+T57	anaphor 347 350	egg
+T58	anaphor 352 357	sugar
+T59	anaphor 359 370	lemon juice
+T60	anaphor 372 384	cream cheese
+T61	anaphor 390 400	sour cream
+T62	anaphor 450 464	cheese mixture
+T63	anaphor 470 483	apple mixture
+T64	anaphor 495 504	top crust
+T65	anaphor 558 567	top crust
+T66	anaphor 591 596	sugar
+R20	zav_anaphor Arg1:T77 Arg2:T66	
+R21	zav_anaphor Arg1:T76 Arg2:T65	
+R15	zav_anaphor Arg1:T73 Arg2:T64	
+R14	zav_zav Arg1:T77 Arg2:T74	

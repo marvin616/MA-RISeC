@@ -1,0 +1,48 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 28 32	toss
+T3	FOOD 33 38	bread
+T4	FOOD 43 48	water
+T5	TOOL 56 65	a skillet
+T6	AC 67 72	saute
+T7	FOOD 73 79	celery
+T8	FOOD 81 86	onion
+T9	FOOD 91 100	mushrooms
+T10	FOOD 104 107	oil
+T11	CONDITION_CLAUSE 108 120	until tender
+T12	AC 122 130	stirring
+T13	AC 146 150	Stir
+T14	FOOD 156 169	bread mixture
+T15	AC 174 177	Add
+T16	FOOD 178 199	remaining ingredients
+T17	AC 201 204	mix
+T18	AC 214 219	Place
+T19	TOOL 223 247	a greased 2-qt casserole
+T20	AC 252 257	Cover
+T21	AC 262 266	bake
+T22	TEMPERATURE 270 283	350 degrees F
+T23	DUR 288 298	30 minutes
+T32	zav 122 130	stirring
+R1	zav_anaphor Arg1:T32 Arg2:T29	
+R2	zav_anaphor Arg1:T32 Arg2:T28	
+R3	zav_anaphor Arg1:T32 Arg2:T27	
+R4	zav_anaphor Arg1:T32 Arg2:T26	
+T33	zav 146 150	Stir
+R5	zav_zav Arg1:T33 Arg2:T32	
+T34	zav 174 177	Add
+R6	zav_zav Arg1:T34 Arg2:T33	
+R7	zav_anaphor Arg1:T34 Arg2:T30	
+T35	zav 201 204	mix
+R8	zav_anaphor Arg1:T35 Arg2:T31	
+R9	zav_zav Arg1:T35 Arg2:T34	
+T36	zav 214 219	Place
+R10	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 252 257	Cover
+R11	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 262 266	bake
+R12	zav_zav Arg1:T38 Arg2:T37	
+T26	anaphor 73 79	celery
+T27	anaphor 81 86	onion
+T28	anaphor 91 100	mushrooms
+T29	anaphor 104 107	oil
+T30	anaphor 156 169	bread mixture
+T31	anaphor 178 199	remaining ingredients

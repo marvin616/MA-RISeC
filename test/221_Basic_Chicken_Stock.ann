@@ -1,0 +1,87 @@
+T1	AC 3 10	Quarter
+T2	AC 21 25	Chop
+T3	AC 76 81	Place
+T4	AC 174 177	Add
+T5	AC 215 221	Reduce
+T6	AC 261 267	Remove
+T7	AC 295 301	Strain
+T8	AC 312 316	Skim
+T9	AC 342 350	Separate
+T10	AC 428 435	combine
+T11	AC 493 496	Add
+T12	AC 531 535	boil
+T13	AC 541 547	Remove
+T14	AC 567 572	stand
+T15	AC 588 594	Strain
+T16	FOOD 11 16	onion
+T17	FOOD 26 41	scrubbed celery
+T18	FOOD 46 52	carrot
+T19	OTHER 58 71	1 inch chunks
+T20	FOOD 82 96	chicken pieces
+T21	FOOD 98 103	onion
+T22	FOOD 105 111	celery
+T23	FOOD 113 119	carrot
+T24	FOOD 121 125	salt
+T25	FOOD 131 137	cloves
+T26	TOOL 141 155	large soup pot
+T27	TOOL 159 169	Dutch oven
+T28	FOOD 178 190	6 cups water
+T29	AC 206 210	boil
+T30	OTHER 222 226	heat
+T31	AC 228 233	cover
+T32	AC 239 245	simmer
+T33	DUR 250 256	1 hour
+T34	FOOD 268 275	chicken
+T35	FOOD 280 290	vegetables
+T36	FOOD 302 307	stock
+T37	FOOD 317 320	fat
+T38	OTHER 325 336	the surface
+T39	FOOD 351 364	the egg white
+T40	FOOD 370 382	the egg yolk
+T41	AC 388 395	reserve
+T42	FOOD 396 405	the shell
+T43	TOOL 414 426	a small bowl
+T44	FOOD 436 454	1/4 cup cold water
+T45	FOOD 456 465	egg white
+T46	FOOD 471 487	crushed eggshell
+T47	FOOD 500 514	strained stock
+T48	TOOL 553 557	heat
+T49	DUR 573 582	5 minutes
+T50	TOOL 628 639	cheesecloth
+T51	TOOL 609 616	a sieve
+T73	zav 174 177	Add
+R1	zav_anaphor Arg1:T73 Arg2:T55	
+R2	zav_anaphor Arg1:T73 Arg2:T56	
+R3	zav_anaphor Arg1:T73 Arg2:T57	
+R4	zav_anaphor Arg1:T73 Arg2:T58	
+R5	zav_anaphor Arg1:T73 Arg2:T59	
+R6	zav_anaphor Arg1:T73 Arg2:T60	
+T74	zav 206 210	boil
+R7	zav_zav Arg1:T74 Arg2:T73	
+R8	zav_anaphor Arg1:T74 Arg2:T61	
+T75	zav 228 233	cover
+R9	zav_zav Arg1:T75 Arg2:T74	
+T76	zav 239 245	simmer
+R10	zav_zav Arg1:T76 Arg2:T75	
+T77	zav 493 496	Add
+R11	zav_anaphor Arg1:T77 Arg2:T69	
+R12	zav_anaphor Arg1:T77 Arg2:T70	
+R13	zav_anaphor Arg1:T77 Arg2:T71	
+T78	zav 531 535	boil
+R14	zav_anaphor Arg1:T78 Arg2:T72	
+R15	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 541 547	Remove
+R16	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 567 572	stand
+R17	zav_zav Arg1:T80 Arg2:T79	
+T55	anaphor 82 96	chicken pieces
+T56	anaphor 98 103	onion
+T57	anaphor 105 111	celery
+T58	anaphor 113 119	carrot
+T59	anaphor 121 125	salt
+T60	anaphor 131 137	cloves
+T61	anaphor 178 190	6 cups water
+T69	anaphor 436 454	1/4 cup cold water
+T70	anaphor 456 465	egg white
+T71	anaphor 471 487	crushed eggshell
+T72	anaphor 500 514	strained stock

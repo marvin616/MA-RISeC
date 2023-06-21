@@ -1,0 +1,82 @@
+T1	AC 3 8	Place
+T2	FOOD 9 23	whole potatoes
+T3	FOOD 44 72	a large pot of boiling water
+T4	AC 74 78	boil
+T5	DUR 83 99	25 to 30 minutes
+T6	AC 104 110	Remove
+T7	FOOD 111 119	potatoes
+T8	AC 125 132	discard
+T9	FOOD 133 138	water
+T10	CONDITION_CLAUSE 143 169	When cool enough to handle
+T11	AC 171 175	peel
+T12	FOOD 176 184	potatoes
+T13	AC 190 195	place
+T14	TOOL 199 224	a lightly floured surface
+T15	AC 229 233	Mash
+T16	FOOD 234 242	potatoes
+T17	TOOL 248 261	a rolling pin
+T18	AC 266 271	Place
+T19	FOOD 272 287	mashed potatoes
+T20	TOOL 293 305	a large bowl
+T21	AC 310 317	Stir in
+T22	FOOD 318 323	flour
+T23	FOOD 325 328	egg
+T24	FOOD 330 337	parsley
+T25	FOOD 339 343	salt
+T26	FOOD 349 355	nutmeg
+T27	AC 360 365	Knead
+T28	PURPOSE_CLAUSE 371 393	to form a smooth dough
+T29	AC 403 411	roll out
+T30	FOOD 412 421	the dough
+T31	FOOD 425 454	a thickness of about 1/2 inch
+T32	AC 459 462	Cut
+T33	FOOD 463 478	flattened dough
+T34	FOOD 484 495	thin strips
+T35	OTHER 503 520	1 1/2 inches long
+T36	AC 533 541	roll out
+T37	FOOD 542 552	the strips
+T38	FOOD 565 569	them
+T39	CONDITION_CLAUSE 570 590	until the ends taper
+T40	AC 596 605	Set aside
+T41	DUR 610 620	15 minutes
+T42	TOOL 629 644	a large skillet
+T43	AC 646 650	heat
+T44	TEMPERATURE 661 672	medium heat
+T45	AC 678 683	Place
+T46	FOOD 684 701	the potato strips
+T47	TOOL 707 718	the skillet
+T48	AC 724 727	fry
+T49	CONDITION_CLAUSE 728 760	until golden brown on both sides
+T50	FOOD 651 655	lard
+T51	AC 557 564	stretch
+T72	zav 74 78	boil
+R1	zav_anaphor Arg1:T72 Arg2:T53	
+R2	zav_anaphor Arg1:T72 Arg2:T52	
+T73	zav 190 195	place
+R3	zav_anaphor Arg1:T73 Arg2:T56	
+T74	zav 310 317	Stir in
+R4	zav_anaphor Arg1:T74 Arg2:T58	
+R5	zav_anaphor Arg1:T74 Arg2:T57	
+T75	zav 360 365	Knead
+R6	zav_zav Arg1:T75 Arg2:T74	
+R7	zav_anaphor Arg1:T75 Arg2:T59	
+R8	zav_anaphor Arg1:T75 Arg2:T60	
+R9	zav_anaphor Arg1:T75 Arg2:T61	
+R10	zav_anaphor Arg1:T75 Arg2:T62	
+R11	zav_anaphor Arg1:T75 Arg2:T63	
+T76	zav 596 605	Set aside
+R12	zav_anaphor Arg1:T76 Arg2:T68	
+T77	zav 724 727	fry
+R13	zav_anaphor Arg1:T77 Arg2:T70	
+T52	anaphor 9 23	whole potatoes
+T53	anaphor 44 72	a large pot of boiling water
+T56	anaphor 176 184	potatoes
+T57	anaphor 234 242	potatoes
+T58	anaphor 272 287	mashed potatoes
+T59	anaphor 318 323	flour
+T60	anaphor 325 328	egg
+T61	anaphor 330 337	parsley
+T62	anaphor 339 343	salt
+T63	anaphor 349 355	nutmeg
+T68	anaphor 542 552	the strips
+T70	anaphor 684 701	the potato strips

@@ -1,0 +1,108 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 28	combine
+T3	FOOD 29 55	the first four ingredients
+T4	TOOL 63 73	a saucepan
+T5	AC 75 82	combine
+T6	FOOD 83 88	water
+T7	FOOD 90 93	oil
+T8	FOOD 95 101	butter
+T9	FOOD 106 111	cocoa
+T10	AC 124 128	boil
+T11	TEMPERATURE 134 145	medium heat
+T12	AC 150 154	pour
+T13	FOOD 160 175	dry ingredients
+T14	AC 177 180	mix
+T15	AC 190 193	Add
+T16	FOOD 194 198	eggs
+T17	FOOD 200 210	buttermilk
+T18	FOOD 212 219	vanilla
+T19	FOOD 224 235	baking soda
+T20	AC 237 240	mix
+T21	AC 250 254	Pour
+T22	TOOL 260 291	a greased and floured 15-in pan
+T23	AC 296 300	Bake
+T24	TEMPERATURE 304 317	375 degrees F
+T25	DUR 322 335	15-20 minutes
+T26	CONDITION_CLAUSE 339 397	until a toothpick inserted near the center comes out clean
+T27	FOOD 417 425	frosting
+T28	AC 427 434	combine
+T29	FOOD 435 445	the butter
+T30	FOOD 447 452	cream
+T31	FOOD 454 459	cocoa
+T32	FOOD 464 472	cinnamon
+T33	TOOL 476 486	a saucepan
+T34	AC 491 495	Cook
+T35	AC 500 504	stir
+T36	TEMPERATURE 510 521	medium heat
+T37	CONDITION_CLAUSE 522 574	until butter is melted and mixture is heated through
+T38	AC 579 585	Remove
+T39	TOOL 591 599	the heat
+T40	FOOD 609 614	sugar
+T41	AC 601 608	beat in
+T42	FOOD 619 626	vanilla
+T43	CONDITION_CLAUSE 627 639	until smooth
+T44	AC 645 652	Stir in
+T45	FOOD 653 660	walnuts
+T46	AC 676 682	spread
+T47	FOOD 688 696	hot cake
+T48	AC 702 706	Cool
+T68	zav 124 128	boil
+R1	zav_anaphor Arg1:T68 Arg2:T53	
+R2	zav_anaphor Arg1:T68 Arg2:T52	
+R3	zav_anaphor Arg1:T68 Arg2:T51	
+R4	zav_anaphor Arg1:T68 Arg2:T50	
+T69	zav 177 180	mix
+T70	zav 150 154	pour
+R5	zav_zav Arg1:T70 Arg2:T68	
+R6	zav_anaphor Arg1:T69 Arg2:T54	
+R7	zav_zav Arg1:T69 Arg2:T70	
+T71	zav 190 193	Add
+R8	zav_zav Arg1:T71 Arg2:T69	
+T72	zav 237 240	mix
+R9	zav_anaphor Arg1:T72 Arg2:T58	
+R10	zav_anaphor Arg1:T72 Arg2:T57	
+R11	zav_anaphor Arg1:T72 Arg2:T56	
+R12	zav_anaphor Arg1:T72 Arg2:T55	
+R13	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 250 254	Pour
+R14	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 296 300	Bake
+R15	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 491 495	Cook
+R16	zav_anaphor Arg1:T75 Arg2:T60	
+R17	zav_anaphor Arg1:T75 Arg2:T61	
+R18	zav_anaphor Arg1:T75 Arg2:T62	
+R19	zav_anaphor Arg1:T75 Arg2:T63	
+T76	zav 500 504	stir
+R20	zav_zav Arg1:T76 Arg2:T75	
+T77	zav 579 585	Remove
+R21	zav_zav Arg1:T77 Arg2:T76	
+T78	zav 601 608	beat in
+R22	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 645 652	Stir in
+R23	zav_zav Arg1:T79 Arg2:T78	
+R24	zav_anaphor Arg1:T79 Arg2:T64	
+R25	zav_anaphor Arg1:T79 Arg2:T65	
+T80	zav 676 682	spread
+R26	zav_zav Arg1:T80 Arg2:T79	
+R27	zav_anaphor Arg1:T80 Arg2:T66	
+T81	zav 702 706	Cool
+R28	zav_zav Arg1:T81 Arg2:T80	
+R29	zav_anaphor Arg1:T81 Arg2:T67	
+T50	anaphor 83 88	water
+T51	anaphor 90 93	oil
+T52	anaphor 95 101	butter
+T53	anaphor 106 111	cocoa
+T54	anaphor 160 175	dry ingredients
+T55	anaphor 194 198	eggs
+T56	anaphor 200 210	buttermilk
+T57	anaphor 212 219	vanilla
+T58	anaphor 224 235	baking soda
+T60	anaphor 435 445	the butter
+T61	anaphor 447 452	cream
+T62	anaphor 454 459	cocoa
+T63	anaphor 464 472	cinnamon
+T64	anaphor 609 614	sugar
+T65	anaphor 619 626	vanilla
+T66	anaphor 653 660	walnuts
+T67	anaphor 688 696	hot cake

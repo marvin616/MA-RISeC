@@ -1,0 +1,25 @@
+T1	TOOL 6 34	a medium microwave safe bowl
+T2	AC 36 41	place
+T3	FOOD 42 54	the caramels
+T4	FOOD 59 75	light corn syrup
+T5	AC 80 89	Microwave
+T6	TEMPERATURE 93 102	high heat
+T7	DUR 117 127	30 seconds
+T8	CONDITION_CLAUSE 129 141	until melted
+T9	AC 146 151	Place
+T10	FOOD 152 158	apples
+T11	TOOL 162 170	the bowl
+T12	AC 176 180	toss
+T13	CONDITION_CLAUSE 181 239	until coated with the caramel and light corn syrup mixture
+T14	AC 253 257	cool
+T15	CONDITION_CLAUSE 258 272	before serving
+T19	zav 80 89	Microwave
+R1	zav_anaphor Arg1:T19 Arg2:T16	
+R2	zav_anaphor Arg1:T19 Arg2:T17	
+T20	zav 176 180	toss
+R3	zav_anaphor Arg1:T20 Arg2:T18	
+T21	zav 253 257	cool
+R4	zav_zav Arg1:T21 Arg2:T20	
+T16	anaphor 42 54	the caramels
+T17	anaphor 59 75	light corn syrup
+T18	anaphor 152 158	apples

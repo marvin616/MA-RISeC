@@ -1,0 +1,135 @@
+T1	AC 3 6	Cut
+T2	FOOD 7 22	chicken breasts
+T3	OTHER 28 41	1 inch strips
+T4	AC 46 51	Place
+T5	TOOL 55 68	a medium bowl
+T6	FOOD 74 90	desired marinade
+T7	AC 96 104	marinate
+T8	TOOL 108 124	the refrigerator
+T9	DUR 129 148	at least 30 minutes
+T10	AC 153 160	Preheat
+T11	TOOL 161 165	oven
+T12	TEMPERATURE 169 182	350 degrees F
+T13	TEMPERATURE 184 197	175 degrees C
+T14	AC 203 207	Heat
+T15	FOOD 208 211	oil
+T16	TOOL 215 230	a large skillet
+T17	TEMPERATURE 236 247	medium heat
+T18	AC 252 257	Saute
+T19	FOOD 258 265	chicken
+T20	FOOD 270 276	onions
+T21	CONDITION_CLAUSE 277 306	until chicken is evenly brown
+T22	AC 311 318	Stir in
+T23	FOOD 319 333	diced tomatoes
+T24	FOOD 339 358	green chile peppers
+T25	FOOD 360 375	stewed tomatoes
+T26	FOOD 377 390	chile peppers
+T27	FOOD 392 396	soup
+T28	FOOD 401 406	broth
+T29	AC 430 434	boil
+T30	FOOD 417 424	mixture
+T31	AC 439 445	Reduce
+T32	OTHER 446 450	heat
+T33	AC 452 457	cover
+T34	TOOL 458 465	skillet
+T35	AC 471 477	simmer
+T36	DUR 482 498	20 to 30 minutes
+T37	CONDITION_CLAUSE 503 555	until chicken is no longer pink and juices run clear
+T38	AC 560 566	Remove
+T39	FOOD 567 574	chicken
+T40	TOOL 580 587	skillet
+T41	AC 593 598	shred
+T42	CONDITION_CLAUSE 599 625	when cool enough to handle
+T43	FOOD 648 663	skillet mixture
+T44	AC 667 673	simmer
+T45	AC 678 684	reduce
+T46	OTHER 688 704	about 2 1/4 cups
+T47	TOOL 713 726	a medium bowl
+T48	AC 728 735	combine
+T49	FOOD 736 752	shredded chicken
+T50	FOOD 763 786	1/4 cup skillet mixture
+T51	PURPOSE_CLAUSE 788 828	just enough to make a paste like mixture
+T52	AC 835 838	Mix
+T53	FOOD 853 882	half the chopped green onions
+T54	AC 888 892	Pour
+T55	FOOD 893 928	remaining 2 cups of skillet mixture
+T56	TOOL 934 957	a 9x13 inch baking dish
+T57	TOOL 966 982	a second skillet
+T58	AC 984 988	heat
+T59	FOOD 989 994	cream
+T60	TEMPERATURE 1000 1008	low heat
+T61	AC 1024 1035	not to boil
+T62	AC 1041 1044	Dip
+T63	FOOD 1045 1054	tortillas
+T64	FOOD 1058 1072	the warm cream
+T65	PURPOSE_CLAUSE 1076 1091	soften and coat
+T66	AC 1097 1102	Spoon
+T67	FOOD 1109 1132	1/3 cup chicken mixture
+T68	FOOD 1138 1151	each tortilla
+T69	AC 1157 1160	Top
+T70	FOOD 1161 1176	chicken mixture
+T71	FOOD 1182 1206	half the shredded cheese
+T72	AC 1212 1219	roll up
+T73	FOOD 1220 1229	tortillas
+T74	AC 1235 1240	Place
+T75	FOOD 1241 1257	rolled tortillas
+T76	TOOL 1261 1272	baking dish
+T77	AC 1294 1301	drizzle
+T78	FOOD 1307 1322	enchilada sauce
+T79	AC 1328 1333	Cover
+T80	FOOD 1339 1364	remaining shredded cheese
+T81	AC 1370 1378	sprinkle
+T82	FOOD 1379 1408	remaining chopped green onion
+T83	FOOD 1414 1420	cheese
+T84	AC 1426 1430	Bake
+T85	TOOL 1444 1458	preheated oven
+T86	DUR 1463 1473	25 minutes
+T87	CONDITION_CLAUSE 1478 1513	until cheese is melted and bubbling
+T119	zav 96 104	marinate
+R1	zav_anaphor Arg1:T119 Arg2:T89	
+R2	zav_anaphor Arg1:T119 Arg2:T88	
+T120	zav 311 318	Stir in
+R3	zav_anaphor Arg1:T120 Arg2:T91	
+R4	zav_anaphor Arg1:T120 Arg2:T92	
+T121	zav 430 434	boil
+R5	zav_zav Arg1:T121 Arg2:T120	
+R6	zav_anaphor Arg1:T121 Arg2:T93	
+R7	zav_anaphor Arg1:T121 Arg2:T94	
+R8	zav_anaphor Arg1:T121 Arg2:T95	
+R9	zav_anaphor Arg1:T121 Arg2:T96	
+R10	zav_anaphor Arg1:T121 Arg2:T97	
+R11	zav_anaphor Arg1:T121 Arg2:T98	
+T122	zav 471 477	simmer
+R12	zav_zav Arg1:T122 Arg2:T121	
+T123	zav 593 598	shred
+R13	zav_anaphor Arg1:T123 Arg2:T100	
+T124	zav 835 838	Mix
+R14	zav_anaphor Arg1:T124 Arg2:T102	
+R15	zav_anaphor Arg1:T124 Arg2:T103	
+T125	zav 1294 1301	drizzle
+R16	zav_anaphor Arg1:T125 Arg2:T114	
+T126	zav 1328 1333	Cover
+R17	zav_zav Arg1:T126 Arg2:T125	
+R18	zav_anaphor Arg1:T126 Arg2:T115	
+T127	zav 1370 1378	sprinkle
+T128	zav 1426 1430	Bake
+R22	zav_anaphor Arg1:T128 Arg2:T118	
+R19	zav_anaphor Arg1:T128 Arg2:T117	
+T88	anaphor 7 22	chicken breasts
+T89	anaphor 74 90	desired marinade
+T91	anaphor 258 265	chicken
+T92	anaphor 270 276	onions
+T93	anaphor 319 333	diced tomatoes
+T94	anaphor 339 358	green chile peppers
+T95	anaphor 360 375	stewed tomatoes
+T96	anaphor 377 390	chile peppers
+T97	anaphor 392 396	soup
+T98	anaphor 401 406	broth
+T100	anaphor 567 574	chicken
+T102	anaphor 736 752	shredded chicken
+T103	anaphor 763 786	1/4 cup skillet mixture
+T114	anaphor 1241 1257	rolled tortillas
+T115	anaphor 1307 1322	enchilada sauce
+T117	anaphor 1379 1408	remaining chopped green onion
+T118	anaphor 1414 1420	cheese
+R20	zav_zav Arg1:T127 Arg2:T126	

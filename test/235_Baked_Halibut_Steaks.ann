@@ -1,0 +1,64 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	450 degrees F
+T4	AC 58 64	grease
+T5	TOOL 65 86	a shallow baking dish
+T6	AC 91 95	Heat
+T7	FOOD 96 105	olive oil
+T8	TOOL 109 126	a medium saucepan
+T9	TEMPERATURE 132 143	medium heat
+T10	AC 148 155	stir in
+T11	FOOD 156 164	zucchini
+T12	FOOD 166 171	onion
+T13	FOOD 177 183	garlic
+T14	AC 185 189	Cook
+T15	AC 194 198	stir
+T16	DUR 199 208	5 minutes
+T17	CONDITION_CLAUSE 212 224	until tender
+T18	AC 229 235	Remove
+T19	TOOL 236 244	saucepan
+T20	TOOL 250 254	heat
+T21	AC 259 265	mix in
+T22	FOOD 266 274	tomatoes
+T23	FOOD 276 281	basil
+T24	FOOD 283 287	salt
+T25	FOOD 293 299	pepper
+T26	AC 304 311	Arrange
+T27	FOOD 312 326	halibut steaks
+T28	TOOL 348 372	the prepared baking dish
+T29	OTHER 330 344	a single layer
+T30	AC 377 382	Spoon
+T31	FOOD 400 420	the zucchini mixture
+T32	FOOD 426 436	each steak
+T33	AC 441 444	Top
+T34	FOOD 450 461	feta cheese
+T35	AC 466 470	Bake
+T36	DUR 471 481	15 minutes
+T37	TOOL 485 503	the preheated oven
+T38	CONDITION_CLAUSE 508 547	until fish is easily flaked with a fork
+T39	TEMPERATURE 34 47	230 degrees C
+T52	zav 148 155	stir in
+R1	zav_anaphor Arg1:T52 Arg2:T40	
+T53	zav 185 189	Cook
+R2	zav_zav Arg1:T53 Arg2:T52	
+R3	zav_anaphor Arg1:T53 Arg2:T41	
+R4	zav_anaphor Arg1:T53 Arg2:T42	
+R5	zav_anaphor Arg1:T53 Arg2:T43	
+T54	zav 194 198	stir
+R6	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 259 265	mix in
+R7	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 441 444	Top
+R8	zav_anaphor Arg1:T56 Arg2:T50	
+T57	zav 466 470	Bake
+R10	zav_zav Arg1:T57 Arg2:T56	
+R11	zav_anaphor Arg1:T57 Arg2:T51	
+T40	anaphor 96 105	olive oil
+T41	anaphor 156 164	zucchini
+T42	anaphor 166 171	onion
+T43	anaphor 177 183	garlic
+T49	anaphor 400 420	the zucchini mixture
+T50	anaphor 426 436	each steak
+T51	anaphor 450 461	feta cheese
+T44	anaphor 383 420	equal amounts of the zucchini mixture
+R9	zav_anaphor Arg1:T56 Arg2:T44	

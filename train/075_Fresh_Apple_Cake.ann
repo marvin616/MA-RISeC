@@ -1,0 +1,68 @@
+T1	AC 449 457	Sprinkle
+T2	AC 3 10	Preheat
+T3	AC 53 59	Grease
+T4	AC 85 89	Beat
+T5	AC 136 140	Sift
+T6	AC 204 207	Add
+T7	AC 261 265	Pour
+T8	AC 406 410	Cool
+T9	AC 288 292	bake
+T10	TOOL 11 15	oven
+T11	TOOL 60 80	one 10 inch tube pan
+T12	TEMPERATURE 19 48	325 degrees F (165 degrees C)
+T13	FOOD 99 106	the oil
+T14	FOOD 108 112	eggs
+T15	FOOD 114 121	vanilla
+T16	FOOD 126 131	sugar
+T17	FOOD 150 159	the flour
+T18	FOOD 161 172	baking soda
+T19	FOOD 174 178	salt
+T20	FOOD 180 188	cinnamon
+T21	FOOD 193 199	nutmeg
+T22	FOOD 211 222	egg mixture
+T23	FOOD 232 238	apples
+T24	FOOD 240 244	nuts
+T25	FOOD 249 256	raisins
+T26	AC 224 231	stir in
+T27	TOOL 271 283	prepared pan
+T28	TEMPERATURE 296 309	325 degrees F
+T29	DUR 330 339	1 1/2 hrs
+T30	AC 415 420	frost
+T31	FOOD 426 444	cream cheese icing
+T32	FOOD 458 461	top
+T33	FOOD 467 492	1/4 cup fine chopped nuts
+T34	CONDITION_CLAUSE 343 401	until a cake tester inserted in the center comes out clean
+T35	TEMPERATURE 311 324	165 degrees C
+T52	zav 204 207	Add
+R1	zav_anaphor Arg1:T52 Arg2:T40	
+R2	zav_anaphor Arg1:T52 Arg2:T41	
+R3	zav_anaphor Arg1:T52 Arg2:T42	
+R4	zav_anaphor Arg1:T52 Arg2:T43	
+R5	zav_anaphor Arg1:T52 Arg2:T44	
+T53	zav 224 231	stir in
+R6	zav_anaphor Arg1:T53 Arg2:T45	
+R7	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 261 265	Pour
+R8	zav_zav Arg1:T54 Arg2:T53	
+R9	zav_anaphor Arg1:T54 Arg2:T46	
+R10	zav_anaphor Arg1:T54 Arg2:T47	
+R11	zav_anaphor Arg1:T54 Arg2:T48	
+T55	zav 288 292	bake
+R12	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 406 410	Cool
+R13	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 415 420	frost
+R14	zav_zav Arg1:T57 Arg2:T56	
+T58	zav 449 457	Sprinkle
+R15	zav_zav Arg1:T58 Arg2:T57	
+R16	zav_anaphor Arg1:T58 Arg2:T49	
+T40	anaphor 150 159	the flour
+T41	anaphor 161 172	baking soda
+T42	anaphor 174 178	salt
+T43	anaphor 180 188	cinnamon
+T44	anaphor 193 199	nutmeg
+T45	anaphor 211 222	egg mixture
+T46	anaphor 232 238	apples
+T47	anaphor 240 244	nuts
+T48	anaphor 249 256	raisins
+T49	anaphor 426 444	cream cheese icing

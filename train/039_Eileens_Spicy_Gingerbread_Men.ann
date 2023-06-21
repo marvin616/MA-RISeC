@@ -1,0 +1,87 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 25	cream
+T3	FOOD 35 48	the margarine
+T4	FOOD 53 58	sugar
+T5	CONDITION_CLAUSE 59 71	until smooth
+T6	AC 76 83	Stir in
+T7	FOOD 97 105	egg yolk
+T8	FOOD 84 92	molasses
+T9	AC 110 117	Combine
+T10	FOOD 118 127	the flour
+T11	FOOD 129 133	salt
+T12	FOOD 135 148	baking powder
+T13	FOOD 150 161	baking soda
+T14	FOOD 163 171	cinnamon
+T15	FOOD 173 179	cloves
+T16	FOOD 181 187	ginger
+T17	FOOD 193 199	nutmeg
+T18	AC 201 206	blend
+T19	FOOD 212 232	the molasses mixture
+T20	CONDITION_CLAUSE 233 245	until smooth
+T21	AC 250 255	Cover
+T22	AC 261 266	chill
+T23	DUR 271 288	at least one hour
+T24	AC 293 300	Preheat
+T25	TOOL 301 309	the oven
+T26	TEMPERATURE 313 326	350 degrees F
+T27	TEMPERATURE 328 341	175 degrees C
+T28	TOOL 350 375	a lightly floured surface
+T29	AC 377 381	roll
+T30	FOOD 382 391	the dough
+T31	FOOD 399 417	1/4 inch thickness
+T32	AC 422 425	Cut
+T33	OTHER 431 445	desired shapes
+T34	TOOL 451 465	cookie cutters
+T35	AC 470 475	Place
+T36	FOOD 476 483	cookies
+T38	TOOL 502 525	ungreased cookie sheets
+T39	AC 530 534	Bake
+T40	DUR 539 554	8 to 10 minutes
+T41	TOOL 558 576	the preheated oven
+T42	CONDITION_CLAUSE 578 588	until firm
+T43	AC 594 600	Remove
+T44	TOOL 606 619	cookie sheets
+T45	PURPOSE_CLAUSE 620 641	to cool on wire racks
+T47	AC 647 652	Frost
+T48	AC 656 664	decorate
+T49	CONDITION_CLAUSE 665 674	when cool
+T37	zav 76 83	Stir in
+R1	zav_anaphor Arg1:T37 Arg2:T46	
+R2	zav_anaphor Arg1:T37 Arg2:T50	
+T51	zav 201 206	blend
+R3	zav_anaphor Arg1:T51 Arg2:T59	
+R4	zav_anaphor Arg1:T51 Arg2:T58	
+R5	zav_anaphor Arg1:T51 Arg2:T57	
+R6	zav_anaphor Arg1:T51 Arg2:T56	
+R7	zav_anaphor Arg1:T51 Arg2:T55	
+R8	zav_anaphor Arg1:T51 Arg2:T54	
+R9	zav_anaphor Arg1:T51 Arg2:T53	
+R10	zav_anaphor Arg1:T51 Arg2:T52	
+T60	zav 250 255	Cover
+R11	zav_zav Arg1:T60 Arg2:T51	
+R12	zav_anaphor Arg1:T60 Arg2:T61	
+T62	zav 261 266	chill
+R13	zav_zav Arg1:T62 Arg2:T60	
+T63	zav 422 425	Cut
+R14	zav_anaphor Arg1:T63 Arg2:T64	
+T65	zav 530 534	Bake
+R15	zav_anaphor Arg1:T65 Arg2:T66	
+T67	zav 594 600	Remove
+R16	zav_zav Arg1:T67 Arg2:T65	
+T68	zav 647 652	Frost
+T69	zav 656 664	decorate
+R17	zav_zav Arg1:T68 Arg2:T67	
+R18	zav_zav Arg1:T69 Arg2:T68	
+T46	anaphor 35 48	the margarine
+T50	anaphor 53 58	sugar
+T52	anaphor 118 127	the flour
+T53	anaphor 129 133	salt
+T54	anaphor 135 148	baking powder
+T55	anaphor 150 161	baking soda
+T56	anaphor 163 171	cinnamon
+T57	anaphor 173 179	cloves
+T58	anaphor 181 187	ginger
+T59	anaphor 193 199	nutmeg
+T61	anaphor 212 232	the molasses mixture
+T64	anaphor 382 391	the dough
+T66	anaphor 476 483	cookies

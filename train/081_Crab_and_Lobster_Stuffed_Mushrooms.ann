@@ -1,0 +1,50 @@
+T1	AC 464 472	Sprinkle
+T2	AC 375 379	Bake
+T3	AC 3 10	Preheat
+T4	AC 57 62	Brush
+T5	AC 124 131	Arrange
+T6	AC 208 211	mix
+T7	TOOL 11 19	the oven
+T8	TEMPERATURE 23 36	375 degrees F
+T9	TOOL 63 83	a large baking sheet
+T10	FOOD 95 119	1/4 cup of melted butter
+T11	FOOD 132 145	mushroom caps
+T12	OTHER 149 163	a single layer
+T13	TOOL 169 185	the baking sheet
+T14	TOOL 193 206	a medium bowl
+T15	FOOD 221 241	the crushed croutons
+T16	FOOD 243 267	remaining 1/2 cup butter
+T17	FOOD 269 284	shredded cheese
+T18	FOOD 286 294	crabmeat
+T19	FOOD 296 303	lobster
+T20	FOOD 308 314	garlic
+T21	FOOD 330 343	mushroom caps
+T22	DUR 384 400	10 to 12 minutes
+T23	TOOL 404 422	the preheated oven
+T24	FOOD 478 495	additional cheese
+T25	AC 512 517	serve
+T26	CONDITION_CLAUSE 427 459	until lightly browned on the top
+T27	AC 319 324	Spoon
+T28	OTHER 344 370	where the stems used to be
+T29	TEMPERATURE 38 51	190 degrees C
+T40	zav 319 324	Spoon
+R1	zav_anaphor Arg1:T40 Arg2:T32	
+R2	zav_anaphor Arg1:T40 Arg2:T33	
+R3	zav_anaphor Arg1:T40 Arg2:T34	
+R4	zav_anaphor Arg1:T40 Arg2:T35	
+R5	zav_anaphor Arg1:T40 Arg2:T36	
+R6	zav_anaphor Arg1:T40 Arg2:T37	
+T41	zav 375 379	Bake
+R7	zav_zav Arg1:T41 Arg2:T40	
+T42	zav 464 472	Sprinkle
+R8	zav_zav Arg1:T42 Arg2:T41	
+T43	zav 512 517	serve
+R9	zav_anaphor Arg1:T43 Arg2:T39	
+R10	zav_zav Arg1:T43 Arg2:T42	
+T32	anaphor 221 241	the crushed croutons
+T33	anaphor 243 267	remaining 1/2 cup butter
+T34	anaphor 269 284	shredded cheese
+T35	anaphor 286 294	crabmeat
+T36	anaphor 296 303	lobster
+T37	anaphor 308 314	garlic
+T39	anaphor 478 495	additional cheese

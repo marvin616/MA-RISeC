@@ -1,0 +1,27 @@
+T1	AC 14 18	coat
+T2	FOOD 19 23	tuna
+T3	FOOD 29 44	Cajun seasoning
+T4	AC 49 53	Heat
+T5	FOOD 54 57	oil
+T6	FOOD 62 68	butter
+T7	TOOL 72 87	a large skillet
+T8	TEMPERATURE 93 102	high heat
+T9	CONDITION_CLAUSE 107 133	When oil is nearly smoking
+T10	AC 135 140	place
+T11	FOOD 141 147	steaks
+T12	TOOL 151 154	pan
+T13	AC 159 163	Cook
+T14	DUR 180 194	3 to 4 minutes
+T15	CONDITION_CLAUSE 199 214	until blackened
+T16	OTHER 167 175	one side
+T17	AC 219 223	Turn
+T18	FOOD 224 230	steaks
+T19	AC 236 240	cook
+T20	DUR 245 259	3 to 4 minutes
+T21	CONDITION_CLAUSE 264 283	to desired doneness
+T28	zav 159 163	Cook
+R1	zav_anaphor Arg1:T28 Arg2:T26	
+T29	zav 236 240	cook
+R2	zav_anaphor Arg1:T29 Arg2:T27	
+T26	anaphor 141 147	steaks
+T27	anaphor 224 230	steaks

@@ -1,0 +1,49 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	AC 53 58	Spray
+T5	TOOL 59 75	9x13 baking dish
+T6	FOOD 81 94	cooking spray
+T7	AC 99 103	Dump
+T8	FOOD 104 122	cherry pie filling
+T9	TOOL 128 132	dish
+T10	AC 137 143	spread
+T11	AC 155 161	Repeat
+T12	FOOD 167 175	cherries
+T13	FOOD 187 192	juice
+T14	AC 197 205	Sprinkle
+T15	FOOD 206 214	cake mix
+T16	FOOD 220 227	the top
+T17	AC 233 241	NOT STIR
+T18	AC 246 254	Sprinkle
+T19	FOOD 260 272	chopped nuts
+T20	AC 277 287	Distribute
+T21	FOOD 288 301	butter pieces
+T22	OTHER 314 321	the top
+T23	AC 326 330	Bake
+T24	TOOL 334 352	the preheated oven
+T25	DUR 357 367	45 minutes
+T26	TEMPERATURE 34 47	190 degrees C
+T35	zav 137 143	spread
+R1	zav_anaphor Arg1:T35 Arg2:T28	
+T36	zav 155 161	Repeat
+R2	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 197 205	Sprinkle
+R3	zav_zav Arg1:T37 Arg2:T36	
+R4	zav_anaphor Arg1:T37 Arg2:T29	
+R5	zav_anaphor Arg1:T37 Arg2:T30	
+T38	zav 246 254	Sprinkle
+R6	zav_zav Arg1:T38 Arg2:T37	
+R7	zav_anaphor Arg1:T38 Arg2:T31	
+T39	zav 277 287	Distribute
+R8	zav_zav Arg1:T39 Arg2:T38	
+R9	zav_anaphor Arg1:T39 Arg2:T33	
+T40	zav 326 330	Bake
+R10	zav_zav Arg1:T40 Arg2:T39	
+R11	zav_anaphor Arg1:T40 Arg2:T34	
+T28	anaphor 104 122	cherry pie filling
+T29	anaphor 167 175	cherries
+T30	anaphor 187 192	juice
+T31	anaphor 206 214	cake mix
+T33	anaphor 260 272	chopped nuts
+T34	anaphor 288 301	butter pieces

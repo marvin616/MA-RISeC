@@ -1,0 +1,65 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 26	cream
+T3	FOOD 27 33	butter
+T4	FOOD 38 58	confectioners' sugar
+T5	AC 63 66	Add
+T6	FOOD 67 74	vanilla
+T7	AC 89 92	add
+T8	FOOD 93 98	flour
+T9	AC 100 103	mix
+T10	TOOL 118 139	lightly floured hands
+T11	AC 141 146	shape
+T12	FOOD 147 171	tablespoonfuls of batter
+T13	FOOD 177 184	cookies
+T14	AC 189 194	Place
+T15	FOOD 195 202	cookies
+T16	TOOL 212 235	ungreased baking sheets
+T17	AC 240 244	Bake
+T18	TEMPERATURE 248 261	350 degrees F
+T19	DUR 266 278	9-11 minutes
+T20	CONDITION_CLAUSE 282 324	until edges and bottom are lightly browned
+T21	AC 329 333	Cool
+T22	DUR 338 349	2-3 minutes
+T23	CONDITION_CLAUSE 350 379	before removing to wire racks
+T24	TOOL 387 408	a microwave-safe bowl
+T25	AC 410 414	melt
+T26	FOOD 415 430	chocolate chips
+T27	FOOD 435 445	shortening
+T28	AC 447 451	stir
+T29	CONDITION_CLAUSE 452 464	until smooth
+T30	AC 469 476	Drizzle
+T31	FOOD 477 486	chocolate
+T32	FOOD 492 511	half of the cookies
+T33	AC 517 520	Dip
+T34	FOOD 585 592	walnuts
+T35	AC 571 579	sprinkle
+T36	FOOD 521 549	one end of remaining cookies
+T37	FOOD 555 564	chocolate
+T52	zav 63 66	Add
+R1	zav_anaphor Arg1:T52 Arg2:T38	
+R2	zav_anaphor Arg1:T52 Arg2:T39	
+T53	zav 89 92	add
+R3	zav_anaphor Arg1:T53 Arg2:T40	
+R4	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 100 103	mix
+R5	zav_anaphor Arg1:T54 Arg2:T41	
+R6	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 240 244	Bake
+R7	zav_anaphor Arg1:T55 Arg2:T44	
+T56	zav 329 333	Cool
+R8	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 447 451	stir
+R9	zav_anaphor Arg1:T57 Arg2:T45	
+R10	zav_anaphor Arg1:T57 Arg2:T46	
+T58	zav 571 579	sprinkle
+R11	zav_anaphor Arg1:T58 Arg2:T51	
+R12	zav_anaphor Arg1:T58 Arg2:T50	
+T38	anaphor 27 33	butter
+T39	anaphor 38 58	confectioners' sugar
+T40	anaphor 67 74	vanilla
+T41	anaphor 93 98	flour
+T44	anaphor 195 202	cookies
+T45	anaphor 415 430	chocolate chips
+T46	anaphor 435 445	shortening
+T50	anaphor 521 549	one end of remaining cookies
+T51	anaphor 555 564	chocolate

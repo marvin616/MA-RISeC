@@ -1,0 +1,55 @@
+T1	TOOL 6 36	a large resealable plastic bag
+T2	AC 38 45	combine
+T3	FOOD 46 72	the first five ingredients
+T4	TOOL 80 94	a shallow bowl
+T5	AC 96 100	beat
+T6	FOOD 101 108	the egg
+T7	FOOD 113 117	milk
+T8	AC 122 125	Add
+T9	FOOD 126 133	chicken
+T10	TOOL 137 140	bag
+T11	FOOD 142 154	a few pieces
+T12	AC 170 175	shake
+T14	AC 188 191	Dip
+T15	FOOD 197 208	egg mixture
+T16	AC 215 221	return
+T17	FOOD 225 238	flour mixture
+T18	AC 243 248	shake
+T19	AC 259 265	Remove
+T20	TOOL 271 274	bag
+T21	AC 283 288	stand
+T22	DUR 293 302	5 minutes
+T23	AC 307 311	Heat
+T24	FOOD 312 315	oil
+T25	TOOL 319 334	a large skillet
+T26	AC 339 342	Fry
+T27	FOOD 343 350	chicken
+T28	CONDITION_CLAUSE 351 382	until golden brown on all sides
+T29	AC 387 393	Reduce
+T30	OTHER 394 398	heat
+T31	TEMPERATURE 402 408	medium
+T32	AC 413 417	cook
+T33	CONDITION_CLAUSE 418 456	until a meat thermometer reads 180 deg
+T34	DUR 464 474	15 minutes
+T13	PURPOSE_CLAUSE 176 183	to coat
+T35	zav 122 125	Add
+R1	zav_anaphor Arg1:T35 Arg2:T36	
+R2	zav_anaphor Arg1:T35 Arg2:T37	
+T38	zav 170 175	shake
+R3	zav_anaphor Arg1:T38 Arg2:T39	
+R4	zav_zav Arg1:T38 Arg2:T35	
+T40	zav 188 191	Dip
+R5	zav_zav Arg1:T40 Arg2:T38	
+T41	zav 243 248	shake
+R6	zav_anaphor Arg1:T41 Arg2:T42	
+T43	zav 259 265	Remove
+R7	zav_zav Arg1:T43 Arg2:T41	
+T44	zav 283 288	stand
+R8	zav_zav Arg1:T44 Arg2:T43	
+T45	zav 413 417	cook
+R9	zav_anaphor Arg1:T45 Arg2:T46	
+T36	anaphor 101 108	the egg
+T37	anaphor 113 117	milk
+T39	anaphor 126 133	chicken
+T42	anaphor 225 238	flour mixture
+T46	anaphor 343 350	chicken

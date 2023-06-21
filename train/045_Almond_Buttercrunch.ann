@@ -1,0 +1,56 @@
+T1	TOOL 6 16	a saucepan
+T2	TEMPERATURE 22 30	low heat
+T3	AC 32 39	combine
+T4	FOOD 40 50	the butter
+T5	FOOD 52 57	sugar
+T6	FOOD 62 83	1 cup chopped almonds
+T7	AC 88 92	Stir
+T8	CONDITION_CLAUSE 104 123	until mixture boils
+T9	AC 137 141	stir
+T10	AC 145 150	shake
+T11	AC 155 159	Heat
+T12	TEMPERATURE 163 183	300 to 310 degrees F
+T13	TEMPERATURE 185 205	149 to 154 degrees C
+T14	CONDITION_CLAUSE 211 292	until a small amount of syrup dropped into cold water forms hard, brittle threads
+T15	AC 297 301	Pour
+T16	TOOL 307 336	a large buttered cookie sheet
+T17	AC 353 358	press
+T18	FOOD 359 374	chocolate chips
+T19	FOOD 380 393	the hot candy
+T22	AC 419 425	spread
+T23	FOOD 426 428	it
+T24	FOOD 434 443	a coating
+T25	FOOD 449 458	the candy
+T26	AC 463 471	Sprinkle
+T27	FOOD 479 494	chopped almonds
+T28	FOOD 500 507	the top
+T29	AC 509 513	cool
+T30	AC 519 524	break
+T31	OTHER 530 543	uneven pieces
+T20	CONDITION_CLAUSE 395 417	As the chocolate melts
+T21	zav 88 92	Stir
+R1	zav_anaphor Arg1:T21 Arg2:T32	
+R2	zav_anaphor Arg1:T21 Arg2:T33	
+R3	zav_anaphor Arg1:T21 Arg2:T34	
+T35	zav 137 141	stir
+T36	zav 145 150	shake
+R4	zav_zav Arg1:T35 Arg2:T21	
+R5	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 297 301	Pour
+R6	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 419 425	spread
+R7	zav_anaphor Arg1:T38 Arg2:T39	
+T40	zav 463 471	Sprinkle
+R8	zav_anaphor Arg1:T40 Arg2:T41	
+R9	zav_zav Arg1:T40 Arg2:T38	
+T43	zav 509 513	cool
+T44	zav 519 524	break
+R10	zav_anaphor Arg1:T43 Arg2:T42	
+R11	zav_zav Arg1:T43 Arg2:T40	
+R12	zav_zav Arg1:T44 Arg2:T43	
+T32	anaphor 40 50	the butter
+T33	anaphor 52 57	sugar
+T34	anaphor 62 83	1 cup chopped almonds
+T39	anaphor 402 411	chocolate
+T41	anaphor 449 458	the candy
+T42	anaphor 479 494	chopped almonds

@@ -1,0 +1,61 @@
+T1	AC 3 10	Prepare
+T2	FOOD 11 19	biscuits
+T3	FOOD 58 84	one 8x8 inch pan cornbread
+T4	OTHER 85 116	according to package directions
+T5	AC 121 125	Cool
+T6	AC 130 137	crumble
+T7	AC 142 149	Preheat
+T8	TOOL 150 154	oven
+T9	TEMPERATURE 158 171	350 degrees F
+T10	TEMPERATURE 173 186	175 degrees C
+T11	TOOL 195 206	a small pot
+T12	AC 208 215	combine
+T13	FOOD 216 221	onion
+T14	FOOD 223 229	celery
+T15	FOOD 231 240	margarine
+T16	FOOD 245 258	chicken broth
+T17	AC 272 276	boil
+T18	AC 281 285	cook
+T19	FOOD 286 296	vegetables
+T20	CONDITION_CLAUSE 297 309	until tender
+T21	TOOL 317 341	a 2-quart casserole dish
+T22	AC 343 350	combine
+T23	FOOD 378 399	4 cups biscuit crumbs
+T24	FOOD 401 405	salt
+T25	FOOD 407 413	pepper
+T26	FOOD 415 422	sausage
+T27	FOOD 424 436	chopped eggs
+T28	FOOD 441 445	sage
+T29	FOOD 351 376	4 cups crumbled cornbread
+T30	AC 450 454	Pour
+T31	FOOD 455 460	broth
+T32	FOOD 465 475	vegetables
+T33	FOOD 481 494	bread mixture
+T34	AC 500 504	stir
+T35	CONDITION_CLAUSE 505 519	until combined
+T36	AC 524 528	Bake
+T37	TOOL 532 550	the preheated oven
+T38	DUR 555 571	30 to 45 minutes
+T56	zav 121 125	Cool
+R1	zav_anaphor Arg1:T56 Arg2:T39	
+T57	zav 130 137	crumble
+R2	zav_zav Arg1:T57 Arg2:T56	
+T58	zav 272 276	boil
+R3	zav_anaphor Arg1:T58 Arg2:T41	
+R4	zav_anaphor Arg1:T58 Arg2:T42	
+R5	zav_anaphor Arg1:T58 Arg2:T43	
+R6	zav_anaphor Arg1:T58 Arg2:T44	
+T59	zav 500 504	stir
+R7	zav_anaphor Arg1:T59 Arg2:T55	
+R8	zav_anaphor Arg1:T59 Arg2:T54	
+R9	zav_anaphor Arg1:T59 Arg2:T53	
+T60	zav 524 528	Bake
+R10	zav_zav Arg1:T60 Arg2:T59	
+T39	anaphor 11 19	biscuits
+T41	anaphor 216 221	onion
+T42	anaphor 223 229	celery
+T43	anaphor 231 240	margarine
+T44	anaphor 245 258	chicken broth
+T53	anaphor 455 460	broth
+T54	anaphor 465 475	vegetables
+T55	anaphor 481 494	bread mixture

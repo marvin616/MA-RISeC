@@ -1,0 +1,109 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 58	Place
+T6	FOOD 59 64	bacon
+T7	TOOL 68 77	a skillet
+T8	AC 82 86	cook
+T9	TEMPERATURE 92 103	medium heat
+T10	CONDITION_CLAUSE 104 132	until the pieces are browned
+T11	AC 137 143	Remove
+T12	TOOL 149 164	a slotted spoon
+T13	TOOL 168 180	paper towels
+T14	AC 185 192	Discard
+T15	FOOD 193 229	all but 1 tablespoon of bacon grease
+T16	AC 234 241	Stir in
+T17	FOOD 242 248	onions
+T18	FOOD 253 262	mushrooms
+T19	AC 268 272	cook
+T20	CONDITION_CLAUSE 273 283	until soft
+T21	AC 288 294	Remove
+T22	OTHER 300 304	heat
+T23	TOOL 312 324	a large bowl
+T24	AC 326 330	stir
+T25	FOOD 340 344	beef
+T26	FOOD 346 349	egg
+T27	FOOD 355 359	milk
+T28	AC 364 371	Stir in
+T29	FOOD 372 381	the onion
+T30	FOOD 386 395	mushrooms
+T31	AC 400 406	Mix in
+T32	FOOD 413 437	4 ounces of Swiss cheese
+T33	AC 478 485	Stir in
+T34	FOOD 486 502	cornflake crumbs
+T35	AC 508 511	mix
+T36	CONDITION_CLAUSE 512 530	until well blended
+T37	AC 536 541	Shape
+T38	FOOD 547 553	a loaf
+T39	AC 559 564	place
+T40	TOOL 568 582	a meatloaf pan
+T41	AC 588 592	Bake
+T42	TOOL 596 612	a preheated oven
+T43	DUR 617 623	1 hour
+T44	FOOD 443 472	all but 1 tablespoon of bacon
+T45	AC 629 634	Drain
+T46	OTHER 635 638	fat
+T47	AC 644 652	sprinkle
+T48	FOOD 658 674	remaining cheese
+T49	FOOD 679 684	bacon
+T50	AC 690 696	Return
+T51	TOOL 700 704	oven
+T52	AC 710 714	bake
+T53	CONDITION_CLAUSE 715 737	until cheese is melted
+T54	DUR 745 754	5 minutes
+T70	zav 82 86	cook
+R1	zav_anaphor Arg1:T70 Arg2:T55	
+T71	zav 137 143	Remove
+R2	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 234 241	Stir in
+R3	zav_zav Arg1:T72 Arg2:T71	
+T73	zav 268 272	cook
+R4	zav_anaphor Arg1:T73 Arg2:T58	
+R5	zav_anaphor Arg1:T73 Arg2:T57	
+T74	zav 288 294	Remove
+R6	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 364 371	Stir in
+R7	zav_anaphor Arg1:T75 Arg2:T59	
+R8	zav_anaphor Arg1:T75 Arg2:T60	
+R9	zav_anaphor Arg1:T75 Arg2:T61	
+T76	zav 400 406	Mix in
+R10	zav_zav Arg1:T76 Arg2:T75	
+R11	zav_anaphor Arg1:T76 Arg2:T62	
+R12	zav_anaphor Arg1:T76 Arg2:T63	
+T77	zav 478 485	Stir in
+R13	zav_zav Arg1:T77 Arg2:T76	
+R14	zav_anaphor Arg1:T77 Arg2:T64	
+R15	zav_anaphor Arg1:T77 Arg2:T67	
+T78	zav 508 511	mix
+R16	zav_anaphor Arg1:T78 Arg2:T65	
+R17	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 536 541	Shape
+R18	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 559 564	place
+R19	zav_anaphor Arg1:T80 Arg2:T66	
+R20	zav_zav Arg1:T80 Arg2:T79	
+T81	zav 588 592	Bake
+R21	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 644 652	sprinkle
+R22	zav_zav Arg1:T82 Arg2:T81	
+T83	zav 690 696	Return
+R23	zav_zav Arg1:T83 Arg2:T82	
+R24	zav_anaphor Arg1:T83 Arg2:T68	
+R25	zav_anaphor Arg1:T83 Arg2:T69	
+T84	zav 710 714	bake
+R26	zav_zav Arg1:T84 Arg2:T83	
+T55	anaphor 59 64	bacon
+T57	anaphor 242 248	onions
+T58	anaphor 253 262	mushrooms
+T59	anaphor 340 344	beef
+T60	anaphor 346 349	egg
+T61	anaphor 355 359	milk
+T62	anaphor 372 381	the onion
+T63	anaphor 386 395	mushrooms
+T64	anaphor 413 437	4 ounces of Swiss cheese
+T65	anaphor 486 502	cornflake crumbs
+T66	anaphor 547 553	a loaf
+T67	anaphor 443 472	all but 1 tablespoon of bacon
+T68	anaphor 658 674	remaining cheese
+T69	anaphor 679 684	bacon

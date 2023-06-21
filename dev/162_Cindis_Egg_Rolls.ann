@@ -1,0 +1,94 @@
+T1	AC 3 7	Cook
+T2	FOOD 8 12	pork
+T3	TOOL 16 27	a large wok
+T4	TEMPERATURE 33 49	medium-high heat
+T5	AC 54 59	Drain
+T6	AC 64 73	set aside
+T7	TOOL 81 93	a large bowl
+T8	AC 95 98	mix
+T9	FOOD 99 110	the cabbage
+T10	FOOD 112 118	carrot
+T11	FOOD 120 137	green bell pepper
+T12	FOOD 139 144	onion
+T13	FOOD 146 152	garlic
+T14	FOOD 157 163	ginger
+T15	TOOL 171 183	a small bowl
+T16	AC 185 188	mix
+T17	FOOD 189 203	the cornstarch
+T18	FOOD 205 214	soy sauce
+T19	FOOD 220 228	molasses
+T20	CONDITION_CLAUSE 229 241	until smooth
+T21	AC 246 250	Heat
+T22	FOOD 251 268	2 tablespoons oil
+T23	TOOL 272 275	wok
+T24	AC 280 287	Stir in
+T25	FOOD 288 303	cabbage mixture
+T26	AC 316 323	cooking
+T27	FOOD 324 334	each batch
+T28	DUR 335 349	3 to 4 minutes
+T29	CONDITION_CLAUSE 356 368	until tender
+T30	AC 373 379	Return
+T31	FOOD 380 390	vegetables
+T32	TOOL 394 398	bowl
+T33	AC 404 410	mix in
+T34	FOOD 411 415	pork
+T35	AC 420 427	Stir in
+T36	FOOD 428 450	the cornstarch mixture
+T37	AC 455 459	Heat
+T38	FOOD 460 471	1 quart oil
+T39	TOOL 475 487	a deep fryer
+T40	TEMPERATURE 491 504	365 degrees F
+T41	TEMPERATURE 506 519	185 degrees C
+T42	AC 526 531	Place
+T43	FOOD 538 558	1 tablespoon filling
+T44	FOOD 562 583	each egg roll wrapper
+T45	AC 589 593	Fold
+T46	FOOD 594 615	one corner of wrapper
+T47	FOOD 621 628	filling
+T48	AC 634 638	Fold
+T49	FOOD 639 652	wrapper sides
+T50	FOOD 658 665	filling
+T51	AC 671 675	Roll
+T52	FOOD 676 684	wrappers
+T53	PURPOSE_CLAUSE 685 702	to form egg rolls
+T54	AC 708 711	Fry
+T55	FOOD 712 721	egg rolls
+T56	FOOD 736 747	the hot oil
+T57	CONDITION_CLAUSE 748 766	until golden brown
+T58	AC 772 777	Drain
+T59	TOOL 781 793	paper towels
+T60	AC 798 803	serve
+T61	FOOD 809 829	sweet and sour sauce
+T89	zav 54 59	Drain
+R1	zav_anaphor Arg1:T89 Arg2:T62	
+T90	zav 64 73	set aside
+R2	zav_zav Arg1:T90 Arg2:T89	
+T91	zav 280 287	Stir in
+R3	zav_anaphor Arg1:T91 Arg2:T72	
+T92	zav 316 323	cooking
+R4	zav_zav Arg1:T92 Arg2:T91	
+R5	zav_anaphor Arg1:T92 Arg2:T73	
+T93	zav 404 410	mix in
+R6	zav_anaphor Arg1:T93 Arg2:T75	
+T94	zav 420 427	Stir in
+R7	zav_zav Arg1:T94 Arg2:T93	
+R8	zav_anaphor Arg1:T94 Arg2:T76	
+T95	zav 589 593	Fold
+R9	zav_anaphor Arg1:T95 Arg2:T79	
+R10	zav_anaphor Arg1:T95 Arg2:T80	
+T96	zav 634 638	Fold
+R11	zav_anaphor Arg1:T96 Arg2:T81	
+R12	zav_zav Arg1:T96 Arg2:T95	
+T97	zav 772 777	Drain
+R13	zav_anaphor Arg1:T97 Arg2:T86	
+T98	zav 798 803	serve
+R14	zav_zav Arg1:T98 Arg2:T97	
+T62	anaphor 8 12	pork
+T72	anaphor 251 268	2 tablespoons oil
+T73	anaphor 288 303	cabbage mixture
+T75	anaphor 380 390	vegetables
+T76	anaphor 411 415	pork
+T79	anaphor 538 558	1 tablespoon filling
+T80	anaphor 562 583	each egg roll wrapper
+T81	anaphor 594 615	one corner of wrapper
+T86	anaphor 712 721	egg rolls

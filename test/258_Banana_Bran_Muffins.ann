@@ -1,0 +1,84 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 72	a muffin pan
+T7	TOOL 86 105	paper muffin liners
+T8	TOOL 113 132	a large mixing bowl
+T9	AC 134 139	cream
+T10	FOOD 140 146	butter
+T11	FOOD 151 162	brown sugar
+T12	CONDITION_CLAUSE 172 184	until fluffy
+T13	AC 189 192	Add
+T14	FOOD 193 200	bananas
+T15	FOOD 202 206	milk
+T16	FOOD 208 215	vanilla
+T17	FOOD 220 224	eggs
+T18	AC 226 229	mix
+T19	AC 239 246	Stir in
+T20	FOOD 247 252	flour
+T21	FOOD 254 258	bran
+T22	FOOD 260 273	baking powder
+T23	FOOD 275 279	soda
+T24	FOOD 284 288	salt
+T25	AC 290 295	blend
+T26	CONDITION_CLAUSE 301 316	until moistened
+T27	AC 321 328	Stir in
+T28	FOOD 329 336	walnuts
+T29	AC 341 345	Pour
+T30	FOOD 346 352	batter
+T31	TOOL 358 378	prepared muffin cups
+T32	AC 383 387	Bake
+T33	TEMPERATURE 391 404	375 degrees F
+T34	TEMPERATURE 406 419	190 degrees C
+T35	DUR 425 441	20 to 25 minutes
+T36	CONDITION_CLAUSE 445 515	until a toothpick inserted into the center of a muffin comes out clean
+T37	AC 520 524	Cool
+T38	TOOL 528 536	the cups
+T39	DUR 541 550	5 minutes
+T40	AC 557 563	remove
+T41	FOOD 564 571	muffins
+T42	AC 576 581	place
+T43	TOOL 585 596	a wire rack
+T44	PURPOSE_CLAUSE 597 615	to cool completely
+T45	AC 76 80	line
+T60	zav 189 192	Add
+R1	zav_anaphor Arg1:T60 Arg2:T46	
+R2	zav_anaphor Arg1:T60 Arg2:T47	
+T61	zav 226 229	mix
+R3	zav_anaphor Arg1:T61 Arg2:T51	
+R4	zav_anaphor Arg1:T61 Arg2:T50	
+R5	zav_anaphor Arg1:T61 Arg2:T49	
+R6	zav_anaphor Arg1:T61 Arg2:T48	
+R7	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 239 246	Stir in
+R8	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 290 295	blend
+R9	zav_anaphor Arg1:T63 Arg2:T56	
+R10	zav_anaphor Arg1:T63 Arg2:T55	
+R11	zav_anaphor Arg1:T63 Arg2:T54	
+R12	zav_anaphor Arg1:T63 Arg2:T53	
+R13	zav_anaphor Arg1:T63 Arg2:T52	
+R14	zav_zav Arg1:T63 Arg2:T62	
+T64	zav 321 328	Stir in
+R15	zav_zav Arg1:T64 Arg2:T63	
+T65	zav 383 387	Bake
+R16	zav_anaphor Arg1:T65 Arg2:T58	
+T66	zav 520 524	Cool
+R17	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 576 581	place
+R18	zav_anaphor Arg1:T67 Arg2:T59	
+T46	anaphor 140 146	butter
+T47	anaphor 151 162	brown sugar
+T48	anaphor 193 200	bananas
+T49	anaphor 202 206	milk
+T50	anaphor 208 215	vanilla
+T51	anaphor 220 224	eggs
+T52	anaphor 247 252	flour
+T53	anaphor 254 258	bran
+T54	anaphor 260 273	baking powder
+T55	anaphor 275 279	soda
+T56	anaphor 284 288	salt
+T58	anaphor 346 352	batter
+T59	anaphor 564 571	muffins

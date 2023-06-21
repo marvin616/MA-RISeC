@@ -1,0 +1,39 @@
+T1	AC 3 10	Prepare
+T2	FOOD 11 33	Fast Chicken Soup Base
+T3	AC 60 63	Add
+T4	FOOD 71 125	1 9-ounce package refrigerated small cheese tortellini
+T5	FOOD 127 158	1 14.5-ounce can diced tomatoes
+T6	FOOD 160 184	2 medium zucchini, diced
+T7	FOOD 186 204	1 tsp. dried basil
+T8	AC 214 220	simmer
+T9	DUR 225 238	10-20 minutes
+T10	FOOD 291 320	1/2 cup chopped fresh parsley
+T11	AC 325 328	Add
+T12	FOOD 329 333	salt
+T13	FOOD 338 344	pepper
+T14	CONDITION_CLAUSE 239 251	until tender
+T15	AC 49 55	simmer
+T16	AC 283 290	stir in
+T17	PURPOSE_CLAUSE 346 354	to taste
+T18	CONDITION_CLAUSE 256 281	Before removing from heat
+T27	zav 49 55	simmer
+R1	zav_anaphor Arg1:T27 Arg2:T19	
+T28	zav 60 63	Add
+R2	zav_zav Arg1:T28 Arg2:T27	
+T29	zav 214 220	simmer
+R3	zav_zav Arg1:T29 Arg2:T28	
+R4	zav_anaphor Arg1:T29 Arg2:T20	
+R5	zav_anaphor Arg1:T29 Arg2:T21	
+R6	zav_anaphor Arg1:T29 Arg2:T22	
+R7	zav_anaphor Arg1:T29 Arg2:T23	
+T30	zav 283 290	stir in
+R8	zav_zav Arg1:T30 Arg2:T29	
+T31	zav 325 328	Add
+R9	zav_zav Arg1:T31 Arg2:T30	
+R10	zav_anaphor Arg1:T31 Arg2:T24	
+T19	anaphor 11 33	Fast Chicken Soup Base
+T20	anaphor 71 125	1 9-ounce package refrigerated small cheese tortellini
+T21	anaphor 127 158	1 14.5-ounce can diced tomatoes
+T22	anaphor 160 184	2 medium zucchini, diced
+T23	anaphor 186 204	1 tsp. dried basil
+T24	anaphor 291 320	1/2 cup chopped fresh parsley

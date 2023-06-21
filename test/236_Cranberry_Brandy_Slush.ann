@@ -1,0 +1,26 @@
+T1	AC 27 30	mix
+T2	TOOL 6 25	a plastic container
+T3	FOOD 40 53	cherry brandy
+T4	FOOD 55 79	orange juice concentrate
+T5	FOOD 81 101	lemonade concentrate
+T6	FOOD 107 122	cranberry juice
+T7	AC 127 133	Freeze
+T8	PURPOSE_CLAUSE 148 156	To serve
+T9	AC 158 163	scoop
+T10	FOOD 164 196	desired amount of frozen mixture
+T11	TOOL 202 209	a glass
+T12	AC 215 219	fill
+T13	FOOD 225 240	lemon-lime soda
+T14	DUR 134 143	overnight
+T21	zav 127 133	Freeze
+R1	zav_anaphor Arg1:T21 Arg2:T15	
+R2	zav_anaphor Arg1:T21 Arg2:T16	
+R3	zav_anaphor Arg1:T21 Arg2:T17	
+R4	zav_anaphor Arg1:T21 Arg2:T18	
+T22	zav 215 219	fill
+R5	zav_anaphor Arg1:T22 Arg2:T19	
+T15	anaphor 40 53	cherry brandy
+T16	anaphor 55 79	orange juice concentrate
+T17	anaphor 81 101	lemonade concentrate
+T18	anaphor 107 122	cranberry juice
+T19	anaphor 164 196	desired amount of frozen mixture

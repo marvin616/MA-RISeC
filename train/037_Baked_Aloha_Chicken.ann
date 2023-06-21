@@ -1,0 +1,62 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Stir
+T6	FOOD 67 78	lemon juice
+T7	FOOD 80 90	corn syrup
+T8	FOOD 92 101	soy sauce
+T9	FOOD 103 107	salt
+T10	FOOD 109 115	ginger
+T11	FOOD 121 129	corn oil
+T12	TOOL 133 139	a bowl
+T13	CONDITION_CLAUSE 140 152	until smooth
+T14	AC 157 164	Stir in
+T15	FOOD 165 186	the crushed pineapple
+T16	FOOD 192 202	its liquid
+T17	AC 207 212	Place
+T18	FOOD 213 229	the chicken legs
+T19	TOOL 233 263	an ovenproof glass baking dish
+T20	AC 269 273	pour
+T21	FOOD 274 279	sauce
+T22	FOOD 285 288	top
+T23	AC 293 297	Bake
+T24	TOOL 301 315	preheated oven
+T25	DUR 320 330	30 minutes
+T26	AC 337 341	turn
+T27	FOOD 342 353	the chicken
+T28	AC 373 380	cooking
+T29	CONDITION_CLAUSE 381 428	until the chicken is tender, and no longer pink
+T30	DUR 436 446	20 minutes
+T31	AC 451 456	Baste
+T32	FOOD 462 467	sauce
+T33	AC 485 491	baking
+T34	zav 157 164	Stir in
+R1	zav_anaphor Arg1:T34 Arg2:T35	
+R2	zav_anaphor Arg1:T34 Arg2:T36	
+R3	zav_anaphor Arg1:T34 Arg2:T37	
+R4	zav_anaphor Arg1:T34 Arg2:T38	
+R5	zav_anaphor Arg1:T34 Arg2:T39	
+R6	zav_anaphor Arg1:T34 Arg2:T40	
+T41	zav 269 273	pour
+R7	zav_anaphor Arg1:T41 Arg2:T42	
+T43	zav 293 297	Bake
+R8	zav_zav Arg1:T43 Arg2:T41	
+R9	zav_anaphor Arg1:T43 Arg2:T44	
+T45	zav 373 380	cooking
+R10	zav_anaphor Arg1:T45 Arg2:T46	
+T47	zav 451 456	Baste
+R11	zav_zav Arg1:T47 Arg2:T45	
+T48	zav 485 491	baking
+R12	zav_zav Arg1:T48 Arg2:T47	
+R13	zav_anaphor Arg1:T48 Arg2:T49	
+T35	anaphor 67 78	lemon juice
+T36	anaphor 80 90	corn syrup
+T37	anaphor 92 101	soy sauce
+T38	anaphor 103 107	salt
+T39	anaphor 109 115	ginger
+T40	anaphor 121 129	corn oil
+T42	anaphor 213 229	the chicken legs
+T44	anaphor 274 279	sauce
+T46	anaphor 342 353	the chicken
+T49	anaphor 462 467	sauce

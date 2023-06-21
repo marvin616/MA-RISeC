@@ -1,0 +1,51 @@
+T1	AC 3 8	Place
+T2	FOOD 9 27	the jerk seasoning
+T3	FOOD 29 32	oil
+T4	FOOD 34 40	garlic
+T5	FOOD 42 48	ginger
+T6	FOOD 50 62	green onions
+T7	FOOD 68 83	jalapeno slices
+T8	TOOL 87 96	a blender
+T9	AC 102 107	blend
+T10	CONDITION_CLAUSE 108 130	until thick and smooth
+T11	AC 135 139	Dunk
+T12	FOOD 140 145	wings
+T13	FOOD 149 160	the mixture
+T14	AC 166 173	arrange
+T15	OTHER 177 189	single layer
+T16	TOOL 193 206	baking sheets
+T17	AC 211 216	Cover
+T18	TOOL 222 235	aluminum foil
+T19	AC 241 252	refrigerate
+T20	DUR 253 260	8 hours
+T21	DUR 265 274	overnight
+T22	AC 279 286	Preheat
+T23	TOOL 287 291	oven
+T24	TEMPERATURE 295 308	300 degrees F
+T25	TEMPERATURE 310 323	150 degrees C
+T26	AC 329 333	Bake
+T27	FOOD 334 339	wings
+T28	DUR 340 347	2 hours
+T29	TOOL 351 369	the preheated oven
+T30	zav 102 107	blend
+R1	zav_anaphor Arg1:T30 Arg2:T36	
+R2	zav_anaphor Arg1:T30 Arg2:T35	
+R3	zav_anaphor Arg1:T30 Arg2:T34	
+R4	zav_anaphor Arg1:T30 Arg2:T33	
+R5	zav_anaphor Arg1:T30 Arg2:T32	
+R6	zav_anaphor Arg1:T30 Arg2:T31	
+T37	zav 166 173	arrange
+R7	zav_anaphor Arg1:T37 Arg2:T39	
+R8	zav_anaphor Arg1:T37 Arg2:T38	
+T40	zav 211 216	Cover
+R9	zav_zav Arg1:T40 Arg2:T37	
+T41	zav 241 252	refrigerate
+R10	zav_zav Arg1:T41 Arg2:T40	
+T31	anaphor 9 27	the jerk seasoning
+T32	anaphor 29 32	oil
+T33	anaphor 34 40	garlic
+T34	anaphor 42 48	ginger
+T35	anaphor 50 62	green onions
+T36	anaphor 68 83	jalapeno slices
+T38	anaphor 140 145	wings
+T39	anaphor 149 160	the mixture

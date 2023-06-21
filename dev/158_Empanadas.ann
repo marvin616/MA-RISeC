@@ -1,0 +1,70 @@
+T1	CONDITION_CLAUSE 3 13	DAY BEFORE
+T2	AC 15 20	Cream
+T3	FOOD 21 27	butter
+T4	FOOD 32 44	cream cheese
+T5	CONDITION_CLAUSE 54 76	until smoothly blended
+T6	AC 81 88	Beat in
+T7	FOOD 89 98	the flour
+T8	AC 103 108	Shape
+T9	FOOD 109 114	dough
+T10	FOOD 120 133	a smooth ball
+T11	AC 135 139	wrap
+T12	TOOL 143 147	foil
+T13	TOOL 151 161	cling wrap
+T14	AC 167 178	refrigerate
+T15	DUR 179 188	overnight
+T16	DUR 192 204	up to a week
+T17	AC 225 231	Remove
+T18	FOOD 232 237	dough
+T19	TOOL 243 255	refrigerator
+T20	DUR 256 266	30 minutes
+T21	CONDITION_CLAUSE 267 279	before using
+T22	AC 290 297	heating
+T23	TOOL 298 302	oven
+T24	TEMPERATURE 306 319	375 degrees F
+T25	TEMPERATURE 321 334	190 degrees C
+T26	AC 340 344	Roll
+T27	FOOD 345 358	chilled dough
+T28	AC 368 371	Cut
+T29	TOOL 377 408	3 or 4 inch round cookie cutter
+T30	AC 413 418	Place
+T31	FOOD 419 440	small spoonful of jam
+T32	AC 466 473	moisten
+T33	FOOD 485 490	water
+T34	FOOD 444 464	center of each round
+T35	FOOD 474 479	edges
+T36	AC 495 499	Fold
+T37	FOOD 500 505	round
+T38	AC 515 520	press
+T39	FOOD 521 526	edges
+T40	AC 541 545	Bake
+T41	TOOL 549 571	ungreased cookie sheet
+T42	DUR 572 588	15 to 20 minutes
+T43	AC 606 613	roll in
+T44	FOOD 614 639	sugar mixed with cinnamon
+T45	FOOD 660 680	confectioners' sugar
+T61	zav 81 88	Beat in
+R1	zav_anaphor Arg1:T61 Arg2:T46	
+R2	zav_anaphor Arg1:T61 Arg2:T47	
+T62	zav 135 139	wrap
+R3	zav_anaphor Arg1:T62 Arg2:T49	
+T63	zav 167 178	refrigerate
+R4	zav_zav Arg1:T63 Arg2:T62	
+T64	zav 368 371	Cut
+R5	zav_anaphor Arg1:T64 Arg2:T52	
+T65	zav 413 418	Place
+R6	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 466 473	moisten
+R7	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 495 499	Fold
+R8	zav_zav Arg1:T67 Arg2:T66	
+T68	zav 515 520	press
+R9	zav_zav Arg1:T68 Arg2:T67	
+T69	zav 541 545	Bake
+R10	zav_zav Arg1:T69 Arg2:T68	
+T70	zav 606 613	roll in
+R11	zav_zav Arg1:T70 Arg2:T69	
+T46	anaphor 21 27	butter
+T47	anaphor 32 44	cream cheese
+T49	anaphor 109 114	dough
+T52	anaphor 345 358	chilled dough

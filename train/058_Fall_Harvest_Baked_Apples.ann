@@ -1,0 +1,55 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Place
+T3	AC 135 142	combine
+T5	AC 231 238	drizzle
+T6	AC 263 268	Cover
+T7	AC 284 288	bake
+T8	AC 326 332	Remove
+T10	AC 408 413	Serve
+T11	TOOL 11 15	oven
+T12	TEMPERATURE 19 32	350 degrees F
+T13	FOOD 59 65	apples
+T14	TOOL 69 92	a 9x13 inch baking dish
+T15	TOOL 100 116	a small saucepan
+T16	TEMPERATURE 122 133	medium heat
+T17	FOOD 143 149	butter
+T18	FOOD 151 162	maple syrup
+T19	FOOD 164 172	cinnamon
+T20	FOOD 174 180	ginger
+T21	FOOD 182 193	lemon juice
+T22	FOOD 198 205	vanilla
+T23	FOOD 252 258	apples
+T24	TOOL 274 278	foil
+T25	TOOL 292 306	preheated oven
+T26	DUR 311 321	20 minutes
+T27	TOOL 333 338	cover
+T28	DUR 365 375	10 minutes
+T29	CONDITION_CLAUSE 380 403	until apples are tender
+T4	AC 221 225	boil
+T9	AC 356 360	bake
+T30	TEMPERATURE 34 47	175 degrees C
+T31	zav 221 225	boil
+R1	zav_anaphor Arg1:T31 Arg2:T32	
+R2	zav_anaphor Arg1:T31 Arg2:T33	
+R3	zav_anaphor Arg1:T31 Arg2:T34	
+R4	zav_anaphor Arg1:T31 Arg2:T35	
+R5	zav_anaphor Arg1:T31 Arg2:T36	
+R6	zav_anaphor Arg1:T31 Arg2:T37	
+T38	zav 231 238	drizzle
+R7	zav_zav Arg1:T38 Arg2:T31	
+T40	zav 263 268	Cover
+R8	zav_zav Arg1:T40 Arg2:T38	
+R9	zav_anaphor Arg1:T40 Arg2:T39	
+T41	zav 284 288	bake
+R10	zav_zav Arg1:T41 Arg2:T40	
+T42	zav 356 360	bake
+R11	zav_zav Arg1:T42 Arg2:T41	
+T43	zav 408 413	Serve
+R12	zav_zav Arg1:T43 Arg2:T42	
+T32	anaphor 143 149	butter
+T33	anaphor 151 162	maple syrup
+T34	anaphor 164 172	cinnamon
+T35	anaphor 174 180	ginger
+T36	anaphor 182 193	lemon juice
+T37	anaphor 198 205	vanilla
+T39	anaphor 252 258	apples

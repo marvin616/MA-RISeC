@@ -1,0 +1,45 @@
+T1	AC 3 6	Mix
+T2	FOOD 7 11	oats
+T3	FOOD 13 18	flour
+T4	FOOD 20 25	sugar
+T5	FOOD 30 37	coconut
+T6	TOOL 54 70	a small saucepan
+T7	TEMPERATURE 76 84	low heat
+T8	AC 86 90	melt
+T9	FOOD 91 100	the syrup
+T10	FOOD 105 111	butter
+T11	FOOD 129 137	the soda
+T12	AC 125 128	Mix
+T13	FOOD 142 159	the boiling water
+T14	AC 164 167	add
+T15	FOOD 171 188	the melted butter
+T16	FOOD 193 198	syrup
+T17	AC 203 206	Add
+T18	FOOD 207 221	butter mixture
+T19	FOOD 225 244	the dry ingredients
+T20	AC 249 253	Drop
+T21	TOOL 270 291	greased cookie sheets
+T22	TOOL 296 308	baking paper
+T23	AC 314 318	Bake
+T24	TEMPERATURE 322 351	350 degrees F (175 degrees C)
+T25	DUR 356 372	18 to 20 minutes
+T26	TOOL 257 266	teaspoons
+T39	zav 164 167	add
+R1	zav_anaphor Arg1:T39 Arg2:T34	
+R2	zav_anaphor Arg1:T39 Arg2:T33	
+T40	zav 203 206	Add
+R3	zav_zav Arg1:T40 Arg2:T39	
+R4	zav_anaphor Arg1:T40 Arg2:T35	
+R5	zav_anaphor Arg1:T40 Arg2:T36	
+T41	zav 249 253	Drop
+R6	zav_zav Arg1:T41 Arg2:T40	
+R7	zav_anaphor Arg1:T41 Arg2:T37	
+R8	zav_anaphor Arg1:T41 Arg2:T38	
+T42	zav 314 318	Bake
+R9	zav_zav Arg1:T42 Arg2:T41	
+T33	anaphor 129 137	the soda
+T34	anaphor 142 159	the boiling water
+T35	anaphor 171 188	the melted butter
+T36	anaphor 193 198	syrup
+T37	anaphor 207 221	butter mixture
+T38	anaphor 225 244	the dry ingredients

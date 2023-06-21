@@ -1,0 +1,37 @@
+T1	AC 3 10	Preheat
+T2	TOOL 38 51	a medium bowl
+T3	FOOD 67 76	the onion
+T4	FOOD 78 84	tomato
+T5	FOOD 86 92	celery
+T6	FOOD 94 105	bell pepper
+T7	FOOD 107 113	cheese
+T8	FOOD 115 127	chili powder
+T9	FOOD 132 136	salt
+T10	FOOD 149 164	slices of bread
+T11	TOOL 168 182	a baking sheet
+T12	TOOL 186 198	broiling pan
+T13	AC 141 148	Arrange
+T14	AC 203 206	Top
+T15	FOOD 207 215	each one
+T16	FOOD 221 239	1/4 of the mixture
+T17	AC 241 254	spreading out
+T18	OTHER 258 267	the edges
+T19	AC 272 277	Broil
+T20	DUR 282 296	4 to 5 minutes
+T21	CONDITION_CLAUSE 301 319	until cheese melts
+T22	AC 361 366	Serve
+T23	TOOL 16 30	oven's broiler
+T24	AC 53 57	stir
+T25	AC 324 329	Watch
+T26	PURPOSE_CLAUSE 338 356	to prevent burning
+T37	zav 241 254	spreading out
+T38	zav 203 206	Top
+R1	zav_anaphor Arg1:T38 Arg2:T34	
+R2	zav_anaphor Arg1:T37 Arg2:T36	
+T39	zav 272 277	Broil
+R3	zav_zav Arg1:T39 Arg2:T37	
+R4	zav_zav Arg1:T39 Arg2:T38	
+T40	zav 361 366	Serve
+R5	zav_zav Arg1:T40 Arg2:T39	
+T34	anaphor 149 164	slices of bread
+T36	anaphor 221 239	1/4 of the mixture

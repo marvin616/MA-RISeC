@@ -1,0 +1,47 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	AC 64 69	cream
+T6	FOOD 79 89	shortening
+T7	FOOD 91 97	sugars
+T8	FOOD 99 103	eggs
+T9	FOOD 108 115	vanilla
+T10	TOOL 123 138	a separate bowl
+T11	AC 140 143	mix
+T12	FOOD 153 172	the dry ingredients
+T13	OTHER 174 192	except the candies
+T14	AC 197 200	Add
+T15	FOOD 204 219	creamed mixture
+T16	AC 224 227	mix
+T17	AC 237 244	Stir in
+T18	FOOD 245 260	1/2 cup candies
+T19	AC 265 268	Mix
+T20	AC 278 282	Drop
+T21	OTHER 286 294	teaspoon
+T22	TOOL 300 313	cookie sheets
+T23	AC 318 326	decorate
+T24	FOOD 332 349	remaining candies
+T25	AC 354 358	Bake
+T26	DUR 363 378	10 - 12 minutes
+T35	zav 197 200	Add
+R1	zav_anaphor Arg1:T35 Arg2:T31	
+T36	zav 224 227	mix
+R2	zav_anaphor Arg1:T36 Arg2:T32	
+R3	zav_zav Arg1:T36 Arg2:T35	
+T37	zav 237 244	Stir in
+R4	zav_zav Arg1:T37 Arg2:T36	
+T38	zav 265 268	Mix
+R5	zav_zav Arg1:T38 Arg2:T37	
+R6	zav_anaphor Arg1:T38 Arg2:T33	
+T39	zav 278 282	Drop
+R7	zav_zav Arg1:T39 Arg2:T38	
+T40	zav 318 326	decorate
+R8	zav_zav Arg1:T40 Arg2:T39	
+T41	zav 354 358	Bake
+R9	zav_zav Arg1:T41 Arg2:T40	
+R10	zav_anaphor Arg1:T41 Arg2:T34	
+T31	anaphor 153 172	the dry ingredients
+T32	anaphor 204 219	creamed mixture
+T33	anaphor 245 260	1/2 cup candies
+T34	anaphor 332 349	remaining candies

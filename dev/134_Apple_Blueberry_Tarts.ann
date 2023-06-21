@@ -1,0 +1,90 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 20 27	combine
+T3	FOOD 28 34	apples
+T4	FOOD 36 47	blueberries
+T5	FOOD 49 65	sugar substitute
+T6	FOOD 71 103	the 1/4 teaspoon apple pie spice
+T7	AC 105 114	set aside
+T8	TOOL 122 141	another medium bowl
+T9	AC 142 155	stir together
+T10	FOOD 156 180	whole wheat pastry flour
+T11	FOOD 182 193	kosher salt
+T12	FOOD 199 231	the 1/8 teaspoon apple pie spice
+T13	AC 236 239	Add
+T14	FOOD 240 243	oil
+T15	FOOD 248 252	milk
+T16	FOOD 268 281	flour mixture
+T17	AC 286 290	Stir
+T18	TOOL 304 310	a fork
+T19	CONDITION_CLAUSE 311 337	until dough comes together
+T20	AC 342 348	Divide
+T21	FOOD 349 354	dough
+T22	FOOD 360 370	6 portions
+T23	AC 375 380	Using
+T24	AC 447 452	press
+T25	FOOD 453 470	one dough portion
+T26	TOOL 474 517	the bottom and up the side of each tart pan
+T27	TOOL 381 422	six 3 1/2- to 4-inch individual tart pans
+T28	TOOL 428 445	removable bottoms
+T29	AC 522 528	Divide
+T30	FOOD 529 542	fruit mixture
+T31	TOOL 549 566	pastry-lined pans
+T32	AC 571 576	Place
+T33	TOOL 577 586	tart pans
+T34	TOOL 590 610	a large baking sheet
+T35	AC 615 620	Place
+T36	TOOL 621 642	a large piece of foil
+T37	TOOL 648 657	tart pans
+T38	AC 659 664	press
+T39	TOOL 685 694	the edges
+T40	PURPOSE_CLAUSE 695 702	to seal
+T41	AC 708 712	Bake
+T42	TOOL 716 736	a 375 degrees F oven
+T43	DUR 741 751	20 minutes
+T44	AC 753 759	remove
+T45	TOOL 760 764	foil
+T46	AC 770 774	Bake
+T47	DUR 781 791	20 minutes
+T48	CONDITION_CLAUSE 800 821	until fruit is tender
+T49	AC 831 835	cool
+T50	TOOL 839 848	tart pans
+T51	TOOL 852 863	a wire rack
+T52	DUR 868 878	15 minutes
+T53	AC 894 900	remove
+T54	TOOL 901 919	sides of tart pans
+T55	AC 925 930	Serve
+T70	zav 105 114	set aside
+R1	zav_anaphor Arg1:T70 Arg2:T59	
+R2	zav_anaphor Arg1:T70 Arg2:T58	
+R3	zav_anaphor Arg1:T70 Arg2:T57	
+R4	zav_anaphor Arg1:T70 Arg2:T56	
+T71	zav 236 239	Add
+R5	zav_anaphor Arg1:T71 Arg2:T60	
+R6	zav_anaphor Arg1:T71 Arg2:T61	
+R7	zav_anaphor Arg1:T71 Arg2:T62	
+T72	zav 286 290	Stir
+R8	zav_zav Arg1:T72 Arg2:T71	
+R9	zav_anaphor Arg1:T72 Arg2:T63	
+R10	zav_anaphor Arg1:T72 Arg2:T64	
+R11	zav_anaphor Arg1:T72 Arg2:T65	
+T73	zav 708 712	Bake
+R12	zav_anaphor Arg1:T73 Arg2:T69	
+T74	zav 770 774	Bake
+R13	zav_zav Arg1:T74 Arg2:T73	
+T75	zav 831 835	cool
+R14	zav_zav Arg1:T75 Arg2:T74	
+T76	zav 894 900	remove
+R15	zav_zav Arg1:T76 Arg2:T75	
+T77	zav 925 930	Serve
+R16	zav_zav Arg1:T77 Arg2:T76	
+T56	anaphor 28 34	apples
+T57	anaphor 36 47	blueberries
+T58	anaphor 49 65	sugar substitute
+T59	anaphor 71 103	the 1/4 teaspoon apple pie spice
+T60	anaphor 156 180	whole wheat pastry flour
+T61	anaphor 182 193	kosher salt
+T62	anaphor 199 231	the 1/8 teaspoon apple pie spice
+T63	anaphor 240 243	oil
+T64	anaphor 248 252	milk
+T65	anaphor 268 281	flour mixture
+T69	anaphor 529 542	fruit mixture

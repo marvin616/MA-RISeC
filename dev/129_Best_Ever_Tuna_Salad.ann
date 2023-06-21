@@ -1,0 +1,71 @@
+T1	AC 3 8	Place
+T2	FOOD 9 13	eggs
+T3	TOOL 17 27	a saucepan
+T4	AC 32 37	cover
+T5	FOOD 43 53	cold water
+T6	FOOD 64 69	water
+T7	AC 75 79	boil
+T8	AC 96 102	remove
+T9	OTHER 108 112	heat
+T10	AC 117 122	Cover
+T11	FOOD 131 135	eggs
+T12	AC 136 141	stand
+T13	FOOD 145 154	hot water
+T14	DUR 159 175	10 to 12 minutes
+T15	AC 180 186	Remove
+T16	FOOD 192 201	hot water
+T17	AC 203 207	cool
+T18	AC 209 213	peel
+T19	AC 218 222	chop
+T20	TOOL 237 250	a mixing bowl
+T21	AC 252 259	combine
+T22	FOOD 260 264	tuna
+T23	FOOD 266 274	crabmeat
+T24	FOOD 276 286	mayonnaise
+T25	FOOD 288 298	sour cream
+T26	FOOD 303 310	mustard
+T27	AC 315 322	Stir in
+T28	FOOD 323 334	chopped egg
+T29	FOOD 336 345	dill weed
+T30	FOOD 347 359	lemon pepper
+T31	FOOD 361 382	dill and sweet relish
+T32	FOOD 387 400	chopped onion
+T33	AC 405 408	Mix
+T50	zav 32 37	cover
+R1	zav_anaphor Arg1:T50 Arg2:T34	
+T51	zav 96 102	remove
+R2	zav_anaphor Arg1:T51 Arg2:T36	
+T52	zav 180 186	Remove
+R3	zav_anaphor Arg1:T52 Arg2:T37	
+T53	zav 203 207	cool
+R4	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 209 213	peel
+R5	zav_zav Arg1:T54 Arg2:T52	
+T55	zav 218 222	chop
+R6	zav_zav Arg1:T55 Arg2:T52	
+T56	zav 315 322	Stir in
+R7	zav_anaphor Arg1:T56 Arg2:T40	
+R8	zav_anaphor Arg1:T56 Arg2:T41	
+R9	zav_anaphor Arg1:T56 Arg2:T42	
+R10	zav_anaphor Arg1:T56 Arg2:T43	
+R11	zav_anaphor Arg1:T56 Arg2:T44	
+T57	zav 405 408	Mix
+R12	zav_zav Arg1:T57 Arg2:T56	
+R13	zav_anaphor Arg1:T57 Arg2:T45	
+R14	zav_anaphor Arg1:T57 Arg2:T46	
+R15	zav_anaphor Arg1:T57 Arg2:T47	
+R16	zav_anaphor Arg1:T57 Arg2:T48	
+R17	zav_anaphor Arg1:T57 Arg2:T49	
+T34	anaphor 9 13	eggs
+T36	anaphor 64 69	water
+T37	anaphor 131 135	eggs
+T40	anaphor 260 264	tuna
+T41	anaphor 266 274	crabmeat
+T42	anaphor 276 286	mayonnaise
+T43	anaphor 288 298	sour cream
+T44	anaphor 303 310	mustard
+T45	anaphor 323 334	chopped egg
+T46	anaphor 336 345	dill weed
+T47	anaphor 347 359	lemon pepper
+T48	anaphor 361 382	dill and sweet relish
+T49	anaphor 387 400	chopped onion

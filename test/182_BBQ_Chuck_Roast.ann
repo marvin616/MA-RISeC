@@ -1,0 +1,61 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 24 38	barbeque sauce
+T4	FOOD 40 54	teriyaki sauce
+T5	FOOD 56 60	beer
+T6	FOOD 62 68	garlic
+T7	FOOD 70 76	ginger
+T8	FOOD 78 83	onion
+T9	FOOD 85 97	black pepper
+T10	FOOD 103 107	salt
+T11	AC 112 117	Place
+T12	FOOD 118 127	the roast
+T13	FOOD 133 145	the marinade
+T14	AC 147 152	cover
+T15	AC 157 168	refrigerate
+T16	DUR 173 182	six hours
+T17	AC 184 191	turning
+T18	AC 202 209	Preheat
+T19	TOOL 210 226	an outdoor grill
+T20	OTHER 231 244	indirect heat
+T21	AC 249 255	Remove
+T22	FOOD 256 265	the roast
+T23	FOOD 271 283	the marinade
+T24	AC 289 293	pour
+T25	FOOD 294 306	the marinade
+T26	TOOL 312 322	a saucepan
+T27	AC 348 352	cook
+T28	DUR 357 366	5 minutes
+T29	PURPOSE_CLAUSE 381 407	for use as a basting sauce
+T30	AC 412 418	Thread
+T31	FOOD 419 428	the roast
+T32	TOOL 434 458	a rotating barbecue spit
+T33	OTHER 465 478	indirect heat
+T34	AC 483 487	Cook
+T35	FOOD 488 497	the roast
+T36	DUR 502 511	two hours
+T37	AC 605 610	Baste
+T38	FOOD 643 660	reserved marinade
+T39	DUR 624 637	the last hour
+T40	AC 338 342	boil
+T41	AC 371 380	Set aside
+T42	CONDITION_CLAUSE 516 600	until the internal temperature of the roast is at least 145 degrees F (63 degrees C)
+T59	zav 147 152	cover
+R1	zav_anaphor Arg1:T59 Arg2:T52	
+R2	zav_anaphor Arg1:T59 Arg2:T51	
+T60	zav 157 168	refrigerate
+R3	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 184 191	turning
+R4	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 338 342	boil
+R5	zav_anaphor Arg1:T62 Arg2:T55	
+T63	zav 348 352	cook
+R6	zav_zav Arg1:T63 Arg2:T62	
+T64	zav 371 380	Set aside
+R7	zav_zav Arg1:T64 Arg2:T63	
+T65	zav 605 610	Baste
+R8	zav_anaphor Arg1:T65 Arg2:T57	
+T51	anaphor 118 127	the roast
+T52	anaphor 133 145	the marinade
+T55	anaphor 294 306	the marinade
+T57	anaphor 488 497	the roast

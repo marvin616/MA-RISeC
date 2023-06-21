@@ -1,0 +1,56 @@
+T1	AC 3 12	Microwave
+T2	FOOD 13 22	chocolate
+T3	FOOD 27 52	2 tablespoons of the milk
+T4	TOOL 56 81	large microwave-safe bowl
+T5	TEMPERATURE 85 89	high
+T6	DUR 90 108	1 1/2 to 2 minutes
+T7	CONDITION_CLAUSE 112 144	until chocolate is almost melted
+T8	AC 146 154	stirring
+T9	AC 188 195	Beat in
+T10	FOOD 196 208	cream cheese
+T11	FOOD 210 215	sugar
+T12	FOOD 221 235	remaining milk
+T13	TOOL 241 251	wire whisk
+T14	CONDITION_CLAUSE 252 265	until blended
+T15	AC 270 281	Refrigerate
+T16	DUR 282 292	10 minutes
+T17	AC 304 311	fold in
+T18	FOOD 312 345	3 1/2 cups of the whipped topping
+T19	CONDITION_CLAUSE 346 369	until no streaks remain
+T20	AC 374 379	Spoon
+T21	FOOD 385 390	crust
+T22	AC 395 401	Freeze
+T23	FOOD 402 405	pie
+T24	DUR 406 413	4 hours
+T25	CONDITION_CLAUSE 418 436	Before cutting pie
+T26	AC 442 447	stand
+T27	TEMPERATURE 451 467	room temperature
+T28	DUR 468 478	15 minutes
+T29	AC 483 488	Serve
+T30	FOOD 494 519	remaining whipped topping
+T40	zav 146 154	stirring
+R1	zav_anaphor Arg1:T40 Arg2:T32	
+R2	zav_anaphor Arg1:T40 Arg2:T31	
+T41	zav 188 195	Beat in
+R3	zav_zav Arg1:T41 Arg2:T40	
+T42	zav 270 281	Refrigerate
+R4	zav_zav Arg1:T42 Arg2:T41	
+R5	zav_anaphor Arg1:T42 Arg2:T33	
+R6	zav_anaphor Arg1:T42 Arg2:T34	
+R7	zav_anaphor Arg1:T42 Arg2:T35	
+T43	zav 304 311	fold in
+R8	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 374 379	Spoon
+R9	zav_zav Arg1:T44 Arg2:T43	
+R10	zav_anaphor Arg1:T44 Arg2:T36	
+T45	zav 442 447	stand
+R11	zav_anaphor Arg1:T45 Arg2:T46	
+T47	zav 483 488	Serve
+R12	zav_zav Arg1:T47 Arg2:T45	
+T31	anaphor 13 22	chocolate
+T32	anaphor 27 52	2 tablespoons of the milk
+T33	anaphor 196 208	cream cheese
+T34	anaphor 210 215	sugar
+T35	anaphor 221 235	remaining milk
+T36	anaphor 312 345	3 1/2 cups of the whipped topping
+T46	anaphor 433 436	pie

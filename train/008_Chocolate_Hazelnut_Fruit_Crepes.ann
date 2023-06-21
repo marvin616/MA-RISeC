@@ -1,0 +1,37 @@
+T1	AC 3 9	Spread
+T2	FOOD 10 39	1/4 cup of chocolate hazelnut
+T3	FOOD 45 55	each crepe
+T4	AC 60 67	Arrange
+T5	FOOD 68 83	1 sliced banana
+T6	FOOD 89 111	the center of each one
+T8	AC 116 123	Roll up
+T9	AC 129 134	place
+T10	TOOL 138 152	a warm skillet
+T11	TEMPERATURE 158 169	medium heat
+T12	FOOD 178 182	them
+T13	AC 183 190	warm up
+T14	DUR 201 211	90 seconds
+T15	AC 216 224	Transfer
+T16	TOOL 228 234	plates
+T17	AC 240 245	serve
+T18	AC 246 252	topped
+T19	FOOD 258 271	whipped cream
+T7	zav 60 67	Arrange
+R1	zav_anaphor Arg1:T7 Arg2:T21	
+R2	zav_anaphor Arg1:T7 Arg2:T20	
+T23	zav 116 123	Roll up
+R3	zav_anaphor Arg1:T23 Arg2:T22	
+R4	zav_zav Arg1:T23 Arg2:T7	
+T24	zav 129 134	place
+R5	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 216 224	Transfer
+T26	zav 183 190	warm up
+R6	zav_zav Arg1:T26 Arg2:T24	
+R7	zav_zav Arg1:T25 Arg2:T26	
+T27	zav 240 245	serve
+T28	zav 246 252	topped
+R8	zav_zav Arg1:T27 Arg2:T25	
+R9	zav_zav Arg1:T28 Arg2:T27	
+T20	anaphor 50 55	crepe
+T21	anaphor 21 30	chocolate
+T22	anaphor 68 83	1 sliced banana

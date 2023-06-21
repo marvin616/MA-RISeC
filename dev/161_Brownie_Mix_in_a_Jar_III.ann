@@ -1,0 +1,51 @@
+T1	AC 3 6	Mix
+T2	FOOD 16 21	flour
+T3	FOOD 23 27	salt
+T4	FOOD 32 45	baking powder
+T5	AC 50 53	Add
+T6	FOOD 54 68	3/4 cup butter
+T7	FOOD 72 81	margarine
+T8	AC 86 93	not use
+T9	FOOD 94 107	diet Magarine
+T10	AC 113 119	Mix in
+T11	FOOD 120 126	2 eggs
+T12	FOOD 148 167	2 teaspoons vanilla
+T13	OTHER 128 143	slightly beaten
+T14	AC 172 178	Spread
+T15	FOOD 179 185	batter
+T16	TOOL 191 222	a sprayed 9 x 13 inch metal pan
+T17	AC 227 231	Bake
+T18	AC 284 288	Cool
+T19	AC 318 321	Cut
+T20	TEMPERATURE 235 248	375 degrees F
+T21	TEMPERATURE 250 263	190 degrees C
+T22	DUR 269 279	25 minutes
+T23	DUR 289 299	15 minutes
+T24	TOOL 303 313	baking pan
+T25	FOOD 322 330	brownies
+T26	OTHER 336 354	1 1/2 inch squares
+T27	AC 359 363	Cool
+T28	TOOL 378 381	pan
+T29	AC 386 390	Make
+T30	FOOD 391 407	2 dozen brownies
+T42	zav 50 53	Add
+R1	zav_anaphor Arg1:T42 Arg2:T31	
+R2	zav_anaphor Arg1:T42 Arg2:T32	
+R3	zav_anaphor Arg1:T42 Arg2:T33	
+T43	zav 113 119	Mix in
+R4	zav_zav Arg1:T43 Arg2:T42	
+R5	zav_anaphor Arg1:T43 Arg2:T34	
+R6	zav_anaphor Arg1:T43 Arg2:T35	
+T44	zav 227 231	Bake
+R7	zav_anaphor Arg1:T44 Arg2:T39	
+T45	zav 284 288	Cool
+R8	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 359 363	Cool
+R9	zav_anaphor Arg1:T46 Arg2:T40	
+T31	anaphor 16 21	flour
+T32	anaphor 23 27	salt
+T33	anaphor 32 45	baking powder
+T34	anaphor 54 68	3/4 cup butter
+T35	anaphor 72 81	margarine
+T39	anaphor 179 185	batter
+T40	anaphor 322 330	brownies

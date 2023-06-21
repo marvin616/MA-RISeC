@@ -1,0 +1,44 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 82	a 9x13 inch baking pan
+T7	AC 87 92	Empty
+T8	OTHER 93 96	jar
+T9	FOOD 100 111	brownie mix
+T10	TOOL 117 136	a large mixing bowl
+T11	AC 138 142	stir
+T12	PURPOSE_CLAUSE 143 160	to break up lumps
+T13	AC 165 168	Add
+T14	FOOD 169 192	3/4 cup softened butter
+T15	FOOD 194 207	2 beaten eggs
+T16	FOOD 213 243	2 teaspoons of vanilla extract
+T17	AC 245 248	mix
+T18	CONDITION_CLAUSE 249 267	until well blended
+T19	AC 272 278	Spread
+T20	FOOD 279 285	batter
+T21	TOOL 296 312	the prepared pan
+T22	AC 317 321	Bake
+T23	DUR 326 336	25 minutes
+T24	AC 350 354	cool
+T25	DUR 358 365	the pan
+T26	CONDITION_CLAUSE 371 398	before cutting into squares
+T32	zav 138 142	stir
+R1	zav_anaphor Arg1:T32 Arg2:T27	
+T33	zav 165 168	Add
+R2	zav_zav Arg1:T33 Arg2:T32	
+T34	zav 245 248	mix
+R3	zav_anaphor Arg1:T34 Arg2:T30	
+R4	zav_anaphor Arg1:T34 Arg2:T29	
+R5	zav_anaphor Arg1:T34 Arg2:T28	
+R6	zav_zav Arg1:T34 Arg2:T33	
+T35	zav 317 321	Bake
+R7	zav_anaphor Arg1:T35 Arg2:T31	
+T36	zav 350 354	cool
+R8	zav_zav Arg1:T36 Arg2:T35	
+T27	anaphor 100 111	brownie mix
+T28	anaphor 169 192	3/4 cup softened butter
+T29	anaphor 194 207	2 beaten eggs
+T30	anaphor 213 243	2 teaspoons of vanilla extract
+T31	anaphor 279 285	batter

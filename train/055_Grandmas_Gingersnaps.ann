@@ -1,0 +1,64 @@
+T1	AC 3 10	Preheat
+T2	AC 71 76	cream
+T4	AC 191 198	Combine
+T5	AC 250 254	stir
+T6	AC 301 305	Roll
+T7	AC 334 338	roll
+T8	AC 376 381	Place
+T9	AC 438 442	Bake
+T11	AC 548 556	removing
+T12	TOOL 11 15	oven
+T13	TEMPERATURE 19 32	350 degrees F
+T14	TOOL 56 69	a medium bowl
+T15	FOOD 86 99	the margarine
+T16	FOOD 104 121	1 cup white sugar
+T17	FOOD 147 154	the egg
+T18	FOOD 159 167	molasses
+T19	FOOD 203 208	flour
+T20	FOOD 210 216	ginger
+T21	FOOD 218 226	cinnamon
+T22	FOOD 228 239	baking soda
+T23	FOOD 244 248	salt
+T24	FOOD 260 280	the molasses mixture
+T26	FOOD 306 311	dough
+T27	FOOD 317 329	1 inch balls
+T28	FOOD 339 348	the balls
+T29	FOOD 352 371	the remaining sugar
+T30	FOOD 382 389	cookies
+T31	TOOL 410 433	ungreased cookie sheets
+T32	TOOL 466 484	the preheated oven
+T33	DUR 447 462	8 to 10 minutes
+T34	TOOL 514 526	baking sheet
+T35	DUR 531 540	5 minutes
+T36	TOOL 560 571	a wire rack
+T37	FOOD 495 502	cookies
+T38	CONDITION_CLAUSE 122 134	until smooth
+T39	CONDITION_CLAUSE 168 186	until well blended
+T3	AC 139 146	Beat in
+T10	AC 506 510	cool
+T25	PURPOSE_CLAUSE 281 296	to form a dough
+T40	OTHER 390 404	2 inches apart
+T41	PURPOSE_CLAUSE 572 590	to cool completely
+T42	TEMPERATURE 34 47	175 degrees C
+T43	zav 139 146	Beat in
+R1	zav_anaphor Arg1:T43 Arg2:T44	
+R2	zav_anaphor Arg1:T43 Arg2:T45	
+T46	zav 250 254	stir
+R3	zav_anaphor Arg1:T46 Arg2:T51	
+R4	zav_anaphor Arg1:T46 Arg2:T50	
+R5	zav_anaphor Arg1:T46 Arg2:T49	
+R6	zav_anaphor Arg1:T46 Arg2:T48	
+R7	zav_anaphor Arg1:T46 Arg2:T47	
+T52	zav 438 442	Bake
+R8	zav_anaphor Arg1:T52 Arg2:T53	
+T54	zav 548 556	removing
+R9	zav_anaphor Arg1:T54 Arg2:T55	
+T44	anaphor 86 99	the margarine
+T45	anaphor 104 121	1 cup white sugar
+T47	anaphor 203 208	flour
+T48	anaphor 210 216	ginger
+T49	anaphor 218 226	cinnamon
+T50	anaphor 228 239	baking soda
+T51	anaphor 244 248	salt
+T53	anaphor 382 389	cookies
+T55	anaphor 495 502	cookies

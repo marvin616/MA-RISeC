@@ -1,0 +1,91 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 81	one 9x5 inch loaf pan
+T7	AC 86 93	Measure
+T8	FOOD 94 99	flour
+T9	FOOD 101 112	1 cup sugar
+T10	FOOD 114 127	baking powder
+T11	FOOD 129 140	baking soda
+T12	FOOD 142 166	1 1/2 teaspoons cinnamon
+T13	FOOD 168 172	salt
+T14	FOOD 174 184	buttermilk
+T15	FOOD 186 189	oil
+T16	FOOD 191 195	eggs
+T17	FOOD 200 207	vanilla
+T18	TOOL 213 230	large mixing bowl
+T19	AC 235 239	Beat
+T20	DUR 240 249	3 minutes
+T21	AC 254 258	Pour
+T22	TOOL 264 281	prepared loaf pan
+T23	AC 286 292	Smooth
+T24	FOOD 293 296	top
+T25	AC 301 308	Combine
+T26	FOOD 309 334	2 tablespoons white sugar
+T27	FOOD 336 355	1 teaspoon cinnamon
+T28	FOOD 360 366	butter
+T29	AC 368 374	mixing
+T31	AC 393 401	Sprinkle
+T32	FOOD 402 409	topping
+T33	FOOD 415 430	smoothed batter
+T34	AC 448 451	cut
+T36	TOOL 441 446	knife
+T37	AC 509 513	Bake
+T38	OTHER 455 478	a light swirling motion
+T39	DUR 524 534	50 minutes
+T40	AC 540 544	Test
+T41	TOOL 550 559	toothpick
+T42	TOOL 579 581	it
+T43	AC 589 593	come
+T46	AC 609 615	Remove
+T47	FOOD 616 621	bread
+T48	TOOL 627 630	pan
+T49	TOOL 634 638	rack
+T50	PURPOSE_CLAUSE 639 646	to cool
+T30	CONDITION_CLAUSE 375 388	until crumbly
+T45	CONDITION_CLAUSE 565 578	When inserted
+T51	PURPOSE_CLAUSE 479 503	to give a marbled effect
+T60	zav 235 239	Beat
+R1	zav_anaphor Arg1:T60 Arg2:T35	
+R2	zav_anaphor Arg1:T60 Arg2:T44	
+R3	zav_anaphor Arg1:T60 Arg2:T52	
+R4	zav_anaphor Arg1:T60 Arg2:T53	
+R5	zav_anaphor Arg1:T60 Arg2:T54	
+R6	zav_anaphor Arg1:T60 Arg2:T55	
+R7	zav_anaphor Arg1:T60 Arg2:T56	
+R8	zav_anaphor Arg1:T60 Arg2:T57	
+R9	zav_anaphor Arg1:T60 Arg2:T58	
+R10	zav_anaphor Arg1:T60 Arg2:T59	
+T61	zav 254 258	Pour
+R11	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 368 374	mixing
+R12	zav_anaphor Arg1:T62 Arg2:T63	
+R13	zav_anaphor Arg1:T62 Arg2:T64	
+R14	zav_anaphor Arg1:T62 Arg2:T65	
+T66	zav 393 401	Sprinkle
+R15	zav_zav Arg1:T66 Arg2:T62	
+T67	zav 448 451	cut
+R16	zav_zav Arg1:T67 Arg2:T66	
+R17	zav_anaphor Arg1:T67 Arg2:T68	
+T69	zav 509 513	Bake
+R18	zav_zav Arg1:T69 Arg2:T67	
+T70	zav 540 544	Test
+R19	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 589 593	come
+R20	zav_zav Arg1:T71 Arg2:T70	
+T35	anaphor 94 99	flour
+T44	anaphor 101 112	1 cup sugar
+T52	anaphor 114 127	baking powder
+T53	anaphor 129 140	baking soda
+T54	anaphor 142 166	1 1/2 teaspoons cinnamon
+T55	anaphor 168 172	salt
+T56	anaphor 174 184	buttermilk
+T57	anaphor 186 189	oil
+T58	anaphor 191 195	eggs
+T59	anaphor 200 207	vanilla
+T63	anaphor 309 334	2 tablespoons white sugar
+T64	anaphor 336 355	1 teaspoon cinnamon
+T65	anaphor 360 366	butter
+T68	anaphor 415 430	smoothed batter

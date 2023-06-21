@@ -1,0 +1,144 @@
+T1	AC 35 42	divided
+T2	FOOD 3 33	3/4 cup grated Parmesan cheese
+T3	AC 81 88	divided
+T4	FOOD 46 79	6 tablespoons butter or margarine
+T5	AC 92 97	Drain
+T6	AC 102 113	squeeze out
+T7	FOOD 114 129	excess moisture
+T8	FOOD 135 142	spinach
+T9	AC 147 151	Beat
+T10	FOOD 152 156	eggs
+T11	FOOD 158 168	onion salt
+T12	FOOD 173 179	nutmeg
+T13	AC 184 187	Add
+T14	FOOD 188 195	spinach
+T15	FOOD 200 223	1/4 cup Parmesan cheese
+T16	AC 225 228	mix
+T17	AC 238 245	Combine
+T18	FOOD 246 258	bread crumbs
+T19	FOOD 263 281	remaining Parmesan
+T20	AC 286 294	Sprinkle
+T21	FOOD 295 302	chicken
+T22	FOOD 308 312	salt
+T23	FOOD 317 323	pepper
+T24	AC 325 329	coat
+T25	FOOD 335 348	crumb mixture
+T26	AC 353 358	Place
+T27	TOOL 362 391	two greased 13-in baking pans
+T28	AC 396 402	Spread
+T29	FOOD 403 432	2 tablespoons spinach mixture
+T30	FOOD 438 449	each breast
+T31	AC 455 463	Sprinkle
+T32	FOOD 469 492	remaining crumb mixture
+T33	AC 494 501	drizzle
+T34	FOOD 507 513	butter
+T35	AC 519 523	Bake
+T36	TEMPERATURE 527 540	350 degrees F
+T37	DUR 545 558	35-40 minutes
+T38	CONDITION_CLAUSE 562 592	until chicken juices run clear
+T39	FOOD 602 607	sauce
+T40	AC 609 613	melt
+T41	FOOD 614 634	4 tablespoons butter
+T42	AC 636 644	blend in
+T43	FOOD 645 650	flour
+T44	FOOD 655 659	salt
+T45	AC 665 669	Stir
+T46	PURPOSE_CLAUSE 670 692	to form a smooth paste
+T47	AC 698 701	Add
+T48	FOOD 702 706	milk
+T49	AC 708 712	cook
+T50	AC 717 721	stir
+T51	CONDITION_CLAUSE 722 748	until thickened and bubbly
+T52	AC 754 757	Add
+T53	FOOD 758 764	cheese
+T54	AC 769 773	stir
+T55	CONDITION_CLAUSE 774 786	until melted
+T56	AC 792 797	Saute
+T57	FOOD 798 807	mushrooms
+T58	FOOD 811 827	remaining butter
+T59	AC 833 837	Stir
+T60	FOOD 843 857	cheese mixture
+T61	AC 873 877	pour
+T62	FOOD 878 883	sauce
+T63	FOOD 889 896	chicken
+T64	AC 901 905	pour
+T65	FOOD 911 925	a serving bowl
+T66	AC 930 934	pass
+T98	zav 81 88	divided
+T99	zav 35 42	divided
+R1	zav_anaphor Arg1:T99 Arg2:T67	
+R2	zav_anaphor Arg1:T98 Arg2:T68	
+T100	zav 184 187	Add
+R3	zav_anaphor Arg1:T100 Arg2:T71	
+R4	zav_anaphor Arg1:T100 Arg2:T72	
+R5	zav_anaphor Arg1:T100 Arg2:T73	
+T101	zav 225 228	mix
+R6	zav_anaphor Arg1:T101 Arg2:T75	
+R7	zav_anaphor Arg1:T101 Arg2:T74	
+R8	zav_zav Arg1:T101 Arg2:T100	
+T102	zav 325 329	coat
+R9	zav_anaphor Arg1:T102 Arg2:T80	
+R10	zav_anaphor Arg1:T102 Arg2:T79	
+R11	zav_anaphor Arg1:T102 Arg2:T78	
+T103	zav 353 358	Place
+R12	zav_zav Arg1:T103 Arg2:T102	
+R13	zav_anaphor Arg1:T103 Arg2:T81	
+T104	zav 455 463	Sprinkle
+R14	zav_anaphor Arg1:T104 Arg2:T82	
+R15	zav_anaphor Arg1:T104 Arg2:T83	
+T105	zav 494 501	drizzle
+R16	zav_anaphor Arg1:T105 Arg2:T84	
+R17	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 519 523	Bake
+R18	zav_zav Arg1:T106 Arg2:T105	
+R19	zav_anaphor Arg1:T106 Arg2:T85	
+T107	zav 636 644	blend in
+R20	zav_anaphor Arg1:T107 Arg2:T87	
+T108	zav 665 669	Stir
+R21	zav_anaphor Arg1:T108 Arg2:T88	
+R22	zav_anaphor Arg1:T108 Arg2:T89	
+R23	zav_zav Arg1:T108 Arg2:T107	
+T109	zav 698 701	Add
+R24	zav_zav Arg1:T109 Arg2:T108	
+T110	zav 708 712	cook
+R25	zav_anaphor Arg1:T110 Arg2:T90	
+R26	zav_zav Arg1:T110 Arg2:T109	
+T111	zav 717 721	stir
+R27	zav_zav Arg1:T111 Arg2:T110	
+T112	zav 754 757	Add
+R28	zav_zav Arg1:T112 Arg2:T111	
+T113	zav 769 773	stir
+R29	zav_anaphor Arg1:T113 Arg2:T91	
+R30	zav_zav Arg1:T113 Arg2:T112	
+T114	zav 833 837	Stir
+R31	zav_anaphor Arg1:T114 Arg2:T92	
+R32	zav_anaphor Arg1:T114 Arg2:T93	
+T115	zav 901 905	pour
+R33	zav_anaphor Arg1:T115 Arg2:T95	
+T116	zav 930 934	pass
+R34	zav_anaphor Arg1:T116 Arg2:T96	
+R35	zav_zav Arg1:T116 Arg2:T115	
+T67	anaphor 3 33	3/4 cup grated Parmesan cheese
+T68	anaphor 46 79	6 tablespoons butter or margarine
+T71	anaphor 152 156	eggs
+T72	anaphor 158 168	onion salt
+T73	anaphor 173 179	nutmeg
+T74	anaphor 188 195	spinach
+T75	anaphor 200 223	1/4 cup Parmesan cheese
+T78	anaphor 295 302	chicken
+T79	anaphor 308 312	salt
+T80	anaphor 317 323	pepper
+T81	anaphor 335 348	crumb mixture
+T82	anaphor 403 432	2 tablespoons spinach mixture
+T83	anaphor 438 449	each breast
+T84	anaphor 469 492	remaining crumb mixture
+T85	anaphor 507 513	butter
+T87	anaphor 614 634	4 tablespoons butter
+T88	anaphor 645 650	flour
+T89	anaphor 655 659	salt
+T90	anaphor 702 706	milk
+T91	anaphor 758 764	cheese
+T92	anaphor 798 807	mushrooms
+T93	anaphor 811 827	remaining butter
+T95	anaphor 878 883	sauce
+T96	anaphor 889 896	chicken

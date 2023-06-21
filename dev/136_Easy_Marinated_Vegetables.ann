@@ -1,0 +1,42 @@
+T1	AC 40 44	boil
+T2	OTHER 9 20	a large pot
+T3	AC 49 54	Place
+T4	FOOD 55 67	the broccoli
+T5	FOOD 72 91	cauliflower florets
+T6	FOOD 97 114	the boiling water
+T7	DUR 119 129	one minute
+T8	AC 134 139	Drain
+T9	AC 144 149	rinse
+T10	FOOD 150 157	florets
+T11	AC 162 169	Combine
+T12	FOOD 170 178	broccoli
+T13	FOOD 180 191	cauliflower
+T14	FOOD 193 204	bell pepper
+T15	FOOD 206 214	cucumber
+T16	FOOD 216 222	carrot
+T17	FOOD 227 249	Italian salad dressing
+T18	TOOL 253 278	a medium size mixing bowl
+T19	AC 283 288	Cover
+T20	TOOL 289 297	the bowl
+T21	AC 302 313	refrigerate
+T22	FOOD 314 328	the vegetables
+T23	DUR 333 341	one hour
+T24	FOOD 24 36	salted water
+T37	zav 134 139	Drain
+R1	zav_anaphor Arg1:T37 Arg2:T26	
+R2	zav_anaphor Arg1:T37 Arg2:T25	
+T38	zav 302 313	refrigerate
+R3	zav_anaphor Arg1:T38 Arg2:T29	
+R4	zav_anaphor Arg1:T38 Arg2:T30	
+R5	zav_anaphor Arg1:T38 Arg2:T31	
+R6	zav_anaphor Arg1:T38 Arg2:T32	
+R7	zav_anaphor Arg1:T38 Arg2:T33	
+R8	zav_anaphor Arg1:T38 Arg2:T34	
+T25	anaphor 55 67	the broccoli
+T26	anaphor 72 91	cauliflower florets
+T29	anaphor 170 178	broccoli
+T30	anaphor 180 191	cauliflower
+T31	anaphor 193 204	bell pepper
+T32	anaphor 206 214	cucumber
+T33	anaphor 216 222	carrot
+T34	anaphor 227 249	Italian salad dressing

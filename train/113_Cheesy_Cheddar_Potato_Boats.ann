@@ -1,0 +1,30 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 33	375 degrees F.
+T4	AC 37 42	Scoop
+T5	AC 68 72	coat
+T6	FOOD 94 99	Ranch
+T7	FOOD 73 88	inside of skins
+T8	FOOD 43 53	the potato
+T9	FOOD 61 66	skins
+T10	FOOD 120 125	skins
+T11	AC 104 109	Place
+T12	AC 130 138	Sprinkle
+T13	FOOD 144 150	cheese
+T14	AC 155 159	Bake
+T15	DUR 164 174	10 minutes
+T16	CONDITION_CLAUSE 178 200	until cheese is melted
+T17	AC 205 212	Garnish
+T18	FOOD 218 230	green onions
+T19	FOOD 238 248	bacon bits
+T28	zav 104 109	Place
+T29	zav 130 138	Sprinkle
+R3	zav_zav Arg1:T29 Arg2:T28	
+R1	zav_anaphor Arg1:T28 Arg2:T22	
+T30	zav 155 159	Bake
+R2	zav_zav Arg1:T30 Arg2:T29	
+R4	zav_anaphor Arg1:T30 Arg2:T25	
+T31	zav 205 212	Garnish
+R5	zav_zav Arg1:T31 Arg2:T30	
+T22	anaphor 43 53	the potato
+T25	anaphor 144 150	cheese

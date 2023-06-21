@@ -1,0 +1,69 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	AC 53 58	Drain
+T5	FOOD 59 68	escargots
+T6	AC 70 75	rinse
+T7	FOOD 79 89	cold water
+T8	AC 94 99	drain
+T9	TOOL 113 126	a mixing bowl
+T10	AC 128 135	combine
+T11	FOOD 136 146	the butter
+T12	FOOD 148 154	garlic
+T13	FOOD 156 167	green onion
+T14	FOOD 169 176	parsley
+T15	FOOD 178 184	pepper
+T16	FOOD 186 192	nutmeg
+T17	FOOD 197 201	wine
+T18	AC 206 209	Mix
+T19	AC 225 230	Place
+T20	FOOD 231 259	1 teaspoon of butter mixture
+T21	TOOL 265 282	each pastry shell
+T22	FOOD 301 311	1 escargot
+T23	AC 287 290	Top
+T24	AC 313 318	cover
+T25	FOOD 324 358	another teaspoon of butter mixture
+T26	AC 363 368	place
+T27	FOOD 369 381	mushroom cap
+T28	AC 393 400	Arrange
+T29	TOOL 401 414	pastry shells
+T30	TOOL 418 443	a 10x15 inch baking sheet
+T31	AC 448 452	Bake
+T32	TOOL 456 472	a preheated oven
+T33	DUR 477 492	8 to 10 minutes
+T34	CONDITION_CLAUSE 496 514	until golden brown
+T35	TEMPERATURE 34 47	200 degrees C
+T36	FOOD 291 295	each
+T37	OTHER 385 388	top
+T52	zav 70 75	rinse
+R1	zav_anaphor Arg1:T52 Arg2:T38	
+T53	zav 94 99	drain
+R2	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 206 209	Mix
+R3	zav_anaphor Arg1:T54 Arg2:T40	
+R4	zav_anaphor Arg1:T54 Arg2:T41	
+R5	zav_anaphor Arg1:T54 Arg2:T42	
+R6	zav_anaphor Arg1:T54 Arg2:T43	
+R7	zav_anaphor Arg1:T54 Arg2:T44	
+R8	zav_anaphor Arg1:T54 Arg2:T45	
+R9	zav_anaphor Arg1:T54 Arg2:T46	
+T55	zav 313 318	cover
+R10	zav_anaphor Arg1:T55 Arg2:T48	
+R11	zav_anaphor Arg1:T55 Arg2:T47	
+T56	zav 363 368	place
+R12	zav_anaphor Arg1:T56 Arg2:T49	
+R13	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 448 452	Bake
+R14	zav_anaphor Arg1:T57 Arg2:T58	
+T38	anaphor 59 68	escargots
+T40	anaphor 136 146	the butter
+T41	anaphor 148 154	garlic
+T42	anaphor 156 167	green onion
+T43	anaphor 169 176	parsley
+T44	anaphor 178 184	pepper
+T45	anaphor 186 192	nutmeg
+T46	anaphor 197 201	wine
+T47	anaphor 231 259	1 teaspoon of butter mixture
+T48	anaphor 301 311	1 escargot
+T49	anaphor 324 358	another teaspoon of butter mixture
+T58	anaphor 401 414	pastry shells

@@ -1,0 +1,107 @@
+T1	AC 3 8	Slice
+T2	AC 92 97	pound
+T3	AC 113 118	Place
+T4	AC 158 162	Soak
+T5	AC 201 205	stir
+T6	AC 265 274	Set aside
+T7	AC 279 283	Heat
+T8	AC 345 351	Dredge
+T9	AC 399 404	place
+T10	AC 432 437	brown
+T11	AC 458 464	remove
+T12	AC 523 529	Season
+T13	AC 565 570	Place
+T14	AC 618 625	Preheat
+T15	AC 673 678	Drain
+T16	AC 728 732	Heat
+T17	AC 807 810	Add
+T18	AC 864 868	Pour
+T19	AC 902 909	drizzle
+T20	AC 705 714	reserving
+T21	AC 935 939	Bake
+T22	TOOL 964 982	the preheated oven
+T23	CONDITION_CLAUSE 984 996	until bubbly
+T24	DUR 944 960	20 to 25 minutes
+T25	FOOD 9 24	chicken breasts
+T26	TOOL 122 128	a dish
+T27	AC 134 138	pour
+T28	FOOD 139 143	milk
+T29	FOOD 149 153	them
+T30	DUR 167 177	10 minutes
+T31	TOOL 185 199	a shallow bowl
+T32	FOOD 215 231	the bread crumbs
+T33	FOOD 233 248	Parmesan cheese
+T34	FOOD 253 260	parsley
+T35	FOOD 284 293	olive oil
+T36	TOOL 297 318	a large heavy skillet
+T37	TEMPERATURE 324 340	medium-high heat
+T38	FOOD 352 366	chicken pieces
+T39	FOOD 370 393	the bread crumb mixture
+T40	FOOD 408 419	the hot oil
+T41	TOOL 468 500	a buttered 9x13 inch baking dish
+T42	FOOD 535 539	salt
+T43	FOOD 544 550	pepper
+T44	PURPOSE_CLAUSE 551 559	to taste
+T45	FOOD 571 584	orange slices
+T46	TOOL 626 634	the oven
+T47	TEMPERATURE 638 651	350 degrees F
+T48	FOOD 679 686	the oil
+T49	TOOL 692 703	the skillet
+T50	FOOD 733 749	the reserved oil
+T51	FOOD 755 763	the wine
+T52	TEMPERATURE 769 780	medium heat
+T53	CONDITION_CLAUSE 781 801	until reduced by 1/2
+T54	FOOD 811 816	broth
+T55	FOOD 821 833	orange juice
+T56	AC 839 845	reduce
+T57	FOOD 869 878	the sauce
+T58	FOOD 884 895	the chicken
+T59	FOOD 590 612	the top of the chicken
+T60	FOOD 915 929	Grand Marinier
+T61	PURPOSE_CLAUSE 48 79	to make 12 thin chicken fillets
+T62	TEMPERATURE 653 666	175 degrees C
+T63	FOOD 98 108	each piece
+T64	OTHER 441 451	both sides
+T65	OTHER 715 722	1/4 cup
+T66	CONDITION_CLAUSE 846 858	by 1/2 again
+T90	zav 113 118	Place
+R1	zav_anaphor Arg1:T90 Arg2:T67	
+T91	zav 158 162	Soak
+R2	zav_zav Arg1:T91 Arg2:T90	
+R3	zav_anaphor Arg1:T91 Arg2:T68	
+R4	zav_anaphor Arg1:T91 Arg2:T69	
+T92	zav 265 274	Set aside
+R5	zav_anaphor Arg1:T92 Arg2:T70	
+R6	zav_anaphor Arg1:T92 Arg2:T71	
+R7	zav_anaphor Arg1:T92 Arg2:T72	
+T93	zav 399 404	place
+R8	zav_anaphor Arg1:T93 Arg2:T75	
+R9	zav_anaphor Arg1:T93 Arg2:T74	
+T94	zav 432 437	brown
+R10	zav_zav Arg1:T94 Arg2:T93	
+T95	zav 458 464	remove
+R11	zav_zav Arg1:T95 Arg2:T94	
+T96	zav 523 529	Season
+R12	zav_zav Arg1:T96 Arg2:T95	
+T97	zav 807 810	Add
+R13	zav_anaphor Arg1:T97 Arg2:T81	
+R14	zav_anaphor Arg1:T97 Arg2:T82	
+T98	zav 902 909	drizzle
+R15	zav_anaphor Arg1:T98 Arg2:T86	
+R16	zav_anaphor Arg1:T98 Arg2:T85	
+T99	zav 935 939	Bake
+R17	zav_zav Arg1:T99 Arg2:T98	
+R18	zav_anaphor Arg1:T99 Arg2:T88	
+T67	anaphor 9 24	chicken breasts
+T68	anaphor 139 143	milk
+T69	anaphor 149 153	them
+T70	anaphor 215 231	the bread crumbs
+T71	anaphor 233 248	Parmesan cheese
+T72	anaphor 253 260	parsley
+T74	anaphor 352 366	chicken pieces
+T75	anaphor 370 393	the bread crumb mixture
+T81	anaphor 733 749	the reserved oil
+T82	anaphor 755 763	the wine
+T85	anaphor 869 878	the sauce
+T86	anaphor 884 895	the chicken
+T88	anaphor 915 929	Grand Marinier

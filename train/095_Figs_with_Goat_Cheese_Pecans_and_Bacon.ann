@@ -1,0 +1,27 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 22	the broiler
+T3	AC 27 32	Stuff
+T4	FOOD 33 43	fig halves
+T5	FOOD 49 60	goat cheese
+T6	AC 65 70	Press
+T7	FOOD 71 77	pecans
+T8	FOOD 83 93	the cheese
+T9	AC 98 102	Wrap
+T10	FOOD 103 124	each stuffed fig half
+T11	FOOD 130 151	half a slice of bacon
+T12	AC 153 161	securing
+T13	TOOL 167 177	toothpicks
+T14	AC 182 189	Arrange
+T15	TOOL 193 214	a medium baking sheet
+T16	AC 219 224	Broil
+T17	DUR 225 234	5 minutes
+T18	CONDITION_CLAUSE 239 322	until bacon is evenly brown and crisp and goat cheese is bubbly and lightly browned
+T25	zav 153 161	securing
+R1	zav_anaphor Arg1:T25 Arg2:T24	
+R2	zav_anaphor Arg1:T25 Arg2:T23	
+T26	zav 182 189	Arrange
+R3	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 219 224	Broil
+R4	zav_zav Arg1:T27 Arg2:T26	
+T23	anaphor 103 124	each stuffed fig half
+T24	anaphor 130 151	half a slice of bacon

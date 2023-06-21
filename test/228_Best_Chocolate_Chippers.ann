@@ -1,0 +1,62 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	350 degrees F
+T4	TOOL 60 72	a large bowl
+T5	AC 74 79	cream
+T6	FOOD 89 99	the butter
+T7	FOOD 101 104	oil
+T8	FOOD 106 117	brown sugar
+T9	FOOD 123 134	white sugar
+T10	CONDITION_CLAUSE 135 147	until smooth
+T11	AC 152 159	Beat in
+T12	FOOD 160 168	the eggs
+T13	FOOD 173 180	vanilla
+T14	AC 185 192	Combine
+T15	FOOD 193 202	the flour
+T16	FOOD 204 215	baking soda
+T17	FOOD 217 232	cream of tartar
+T18	FOOD 238 242	salt
+T19	AC 244 248	stir
+T20	FOOD 254 273	the creamed mixture
+T21	AC 278 284	Mix in
+T22	FOOD 285 304	the chocolate chips
+T23	FOOD 309 316	walnuts
+T24	AC 321 325	Drop
+T25	FOOD 326 331	dough
+T26	TOOL 358 381	ungreased cookie sheets
+T27	AC 386 390	Bake
+T28	DUR 395 411	12 to 15 minutes
+T29	TOOL 415 433	the preheated oven
+T30	CONDITION_CLAUSE 438 455	until light brown
+T31	AC 477 481	cool
+T32	TOOL 485 502	the baking sheets
+T33	FOOD 466 473	cookies
+T34	DUR 507 526	a couple of minutes
+T35	TEMPERATURE 38 51	175 degrees C
+T36	TOOL 335 352	rounded teaspoons
+T37	CONDITION_CLAUSE 527 579	before transferring to wire racks to cool completely
+T53	zav 152 159	Beat in
+R1	zav_anaphor Arg1:T53 Arg2:T38	
+R2	zav_anaphor Arg1:T53 Arg2:T39	
+R3	zav_anaphor Arg1:T53 Arg2:T40	
+R4	zav_anaphor Arg1:T53 Arg2:T41	
+T54	zav 244 248	stir
+R5	zav_anaphor Arg1:T54 Arg2:T47	
+R6	zav_anaphor Arg1:T54 Arg2:T46	
+R7	zav_anaphor Arg1:T54 Arg2:T45	
+R8	zav_anaphor Arg1:T54 Arg2:T44	
+T55	zav 278 284	Mix in
+R9	zav_zav Arg1:T55 Arg2:T54	
+R10	zav_anaphor Arg1:T55 Arg2:T48	
+T56	zav 386 390	Bake
+R11	zav_anaphor Arg1:T56 Arg2:T51	
+T38	anaphor 89 99	the butter
+T39	anaphor 101 104	oil
+T40	anaphor 106 117	brown sugar
+T41	anaphor 123 134	white sugar
+T44	anaphor 193 202	the flour
+T45	anaphor 204 215	baking soda
+T46	anaphor 217 232	cream of tartar
+T47	anaphor 238 242	salt
+T48	anaphor 254 273	the creamed mixture
+T51	anaphor 326 331	dough

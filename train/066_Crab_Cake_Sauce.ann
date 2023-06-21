@@ -1,0 +1,30 @@
+T1	AC 3 10	Combine
+T2	AC 118 123	puree
+T3	AC 141 146	Chill
+T4	FOOD 27 37	mayonnaise
+T5	FOOD 39 53	cottage cheese
+T6	FOOD 55 60	salsa
+T7	FOOD 62 76	cayenne pepper
+T8	FOOD 78 89	lemon juice
+T9	FOOD 94 100	yogurt
+T10	TOOL 104 113	a blender
+T11	CONDITION_CLAUSE 124 136	until smooth
+T12	FOOD 11 25	the sour cream
+T13	AC 154 161	serving
+T21	zav 118 123	puree
+R1	zav_anaphor Arg1:T21 Arg2:T19	
+R2	zav_anaphor Arg1:T21 Arg2:T18	
+R3	zav_anaphor Arg1:T21 Arg2:T17	
+R4	zav_anaphor Arg1:T21 Arg2:T16	
+R5	zav_anaphor Arg1:T21 Arg2:T15	
+R6	zav_anaphor Arg1:T21 Arg2:T20	
+T22	zav 141 146	Chill
+R7	zav_zav Arg1:T22 Arg2:T21	
+T23	zav 154 161	serving
+R8	zav_zav Arg1:T23 Arg2:T22	
+T15	anaphor 39 53	cottage cheese
+T16	anaphor 55 60	salsa
+T17	anaphor 62 76	cayenne pepper
+T18	anaphor 78 89	lemon juice
+T19	anaphor 94 100	yogurt
+T20	anaphor 11 25	the sour cream

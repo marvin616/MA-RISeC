@@ -1,0 +1,134 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	AC 62 68	grease
+T5	TOOL 69 92	a 9 inch springform pan
+T6	AC 114 117	mix
+T7	TOOL 100 112	a small bowl
+T8	FOOD 127 160	1 1/2 cups chocolate wafer crumbs
+T9	FOOD 162 181	2 tablespoons sugar
+T10	FOOD 187 200	melted butter
+T11	AC 205 210	Press
+T12	OTHER 216 226	the bottom
+T13	AC 297 301	Bake
+T14	TEMPERATURE 305 318	350 degrees F
+T15	DUR 339 349	10 minutes
+T16	AC 363 367	cool
+T17	AC 372 378	Reduce
+T18	OTHER 379 395	oven temperature
+T19	TEMPERATURE 399 428	325 degrees F (165 degrees C)
+T20	PURPOSE_CLAUSE 433 448	To Make Filling
+T21	TOOL 453 469	a small saucepan
+T22	AC 471 475	heat
+T23	FOOD 476 498	1/4 cup whipping cream
+T24	FOOD 503 526	1/4 cup chocolate chips
+T25	AC 528 536	stirring
+T26	CONDITION_CLAUSE 549 571	until chips are melted
+T27	TOOL 579 598	a large mixing bowl
+T28	AC 600 604	beat
+T29	FOOD 605 617	cream cheese
+T30	FOOD 622 636	1 cup of sugar
+T31	CONDITION_CLAUSE 637 649	until smooth
+T32	AC 655 658	Add
+T33	FOOD 659 664	cocoa
+T34	AC 669 673	beat
+T35	AC 684 687	Add
+T36	FOOD 688 692	eggs
+T37	AC 697 701	beat
+T38	TEMPERATURE 705 708	low
+T39	CONDITION_CLAUSE 709 727	until just blended
+T40	AC 733 740	Stir in
+T41	FOOD 741 759	1 teaspoon vanilla
+T42	FOOD 764 790	reserved chocolate mixture
+T43	CONDITION_CLAUSE 791 804	until blended
+T44	AC 810 814	Pour
+T45	FOOD 820 825	crust
+T46	AC 831 835	Bake
+T47	TEMPERATURE 839 852	325 degrees F
+T48	DUR 873 889	45 to 50 minutes
+T49	CONDITION_CLAUSE 893 919	until center is almost set
+T50	PURPOSE_CLAUSE 925 940	To Make Topping
+T51	TOOL 945 961	a small saucepan
+T52	AC 963 967	heat
+T53	FOOD 968 990	1/4 cup whipping cream
+T54	FOOD 995 1013	1 teaspoon vanilla
+T55	CONDITION_CLAUSE 1014 1039	until just before boiling
+T56	AC 1045 1049	Stir
+T57	AC 1083 1092	boil over
+T58	FOOD 1103 1129	1 1/2 cups chocolate chips
+T59	TOOL 1139 1151	a small bowl
+T60	FOOD 1165 1178	the hot cream
+T61	AC 1183 1187	stir
+T62	AC 1157 1164	Pour in
+T63	TOOL 1193 1200	a spoon
+T64	CONDITION_CLAUSE 1201 1213	until smooth
+T65	AC 1219 1225	Spread
+T66	FOOD 1231 1247	baked cheesecake
+T67	AC 1252 1263	refrigerate
+T68	TEMPERATURE 35 48	175 degrees C
+T69	TEMPERATURE 320 333	175 degrees C
+T70	TOOL 258 292	the prepared 9 inch springform pan
+T71	TEMPERATURE 854 867	165 degrees C
+T72	AC 1098 1102	Have
+T73	DUR 1264 1273	overnight
+T91	zav 205 210	Press
+R1	zav_anaphor Arg1:T91 Arg2:T74	
+R2	zav_anaphor Arg1:T91 Arg2:T75	
+R3	zav_anaphor Arg1:T91 Arg2:T76	
+T92	zav 297 301	Bake
+R4	zav_zav Arg1:T92 Arg2:T91	
+T93	zav 363 367	cool
+R5	zav_zav Arg1:T93 Arg2:T92	
+T94	zav 528 536	stirring
+R6	zav_anaphor Arg1:T94 Arg2:T78	
+R7	zav_anaphor Arg1:T94 Arg2:T77	
+T95	zav 655 658	Add
+R8	zav_anaphor Arg1:T95 Arg2:T79	
+R9	zav_anaphor Arg1:T95 Arg2:T80	
+T96	zav 684 687	Add
+T97	zav 669 673	beat
+R10	zav_anaphor Arg1:T97 Arg2:T81	
+R11	zav_zav Arg1:T97 Arg2:T95	
+R12	zav_zav Arg1:T96 Arg2:T97	
+T98	zav 697 701	beat
+R13	zav_anaphor Arg1:T98 Arg2:T82	
+R14	zav_zav Arg1:T98 Arg2:T96	
+T99	zav 733 740	Stir in
+R15	zav_zav Arg1:T99 Arg2:T98	
+T100	zav 810 814	Pour
+R16	zav_zav Arg1:T100 Arg2:T99	
+R17	zav_anaphor Arg1:T100 Arg2:T83	
+R18	zav_anaphor Arg1:T100 Arg2:T84	
+T101	zav 831 835	Bake
+R19	zav_zav Arg1:T101 Arg2:T100	
+T102	zav 1045 1049	Stir
+R20	zav_anaphor Arg1:T102 Arg2:T86	
+R21	zav_anaphor Arg1:T102 Arg2:T87	
+T103	zav 1083 1087	boil
+R22	zav_zav Arg1:T103 Arg2:T102	
+T104	zav 1157 1164	Pour in
+R23	zav_anaphor Arg1:T104 Arg2:T88	
+T105	zav 1183 1187	stir
+R24	zav_anaphor Arg1:T105 Arg2:T89	
+R25	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 1219 1225	Spread
+R26	zav_zav Arg1:T106 Arg2:T105	
+T107	zav 1252 1263	refrigerate
+R27	zav_anaphor Arg1:T107 Arg2:T90	
+R28	zav_zav Arg1:T107 Arg2:T106	
+T74	anaphor 127 160	1 1/2 cups chocolate wafer crumbs
+T75	anaphor 162 181	2 tablespoons sugar
+T76	anaphor 187 200	melted butter
+T77	anaphor 476 498	1/4 cup whipping cream
+T78	anaphor 503 526	1/4 cup chocolate chips
+T79	anaphor 605 617	cream cheese
+T80	anaphor 622 636	1 cup of sugar
+T81	anaphor 659 664	cocoa
+T82	anaphor 688 692	eggs
+T83	anaphor 741 759	1 teaspoon vanilla
+T84	anaphor 764 790	reserved chocolate mixture
+T86	anaphor 968 990	1/4 cup whipping cream
+T87	anaphor 995 1013	1 teaspoon vanilla
+T88	anaphor 1103 1129	1 1/2 cups chocolate chips
+T89	anaphor 1165 1178	the hot cream
+T90	anaphor 1231 1247	baked cheesecake

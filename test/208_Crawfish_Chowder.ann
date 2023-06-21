@@ -1,0 +1,71 @@
+T1	AC 66 71	Saute
+T2	FOOD 72 84	green onions
+T3	FOOD 88 94	butter
+T4	CONDITION_CLAUSE 95 107	until tender
+T5	AC 3 7	Melt
+T6	FOOD 8 25	1/4 cup of butter
+T7	TOOL 29 44	a large skillet
+T8	TEMPERATURE 50 61	medium heat
+T9	AC 112 118	Remove
+T10	TOOL 124 127	pan
+T11	TOOL 150 166	the same skillet
+T12	AC 168 172	melt
+T13	FOOD 173 190	1/2 cup of butter
+T14	AC 196 201	saute
+T15	FOOD 202 214	the crawfish
+T16	DUR 219 228	5 minutes
+T17	AC 230 239	set aside
+T18	AC 133 142	set aside
+T19	TOOL 247 258	a large pot
+T20	TEMPERATURE 264 275	medium heat
+T21	AC 277 284	combine
+T22	FOOD 285 296	potato soup
+T23	FOOD 298 311	mushroom soup
+T24	FOOD 313 317	corn
+T25	FOOD 323 335	cream cheese
+T26	AC 340 343	Mix
+T27	AC 370 374	boil
+T28	FOOD 402 422	sauteed green onions
+T29	FOOD 428 436	crawfish
+T30	AC 379 386	Stir in
+T31	AC 441 447	Season
+T32	FOOD 453 467	cayenne pepper
+T33	AC 487 491	boil
+T34	AC 497 503	simmer
+T35	DUR 504 513	5 minutes
+T36	PURPOSE_CLAUSE 514 530	to blend flavors
+T49	zav 112 118	Remove
+R1	zav_anaphor Arg1:T49 Arg2:T37	
+T50	zav 133 142	set aside
+R2	zav_zav Arg1:T50 Arg2:T49	
+T51	zav 230 239	set aside
+R3	zav_anaphor Arg1:T51 Arg2:T41	
+T52	zav 340 343	Mix
+R4	zav_anaphor Arg1:T52 Arg2:T42	
+R5	zav_anaphor Arg1:T52 Arg2:T43	
+R6	zav_anaphor Arg1:T52 Arg2:T44	
+R7	zav_anaphor Arg1:T52 Arg2:T45	
+T53	zav 370 374	boil
+R8	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 379 386	Stir in
+R9	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 441 447	Season
+R10	zav_zav Arg1:T55 Arg2:T54	
+R11	zav_anaphor Arg1:T55 Arg2:T46	
+R12	zav_anaphor Arg1:T55 Arg2:T47	
+T56	zav 487 491	boil
+R13	zav_anaphor Arg1:T56 Arg2:T48	
+R14	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 497 503	simmer
+R15	zav_zav Arg1:T57 Arg2:T56	
+T37	anaphor 72 84	green onions
+T41	anaphor 202 214	the crawfish
+T42	anaphor 285 296	potato soup
+T43	anaphor 298 311	mushroom soup
+T44	anaphor 313 317	corn
+T45	anaphor 323 335	cream cheese
+T46	anaphor 402 422	sauteed green onions
+T47	anaphor 428 436	crawfish
+T48	anaphor 453 467	cayenne pepper
+T38	anaphor 173 190	1/2 cup of butter
+R16	zav_anaphor Arg1:T51 Arg2:T38	

@@ -1,0 +1,37 @@
+T1	AC 3 9	Spread
+T2	FOOD 10 20	mayonnaise
+T3	FOOD 24 42	one slice of toast
+T5	AC 49 55	spread
+T6	FOOD 56 63	mustard
+T7	FOOD 67 76	the other
+T8	AC 81 88	Arrange
+T9	FOOD 89 106	the sliced turkey
+T10	FOOD 110 118	one side
+T11	AC 123 129	Spread
+T12	FOOD 130 139	guacamole
+T13	FOOD 145 155	the turkey
+T14	AC 160 164	Pile
+T15	FOOD 168 184	the salad greens
+T16	FOOD 186 198	bean sprouts
+T17	FOOD 200 207	avocado
+T18	FOOD 212 218	cheese
+T19	AC 223 229	Finish
+T20	FOOD 235 248	tomato slices
+T21	AC 255 260	place
+T22	FOOD 261 289	the remaining slice of toast
+T24	FOOD 293 296	top
+T4	zav 160 164	Pile
+R1	zav_anaphor Arg1:T4 Arg2:T25	
+R2	zav_anaphor Arg1:T4 Arg2:T23	
+T26	zav 255 260	place
+R3	zav_zav Arg1:T26 Arg2:T4	
+R4	zav_anaphor Arg1:T26 Arg2:T27	
+R5	zav_anaphor Arg1:T26 Arg2:T28	
+R6	zav_anaphor Arg1:T26 Arg2:T29	
+R7	zav_anaphor Arg1:T26 Arg2:T30	
+T23	anaphor 145 155	the turkey
+T25	anaphor 130 139	guacamole
+T27	anaphor 168 184	the salad greens
+T28	anaphor 186 198	bean sprouts
+T29	anaphor 200 207	avocado
+T30	anaphor 212 218	cheese

@@ -1,0 +1,29 @@
+T1	AC 3 7	Heat
+T2	AC 57 60	Dip
+T3	AC 126 129	Fry
+T4	AC 185 190	Drain
+T5	AC 105 110	place
+T6	TOOL 194 206	paper towels
+T7	DUR 130 144	2 to 3 minutes
+T8	FOOD 61 76	eggplant slices
+T9	FOOD 80 83	egg
+T10	FOOD 114 121	hot oil
+T11	FOOD 93 99	crumbs
+T12	FOOD 8 11	oil
+T13	TOOL 15 30	a large skillet
+T14	TEMPERATURE 36 52	medium-high heat
+T15	CONDITION_CLAUSE 162 180	until golden brown
+T16	OTHER 148 157	each side
+T22	zav 105 110	place
+R1	zav_anaphor Arg1:T22 Arg2:T20	
+R2	zav_anaphor Arg1:T22 Arg2:T18	
+R3	zav_anaphor Arg1:T22 Arg2:T17	
+T21	zav 126 129	Fry
+R4	zav_zav Arg1:T21 Arg2:T22	
+R5	zav_anaphor Arg1:T21 Arg2:T19	
+T23	zav 185 190	Drain
+R6	zav_zav Arg1:T23 Arg2:T21	
+T17	anaphor 61 76	eggplant slices
+T18	anaphor 80 83	egg
+T19	anaphor 114 121	hot oil
+T20	anaphor 93 99	crumbs

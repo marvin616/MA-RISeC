@@ -1,0 +1,47 @@
+T1	AC 3 8	Place
+T2	FOOD 9 14	flour
+T3	TOOL 18 32	a shallow bowl
+T4	AC 37 42	Place
+T5	FOOD 43 54	breadcrumbs
+T6	TOOL 58 81	a separate shallow bowl
+T7	AC 87 90	mix
+T8	FOOD 96 115	ground black pepper
+T9	FOOD 120 134	cayenne pepper
+T10	AC 139 144	Place
+T11	FOOD 145 149	eggs
+T12	FOOD 154 159	water
+T13	TOOL 163 175	a small bowl
+T14	AC 201 205	coat
+T15	FOOD 206 217	the chicken
+T16	FOOD 221 230	the flour
+T17	FOOD 232 240	the eggs
+T18	FOOD 245 261	the bread crumbs
+T19	AC 267 276	set aside
+T20	AC 281 285	Heat
+T21	FOOD 286 289	oil
+T22	TOOL 293 305	a deep fryer
+T23	TEMPERATURE 309 322	375 degrees F
+T24	TEMPERATURE 324 337	190 degrees C
+T25	AC 361 364	fry
+T26	FOOD 365 372	chicken
+T27	DUR 373 387	6 to 8 minutes
+T28	CONDITION_CLAUSE 392 410	until golden brown
+T29	TOOL 418 439	a separate small bowl
+T30	AC 441 448	combine
+T31	FOOD 449 463	the mayonnaise
+T32	FOOD 465 476	horseradish
+T33	FOOD 478 488	sour cream
+T34	FOOD 490 510	Worcestershire sauce
+T35	FOOD 515 522	mustard
+T53	zav 87 90	mix
+R1	zav_anaphor Arg1:T53 Arg2:T37	
+T54	zav 267 276	set aside
+R2	zav_anaphor Arg1:T54 Arg2:T45	
+R3	zav_anaphor Arg1:T54 Arg2:T44	
+R4	zav_anaphor Arg1:T54 Arg2:T43	
+R5	zav_anaphor Arg1:T54 Arg2:T42	
+T37	anaphor 43 54	breadcrumbs
+T42	anaphor 206 217	the chicken
+T43	anaphor 221 230	the flour
+T44	anaphor 232 240	the eggs
+T45	anaphor 245 261	the bread crumbs

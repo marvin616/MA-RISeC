@@ -1,0 +1,101 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 21 26	cream
+T3	FOOD 36 42	butter
+T4	FOOD 46 55	margarine
+T5	FOOD 60 71	white sugar
+T6	CONDITION_CLAUSE 72 94	until light and fluffy
+T7	AC 99 107	Blend in
+T8	FOOD 108 111	egg
+T9	FOOD 116 123	vanilla
+T10	AC 128 132	Sift
+T11	FOOD 142 147	flour
+T12	FOOD 152 156	salt
+T13	AC 161 164	Add
+T14	FOOD 168 183	creamed mixture
+T15	AC 188 191	mix
+T16	AC 201 208	Stir in
+T17	FOOD 209 213	oats
+T18	AC 218 224	Divide
+T19	FOOD 225 230	dough
+T20	OTHER 234 238	half
+T21	AC 243 246	Add
+T22	FOOD 247 265	peppermint extract
+T23	FOOD 270 295	a few drops of food color
+T24	FOOD 299 312	half of dough
+T26	AC 317 322	Chill
+T27	DUR 327 340	several hours
+T28	AC 345 352	Preheat
+T29	TOOL 353 357	oven
+T30	TEMPERATURE 361 374	350 degrees F
+T31	TEMPERATURE 376 389	175 degrees C
+T32	AC 396 404	Roll out
+T33	FOOD 405 423	each half of dough
+T35	OTHER 427 445	1/8 inch thickness
+T38	TOOL 449 500	surface sprinkled lightly with confectioners' sugar
+T39	AC 506 513	Cut out
+T40	FOOD 514 532	half of each color
+T42	TOOL 538 579	the 2 1/2 inch heart shaped cookie cutter
+T43	FOOD 585 589	half
+T44	TOOL 595 621	a 1 1/2 inch cookie cutter
+T45	AC 627 632	Place
+T46	FOOD 633 637	them
+T47	TOOL 641 665	unprepared cookie sheets
+T48	AC 671 675	Bake
+T49	DUR 680 696	10 to 12 minutes
+T50	TOOL 700 718	the preheated oven
+T51	AC 724 730	Remove
+T52	TOOL 736 740	oven
+T53	AC 745 750	place
+T54	FOOD 751 788	1 one square (1/8) of a chocolate bar
+T55	FOOD 794 824	the center of each large heart
+T57	AC 830 835	Place
+T58	FOOD 836 847	small heart
+T59	AC 859 864	press
+T61	AC 888 896	Transfer
+T62	TOOL 900 904	rack
+T63	PURPOSE_CLAUSE 905 912	to cool
+T64	FOOD 851 854	top
+T25	PURPOSE_CLAUSE 873 882	to secure
+T34	zav 99 107	Blend in
+R1	zav_anaphor Arg1:T34 Arg2:T36	
+R2	zav_anaphor Arg1:T34 Arg2:T37	
+R3	zav_anaphor Arg1:T34 Arg2:T41	
+T56	zav 161 164	Add
+R4	zav_anaphor Arg1:T56 Arg2:T60	
+R5	zav_anaphor Arg1:T56 Arg2:T65	
+T66	zav 188 191	mix
+R6	zav_anaphor Arg1:T66 Arg2:T67	
+R7	zav_zav Arg1:T66 Arg2:T56	
+T68	zav 201 208	Stir in
+R8	zav_zav Arg1:T68 Arg2:T66	
+T69	zav 243 246	Add
+R9	zav_anaphor Arg1:T69 Arg2:T70	
+T74	zav 317 322	Chill
+R10	zav_anaphor Arg1:T74 Arg2:T71	
+R11	zav_anaphor Arg1:T74 Arg2:T72	
+R12	zav_anaphor Arg1:T74 Arg2:T73	
+T75	zav 627 632	Place
+R13	zav_anaphor Arg1:T75 Arg2:T77	
+T76	zav 671 675	Bake
+R14	zav_zav Arg1:T76 Arg2:T75	
+T78	zav 724 730	Remove
+R15	zav_zav Arg1:T78 Arg2:T76	
+T80	zav 859 864	press
+R16	zav_anaphor Arg1:T80 Arg2:T79	
+T81	zav 888 896	Transfer
+R17	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 830 835	Place
+R18	zav_zav Arg1:T82 Arg2:T78	
+R19	zav_zav Arg1:T80 Arg2:T82	
+T36	anaphor 36 42	butter
+T37	anaphor 46 55	margarine
+T41	anaphor 60 71	white sugar
+T60	anaphor 142 147	flour
+T65	anaphor 152 156	salt
+T67	anaphor 168 183	creamed mixture
+T70	anaphor 225 230	dough
+T71	anaphor 247 265	peppermint extract
+T72	anaphor 270 295	a few drops of food color
+T73	anaphor 299 312	half of dough
+T77	anaphor 538 579	the 2 1/2 inch heart shaped cookie cutter
+T79	anaphor 836 847	small heart

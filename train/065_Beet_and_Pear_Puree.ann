@@ -1,0 +1,81 @@
+T1	AC 3 10	Preheat
+T2	AC 53 57	Wash
+T3	AC 69 74	place
+T4	AC 97 101	Bake
+T5	AC 145 154	Set aside
+T6	AC 167 171	Melt
+T7	AC 261 265	cook
+T8	AC 267 275	stirring
+T9	AC 349 353	peel
+T10	AC 367 371	chop
+T11	AC 376 381	Puree
+T12	AC 437 440	Add
+T13	AC 468 473	pulse
+T14	AC 491 494	Add
+T15	AC 516 521	pulse
+T16	TOOL 11 15	oven
+T17	FOOD 58 63	beets
+T18	TOOL 78 92	a roasting pan
+T19	DUR 106 126	45 minutes to 1 hour
+T20	FOOD 172 178	butter
+T21	TOOL 182 197	a large skillet
+T22	TEMPERATURE 203 214	medium heat
+T23	FOOD 227 232	onion
+T24	FOOD 234 239	pears
+T25	FOOD 241 246	sugar
+T26	FOOD 252 259	vinegar
+T27	DUR 292 302	20 minutes
+T28	FOOD 382 395	onion mixture
+T29	TOOL 399 415	a food processor
+T30	TOOL 421 432	metal blade
+T31	FOOD 441 445	salt
+T32	FOOD 450 466	1/2 of the beets
+T33	FOOD 495 510	remaining beets
+T34	CONDITION_CLAUSE 131 143	until tender
+T35	CONDITION_CLAUSE 307 347	When the beets are cool enough to handle
+T36	AC 219 226	Stir in
+T37	TEMPERATURE 19 32	400 degrees F
+T38	TEMPERATURE 34 47	200 degrees C
+T39	PURPOSE_CLAUSE 155 162	to cool
+T50	zav 69 74	place
+R1	zav_anaphor Arg1:T50 Arg2:T40	
+T51	zav 97 101	Bake
+R2	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 145 154	Set aside
+R3	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 219 226	Stir in
+R4	zav_anaphor Arg1:T53 Arg2:T41	
+T54	zav 261 265	cook
+R5	zav_anaphor Arg1:T54 Arg2:T45	
+R6	zav_anaphor Arg1:T54 Arg2:T44	
+R7	zav_anaphor Arg1:T54 Arg2:T43	
+R8	zav_anaphor Arg1:T54 Arg2:T42	
+R9	zav_zav Arg1:T54 Arg2:T53	
+T55	zav 267 275	stirring
+R10	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 349 353	peel
+R11	zav_anaphor Arg1:T56 Arg2:T57	
+T58	zav 367 371	chop
+R12	zav_zav Arg1:T58 Arg2:T56	
+T59	zav 437 440	Add
+R13	zav_anaphor Arg1:T59 Arg2:T46	
+T60	zav 468 473	pulse
+R14	zav_anaphor Arg1:T60 Arg2:T48	
+R15	zav_anaphor Arg1:T60 Arg2:T47	
+R16	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 491 494	Add
+R17	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 516 521	pulse
+R18	zav_zav Arg1:T62 Arg2:T61	
+R19	zav_anaphor Arg1:T62 Arg2:T49	
+T40	anaphor 58 63	beets
+T41	anaphor 172 178	butter
+T42	anaphor 227 232	onion
+T43	anaphor 234 239	pears
+T44	anaphor 241 246	sugar
+T45	anaphor 252 259	vinegar
+T46	anaphor 382 395	onion mixture
+T47	anaphor 441 445	salt
+T48	anaphor 450 466	1/2 of the beets
+T49	anaphor 495 510	remaining beets
+T57	anaphor 326 330	cool

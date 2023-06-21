@@ -1,0 +1,95 @@
+T1	AC 3 10	Preheat
+T2	AC 53 59	Grease
+T3	AC 90 93	Mix
+T4	AC 151 155	Make
+T5	AC 218 221	Mix
+T6	AC 257 264	Stir in
+T7	AC 337 341	Bake
+T8	AC 439 443	cool
+T9	AC 471 476	Cream
+T10	PURPOSE_CLAUSE 449 469	To make the frosting
+T11	AC 523 526	Add
+T12	TOOL 11 15	oven
+T13	TEMPERATURE 19 32	350 degrees F
+T14	AC 64 69	flour
+T15	TOOL 70 85	a 9x13 inch pan
+T16	FOOD 94 99	flour
+T17	FOOD 101 112	baking soda
+T18	FOOD 114 127	baking powder
+T19	FOOD 129 133	salt
+T20	FOOD 138 146	cinnamon
+T21	AC 181 184	add
+T22	FOOD 185 190	sugar
+T23	FOOD 192 195	oil
+T24	OTHER 156 162	a well
+T25	OTHER 166 176	the center
+T26	FOOD 197 201	eggs
+T27	FOOD 206 213	vanilla
+T28	TOOL 227 239	wooden spoon
+T29	CONDITION_CLAUSE 240 252	until smooth
+T30	FOOD 265 272	carrots
+T31	FOOD 274 281	coconut
+T32	FOOD 283 290	walnuts
+T33	FOOD 295 304	pineapple
+T34	AC 309 313	Pour
+T35	TOOL 319 332	9x13 inch pan
+T36	TEMPERATURE 345 356	350 degrees
+T37	DUR 361 377	about 45 minutes
+T38	FOOD 477 487	the butter
+T39	AC 492 497	cream
+T40	FOOD 498 504	cheese
+T41	CONDITION_CLAUSE 505 517	until smooth
+T42	FOOD 527 550	the confectioners sugar
+T43	AC 555 559	beat
+T44	CONDITION_CLAUSE 560 572	until creamy
+T45	TEMPERATURE 34 47	175 degrees C
+T46	FOOD 395 405	the center
+T47	AC 411 415	sink
+T65	zav 151 155	Make
+R1	zav_anaphor Arg1:T65 Arg2:T48	
+R2	zav_anaphor Arg1:T65 Arg2:T49	
+R3	zav_anaphor Arg1:T65 Arg2:T50	
+R4	zav_anaphor Arg1:T65 Arg2:T51	
+R5	zav_anaphor Arg1:T65 Arg2:T52	
+T66	zav 181 184	add
+R6	zav_zav Arg1:T66 Arg2:T65	
+T67	zav 218 221	Mix
+R7	zav_zav Arg1:T67 Arg2:T66	
+R8	zav_anaphor Arg1:T67 Arg2:T53	
+R9	zav_anaphor Arg1:T67 Arg2:T54	
+R10	zav_anaphor Arg1:T67 Arg2:T55	
+R11	zav_anaphor Arg1:T67 Arg2:T56	
+T68	zav 257 264	Stir in
+R12	zav_zav Arg1:T68 Arg2:T67	
+T69	zav 309 313	Pour
+R13	zav_zav Arg1:T69 Arg2:T68	
+R14	zav_anaphor Arg1:T69 Arg2:T57	
+R15	zav_anaphor Arg1:T69 Arg2:T58	
+R16	zav_anaphor Arg1:T69 Arg2:T59	
+R17	zav_anaphor Arg1:T69 Arg2:T60	
+T70	zav 337 341	Bake
+R18	zav_zav Arg1:T70 Arg2:T69	
+T71	zav 439 443	cool
+R19	zav_zav Arg1:T71 Arg2:T70	
+T72	zav 523 526	Add
+R20	zav_anaphor Arg1:T72 Arg2:T61	
+R21	zav_anaphor Arg1:T72 Arg2:T62	
+T73	zav 555 559	beat
+R22	zav_anaphor Arg1:T73 Arg2:T63	
+R23	zav_zav Arg1:T73 Arg2:T72	
+T48	anaphor 94 99	flour
+T49	anaphor 101 112	baking soda
+T50	anaphor 114 127	baking powder
+T51	anaphor 129 133	salt
+T52	anaphor 138 146	cinnamon
+T53	anaphor 185 190	sugar
+T54	anaphor 192 195	oil
+T55	anaphor 197 201	eggs
+T56	anaphor 206 213	vanilla
+T57	anaphor 265 272	carrots
+T58	anaphor 274 281	coconut
+T59	anaphor 283 290	walnuts
+T60	anaphor 295 304	pineapple
+T61	anaphor 477 487	the butter
+T62	anaphor 498 504	cheese
+T63	anaphor 527 550	the confectioners sugar

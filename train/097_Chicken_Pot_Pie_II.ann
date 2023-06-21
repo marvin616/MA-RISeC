@@ -1,0 +1,155 @@
+T1	TOOL 6 22	a large saucepan
+T2	TEMPERATURE 28 44	medium high heat
+T3	AC 46 53	combine
+T4	FOOD 54 70	the chicken meat
+T5	FOOD 72 85	chicken broth
+T6	FOOD 87 91	salt
+T7	FOOD 96 102	pepper
+T8	AC 118 122	boil
+T9	AC 127 133	reduce
+T10	OTHER 134 138	heat
+T11	TEMPERATURE 142 145	low
+T12	AC 150 155	Cover
+T13	AC 164 170	simmer
+T14	DUR 175 185	30 minutes
+T15	CONDITION_CLAUSE 190 260	until chicken is no longer pink in the center and the juices run clear
+T16	AC 265 271	Remove
+T17	FOOD 272 283	the chicken
+T18	AC 292 296	cool
+T19	AC 301 305	Pour
+T20	AC 378 387	spoon off
+T21	AC 396 399	Add
+T22	AC 457 460	Cut
+T23	AC 511 515	melt
+T24	TOOL 497 509	the same pan
+T25	AC 558 561	Add
+T26	AC 588 593	Saute
+T27	AC 595 603	stirring
+T28	AC 624 631	Stir in
+T29	OTHER 662 671	Gradually
+T30	FOOD 680 693	broth mixture
+T31	AC 672 679	stir in
+T32	AC 699 705	Simmer
+T33	AC 707 715	stirring
+T34	CONDITION_CLAUSE 728 762	until the sauce thickens and boils
+T35	AC 768 771	Add
+T36	FOOD 772 783	the chicken
+T37	FOOD 785 795	vegetables
+T38	FOOD 797 804	parsley
+T39	FOOD 809 814	thyme
+T40	AC 820 824	Pour
+T41	FOOD 825 832	mixture
+T42	TOOL 840 871	1 1/2 quart deep casserole dish
+T43	AC 877 884	Preheat
+T44	TOOL 885 889	oven
+T45	TEMPERATURE 893 906	400 degrees F
+T46	TEMPERATURE 908 921	200 degrees C
+T47	AC 928 936	Roll out
+T48	FOOD 937 943	pastry
+T49	TOOL 1001 1026	a lightly floured surface
+T50	OTHER 944 997	1 inch larger than the diameter of the casserole dish
+T51	AC 1032 1035	Cut
+T52	OTHER 1036 1041	slits
+T53	FOOD 1045 1055	the pastry
+T54	PURPOSE_CLAUSE 1056 1071	for venting air
+T55	AC 1077 1082	Place
+T56	FOOD 1083 1089	pastry
+T57	TOOL 1093 1109	top of casserole
+T58	AC 1115 1119	Roll
+T59	AC 1191 1196	Brush
+T60	AC 1338 1342	cool
+T61	DUR 1347 1357	10 minutes
+T62	AC 1362 1367	serve
+T63	CONDITION_CLAUSE 1269 1328	until the crust is golden brown and the filling is bubbling
+T64	FOOD 1197 1203	pastry
+T65	FOOD 1209 1219	beaten egg
+T66	AC 1224 1228	bake
+T67	TOOL 1232 1250	the preheated oven
+T68	DUR 1255 1265	30 minutes
+T69	AC 1153 1158	flute
+T70	AC 1168 1185	pinching together
+T71	FOOD 1159 1164	edges
+T72	FOOD 1120 1125	edges
+T73	AC 1130 1138	cut away
+T74	FOOD 1139 1151	extra pastry
+T75	FOOD 516 522	butter
+T76	FOOD 526 535	margarine
+T77	TEMPERATURE 541 552	medium heat
+T78	FOOD 419 432	broth mixture
+T79	FOOD 562 571	the onion
+T80	FOOD 576 582	celery
+T81	FOOD 461 468	chicken
+T82	OTHER 474 489	1/2 inch pieces
+T83	FOOD 407 411	milk
+T84	FOOD 388 391	fat
+T85	FOOD 306 341	the remaining chicken broth mixture
+T86	FOOD 349 362	measuring cup
+T87	DUR 609 618	3 minutes
+T88	FOOD 632 637	flour
+T89	CONDITION_CLAUSE 638 656	until well blended
+T120	zav 118 122	boil
+R1	zav_anaphor Arg1:T120 Arg2:T90	
+R2	zav_anaphor Arg1:T120 Arg2:T91	
+R3	zav_anaphor Arg1:T120 Arg2:T92	
+R4	zav_anaphor Arg1:T120 Arg2:T93	
+T121	zav 150 155	Cover
+R5	zav_zav Arg1:T121 Arg2:T120	
+T122	zav 164 170	simmer
+R6	zav_zav Arg1:T122 Arg2:T121	
+T123	zav 292 296	cool
+T124	zav 367 376	Let stand
+R8	zav_anaphor Arg1:T124 Arg2:T117	
+T126	zav 558 561	Add
+R10	zav_anaphor Arg1:T126 Arg2:T109	
+R11	zav_anaphor Arg1:T126 Arg2:T110	
+T127	zav 588 593	Saute
+R12	zav_anaphor Arg1:T127 Arg2:T112	
+R13	zav_anaphor Arg1:T127 Arg2:T113	
+R14	zav_zav Arg1:T127 Arg2:T126	
+T128	zav 595 603	stirring
+R15	zav_zav Arg1:T128 Arg2:T127	
+T129	zav 624 631	Stir in
+R16	zav_zav Arg1:T129 Arg2:T128	
+T130	zav 672 679	stir in
+R17	zav_anaphor Arg1:T130 Arg2:T119	
+R18	zav_zav Arg1:T130 Arg2:T129	
+T131	zav 699 705	Simmer
+R19	zav_zav Arg1:T131 Arg2:T130	
+R20	zav_anaphor Arg1:T131 Arg2:T95	
+T132	zav 707 715	stirring
+R21	zav_zav Arg1:T132 Arg2:T131	
+T133	zav 768 771	Add
+R22	zav_zav Arg1:T133 Arg2:T132	
+T134	zav 820 824	Pour
+R23	zav_zav Arg1:T134 Arg2:T133	
+R24	zav_anaphor Arg1:T134 Arg2:T96	
+R25	zav_anaphor Arg1:T134 Arg2:T97	
+R26	zav_anaphor Arg1:T134 Arg2:T98	
+R27	zav_anaphor Arg1:T134 Arg2:T99	
+T135	zav 1224 1228	bake
+R28	zav_anaphor Arg1:T135 Arg2:T105	
+R29	zav_anaphor Arg1:T135 Arg2:T104	
+T136	zav 1338 1342	cool
+R30	zav_zav Arg1:T136 Arg2:T135	
+T137	zav 1362 1367	serve
+R31	zav_zav Arg1:T137 Arg2:T136	
+T90	anaphor 54 70	the chicken meat
+T91	anaphor 72 85	chicken broth
+T92	anaphor 87 91	salt
+T93	anaphor 96 102	pepper
+T95	anaphor 680 693	broth mixture
+T96	anaphor 772 783	the chicken
+T97	anaphor 785 795	vegetables
+T98	anaphor 797 804	parsley
+T99	anaphor 809 814	thyme
+T104	anaphor 1197 1203	pastry
+T105	anaphor 1209 1219	beaten egg
+T109	anaphor 516 522	butter
+T110	anaphor 526 535	margarine
+T112	anaphor 562 571	the onion
+T113	anaphor 576 582	celery
+T117	anaphor 306 341	the remaining chicken broth mixture
+T119	anaphor 632 637	flour
+R7	zav_anaphor Arg1:T123 Arg2:T91	
+R32	zav_anaphor Arg1:T123 Arg2:T92	
+R35	zav_anaphor Arg1:T123 Arg2:T93	

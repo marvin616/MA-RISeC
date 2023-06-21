@@ -1,0 +1,59 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 18	a grill
+T3	TEMPERATURE 23 32	high heat
+T4	TOOL 40 52	a large bowl
+T5	AC 54 57	mix
+T6	FOOD 67 85	the Cheddar cheese
+T7	FOOD 87 102	Parmesan cheese
+T8	FOOD 104 109	onion
+T9	FOOD 111 114	egg
+T10	FOOD 116 123	ketchup
+T11	FOOD 125 145	Worcestershire sauce
+T12	FOOD 147 151	salt
+T13	FOOD 156 162	pepper
+T14	AC 167 177	Crumble in
+T15	FOOD 178 193	the ground beef
+T16	AC 199 202	mix
+T17	TOOL 215 219	hand
+T18	AC 224 228	Form
+T19	FOOD 234 243	6 patties
+T20	AC 249 253	wrap
+T21	FOOD 254 270	a slice of bacon
+T22	FOOD 278 286	each one
+T23	AC 291 297	Secure
+T24	FOOD 298 303	bacon
+T25	TOOL 309 319	toothpicks
+T26	AC 324 329	Place
+T27	FOOD 330 337	patties
+T28	TOOL 341 350	the grill
+T29	AC 356 360	cook
+T30	DUR 365 374	5 minutes
+T31	OTHER 375 383	per side
+T32	CONDITION_CLAUSE 388 403	until well done
+T33	AC 408 414	Remove
+T34	TOOL 415 425	toothpicks
+T35	CONDITION_CLAUSE 426 458	before serving on hamburger buns
+T50	zav 167 177	Crumble in
+R1	zav_anaphor Arg1:T50 Arg2:T36	
+R2	zav_anaphor Arg1:T50 Arg2:T37	
+R3	zav_anaphor Arg1:T50 Arg2:T38	
+R4	zav_anaphor Arg1:T50 Arg2:T39	
+R5	zav_anaphor Arg1:T50 Arg2:T40	
+R6	zav_anaphor Arg1:T50 Arg2:T41	
+R7	zav_anaphor Arg1:T50 Arg2:T42	
+R8	zav_anaphor Arg1:T50 Arg2:T43	
+T51	zav 199 202	mix
+R9	zav_anaphor Arg1:T51 Arg2:T44	
+R10	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 356 360	cook
+R11	zav_anaphor Arg1:T52 Arg2:T49	
+T36	anaphor 67 85	the Cheddar cheese
+T37	anaphor 87 102	Parmesan cheese
+T38	anaphor 104 109	onion
+T39	anaphor 111 114	egg
+T40	anaphor 116 123	ketchup
+T41	anaphor 125 145	Worcestershire sauce
+T42	anaphor 147 151	salt
+T43	anaphor 156 162	pepper
+T44	anaphor 178 193	the ground beef
+T49	anaphor 330 337	patties

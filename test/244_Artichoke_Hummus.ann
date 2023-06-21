@@ -1,0 +1,30 @@
+T1	AC 219 222	Dip
+T2	AC 226 232	spread
+T3	AC 199 206	Stir in
+T4	AC 152 157	Cover
+T5	AC 162 173	refrigerate
+T6	CONDITION_CLAUSE 174 194	until ready to serve
+T7	AC 123 131	Transfer
+T8	TOOL 135 147	serving bowl
+T9	AC 100 105	Pulse
+T10	CONDITION_CLAUSE 106 118	until smooth
+T11	AC 3 10	Combine
+T12	FOOD 11 41	all ingredients except parsley
+T13	FOOD 46 64	Quaker Rice Snacks
+T14	TOOL 68 95	work bowl of food processor
+T15	FOOD 233 268	each Quakes Ranch Flavor Rice Snack
+T16	FOOD 274 280	hummus
+T17	FOOD 207 214	parsley
+T23	zav 100 105	Pulse
+R1	zav_anaphor Arg1:T23 Arg2:T18	
+R2	zav_anaphor Arg1:T23 Arg2:T19	
+T24	zav 123 131	Transfer
+R3	zav_zav Arg1:T24 Arg2:T23	
+T25	zav 152 157	Cover
+R4	zav_zav Arg1:T25 Arg2:T24	
+T26	zav 162 173	refrigerate
+R5	zav_zav Arg1:T26 Arg2:T25	
+T27	zav 199 206	Stir in
+R6	zav_zav Arg1:T27 Arg2:T26	
+T18	anaphor 11 41	all ingredients except parsley
+T19	anaphor 46 64	Quaker Rice Snacks

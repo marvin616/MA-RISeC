@@ -1,0 +1,43 @@
+T1	TOOL 6 16	a saucepan
+T2	TEMPERATURE 22 30	low heat
+T3	AC 32 35	mix
+T4	FOOD 36 51	the brown sugar
+T5	FOOD 53 64	chile sauce
+T6	FOOD 66 69	rum
+T7	FOOD 71 80	soy sauce
+T8	FOOD 82 89	ketchup
+T9	FOOD 91 111	Worcestershire sauce
+T10	FOOD 113 119	garlic
+T11	FOOD 121 132	dry mustard
+T12	FOOD 138 144	pepper
+T13	AC 149 155	Simmer
+T14	DUR 156 166	30 minutes
+T15	AC 168 176	stirring
+T16	AC 194 198	Cool
+T17	AC 204 215	refrigerate
+T18	CONDITION_CLAUSE 216 234	until ready to use
+T28	zav 149 155	Simmer
+R1	zav_anaphor Arg1:T28 Arg2:T19	
+R2	zav_anaphor Arg1:T28 Arg2:T20	
+R3	zav_anaphor Arg1:T28 Arg2:T21	
+R4	zav_anaphor Arg1:T28 Arg2:T22	
+R5	zav_anaphor Arg1:T28 Arg2:T23	
+R6	zav_anaphor Arg1:T28 Arg2:T24	
+R7	zav_anaphor Arg1:T28 Arg2:T25	
+R8	zav_anaphor Arg1:T28 Arg2:T26	
+R9	zav_anaphor Arg1:T28 Arg2:T27	
+T29	zav 168 176	stirring
+R10	zav_zav Arg1:T29 Arg2:T28	
+T30	zav 194 198	Cool
+R11	zav_zav Arg1:T30 Arg2:T29	
+T31	zav 204 215	refrigerate
+R12	zav_zav Arg1:T31 Arg2:T30	
+T19	anaphor 36 51	the brown sugar
+T20	anaphor 53 64	chile sauce
+T21	anaphor 66 69	rum
+T22	anaphor 71 80	soy sauce
+T23	anaphor 82 89	ketchup
+T24	anaphor 91 111	Worcestershire sauce
+T25	anaphor 113 119	garlic
+T26	anaphor 121 132	dry mustard
+T27	anaphor 138 144	pepper

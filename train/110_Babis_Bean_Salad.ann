@@ -1,0 +1,96 @@
+T1	AC 3 8	Place
+T2	FOOD 9 18	the beans
+T3	TOOL 22 32	a saucepan
+T4	FOOD 38 50	enough water
+T5	FOOD 87 92	beans
+T6	AC 103 107	boil
+T7	AC 112 118	Reduce
+T8	OTHER 119 123	heat
+T9	TEMPERATURE 127 130	low
+T10	AC 136 142	simmer
+T11	CONDITION_CLAUSE 143 169	until tender but not mushy
+T12	DUR 177 187	35 minutes
+T13	AC 193 202	Set aside
+T14	PURPOSE_CLAUSE 203 210	to cool
+T15	CONDITION_CLAUSE 215 241	When the beans have cooled
+T16	AC 243 248	place
+T17	FOOD 249 253	them
+T18	TOOL 257 269	a large bowl
+T19	AC 274 277	Add
+T20	FOOD 278 288	the celery
+T21	FOOD 290 297	carrots
+T22	FOOD 299 306	parsley
+T23	FOOD 308 319	white onion
+T24	FOOD 325 329	mint
+T25	AC 331 335	toss
+T26	PURPOSE_CLAUSE 336 344	to blend
+T27	AC 363 368	blend
+T28	FOOD 369 378	olive oil
+T29	FOOD 380 402	orange and lemon juice
+T30	FOOD 404 410	garlic
+T31	FOOD 412 421	coriander
+T32	FOOD 423 427	salt
+T33	FOOD 429 435	pepper
+T34	FOOD 441 452	brown sugar
+T35	TOOL 456 465	a blender
+T36	DUR 470 479	6 seconds
+T37	AC 484 492	Transfer
+T38	TOOL 496 512	a small saucepan
+T39	AC 518 524	simmer
+T40	TEMPERATURE 530 538	low heat
+T41	DUR 543 555	five minutes
+T42	AC 560 566	Remove
+T43	OTHER 572 576	heat
+T44	AC 582 586	cool
+T45	AC 592 596	Pour
+T46	FOOD 353 361	dressing
+T47	FOOD 597 605	dressing
+T48	FOOD 611 625	the bean salad
+T49	AC 631 642	refrigerate
+T50	DUR 647 662	at least 1 hour
+T51	CONDITION_CLAUSE 663 677	before serving
+T52	PURPOSE_CLAUSE 51 76	to cover them by one inch
+T72	zav 136 142	simmer
+R1	zav_anaphor Arg1:T72 Arg2:T55	
+T73	zav 193 202	Set aside
+R2	zav_zav Arg1:T73 Arg2:T72	
+T74	zav 274 277	Add
+R3	zav_anaphor Arg1:T74 Arg2:T75	
+T76	zav 331 335	toss
+R4	zav_zav Arg1:T76 Arg2:T74	
+R5	zav_anaphor Arg1:T76 Arg2:T57	
+R6	zav_anaphor Arg1:T76 Arg2:T58	
+R7	zav_anaphor Arg1:T76 Arg2:T60	
+R8	zav_anaphor Arg1:T76 Arg2:T61	
+T77	zav 484 492	Transfer
+R9	zav_anaphor Arg1:T77 Arg2:T62	
+R10	zav_anaphor Arg1:T77 Arg2:T63	
+R11	zav_anaphor Arg1:T77 Arg2:T64	
+R12	zav_anaphor Arg1:T77 Arg2:T65	
+R13	zav_anaphor Arg1:T77 Arg2:T66	
+R14	zav_anaphor Arg1:T77 Arg2:T67	
+R15	zav_anaphor Arg1:T77 Arg2:T68	
+T78	zav 518 524	simmer
+R16	zav_zav Arg1:T78 Arg2:T77	
+T79	zav 560 566	Remove
+R17	zav_zav Arg1:T79 Arg2:T78	
+T80	zav 582 586	cool
+R18	zav_zav Arg1:T80 Arg2:T79	
+T82	zav 631 642	refrigerate
+R19	zav_anaphor Arg1:T82 Arg2:T71	
+R20	zav_anaphor Arg1:T82 Arg2:T70	
+T55	anaphor 87 92	beans
+T57	anaphor 278 288	the celery
+T58	anaphor 290 297	carrots
+T60	anaphor 308 319	white onion
+T61	anaphor 325 329	mint
+T62	anaphor 369 378	olive oil
+T63	anaphor 380 402	orange and lemon juice
+T64	anaphor 404 410	garlic
+T65	anaphor 412 421	coriander
+T66	anaphor 423 427	salt
+T67	anaphor 429 435	pepper
+T68	anaphor 441 452	brown sugar
+T70	anaphor 597 605	dressing
+T71	anaphor 611 625	the bean salad
+T75	anaphor 220 229	the beans

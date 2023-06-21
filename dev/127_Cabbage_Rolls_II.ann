@@ -1,0 +1,60 @@
+T1	AC 35 39	boil
+T2	FOOD 9 29	a large pot of water
+T3	AC 44 48	Boil
+T4	FOOD 49 63	cabbage leaves
+T5	DUR 64 73	2 minutes
+T6	AC 75 80	drain
+T7	TOOL 88 98	large bowl
+T8	AC 100 107	combine
+T9	FOOD 108 125	1 cup cooked rice
+T10	FOOD 127 130	egg
+T11	FOOD 132 136	milk
+T12	FOOD 138 143	onion
+T13	FOOD 145 156	ground beef
+T14	FOOD 158 162	salt
+T15	FOOD 168 174	pepper
+T16	AC 179 184	Place
+T17	FOOD 191 214	1/4 cup of meat mixture
+T18	FOOD 218 245	center of each cabbage leaf
+T19	AC 251 258	roll up
+T20	AC 260 267	tucking
+T21	AC 280 285	Place
+T22	FOOD 286 291	rolls
+T23	TOOL 295 306	slow cooker
+T24	TOOL 314 326	a small bowl
+T25	AC 328 331	mix
+T26	FOOD 341 353	tomato sauce
+T27	FOOD 355 366	brown sugar
+T28	FOOD 368 379	lemon juice
+T29	FOOD 385 405	Worcestershire sauce
+T30	AC 410 414	Pour
+T31	FOOD 420 433	cabbage rolls
+T32	AC 438 443	Cover
+T33	AC 449 453	cook
+T34	TEMPERATURE 457 460	low
+T35	DUR 461 473	8 to 9 hours
+T53	zav 75 80	drain
+R1	zav_anaphor Arg1:T53 Arg2:T37	
+T36	zav 251 258	roll up
+R2	zav_anaphor Arg1:T36 Arg2:T46	
+R3	zav_anaphor Arg1:T36 Arg2:T45	
+T38	zav 260 267	tucking
+R4	zav_zav Arg1:T38 Arg2:T36	
+T39	zav 410 414	Pour
+R5	zav_anaphor Arg1:T39 Arg2:T48	
+R6	zav_anaphor Arg1:T39 Arg2:T49	
+R7	zav_anaphor Arg1:T39 Arg2:T50	
+R8	zav_anaphor Arg1:T39 Arg2:T51	
+T40	zav 438 443	Cover
+T41	zav 449 453	cook
+R9	zav_zav Arg1:T40 Arg2:T39	
+R10	zav_anaphor Arg1:T40 Arg2:T52	
+R11	zav_zav Arg1:T41 Arg2:T40	
+T37	anaphor 49 63	cabbage leaves
+T45	anaphor 191 214	1/4 cup of meat mixture
+T46	anaphor 218 245	center of each cabbage leaf
+T48	anaphor 341 353	tomato sauce
+T49	anaphor 355 366	brown sugar
+T50	anaphor 368 379	lemon juice
+T51	anaphor 385 405	Worcestershire sauce
+T52	anaphor 420 433	cabbage rolls

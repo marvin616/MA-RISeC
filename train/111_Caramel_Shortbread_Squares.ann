@@ -1,0 +1,79 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 33	350 degrees F.
+T4	TOOL 40 53	a medium bowl
+T5	AC 55 58	mix
+T6	FOOD 68 82	2/3 cup butter
+T7	FOOD 84 103	1/4 cup white sugar
+T8	FOOD 109 124	1 1/4 cup flour
+T9	CONDITION_CLAUSE 125 145	until evenly crumbly
+T10	AC 150 155	Press
+T11	TOOL 161 181	9" square baking pan
+T12	AC 186 190	Bake
+T13	DUR 195 205	20 minutes
+T14	TOOL 213 231	a 2 quart saucepan
+T15	AC 233 240	combine
+T16	FOOD 241 255	1/2 cup butter
+T17	FOOD 257 268	brown sugar
+T18	FOOD 270 280	corn syrup
+T19	FOOD 286 310	sweetened condensed milk
+T20	AC 326 330	boil
+T21	AC 347 351	boil
+T22	DUR 356 365	5 minutes
+T23	AC 370 376	Remove
+T24	OTHER 382 386	heat
+T25	AC 391 395	beat
+T26	TOOL 412 426	a wooden spoon
+T27	DUR 437 446	3 minutes
+T28	AC 451 455	Pour
+T29	FOOD 461 472	baked crust
+T30	AC 493 497	Cool
+T31	CONDITION_CLAUSE 498 521	until it begins to firm
+T32	AC 527 531	Melt
+T33	FOOD 532 541	chocolate
+T34	AC 546 550	pour
+T35	FOOD 556 569	caramel layer
+T36	AC 575 580	Cover
+T37	FOOD 581 590	the layer
+T38	AC 607 612	Chill
+T39	AC 618 621	Cut
+T40	OTHER 627 634	squares
+T52	zav 150 155	Press
+R1	zav_anaphor Arg1:T52 Arg2:T41	
+R2	zav_anaphor Arg1:T52 Arg2:T42	
+R3	zav_anaphor Arg1:T52 Arg2:T43	
+T53	zav 186 190	Bake
+R4	zav_zav Arg1:T53 Arg2:T52	
+T54	zav 326 330	boil
+R5	zav_anaphor Arg1:T54 Arg2:T44	
+R6	zav_anaphor Arg1:T54 Arg2:T45	
+R7	zav_anaphor Arg1:T54 Arg2:T46	
+R8	zav_anaphor Arg1:T54 Arg2:T47	
+T55	zav 347 351	boil
+R9	zav_zav Arg1:T55 Arg2:T54	
+T56	zav 370 376	Remove
+R10	zav_zav Arg1:T56 Arg2:T55	
+T57	zav 391 395	beat
+R11	zav_zav Arg1:T57 Arg2:T56	
+T58	zav 451 455	Pour
+R12	zav_zav Arg1:T58 Arg2:T57	
+T59	zav 493 497	Cool
+R13	zav_anaphor Arg1:T59 Arg2:T48	
+R14	zav_zav Arg1:T59 Arg2:T58	
+T60	zav 546 550	pour
+R15	zav_anaphor Arg1:T60 Arg2:T49	
+T61	zav 607 612	Chill
+R16	zav_zav Arg1:T61 Arg2:T60	
+R17	zav_anaphor Arg1:T61 Arg2:T50	
+T62	zav 618 621	Cut
+R18	zav_zav Arg1:T62 Arg2:T61	
+T41	anaphor 68 82	2/3 cup butter
+T42	anaphor 84 103	1/4 cup white sugar
+T43	anaphor 109 124	1 1/4 cup flour
+T44	anaphor 241 255	1/2 cup butter
+T45	anaphor 257 268	brown sugar
+T46	anaphor 270 280	corn syrup
+T47	anaphor 286 310	sweetened condensed milk
+T48	anaphor 461 472	baked crust
+T49	anaphor 532 541	chocolate
+T50	anaphor 556 569	caramel layer

@@ -1,0 +1,30 @@
+T1	AC 3 10	Preheat
+T2	AC 86 93	combine
+T3	AC 171 175	Bake
+T4	AC 205 210	Serve
+T5	DUR 190 200	30 minutes
+T6	TOOL 11 15	oven
+T7	TEMPERATURE 19 32	350 degrees F
+T8	TOOL 56 84	a 1-1/2 quart casserole dish
+T9	FOOD 94 104	mayonnaise
+T10	FOOD 106 116	sour cream
+T11	FOOD 118 126	soup mix
+T12	FOOD 128 144	artichoke hearts
+T13	FOOD 146 152	cheese
+T14	FOOD 157 166	crab meat
+T15	TEMPERATURE 34 47	175 degrees C
+T22	zav 171 175	Bake
+R1	zav_anaphor Arg1:T22 Arg2:T16	
+R2	zav_anaphor Arg1:T22 Arg2:T17	
+R3	zav_anaphor Arg1:T22 Arg2:T18	
+R4	zav_anaphor Arg1:T22 Arg2:T19	
+R5	zav_anaphor Arg1:T22 Arg2:T20	
+R6	zav_anaphor Arg1:T22 Arg2:T21	
+T23	zav 205 210	Serve
+R7	zav_zav Arg1:T23 Arg2:T22	
+T16	anaphor 94 104	mayonnaise
+T17	anaphor 106 116	sour cream
+T18	anaphor 118 126	soup mix
+T19	anaphor 128 144	artichoke hearts
+T20	anaphor 146 152	cheese
+T21	anaphor 157 166	crab meat

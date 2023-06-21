@@ -1,0 +1,61 @@
+T1	AC 3 10	Measure
+T2	FOOD 11 16	flour
+T3	FOOD 18 23	sugar
+T4	FOOD 25 38	baking powder
+T5	FOOD 40 44	salt
+T6	FOOD 50 65	chocolate chips
+T7	TOOL 71 83	a large bowl
+T8	AC 88 91	Mix
+T9	AC 108 112	make
+T10	AC 138 142	Beat
+T11	FOOD 143 150	the egg
+T12	TOOL 154 166	a small bowl
+T13	CONDITION_CLAUSE 167 179	until frothy
+T14	AC 184 190	Mix in
+T15	FOOD 191 202	cooking oil
+T16	FOOD 204 208	milk
+T17	FOOD 214 221	bananas
+T18	AC 226 230	Pour
+T19	FOOD 231 238	mixture
+T20	OTHER 244 252	the well
+T21	AC 257 261	Stir
+T22	PURPOSE_CLAUSE 267 277	to moisten
+T23	AC 282 286	Fill
+T24	TOOL 287 306	greased muffin cups
+T25	AC 320 324	Bake
+T26	DUR 362 378	20 to 25 minutes
+T27	TEMPERATURE 328 341	400 degrees F
+T28	TEMPERATURE 343 356	205 degrees C
+T29	OTHER 307 315	3/4 full
+T30	OTHER 113 119	a well
+T31	OTHER 123 133	the center
+T42	zav 88 91	Mix
+R1	zav_anaphor Arg1:T42 Arg2:T32	
+R2	zav_anaphor Arg1:T42 Arg2:T33	
+R3	zav_anaphor Arg1:T42 Arg2:T34	
+R4	zav_anaphor Arg1:T42 Arg2:T35	
+R5	zav_anaphor Arg1:T42 Arg2:T36	
+T43	zav 108 112	make
+R6	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 184 190	Mix in
+R7	zav_anaphor Arg1:T44 Arg2:T37	
+T45	zav 226 230	Pour
+R8	zav_zav Arg1:T45 Arg2:T44	
+R9	zav_anaphor Arg1:T45 Arg2:T38	
+R10	zav_anaphor Arg1:T45 Arg2:T39	
+R11	zav_anaphor Arg1:T45 Arg2:T40	
+T46	zav 257 261	Stir
+R12	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 282 286	Fill
+R13	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 320 324	Bake
+R14	zav_zav Arg1:T48 Arg2:T47	
+T32	anaphor 11 16	flour
+T33	anaphor 18 23	sugar
+T34	anaphor 25 38	baking powder
+T35	anaphor 40 44	salt
+T36	anaphor 50 65	chocolate chips
+T37	anaphor 143 150	the egg
+T38	anaphor 191 202	cooking oil
+T39	anaphor 204 208	milk
+T40	anaphor 214 221	bananas

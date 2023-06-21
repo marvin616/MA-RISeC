@@ -1,0 +1,48 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	TEMPERATURE 34 47	205 degrees C
+T5	AC 53 57	Beat
+T6	FOOD 58 66	the eggs
+T7	TOOL 70 82	a large bowl
+T8	AC 87 93	Mix in
+T9	FOOD 94 99	sugar
+T10	FOOD 101 105	salt
+T11	FOOD 107 114	vanilla
+T12	FOOD 120 125	syrup
+T13	AC 130 134	Melt
+T14	FOOD 135 145	the butter
+T15	FOOD 149 158	margarine
+T16	AC 164 167	add
+T17	FOOD 168 170	it
+T18	FOOD 174 189	the egg mixture
+T19	AC 194 201	Stir in
+T20	FOOD 202 210	the nuts
+T21	AC 215 219	Pour
+T22	FOOD 220 227	filling
+T23	FOOD 233 242	pie shell
+T24	AC 247 251	Bake
+T25	TOOL 255 269	preheated oven
+T26	DUR 274 284	10 minutes
+T27	AC 289 295	Reduce
+T28	OTHER 296 300	heat
+T29	TEMPERATURE 304 317	300 degrees F
+T30	TEMPERATURE 319 332	150 degrees C
+T31	AC 348 354	baking
+T32	DUR 359 375	35 to 45 minutes
+T34	zav 87 93	Mix in
+R1	zav_anaphor Arg1:T34 Arg2:T33	
+T35	zav 194 201	Stir in
+R2	zav_anaphor Arg1:T35 Arg2:T36	
+R3	zav_anaphor Arg1:T35 Arg2:T37	
+R4	zav_anaphor Arg1:T35 Arg2:T38	
+T39	zav 247 251	Bake
+R5	zav_zav Arg1:T39 Arg2:T35	
+R6	zav_anaphor Arg1:T39 Arg2:T40	
+T41	zav 348 354	baking
+R7	zav_zav Arg1:T41 Arg2:T39	
+T33	anaphor 58 66	the eggs
+T36	anaphor 135 145	the butter
+T37	anaphor 149 158	margarine
+T38	anaphor 174 189	the egg mixture
+T40	anaphor 202 210	the nuts

@@ -1,0 +1,60 @@
+T1	TOOL 6 22	a large saucepan
+T2	AC 24 31	combine
+T3	FOOD 32 40	the eggs
+T4	FOOD 42 46	milk
+T5	FOOD 51 64	1/3 cup sugar
+T6	AC 69 73	Cook
+T7	AC 78 82	stir
+T8	OTHER 88 99	medium heat
+T9	CONDITION_CLAUSE 100 133	until mixture coats a metal spoon
+T10	AC 138 144	Remove
+T11	OTHER 150 154	heat
+T12	AC 159 163	Cool
+T13	AC 175 182	placing
+T14	TOOL 183 186	pan
+T15	TOOL 190 196	a sink
+T16	TOOL 200 217	bowl of ice water
+T17	AC 222 230	stirring
+T18	DUR 231 245	1 to 2 minutes
+T19	AC 250 257	Stir in
+T20	FOOD 258 269	the vanilla
+T21	AC 274 279	Chill
+T22	DUR 280 293	4 to 24 hours
+T23	CONDITION_CLAUSE 298 312	Before serving
+T24	AC 314 318	whip
+T25	FOOD 319 328	the cream
+T26	FOOD 333 352	2 tablespoons sugar
+T27	CONDITION_CLAUSE 353 374	until soft peaks form
+T28	AC 379 387	Transfer
+T29	FOOD 388 407	chilled egg mixture
+T30	TOOL 411 423	a punch bowl
+T31	AC 428 436	Sprinkle
+T32	FOOD 437 449	each serving
+T33	FOOD 455 461	nutmeg
+T34	AC 467 474	Fold in
+T35	FOOD 475 496	whipped cream mixture
+T36	AC 501 506	serve
+T37	zav 69 73	Cook
+R1	zav_anaphor Arg1:T37 Arg2:T38	
+R2	zav_anaphor Arg1:T37 Arg2:T39	
+R3	zav_anaphor Arg1:T37 Arg2:T40	
+T41	zav 78 82	stir
+R4	zav_zav Arg1:T41 Arg2:T37	
+T42	zav 138 144	Remove
+R5	zav_zav Arg1:T42 Arg2:T41	
+T43	zav 159 163	Cool
+R6	zav_zav Arg1:T43 Arg2:T42	
+T44	zav 222 230	stirring
+R7	zav_zav Arg1:T44 Arg2:T43	
+T45	zav 250 257	Stir in
+R8	zav_zav Arg1:T45 Arg2:T44	
+T46	zav 274 279	Chill
+R9	zav_zav Arg1:T46 Arg2:T45	
+R10	zav_anaphor Arg1:T46 Arg2:T47	
+T48	zav 501 506	serve
+R11	zav_anaphor Arg1:T48 Arg2:T49	
+T38	anaphor 32 40	the eggs
+T39	anaphor 42 46	milk
+T40	anaphor 51 64	1/3 cup sugar
+T47	anaphor 258 269	the vanilla
+T49	anaphor 475 496	whipped cream mixture

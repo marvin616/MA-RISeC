@@ -1,0 +1,48 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 26	cream
+T3	FOOD 27 33	butter
+T4	FOOD 35 45	shortening
+T5	FOOD 50 56	sugars
+T6	AC 61 64	Add
+T7	FOOD 65 68	egg
+T8	FOOD 73 81	extracts
+T9	AC 83 86	mix
+T10	AC 96 103	Combine
+T11	FOOD 104 130	the next eight ingredients
+T12	AC 142 145	add
+T13	FOOD 149 168	the creamed mixture
+T14	AC 173 178	Shape
+T15	FOOD 184 194	1-in balls
+T16	AC 196 203	roll in
+T17	TOOL 219 242	ungreased baking sheets
+T18	FOOD 204 209	sugar
+T19	AC 247 251	Bake
+T20	TEMPERATURE 255 268	350 degrees F
+T21	DUR 273 286	10-15 minutes
+T22	CONDITION_CLAUSE 290 311	until lightly browned
+T23	zav 61 64	Add
+R1	zav_anaphor Arg1:T23 Arg2:T24	
+R2	zav_anaphor Arg1:T23 Arg2:T25	
+R3	zav_anaphor Arg1:T23 Arg2:T26	
+R4	zav_anaphor Arg1:T23 Arg2:T27	
+T28	zav 83 86	mix
+R5	zav_zav Arg1:T28 Arg2:T23	
+R6	zav_anaphor Arg1:T28 Arg2:T29	
+R7	zav_anaphor Arg1:T28 Arg2:T30	
+T31	zav 142 145	add
+R8	zav_anaphor Arg1:T31 Arg2:T32	
+T33	zav 196 203	roll in
+R9	zav_zav Arg1:T33 Arg2:T31	
+R10	zav_anaphor Arg1:T33 Arg2:T34	
+T35	zav 247 251	Bake
+R11	zav_zav Arg1:T35 Arg2:T33	
+R12	zav_anaphor Arg1:T35 Arg2:T36	
+T24	anaphor 21 26	cream
+T25	anaphor 27 33	butter
+T26	anaphor 35 45	shortening
+T27	anaphor 50 56	sugars
+T29	anaphor 65 68	egg
+T30	anaphor 73 81	extracts
+T32	anaphor 104 130	the next eight ingredients
+T34	anaphor 149 168	the creamed mixture
+T36	anaphor 204 209	sugar

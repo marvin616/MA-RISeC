@@ -1,0 +1,65 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 17	cut
+T3	FOOD 18 27	margarine
+T4	FOOD 33 38	flour
+T5	CONDITION_CLAUSE 39 52	until crumbly
+T6	AC 57 62	Press
+T7	TOOL 68 88	an 11-in baking dish
+T8	AC 128 132	Bake
+T9	TEMPERATURE 136 149	350 degrees F
+T10	DUR 154 167	15-18 minutes
+T11	CONDITION_CLAUSE 171 192	until lightly browned
+T12	AC 197 201	Cool
+T13	TOOL 220 233	a mixing bowl
+T14	AC 235 239	beat
+T15	FOOD 240 252	cream cheese
+T16	FOOD 257 266	sweetener
+T17	CONDITION_CLAUSE 267 279	until smooth
+T18	AC 284 291	Fold in
+T19	FOOD 292 319	half of the whipped topping
+T20	AC 334 340	spread
+T21	FOOD 350 355	crust
+T22	TOOL 363 376	a mixing bowl
+T23	AC 378 385	combine
+T24	FOOD 386 390	milk
+T25	FOOD 395 406	pudding mix
+T26	AC 411 415	Beat
+T27	OTHER 419 428	low speed
+T28	DUR 433 442	2 minutes
+T29	AC 452 457	stand
+T30	DUR 462 473	2-3 minutes
+T31	AC 479 485	Spread
+T32	FOOD 491 507	the cream cheese
+T33	AC 513 516	Top
+T34	FOOD 522 551	the remaining whipped topping
+T45	zav 57 62	Press
+R1	zav_anaphor Arg1:T45 Arg2:T35	
+R2	zav_anaphor Arg1:T45 Arg2:T36	
+T46	zav 128 132	Bake
+R3	zav_zav Arg1:T46 Arg2:T45	
+T47	zav 197 201	Cool
+R4	zav_zav Arg1:T47 Arg2:T46	
+T48	zav 284 291	Fold in
+R5	zav_anaphor Arg1:T48 Arg2:T37	
+R6	zav_anaphor Arg1:T48 Arg2:T38	
+T49	zav 334 340	spread
+R7	zav_anaphor Arg1:T49 Arg2:T39	
+R8	zav_zav Arg1:T49 Arg2:T48	
+T50	zav 411 415	Beat
+R9	zav_anaphor Arg1:T50 Arg2:T41	
+R10	zav_anaphor Arg1:T50 Arg2:T42	
+T51	zav 452 457	stand
+R11	zav_zav Arg1:T51 Arg2:T50	
+T52	zav 479 485	Spread
+R12	zav_zav Arg1:T52 Arg2:T51	
+T53	zav 513 516	Top
+R13	zav_zav Arg1:T53 Arg2:T52	
+R14	zav_anaphor Arg1:T53 Arg2:T43	
+T35	anaphor 18 27	margarine
+T36	anaphor 33 38	flour
+T37	anaphor 240 252	cream cheese
+T38	anaphor 257 266	sweetener
+T39	anaphor 292 319	half of the whipped topping
+T41	anaphor 386 390	milk
+T42	anaphor 395 406	pudding mix
+T43	anaphor 491 507	the cream cheese

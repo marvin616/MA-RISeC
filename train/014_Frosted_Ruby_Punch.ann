@@ -1,0 +1,31 @@
+T1	AC 3 7	Pour
+T2	FOOD 8 23	cranberry juice
+T3	TOOL 29 46	a 5-cup ring mold
+T4	AC 51 57	Freeze
+T5	DUR 58 68	over night
+T6	TOOL 76 88	a punch bowl
+T7	AC 90 97	combine
+T8	FOOD 98 103	sugar
+T9	FOOD 105 116	lemon juice
+T10	FOOD 121 133	orange juice
+T11	CONDITION_CLAUSE 134 158	until sugar is dissolved
+T12	AC 160 167	stir in
+T13	FOOD 168 182	the ginger ale
+T14	AC 187 193	Remove
+T15	FOOD 194 202	ice ring
+T16	TOOL 208 212	mold
+T17	AC 214 219	float
+T18	AC 233 238	Place
+T19	FOOD 239 256	scoops of sherbet
+T21	TOOL 223 228	punch
+T20	TOOL 264 268	ring
+T22	zav 51 57	Freeze
+R1	zav_anaphor Arg1:T22 Arg2:T23	
+T24	zav 160 167	stir in
+R2	zav_anaphor Arg1:T24 Arg2:T27	
+R3	zav_anaphor Arg1:T24 Arg2:T26	
+R4	zav_anaphor Arg1:T24 Arg2:T25	
+T23	anaphor 8 23	cranberry juice
+T25	anaphor 98 103	sugar
+T26	anaphor 105 116	lemon juice
+T27	anaphor 121 133	orange juice

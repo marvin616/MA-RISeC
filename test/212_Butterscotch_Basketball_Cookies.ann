@@ -1,0 +1,146 @@
+T1	AC 19 23	melt
+T2	AC 44 48	cool
+T3	AC 86 91	cream
+T4	AC 114 117	Add
+T5	AC 154 161	Beat in
+T6	AC 189 192	add
+T7	AC 213 218	Cover
+T8	AC 223 234	refrigerate
+T9	AC 272 280	roll out
+T10	AC 312 315	Cut
+T11	AC 448 452	Bake
+T12	AC 526 530	Cool
+T13	AC 545 551	remove
+T14	AC 604 611	combine
+T15	AC 667 670	mix
+T16	AC 691 698	beat in
+T17	AC 710 715	Place
+T18	AC 749 752	cut
+T19	AC 788 792	Pipe
+T20	AC 826 833	Fill in
+T21	AC 908 913	place
+T22	AC 879 883	Tint
+T23	AC 936 940	Pipe
+T24	AC 1029 1033	Tint
+T25	AC 1089 1093	Tint
+T26	AC 141 144	mix
+T27	AC 200 203	mix
+T28	TOOL 6 17	a microwave
+T29	TOOL 71 84	a mixing bowl
+T30	FOOD 92 98	butter
+T31	FOOD 103 109	sugars
+T32	DUR 53 63	10 minutes
+T33	FOOD 24 42	butterscotch chips
+T34	FOOD 118 121	egg
+T35	FOOD 123 127	milk
+T36	FOOD 132 139	vanilla
+T37	FOOD 162 174	melted chips
+T38	DUR 239 245	1 hour
+T39	TOOL 253 270	a floured surface
+T40	FOOD 281 286	dough
+T41	OTHER 290 307	1/4-in. thickness
+T42	TOOL 321 370	a floured 4-1/2-in. gingerbread man cookie cutter
+T43	TOOL 375 395	a 3-in. round cutter
+T44	AC 400 405	Place
+T45	TOOL 421 442	greased baking sheets
+T46	TEMPERATURE 456 469	375 degrees F
+T47	DUR 474 485	5-8 minutes
+T48	CONDITION_CLAUSE 489 520	until edges are lightly browned
+T49	DUR 535 543	1 minute
+T50	PURPOSE_CLAUSE 566 584	to cool completely
+T51	TOOL 555 565	wire racks
+T52	FOOD 594 602	frosting
+T53	FOOD 612 622	shortening
+T54	FOOD 624 629	water
+T55	FOOD 631 636	flour
+T56	FOOD 641 648	vanilla
+T57	TOOL 652 665	a mixing bowl
+T58	FOOD 699 704	sugar
+T59	FOOD 716 730	1 cup frosting
+T60	TOOL 734 747	a plastic bag
+T61	OTHER 753 765	a small hole
+T62	TOOL 769 782	corner of bag
+T63	OTHER 793 820	shirt and shorts on players
+T64	AC 846 852	smooth
+T65	TOOL 858 873	a metal spatula
+T66	FOOD 884 900	1/4 cup frosting
+T67	TOOL 917 930	a plastic bag
+T68	PURPOSE_CLAUSE 964 985	to create basketballs
+T69	AC 987 991	pipe
+T70	FOOD 1034 1050	1/4 cup frosting
+T71	AC 1056 1060	pipe
+T72	OTHER 1061 1083	a mouth on each player
+T73	AC 1150 1154	pipe
+T74	FOOD 1094 1112	remaining frosting
+T75	PURPOSE_CLAUSE 1113 1148	to match team colors of your choice
+T76	AC 1184 1187	add
+T77	FOOD 193 198	flour
+T78	OTHER 834 841	outline
+T79	OTHER 992 1023	hair, eyes and noses on players
+T80	OTHER 941 963	lines on round cookies
+T81	OTHER 1162 1179	shirts and shorts
+T82	OTHER 1188 1206	a letter on shirts
+T102	zav 44 48	cool
+R1	zav_anaphor Arg1:T102 Arg2:T85	
+T103	zav 114 117	Add
+R2	zav_anaphor Arg1:T103 Arg2:T83	
+R3	zav_anaphor Arg1:T103 Arg2:T84	
+T104	zav 141 144	mix
+R4	zav_anaphor Arg1:T104 Arg2:T88	
+R5	zav_anaphor Arg1:T104 Arg2:T87	
+R6	zav_anaphor Arg1:T104 Arg2:T86	
+R7	zav_zav Arg1:T104 Arg2:T103	
+T105	zav 154 161	Beat in
+R8	zav_zav Arg1:T105 Arg2:T104	
+T106	zav 189 192	add
+R9	zav_anaphor Arg1:T106 Arg2:T89	
+R10	zav_zav Arg1:T106 Arg2:T105	
+T107	zav 200 203	mix
+R11	zav_anaphor Arg1:T107 Arg2:T101	
+R12	zav_zav Arg1:T107 Arg2:T106	
+T108	zav 213 218	Cover
+R13	zav_zav Arg1:T108 Arg2:T107	
+T109	zav 223 234	refrigerate
+R14	zav_zav Arg1:T109 Arg2:T108	
+T110	zav 312 315	Cut
+R15	zav_anaphor Arg1:T110 Arg2:T90	
+T111	zav 400 405	Place
+R16	zav_zav Arg1:T111 Arg2:T110	
+T112	zav 448 452	Bake
+R17	zav_zav Arg1:T112 Arg2:T111	
+T113	zav 526 530	Cool
+R18	zav_zav Arg1:T113 Arg2:T112	
+T114	zav 667 670	mix
+R19	zav_anaphor Arg1:T114 Arg2:T95	
+R20	zav_anaphor Arg1:T114 Arg2:T94	
+R21	zav_anaphor Arg1:T114 Arg2:T93	
+R22	zav_anaphor Arg1:T114 Arg2:T92	
+T115	zav 691 698	beat in
+R24	zav_zav Arg1:T115 Arg2:T114	
+T116	zav 749 752	cut
+R25	zav_anaphor Arg1:T116 Arg2:T97	
+T117	zav 908 913	place
+R26	zav_anaphor Arg1:T117 Arg2:T98	
+T118	zav 1056 1060	pipe
+R27	zav_anaphor Arg1:T118 Arg2:T99	
+T119	zav 1150 1154	pipe
+R28	zav_anaphor Arg1:T119 Arg2:T100	
+T120	zav 1184 1187	add
+R29	zav_zav Arg1:T120 Arg2:T119	
+T83	anaphor 92 98	butter
+T84	anaphor 103 109	sugars
+T85	anaphor 24 42	butterscotch chips
+T86	anaphor 118 121	egg
+T87	anaphor 123 127	milk
+T88	anaphor 132 139	vanilla
+T89	anaphor 162 174	melted chips
+T90	anaphor 281 286	dough
+T92	anaphor 612 622	shortening
+T93	anaphor 624 629	water
+T94	anaphor 631 636	flour
+T95	anaphor 641 648	vanilla
+T97	anaphor 716 730	1 cup frosting
+T98	anaphor 884 900	1/4 cup frosting
+T99	anaphor 1034 1050	1/4 cup frosting
+T100	anaphor 1094 1112	remaining frosting
+T101	anaphor 193 198	flour

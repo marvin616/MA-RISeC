@@ -1,0 +1,9 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 21	combine
+T3	FOOD 22 37	all ingredients
+T4	AC 46 51	stand
+T5	DUR 56 66	30 minutes
+T6	CONDITION_CLAUSE 67 81	before serving
+T8	zav 46 51	stand
+R1	zav_anaphor Arg1:T8 Arg2:T7	
+T7	anaphor 22 37	all ingredients

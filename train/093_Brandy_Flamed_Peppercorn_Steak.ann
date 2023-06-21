@@ -1,0 +1,75 @@
+T1	AC 3 8	Press
+T2	AC 63 71	Sprinkle
+T3	AC 104 108	Melt
+T4	AC 161 168	Stir in
+T5	AC 212 219	Arrange
+T6	AC 304 310	Reduce
+T7	AC 327 331	Pour
+T8	AC 417 425	Sprinkle
+T9	AC 507 511	Cook
+T10	AC 544 552	Transfer
+T11	AC 575 579	Stir
+T12	FOOD 580 585	sugar
+T13	FOOD 591 596	sauce
+T14	DUR 248 272	5 to 10 minutes per side
+T15	FOOD 169 175	garlic
+T16	FOOD 180 184	wine
+T17	FOOD 109 115	butter
+T18	TOOL 119 134	a large skillet
+T19	FOOD 9 28	crushed peppercorns
+T20	FOOD 34 58	both sides of each steak
+T21	FOOD 77 89	lemon pepper
+T22	FOOD 95 99	salt
+T23	AC 190 194	cook
+T24	DUR 199 207	1 minute
+T25	FOOD 220 226	steaks
+T26	TOOL 230 233	pan
+T27	AC 239 243	cook
+T28	CONDITION_CLAUSE 277 299	until desired doneness
+T29	TEMPERATURE 319 322	low
+T30	FOOD 332 338	brandy
+T31	FOOD 344 350	steaks
+T32	AC 366 371	light
+T33	TOOL 377 384	a match
+T34	AC 404 412	burn off
+T35	FOOD 426 437	green onion
+T36	FOOD 442 449	shallot
+T37	FOOD 457 467	the steaks
+T38	AC 473 479	circle
+T39	FOOD 480 490	the steaks
+T40	FOOD 496 501	cream
+T41	AC 513 521	stirring
+T42	FOOD 522 527	sauce
+T43	CONDITION_CLAUSE 529 538	until hot
+T44	FOOD 553 559	steaks
+T45	TOOL 563 569	plates
+T46	AC 607 612	spoon
+T47	FOOD 618 622	meat
+T48	TEMPERATURE 140 156	medium-high heat
+T49	OTHER 311 315	heat
+T50	OTHER 397 403	flames
+T71	zav 63 71	Sprinkle
+R1	zav_anaphor Arg1:T71 Arg2:T56	
+R2	zav_anaphor Arg1:T71 Arg2:T57	
+T72	zav 161 168	Stir in
+R3	zav_anaphor Arg1:T72 Arg2:T55	
+T73	zav 239 243	cook
+R4	zav_anaphor Arg1:T73 Arg2:T60	
+T74	zav 366 371	light
+R5	zav_anaphor Arg1:T74 Arg2:T62	
+R6	zav_anaphor Arg1:T74 Arg2:T61	
+T75	zav 507 511	Cook
+R7	zav_anaphor Arg1:T75 Arg2:T66	
+R8	zav_anaphor Arg1:T75 Arg2:T67	
+R9	zav_anaphor Arg1:T75 Arg2:T64	
+R10	zav_anaphor Arg1:T75 Arg2:T63	
+T55	anaphor 109 115	butter
+T56	anaphor 9 28	crushed peppercorns
+T57	anaphor 34 58	both sides of each steak
+T60	anaphor 220 226	steaks
+T61	anaphor 332 338	brandy
+T62	anaphor 344 350	steaks
+T63	anaphor 426 437	green onion
+T64	anaphor 442 449	shallot
+T66	anaphor 480 490	the steaks
+T67	anaphor 496 501	cream

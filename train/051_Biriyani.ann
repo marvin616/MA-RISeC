@@ -1,0 +1,129 @@
+T1	AC 3 7	Heat
+T3	AC 96 101	Place
+T4	AC 132 136	cook
+T8	AC 269 275	Season
+T9	AC 347 352	Place
+T10	AC 384 390	Reduce
+T12	AC 635 641	Season
+T13	AC 666 671	Cover
+T14	AC 673 679	reduce
+T15	AC 697 703	simmer
+T16	AC 739 748	alternate
+T17	AC 812 820	Sprinkle
+T18	AC 849 852	mix
+T19	FOOD 8 21	the olive oil
+T20	FOOD 69 79	the yogurt
+T21	FOOD 84 91	vinegar
+T22	FOOD 102 111	the onion
+T23	FOOD 161 171	the garlic
+T24	FOOD 173 185	ginger paste
+T25	FOOD 187 206	green chile peppers
+T26	FOOD 212 220	tomatoes
+T28	FOOD 281 293	garam masala
+T29	FOOD 295 299	mint
+T30	FOOD 301 305	salt
+T31	FOOD 311 317	pepper
+T33	FOOD 330 342	the cilantro
+T34	FOOD 353 364	the chicken
+T35	TOOL 368 379	the skillet
+T36	TOOL 25 40	a large skillet
+T37	TOOL 115 126	the skillet
+T38	FOOD 585 599	green cardamom
+T39	FOOD 601 615	black cardamom
+T40	FOOD 621 629	cinnamon
+T41	FOOD 571 583	the bay leaf
+T42	FOOD 647 651	salt
+T43	DUR 704 714	20 minutes
+T44	TOOL 723 737	a separate pot
+T45	FOOD 749 757	the rice
+T46	FOOD 762 777	chicken mixture
+T47	FOOD 802 806	rice
+T48	FOOD 826 843	the food coloring
+T49	AC 411 416	cover
+T50	AC 431 438	cooking
+T51	DUR 439 449	45 minutes
+T52	AC 451 459	stirring
+T55	TEMPERATURE 399 409	medium-low
+T57	FOOD 515 524	the water
+T58	FOOD 529 533	rice
+T59	TOOL 547 558	a large pot
+T61	TEMPERATURE 46 57	medium heat
+T62	TOOL 391 395	heat
+T6	AC 234 238	stir
+T7	CONDITION_CLAUSE 137 149	until tender
+T27	CONDITION_CLAUSE 239 264	until tomatoes are tender
+T53	CONDITION_CLAUSE 474 504	until chicken juices run clear
+T54	AC 789 796	topping
+T63	TEMPERATURE 688 691	low
+T2	AC 62 68	Mix in
+T5	AC 154 160	Mix in
+T11	AC 564 570	Mix in
+T32	AC 323 329	mix in
+T60	AC 539 543	boil
+T56	OTHER 781 787	layers
+T64	TOOL 680 684	heat
+T65	AC 225 229	Cook
+T66	PURPOSE_CLAUSE 652 660	to taste
+T67	PURPOSE_CLAUSE 853 861	to serve
+T68	zav 62 68	Mix in
+R1	zav_anaphor Arg1:T68 Arg2:T69	
+T70	zav 132 136	cook
+R2	zav_anaphor Arg1:T70 Arg2:T71	
+R3	zav_anaphor Arg1:T70 Arg2:T73	
+R4	zav_anaphor Arg1:T70 Arg2:T72	
+R5	zav_zav Arg1:T70 Arg2:T68	
+T74	zav 154 160	Mix in
+R6	zav_zav Arg1:T74 Arg2:T70	
+T79	zav 225 229	Cook
+T80	zav 234 238	stir
+R7	zav_zav Arg1:T79 Arg2:T74	
+R8	zav_anaphor Arg1:T79 Arg2:T75	
+R9	zav_anaphor Arg1:T79 Arg2:T76	
+R10	zav_anaphor Arg1:T79 Arg2:T77	
+R11	zav_anaphor Arg1:T79 Arg2:T78	
+R12	zav_zav Arg1:T80 Arg2:T79	
+T81	zav 269 275	Season
+R13	zav_zav Arg1:T81 Arg2:T80	
+T82	zav 411 416	cover
+R14	zav_anaphor Arg1:T82 Arg2:T83	
+T84	zav 431 438	cooking
+R15	zav_zav Arg1:T84 Arg2:T82	
+T85	zav 451 459	stirring
+R16	zav_zav Arg1:T85 Arg2:T84	
+T86	zav 635 641	Season
+R17	zav_anaphor Arg1:T86 Arg2:T87	
+R18	zav_anaphor Arg1:T86 Arg2:T88	
+R19	zav_anaphor Arg1:T86 Arg2:T89	
+R20	zav_anaphor Arg1:T86 Arg2:T90	
+T91	zav 666 671	Cover
+R21	zav_zav Arg1:T91 Arg2:T86	
+R22	zav_anaphor Arg1:T91 Arg2:T92	
+T93	zav 697 703	simmer
+R23	zav_zav Arg1:T93 Arg2:T91	
+T94	zav 789 796	topping
+R24	zav_anaphor Arg1:T94 Arg2:T95	
+R25	zav_anaphor Arg1:T94 Arg2:T96	
+T97	zav 812 820	Sprinkle
+R26	zav_zav Arg1:T97 Arg2:T94	
+R27	zav_anaphor Arg1:T97 Arg2:T98	
+T100	zav 849 852	mix
+R28	zav_anaphor Arg1:T100 Arg2:T99	
+R29	zav_zav Arg1:T100 Arg2:T97	
+T69	anaphor 8 21	the olive oil
+T71	anaphor 102 111	the onion
+T72	anaphor 69 79	the yogurt
+T73	anaphor 84 91	vinegar
+T75	anaphor 161 171	the garlic
+T76	anaphor 173 185	ginger paste
+T77	anaphor 187 206	green chile peppers
+T78	anaphor 212 220	tomatoes
+T83	anaphor 353 364	the chicken
+T87	anaphor 571 583	the bay leaf
+T88	anaphor 585 599	green cardamom
+T89	anaphor 601 615	black cardamom
+T90	anaphor 621 629	cinnamon
+T92	anaphor 647 651	salt
+T95	anaphor 762 777	chicken mixture
+T96	anaphor 749 757	the rice
+T98	anaphor 802 806	rice
+T99	anaphor 826 843	the food coloring

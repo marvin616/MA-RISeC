@@ -1,0 +1,81 @@
+T1	AC 506 512	Repeat
+T2	AC 3 7	Heat
+T3	AC 192 196	Cook
+T4	AC 239 243	Melt
+T5	AC 310 315	Place
+T6	AC 415 420	Place
+T7	AC 343 351	sprinkle
+T8	AC 377 380	top
+T9	AC 446 450	cook
+T10	AC 470 474	flip
+T11	AC 479 483	cook
+T12	FOOD 8 11	oil
+T13	TOOL 15 31	a large saucepan
+T14	OTHER 37 48	medium heat
+T15	FOOD 61 66	onion
+T16	AC 72 76	cook
+T17	FOOD 121 126	beans
+T18	FOOD 131 135	corn
+T19	AC 142 145	add
+T20	FOOD 146 151	sugar
+T21	FOOD 153 158	salsa
+T22	FOOD 164 177	pepper flakes
+T23	AC 179 182	mix
+T24	FOOD 244 269	2 teaspoons of the butter
+T25	TOOL 273 288	a large skillet
+T26	TEMPERATURE 294 305	medium heat
+T27	FOOD 316 326	a tortilla
+T28	TOOL 330 341	the skillet
+T29	FOOD 364 370	cheese
+T30	FOOD 386 410	some of the bean mixture
+T31	FOOD 421 437	another tortilla
+T32	FOOD 441 444	top
+T33	OTHER 487 501	the other side
+T34	FOOD 518 537	remaining tortillas
+T35	FOOD 542 549	filling
+T36	CONDITION_CLAUSE 77 91	until softened
+T37	CONDITION_CLAUSE 197 217	until heated through
+T38	CONDITION_CLAUSE 451 463	until golden
+T39	AC 53 60	Stir in
+T40	AC 113 120	Stir in
+T41	DUR 93 108	about 2 minutes
+T42	DUR 219 234	about 3 minutes
+T58	zav 53 60	Stir in
+R1	zav_anaphor Arg1:T58 Arg2:T43	
+T59	zav 72 76	cook
+R2	zav_anaphor Arg1:T59 Arg2:T44	
+R3	zav_zav Arg1:T59 Arg2:T58	
+T60	zav 113 120	Stir in
+R4	zav_zav Arg1:T60 Arg2:T59	
+T61	zav 142 145	add
+R5	zav_anaphor Arg1:T61 Arg2:T46	
+R6	zav_anaphor Arg1:T61 Arg2:T45	
+R7	zav_zav Arg1:T61 Arg2:T60	
+T62	zav 179 182	mix
+R8	zav_anaphor Arg1:T62 Arg2:T49	
+R9	zav_anaphor Arg1:T62 Arg2:T48	
+R10	zav_anaphor Arg1:T62 Arg2:T47	
+R11	zav_zav Arg1:T62 Arg2:T61	
+T63	zav 192 196	Cook
+R12	zav_zav Arg1:T63 Arg2:T62	
+T64	zav 343 351	sprinkle
+R13	zav_anaphor Arg1:T64 Arg2:T51	
+T65	zav 377 380	top
+R14	zav_anaphor Arg1:T65 Arg2:T52	
+R15	zav_zav Arg1:T65 Arg2:T64	
+T66	zav 446 450	cook
+R16	zav_anaphor Arg1:T66 Arg2:T54	
+T67	zav 470 474	flip
+R17	zav_zav Arg1:T67 Arg2:T66	
+T68	zav 479 483	cook
+R18	zav_zav Arg1:T68 Arg2:T67	
+T43	anaphor 8 11	oil
+T44	anaphor 61 66	onion
+T45	anaphor 121 126	beans
+T46	anaphor 131 135	corn
+T47	anaphor 146 151	sugar
+T48	anaphor 153 158	salsa
+T49	anaphor 164 177	pepper flakes
+T51	anaphor 316 326	a tortilla
+T52	anaphor 364 370	cheese
+T54	anaphor 421 437	another tortilla

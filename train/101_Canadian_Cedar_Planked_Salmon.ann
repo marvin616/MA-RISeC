@@ -1,0 +1,52 @@
+T1	AC 3 11	Submerge
+T2	TOOL 12 33	untreated cedar plank
+T3	FOOD 37 42	water
+T4	AC 47 51	Soak
+T5	DUR 66 74	12 hours
+T6	DUR 79 88	overnight
+T7	AC 93 100	Preheat
+T8	TOOL 101 117	an outdoor grill
+T9	TEMPERATURE 122 131	high heat
+T10	AC 136 141	Place
+T11	TOOL 142 156	prepared plank
+T12	TOOL 160 169	the grill
+T13	AC 175 183	sprinkle
+T14	FOOD 189 200	coarse salt
+T15	AC 205 210	Cover
+T16	FOOD 211 216	grill
+T17	AC 221 225	heat
+T18	FOOD 226 231	plank
+T19	DUR 232 246	2 to 3 minutes
+T20	CONDITION_CLAUSE 248 257	until dry
+T21	AC 262 268	Adjust
+T22	OTHER 269 286	grill temperature
+T23	TEMPERATURE 291 302	medium heat
+T24	AC 307 310	Rub
+T25	FOOD 311 324	salmon filets
+T26	FOOD 330 339	olive oil
+T27	AC 344 351	Arrange
+T28	TOOL 355 364	the plank
+T29	AC 369 372	Top
+T30	FOOD 373 379	salmon
+T31	FOOD 385 394	red onion
+T32	FOOD 396 408	lemon slices
+T33	FOOD 413 430	black peppercorns
+T34	AC 436 440	Cook
+T35	FOOD 441 447	salmon
+T36	DUR 458 474	10 to 12 minutes
+T37	CONDITION_CLAUSE 479 521	until opaque and easily flaked with a fork
+T49	zav 47 51	Soak
+T50	anaphor 22 33	cedar plank
+T51	zav 175 183	sprinkle
+R2	zav_anaphor Arg1:T51 Arg2:T52	
+T53	zav 205 210	Cover
+R3	zav_zav Arg1:T53 Arg2:T51	
+R4	zav_anaphor Arg1:T53 Arg2:T39	
+T54	zav 344 351	Arrange
+R5	zav_anaphor Arg1:T54 Arg2:T42	
+R6	zav_anaphor Arg1:T54 Arg2:T43	
+T39	anaphor 189 200	coarse salt
+T42	anaphor 311 324	salmon filets
+T43	anaphor 330 339	olive oil
+T52	anaphor 142 156	prepared plank
+R1	zav_anaphor Arg1:T49 Arg2:T50	
